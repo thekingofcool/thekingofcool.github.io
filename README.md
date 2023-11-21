@@ -1,0 +1,3 @@
+# thekingofcool.github.io
+
+Nothing.
