@@ -1,0 +1,19 @@
+.tabs li {
+  position: relative;
+}
+.tabs li::before {
+  content: "";
+  display: inline-block;
+  width: 20px; /* 图片宽度 */
+  height: 20px; /* 图片高度 */
+  background-image: url("../image/favicon.jpg"); /* 图片路径 */
+  background-size: cover;
+  margin-right: 5px; /* 图片与文本之间的间距 */
+  vertical-align: middle;
+}
+.tab-content {
+  display: none; /* 默认隐藏内容 */
+}
+.tab-content:target {
+  display: block; /* 根据选项卡的哈希值显示内容 */
+}
