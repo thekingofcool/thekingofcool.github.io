@@ -1,0 +1,32 @@
+.outer-container {
+  border: 2px solid black;
+  height: 175px;
+  width: 300px;
+}
+
+.top-section {
+  background: lightgreen;
+  height: 50%;
+}
+
+.bottom-section {
+  background: lightblue;
+  height: 50%;
+  margin: 8px;
+}
+
+.bottom-aligner {
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+  width: 3px;
+  background: red;
+}
+
+.bottom-content {
+  display: inline-block;
+}
+
+.top-content {
+  padding: 8px;
+}

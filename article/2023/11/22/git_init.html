@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<div id="doc" class="container-fluid markdown-body comment-enabled" data-hard-breaks="true">
+
+
+<br>
+<h1 style="margin-bottom:7px"> 本地安装Git开发Github仓库 </h1>
+<small style="float:left; color: #888"> 2023 Nov 22 </small>
+<small style="float:right; color: #888"><a href="../../../../index.html">See all posts</a></small>
+<br> <br> <br>
+
+
+<p>下载对应系统版本并安装<a href="https://git-scm.com/downloads">git</a>，检查安装情况：</p>
+<pre><code>git <span class="hljs-comment">--version</span>
+</code></pre><p>配置config并检查配置情况：</p>
+<pre><code>git <span class="hljs-keyword">config</span> --<span class="hljs-keyword">global</span> user<span class="hljs-variable">.name</span> <span class="hljs-string">"your name"</span>
+git <span class="hljs-keyword">config</span> --<span class="hljs-keyword">global</span> user<span class="hljs-variable">.email</span> <span class="hljs-string">"your email"</span>
+
+git <span class="hljs-keyword">config</span> -l
+</code></pre><p>配置ssh:</p>
+<pre><code>ssh-keygen -t rsa -C <span class="hljs-string">"your github email"</span>
+<span class="hljs-keyword">return</span> * <span class="hljs-number">3</span>
+</code></pre><p>去到Github - Settings - SSH and GPG keys, new SSH key
+将 上一步生成的 ~/.ssh 目录下的 id_rsa.pub 文件内容复制到新建的SSH key中，并建立连接：</p>
+<pre><code><span class="hljs-selector-tag">ssh</span> <span class="hljs-selector-tag">-T</span> <span class="hljs-selector-tag">git</span>@<span class="hljs-keyword">github</span>.<span class="hljs-keyword">com</span>
+</code></pre><p>接下来就是正常git远程仓库操作。</p>
