@@ -1,0 +1,227 @@
+---
+layout: post
+title:  "米莱：我们为什么繁荣，以及我们为什么贫穷"
+date:   2024-01-29
+categories: reading
+---
+
+This is a transcript from the Special address by Javier Milei, President of Argentina, which took place during the World Economic Forum's Annual Meeting 2024 in Davos in January 17, 2024.
+English version
+Good afternoon. Thank you very much.
+
+Today I'm here to tell you that the Western world is in danger. And it is in danger because those who are supposed to have to defend the values of the West are co-opted by a vision of the world that inexorably leads to socialism and thereby to poverty.
+
+Unfortunately, in recent decades, the main leaders of the Western world have abandoned the model of freedom for different versions of what we call collectivism. Some have been motivated by well-meaning individuals who are willing to help others, and others have been motivated by the wish to belong to a privileged caste.
+
+We're here to tell you that collectivist experiments are never the solution to the problems that afflict the citizens of the world. Rather, they are the root cause. Do believe me: no one is in better place than us, Argentines, to testify to these two points.
+
+Thirty five years after we adopted the model of freedom, back in 1860, we became a leading world power. And when we embraced collectivism over the course of the last 100 years, we saw how our citizens started to become systematically impoverished, and we dropped to spot number 140 globally.
+
+But before having the discussion, it would first be important for us to take a look at the data that demonstrate why free enterprise capitalism is not just the only possible system to end world poverty, but also that it's the only morally desirable system to achieve this.
+
+If we look at the history of economic progress, we can see how between the year zero and the year 1800 approximately, world per capita GDP practically remained constant throughout the whole reference period.
+
+If you look at a graph of the evolution of economic growth throughout the history of humanity, you would see a hockey stick graph, an exponential function that remained constant for 90% of the time and which was exponentially triggered starting in the 19th century.
+
+The only exception to this history of stagnation was in the late 15th century, with the discovery of the American continent, but for this exception, throughout the whole period between the year zero and the year 1800, global per capita GDP stagnated.
+
+Now, it's not just that capitalism brought about an explosion in wealth from the moment it was adopted as an economic system, but also, if you look at the data, what you will see is that growth continues to accelerate throughout the whole period.
+
+And throughout the whole period between the year zero and the year 1800, the per capita GDP growth rate remains stable at around 0.02% annually. So almost no growth. Starting in the 19th century with the Industrial Revolution, the compound annual growth rate was 0.66%. And at that rate, in order to double per capita GDP, you would need some 107 years.
+
+Now, if you look at the period between the year 1900 and the year 1950, the growth rate accelerated to 1.66% a year. So you no longer need 107 years to double per capita GDP - but 66. And if you take the period between 1950 and the year 2000, you will see that the growth rate was 2.1%, which would mean that in only 33 years we could double the world's per capita GDP.
+
+This trend, far from stopping, remains well alive today. If we take the period between the years 2000 and 2023, the growth rate again accelerated to 3% a year, which means that we could double world per capita GDP in just 23 years.
+
+That said, when you look at per capita GDP since the year 1800 until today, what you will see is that after the Industrial Revolution, global per capita GDP multiplied by over 15 times, which meant a boom in growth that lifted 90% of the global population out of poverty.
+
+We should remember that by the year 1800, about 95% of the world's population lived in extreme poverty. And that figure dropped to 5% by the year 2020, prior to the pandemic. The conclusion is obvious.
+
+Far from being the cause of our problems, free trade capitalism as an economic system is the only instrument we have to end hunger, poverty and extreme poverty across our planet. The empirical evidence is unquestionable.
+
+Therefore since there is no doubt that free enterprise capitalism is superior in productive terms, the left-wing doxa has attacked capitalism, alleging matters of morality, saying - that's what the detractors claim - that it's unjust. They say that capitalism is evil because it's individualistic and that collectivism is good because it's altruistic. Of course, with the money of others.
+
+So they therefore advocate for social justice. But this concept, which in the developed world became fashionable in recent times, in my country has been a constant in political discourse for over 80 years. The problem is that social justice is not just, and it doesn't contribute to general well-being.
+
+Quite on the contrary, it's an intrinsically unfair idea because it's violent. It's unjust because the state is financed through tax and taxes are collected coercively. Or can any one of us say that we voluntarily pay taxes? This means that the state is financed through coercion and that the higher the tax burden, the higher the coercion and the lower the freedom.
+
+Those who promote social justice start with the idea that the whole economy is a pie that can be shared differently. But that pie is not a given. It's wealth that is generated in what Israel Kirzner, for instance, calls a market discovery process.
+
+If the goods or services offered by a business are not wanted, the business will fail unless it adapts to what the market is demanding. They will do well and produce more if they make a good quality product at an attractive price. So the market is a discovery process in which the capitalists will find the right path as they move forward.
+
+But if the state punishes capitalists when they're successful and gets in the way of the discovery process, they will destroy their incentives, and the consequence is that they will produce less.
+
+The pie will be smaller, and this will harm society as a whole. Collectivism, by inhibiting these discovery processes and hindering the appropriation of discoveries, ends up binding the hands of entrepreneurs and prevents them from offering better goods and services at a better price.
+
+So how come academia, international organisations, economic theorists and politicians demonise an economic system that has not only lifted 90% of the world's population out of extreme poverty but has continued to do this faster and faster?
+
+Thanks to free trade capitalism, the world is now living its best moment. Never in all of mankind or humanity's history has there been a time of more prosperity than today. This is true for all. The world of today has more freedom, is rich, more peaceful and prosperous. This is particularly true for countries that have more economic freedom and respect the property rights of individuals.
+
+Countries that have more freedom are 12 times richer than those that are repressed. The lowest percentile in free countries is better off than 90% of the population in repressed countries. Poverty is 25 times lower and extreme poverty is 50 times lower. And citizens in free countries live 25% longer than citizens in repressed countries.
+
+Now what is it that we mean when we talk about libertarianism? And let me quote the words of the greatest authority on freedom in Argentina, Professor Alberto Benegas Lynch Jr, who says that libertarianism is the unrestricted respect for the life project of others based on the principle of non-aggression, in defence of the right to life, liberty and property.
+
+Its fundamental institutions are private property, markets free from state intervention, free competition, and the division of labour and social cooperation, in which success is achieved only by serving others with goods of better quality or at a better price.
+
+In other words, capitalist successful business people are social benefactors who, far from appropriating the wealth of others, contribute to the general well-being. Ultimately, a successful entrepreneur is a hero.
+
+And this is the model that we are advocating for the Argentina of the future. A model based on the fundamental principle of libertarianism. The defence of life, of freedom and of property.
+
+Now, if the free enterprise, capitalism and economic freedom have proven to be extraordinary instruments to end poverty in the world, and we are now at the best time in the history of humanity, it is worth asking why I say that the West is in danger.
+
+And I say this precisely because in countries that should defend the values of the free market, private property and the other institutions of libertarianism, sectors of the political and economic establishment are undermining the foundations of libertarianism, opening up the doors to socialism and potentially condemning us to poverty, misery and stagnation.
+
+It should never be forgotten that socialism is always and everywhere an impoverishing phenomenon that has failed in all countries where it's been tried out. It's been a failure economically, socially, culturally and it also murdered over 100 million human beings.
+
+The essential problem of the West today is not just that we need to come to grips with those who, even after the fall of the Berlin Wall and the overwhelming empirical evidence, continue to advocate for impoverishing socialism.
+
+But there's also our own leaders, thinkers and academics who are relying on a misguided theoretical framework to undermine the fundamentals of the system that has given us the greatest expansion of wealth and prosperity in our history.
+
+The theoretical framework to which I refer is that of Neoclassical economic theory, which designs a set of instruments that, unwillingly or without meaning to, end up serving intervention by the state, socialism and social degradation.
+
+The problem with Neoclassicals is that the model they fell in love with does not map reality, so they put down their mistakes to supposed market failures rather than reviewing the premises of the model.
+
+Under the pretext of a supposed market failure, regulations are introduced. These regulations create distortions in the price system, prevent economic calculus, and therefore also prevent saving, investment and growth.
+
+This problem lies mainly in the fact that not even supposed libertarian economists understand what the market is because if they did understand, it would quickly be seen that it's impossible for there to be market failures.
+
+The market is not a mere graph describing a curve of supply and demand. The market is a mechanism for social cooperation, where you voluntarily exchange ownership rights. Therefore based on this definition, talking about a market failure is an oxymoron. There are no market failures.
+
+If transactions are voluntary, the only context in which there can be market failure is if there is coercion and the only one that is able to coerce generally is the state, which holds a monopoly on violence.
+
+Consequently, if someone considers that there is a market failure, I would suggest that they check to see if there is state intervention involved. And if they find that that's not the case, I would suggest that they check again, because obviously there's a mistake. Market failures do not exist.
+
+An example of the so-called market failures described by the Neoclassicals is the concentrated structure of the economy. From the year 1800 onwards, with the population multiplying by 8 or 9 times, per capita GDP grew by over 15 times, so there were growing returns which took extreme poverty from 95% to 5%.
+
+However, the presence of growing returns involves concentrated structures, what we would call a monopoly. How come, then, something that has generated so much well-being for the Neoclassical theory is a market failure?
+
+Neoclassical economists think outside of the box. When the model fails, you shouldn't get angry with reality but rather with a model and change it. The dilemma faced by the Neoclassical model is that they say they wish to perfect the function of the market by attacking what they consider to be failures. But in so doing, they don't just open up the doors to socialism but also go against economic growth.
+
+For example, regulating monopolies, destroying their profits and destroying growing returns would automatically destroy economic growth.
+
+However, faced with the theoretical demonstration that state intervention is harmful - and the empirical evidence that it has failed couldn't have been otherwise - the solution proposed by collectivists is not greater freedom but rather greater regulation, which creates a downward spiral of regulations until we are all poorer and our lives depend on a bureaucrat sitting in a luxury office.
+
+Given the dismal failure of collectivist models and the undeniable advances in the free world, socialists were forced to change their agenda: they left behind the class struggle based on the economic system and replaced this with other supposed social conflicts, which are just as harmful to life and to economic growth.
+
+The first of these new battles was the ridiculous and unnatural fight between man and woman. Libertarianism already provides for equality of the sexes. The cornerstone of our creed is that all humans are created equal and that we all have the same inalienable rights granted by the Creator, including life, freedom and ownership.
+
+All that the radical feminism agenda has led to is greater state intervention to hinder economic process, giving jobs to bureaucrats who have not contributed anything to society. Examples are ministries of women or international organisations devoted to promoting this agenda.
+
+Another conflict presented by socialists is that of humans against nature, claiming that we human beings damage a planet which should be protected at all costs, even going as far as advocating for population control mechanisms or the abortion agenda.
+
+Unfortunately, these harmful ideas have taken a stronghold in our society. Neo-Marxists have managed to co-opt the common sense of the Western world, and this they have achieved by appropriating the media, culture, universities and also international organisations.
+
+The latter case is the most serious one, probably because these are institutions that have enormous influence on the political and economic decisions of their member states.
+
+Fortunately there's more and more of us who are daring to make our voices heard, because we see that if we don't truly and decisively fight against these ideas, the only possible fate is for us to have increasing levels of state regulation, socialism, poverty and less freedom, and therefore, worse standards of living.
+
+The West has unfortunately already started to go along this path. I know, to many it may sound ridiculous to suggest that the West has turned to socialism, but it's only ridiculous if you only limit yourself to the traditional economic definition of socialism, which says that it's an economic system where the state owns the means of production. This definition in my view, should be updated in the light of current circumstances.
+
+Today, states don't need to directly control the means of production to control every aspect of the lives of individuals. With tools such as printing money, debt, subsidies, controlling the interest rate, price controls, and regulations to correct so-called market failures, they can control the lives and fates of millions of individuals.
+
+This is how we come to the point where, by using different names or guises, a good deal of the generally accepted ideologies in most Western countries are collectivist variants, whether they proclaim to be openly communist, fascist, socialist, social democrats, national socialists, Christian democrats, neo-Keynesians, progressives, populists, nationalists or globalists.
+
+Ultimately, there are no major differences. They all say that the state should steer all aspects of the lives of individuals. They all defend a model contrary to the one that led humanity to the most spectacular progress in its history.
+
+We have come here today to invite the Western world to get back on the path to prosperity. Economic freedom, limited government and unlimited respect for private property are essential elements for economic growth. The impoverishment produced by collectivism is not a fantasy, nor is it an inescapable fate. It's a reality that we Argentines know very well.
+
+We have lived through this. We have been through this because, as I said earlier, ever since we decided to abandon the model of freedom that had made us rich, we have been caught up in a downward spiral - a spiral by which we are poorer and poorer, day by day.
+
+This is something we have lived through and we are here to warn you about what can happen if countries in the Western world, that became rich through the model of freedom, stay on this path of servitude.
+
+The case of Argentina is an empirical demonstration that no matter how rich you may be, how much you may have in terms of natural resources, how skilled your population may be, how educated, or how many bars of gold you may have in the central bank - if measures are adopted that hinder the free functioning of markets, competition, price systems, trade and ownership of private property, the only possible fate is poverty.
+
+Therefore, in conclusion, I would like to leave a message for all business people here and those who are not here in person but are following from around the world.
+
+Do not be intimidated by the political caste or by parasites who live off the state. Do not surrender to a political class that only wants to stay in power and retain its privileges. You are social benefactors. You are heroes. You are the creators of the most extraordinary period of prosperity we've ever seen.
+
+Let no one tell you that your ambition is immoral. If you make money, it's because you offer a better product at a better price, thereby contributing to general wellbeing.
+
+Do not surrender to the advance of the state. The state is not the solution. The state is the problem itself. You are the true protagonists of this story and rest assured that as from today, Argentina is your staunch and unconditional ally.
+
+Thank you very much and long live freedom, damn it!
+
+中文版本
+谢谢大家，下午好。
+
+今天，我在这里告诉你们，西方世界正处于危险之中，这种危险是因为那些本应捍卫西方价值观的人，被一种必然导致社会主义并由此带来贫穷的世界观所同化。
+
+不幸的是，近几十年间，受一些出于好意想帮助他人的人，以及一些渴望跻身特权阶层的人的驱动，西方世界的主要领导人已经放弃了自由模式，转而采用了我们所称的集体主义的不同版本。
+
+我在这里告诉你，集体主义实验，永远不是困扰全世界人民的各种问题的解决之道；相反，它才是问题的根源。
+
+请相信我，没有人比我们阿根廷人更有资格来证明这两点。我们在1860年采纳自由模式时，35年间我们成为了世界上领先的大国。 而当在过去的100年里拥抱集体主义时，我们目睹了我国的公民如何陷入系统性的贫穷，全球排名下降到了第140位。
+
+但在进行讨论之前，首先，重要的是，我们需要看一下数据，展示了为什么自由企业资本主义制度不仅是结束世界贫困的唯一可能的制度，而且也是唯一符合道德的能实现此目标的制度。
+
+如果观察经济进步的历史，可以看到，从公元0年到1800年间，全球人均GDP基本保持不变。如果你看一下人类历史上经济增长的演变图，你会看到一个曲棍球棒形状的图形，在90%的时间里保持恒定，却从19世纪开始呈指数级增长。这段停滞历史的唯一例外是在15世纪末发现美洲大陆。 除这个例外，在公元零年到1800年整个时期，全球人均GDP停滞不前。
+
+现在，不仅是从采纳资本主义作为经济制度那一刻之后，带来了财富的爆炸性增长，而且，如果你查看数据，你会看到增长在整个时期内持续加速。从公元0年到1800年间，人均GDP的年增长率始终是约0.02%，也就是几乎没有增长。 从19世纪开始，伴随着工业革命爆发，年复合增长率达到0.66%，照这个速度，要使人均GDP翻倍，需要大约107年。现在，如果你观察1900年到1950年之间，增长率加速到每年1.66%，意味着人均GDP翻倍不再需要107年，而是66年。如果你观察1950年到2000年之间，你会看到增长率又提高为2.1%，这意味着仅需33年，我们就可以使全球人均GDP翻倍。 这一趋势远未停止，迄今仍在持续发力。如果我们观察2000年到2023年之间，增长率再次加速到每年3%，这意味着我们可以在短短23年内使全球人均GDP翻倍。也就是说，当你观察从1800年到今天的人均GDP时，你会看到工业革命之后，全球人均GDP增长了超过15倍，这意味着增长的繁荣使全球90%的人口摆脱了贫困。 我们应记住，1800年时，大约95%的世界人口生活在极端贫困之中，而这一数字在2020年大流行疫情之前降至了5%。
+
+结论显而易见：自由贸易资本主义，作为一种经济体系，绝非产生问题的根源，而是我们结束全球饥饿、贫困，乃至极端贫困的唯一工具。
+
+上述实证证据无可置疑。因此，既然自由企业资本主义无疑在生产方面更为优越，左翼理论就转而攻击资本主义的道德问题，称其不公正。 他们说资本主义是邪恶的，因为它是个人主义的，而集体主义是好的，因为集体主义是利他主义的，当然，是用别人的钱去利他。
+
+因此，他们倡导社会正义。 这个概念，近来在发达国家才变得时尚，而在我的国家已经在政治话语中的老调常谈了超过80年。问题在于，社会正义既不公正，也不促进整体福祉。
+
+恰恰相反，它本质上是不公平的，因为它是暴力的。 它不公正，因为国家通过税收来获取资金，而税收是强制征收的。我们中谁会说他是自愿缴税的？这意味着国家是通过强制手段来获得资金，税负越高，强制越大，自由度就越低。
+
+那些推动社会正义的倡导者，其出发点是整个经济就像一个可以由不同人分享的馅饼，但这个馅饼的大小并非是既定的。 这是柯兹纳(Israel Kirzner)所说的市场发现过程中产生的财富。如果企业提供的商品或服务不受欢迎，除非它改为适应市场的需求，否则生意将会失败。 如果它们制造出高质量、价格吸引人的商品，它们将会生意兴隆并生产更多商品。
+
+因此，市场是一个发现过程，资本家在其中找到前进的正确路径。 但如果国家在资本家成功时惩罚他们，并妨碍发现过程，他们将破坏资本家的激励，后果是他们生产将会变少，馅饼将会变小，这将对整个社会造成伤害。集体主义通过抑制这些发现过程，并阻碍发现的应用，阻止他们以更好的价格提供更好的商品和服务。
+
+那么，对于这样的经济制度——一种不仅让世界上90%的人口摆脱了极端贫困，而且以越来越快的速度持续让人们脱贫，并且在道德上更优越和公正的经济制度，学术界、国际组织、经济理论和政治界又是如何诋毁它的呢？我们可以看到，世界现在正处于有史以来最好的时刻。在人类的整个历史中，从来没有比今天更繁荣的时期。对所有人都是这样。
+
+今天的世界拥有更多的自由，更加富裕，更加和平和繁荣。对于那些自由更多，拥有经济自由并尊重个人财产权的国家尤其如此。
+
+因为拥有更多自由的国家比压制性的国家富裕12倍。自由的国家贫困率是压制性国家的1/25，极端贫困率是1/50，自由国家的公民寿命，比压制性国家的公民长25%。 那么，当我们谈论自由主义时，我们指的是什么呢？
+
+让我引用阿根廷自由主义最大权威，林奇(Alberto Lynch Jr.)教授的话，他说自由主义是基于非侵犯原则，捍卫生命、自由和财产权利，对他人生活计划的不设限制的尊重。 其基本机构是私有财产、不受国家干预的市场、自由竞争、劳动分工和社会合作，成功只能通过提供更高质量或更优惠价格的商品来服务他人而实现。
+
+换句话说，资本家、成功的商人是社会的恩人，他们绝非剥夺了他人的财富，而是为普遍的福祉做贡献。 归根结底，成功的企业家是英雄，这就是我们为未来阿根廷所倡导的模式，一种基于自由主义基本原则的模式：捍卫生命、自由和财产。
+
+现在，如果说企业资本主义和经济自由已经被证明是消除世界贫困的卓越工具，而我们现在正处于人类历史上最好的时期，那么需要问的是，为什么我会说西方正处于危险之中。 我之所以这么说，正是因为在这些国家中，某些政治和经济体制的部门，本应捍卫自由市场、私有财产和其他自由主义制度价值，却有的是出于理论框架上的错误，有的是出于对权力的贪婪，正在破坏自由主义的基础，为社会主义敞开大门，这可能将我们置于贫困、苦难和停滞之中。
+
+永远不应忘记，社会主义不管在哪里，都始终是一个导致贫困的现象，所有尝试过社会主义的国家都失败了。 它在经济上、社会上、文化上都失败了，还导致了1亿人死亡。西方今天面临的根本问题，不仅仅即使在柏林墙倒塌之后，并有了压倒性的实证证据之后，仍然倡导导致贫困的社会主义的那些人，还有我们自己的领导者、思想家和学者，他们依靠错误的理论框架，破坏了给予我们历史上最大规模财富和繁荣扩张的制度的基础。
+
+我所指的理论框架是新古典经济理论，它设计了一套工具，不管是有意还是无意，最终服务于国家干预、社会主义和社会退化。新古典经济学的问题在于，他们所热爱的模型并不符合现实。所以，他们将错误归咎于所谓的市场失败，而不是重新审视模型的前提。 以所谓市场失败为借口，引入监管，这只会扭曲价格体系，阻碍经济计算，因此也阻碍了储蓄、投资和增长。
+
+问题主要在于，即便所谓的自由主义经济学家也不理解市场是什么。因为如果他们真的理解了，就会很快看到市场失败这样的事情是不可能存在的。 市场不是描述供求曲线的图表；市场是一个社会合作的机制，你在其中自愿交换所有权。
+
+因此，基于这个定义，谈论市场失败是一个悖论。如果交易是自愿的，就不存在市场失败。市场失败唯一可能存在的情境是有强制存在，而一般能够实施强制的只有国家，因为它拥有暴力垄断权。
+
+因此，如有人认为市场出现了失败，我建议他们检查是否与国家干预有关，如果他们发现并非如此，我建议他们再检查一遍，因为显然有错误。
+
+市场失败是不存在的。新古典主义者所描述的所谓市场失败的一个例子是经济体中的集中结构。 然而，如没有规模收益递增功能，其对应的是经济中的集中结构，我们就无法解释自1800年以来的经济增长。
+
+这不是很有趣吗？自1800年以来，人口增长了八到九倍，而人均GDP仍增长了15倍以上。因此，回报在不断增长，这将极端贫困从95%降至5%。然而，存在不断增长的回报涉及到集中结构，我们称之为垄断。 那么，为什么新古典主义理论认为，创造了如此多福祉的东西却是市场失败呢？当模型失败时，新古典经济学家怪罪于现实。他们不应该对现实而是应对模型感到愤怒，并改变模型。
+
+新古典模型面临的困境是，他们说，他们希望通过攻击所谓的市场失败来完善市场的功能，但在这样做的过程中，他们不仅为社会主义打开了大门，也阻碍了经济增长。
+
+例如：对垄断进行监管，破坏它们的利润，并摧毁增长的收益回报，这将自动地破坏经济增长。换句话说，每当你想要纠正一个所谓的市场失败时，由于不了解市场是什么，或者是因为沉迷于一个失败的模型，你就在为社会主义打开大门，将人民置于贫困之中。 然而，面对国家干预是有害的理论证明，以及表明其失败的实证证据，情况本不应如此，集体主义者提出的解决方案不是更大的自由，而是更严格的监管，这产生了螺旋式不断增加监管的恶性循环，直到我们所有人都变贫穷。
+
+而我们所有人的生活，都取决于坐在豪华办公室里的官僚。 鉴于集体主义模式的惨败，以及无可否认的自由世界的进步，社会主义被迫改变了他们的议程。他们抛弃了基于经济体系的阶级斗争，转而替换为其他所谓的社会冲突，这些冲突对社区生活和经济增长同样有害。
+
+这些新战役中的第一个是荒谬和非自然的男性与女性之争。 自由主义已提供了性别之间的平等。我们信条的基石是所有人生而平等，我们都拥有创造者赋予的同样不可剥夺的权利，包括生命、自由和所有权。
+
+这种激进的女权主义议程，所导致的只是更大的国家干预，阻碍了经济过程，为那些对社会没有贡献的官僚提供了工作，例子包括妇女部门或致力于推广这一议程的国际组织。
+
+社会主义者提出的另一个冲突是人类与自然之间的对抗，声称我们人类破坏了应该不惜一切代价保护的地球。他们甚至走得太远，主张人口控制机制或血腥的堕胎计划。 不幸的是，这些有害的想法已经在我们社会中占据了强势地位。
+
+新马克思主义者设法渗入了西方世界的常识，他们通过占据媒体、文化、大学和国际组织来实现这一目标。 国际组织可能是情况最严重的，因为这些机构对作为多边组织成员的国家的政治和经济决策有着巨大的影响。幸运的是，越来越多的人敢于发出我们的声音，因为我们看到，如果我们不真正且果断地对抗这些观点，我们唯一可能的命运就是增加国家管制的水平，社会主义，贫困和减少自由，因此我们的生活水平将会变得更差。
+
+不幸的是，西方已经开始走上这条道路。我知道对许多人来说，暗示西方已转向社会主义，似乎听起来很荒谬，但这只是因为你将社会主义局限于传统经济的定义，才会显得荒谬，该定义认为社会主义是一种国家拥有生产资料的经济体系。 依我之见，这个定义应该依据当前的形势进行更新。
+
+如今，国家不需要直接控制生产资料就能控制个人生活的各个方面。通过印钞、债务、补贴、控制利率、价格控制和管制等工具，来纠正所谓的市场失败，他们可以控制数以百万计个人的生活和命运。 这就是我们如何形成了这样的局面，即在大多数西方国家，许多被普遍接受的政治提议，无论它们是公开宣称为共产主义、法西斯主义、纳粹主义、社会主义、社会民主主义、国家社会主义、民主基督教或基督教民主主义、新保守主义、进步主义、民粹主义、民族主义还是全球主义，等等，都是集体主义的变种。究其根本，它们没有本质区别。 它们都声称国家应该操控个人生活的各个方面。它们捍卫的都是与那个引领人类走向史无前例进步的模式相反的模式。
+
+我们今天来到这里，是为了邀请西方世界的其他国家重回繁荣之路。经济自由、有限政府和对私有财产的无限尊重是经济增长的基本要素，而集体主义所产生的贫困并非幻想，也不是不可避免的命运，而是我们阿根廷人非常了解的现实。
+
+我们经历过这一切。我们经历这一切是因为，正如我之前所说，自从我们决定放弃让我们富裕的自由模式以来，我们就落入了一个不断下行的螺旋，我们每天都变得越来越贫穷。 所以，这是我们经历过的事情，我们在这里警告你，如果那些通过自由模式变得富裕的西方国家，继续走这条通往奴役之路，这就是将会发生的情况。
+
+1920年代的阿根廷街景。阿根廷是一个实证示范，无论你有多富裕，或者拥有多少自然资源，或者你有多少的技术熟练或受过良好教育的人口，或者你的中央银行有多少金条，如果采取阻碍市场自由运作、自由竞争、自由价格体系的措施，如果你阻碍贸易，如果你攻击私有财产，唯一可能的命运就是贫困。
+
+因此，在结束时，我想对在场的所有商业人士，以及那些虽然不在场却在世界各地关注我们的人说一句话： 不要被吓到，不要被政治阶层或依赖国家生活的寄生虫所吓倒！不要屈服于只想掌握权力并保留特权的政治阶级！
+
+你们是社会的恩人，你们是英雄，你们是我们所见过最非凡繁荣时期的创造者！不要听任何人说，你的雄心壮志是不道德的。 如果你赚钱，那是因为你以更优惠的价格，提供了更好的产品，从而有助于普遍的福祉。不要屈服于国家的步步逼近。国家不是解决方案；国家就是问题本身。 你们是这个故事的真正主角，请放心，从今天起，阿根廷是你们无条件的盟友。
+
+非常感谢，自由万岁，他妈的！

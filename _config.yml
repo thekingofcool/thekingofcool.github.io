@@ -1,17 +1,11 @@
 title: thekingofcool's qqzone
-author: bug hunter
+favicon: /assets/favicon.ico
 email: offweiboforawhile@proton.me
-description: >- # this means to ignore newlines until "baseurl:"
-  Good evening ladies and gentleman, 
-  we are tonight's entertainment.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: offXforawhile
 github_username:  thekingofcool
-repository: thekingofcool/thekingofcool.github.io
-# Build settings
 
-remote_theme: riggraz/no-style-please # if you are using GitHub Pages, change it to remote_theme: riggraz/no-style-please
+# Build settings
+remote_theme: riggraz/no-style-please
 
 theme_config:
   appearance: "auto" # can be "light", "dark" or "auto"
@@ -19,14 +13,5 @@ theme_config:
   date_format: "%Y-%m-%d" # customize how date is formatted
   show_description: false # show blog description in home page
 
-sass:
-  style: :compressed
-
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
-  
-markdown: kramdown
-kramdown:
-input: GFM
-syntax_highlighter: rouge

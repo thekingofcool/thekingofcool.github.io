@@ -7,8 +7,12 @@ entries:
       - title: twitter
         url: https://x.com/offXforawhile
 
-
   - title: blogs
-    post_list: true
-    url: /categories
+    post_list:
+      category: blog
+    entries: false
+
+  - title: readings
+    post_list:
+      category: reading
     entries: false

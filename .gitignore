@@ -1,0 +1,5 @@
+.jekyll-cache
+.vscode
+_site
+Gemfile.lock
+assets/*
