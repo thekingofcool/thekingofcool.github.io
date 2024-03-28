@@ -5,8 +5,10 @@ date:   2024-01-29
 categories: reading
 ---
 
-This is a transcript from the Special address by Javier Milei, President of Argentina, which took place during the World Economic Forum's Annual Meeting 2024 in Davos in January 17, 2024.
-English version
+*This is a transcript from the Special address by Javier Milei, President of Argentina, which took place during the World Economic Forum's Annual Meeting 2024 in Davos in January 17, 2024.*
+
+## English version
+
 Good afternoon. Thank you very much.
 
 Today I'm here to tell you that the Western world is in danger. And it is in danger because those who are supposed to have to defend the values of the West are co-opted by a vision of the world that inexorably leads to socialism and thereby to poverty.
@@ -141,7 +143,8 @@ Do not surrender to the advance of the state. The state is not the solution. The
 
 Thank you very much and long live freedom, damn it!
 
-中文版本
+## 中文版本
+
 谢谢大家，下午好。
 
 今天，我在这里告诉你们，西方世界正处于危险之中，这种危险是因为那些本应捍卫西方价值观的人，被一种必然导致社会主义并由此带来贫穷的世界观所同化。

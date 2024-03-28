@@ -2,8 +2,8 @@ entries:
   - title: about me
     url: /about
     entries:
-      - title: github
-        url: https://github.com/thekingofcool
+      - title: mastodon
+        url: https://mastodon.social/@thekingofcool
       - title: twitter
         url: https://x.com/offXforawhile
 
