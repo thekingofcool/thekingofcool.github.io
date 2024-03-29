@@ -5,7 +5,7 @@ date:   2022-09-23
 categories: blog
 ---
 
-**The first thing you have to learn is how to fucking chill**
+*"The first thing you have to learn is how to fucking chill."*
 
 绝大多数业余对抗，比拼的只是体能。重中之重就是不要急躁，沉得住气，收放自如，有体能和技巧做支撑。
 
@@ -41,4 +41,5 @@ categories: blog
 ### 周六时间拉长，所有训练过一遍
 
 ### 周日休息
-控制饮食，不要吃饱。
+
+### 控制饮食，不要吃饱。
