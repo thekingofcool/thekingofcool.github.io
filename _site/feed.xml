@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-30T23:07:56+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s qqzone</title><entry><title type="html">Markdown中文语法规范</title><link href="http://localhost:4000/reading/2024/03/28/markdown_guide.html" rel="alternate" type="text/html" title="Markdown中文语法规范" /><published>2024-03-28T00:00:00+08:00</published><updated>2024-03-28T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/03/28/markdown_guide</id><content type="html" xml:base="http://localhost:4000/reading/2024/03/28/markdown_guide.html"><![CDATA[<p>内容来自Github repo: <a href="https://github.com/ruanyf/document-style-guide/tree/master">document-style-guide</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-31T19:09:48+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s qqzone</title><entry><title type="html">How to search information efficiently</title><link href="http://localhost:4000/blog/2024/03/31/how_to_search_information_efficiently.html" rel="alternate" type="text/html" title="How to search information efficiently" /><published>2024-03-31T00:00:00+08:00</published><updated>2024-03-31T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/03/31/how_to_search_information_efficiently</id><content type="html" xml:base="http://localhost:4000/blog/2024/03/31/how_to_search_information_efficiently.html"><![CDATA[<p>日常搜索需求主要包含：信息咨询；知识技能；素材文件；工具软件。</p>
+
+<h3 id="为什么搜">为什么搜</h3>
+<p>know something；learn something；create something；do something</p>
+
+<h3 id="搜什么">搜什么</h3>
+<ol>
+  <li>信息资讯：新闻、事件；</li>
+  <li>知识技能：概念、教程；</li>
+  <li>素材文件：图片、视频、文档；</li>
+  <li>工具软件：工具、插件。</li>
+</ol>
+
+<h3 id="去哪里搜">去哪里搜</h3>
+<p>搜索效率：谷歌 &gt; 公众号 &gt; 短视频 &gt; 百度</p>
+
+<h3 id="怎么搜">怎么搜</h3>
+<ol>
+  <li>“word” 限定关键词</li>
+  <li>intitle: word 限定标题关键词</li>
+  <li>allintitle: word1 word2 联合标题关键词</li>
+  <li>intext: word 限定文章内容关键词</li>
+  <li>site: website 限定网站</li>
+  <li>inurl: word 限定域名关键词</li>
+  <li>imagesize: width x length 限定图片尺寸</li>
+  <li>filetype: extension 限定结果的文件格式</li>
+</ol>
+
+<p>去信息源头获取一手信息，掌握最大化利用AI的能力。</p>
+
+<p><em>original youtube link: <a href="https://youtu.be/tiN6T1LewmQ?si=4dgBUf1qVfVdCeAl">搜索技术，普通人变强的唯一外挂</a></em></p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[日常搜索需求主要包含：信息咨询；知识技能；素材文件；工具软件。]]></summary></entry><entry><title type="html">Markdown中文语法规范</title><link href="http://localhost:4000/reading/2024/03/28/markdown_guide.html" rel="alternate" type="text/html" title="Markdown中文语法规范" /><published>2024-03-28T00:00:00+08:00</published><updated>2024-03-28T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/03/28/markdown_guide</id><content type="html" xml:base="http://localhost:4000/reading/2024/03/28/markdown_guide.html"><![CDATA[<p>内容来自Github repo: <a href="https://github.com/ruanyf/document-style-guide/tree/master">document-style-guide</a></p>
 
 <h1 id="标题">标题</h1>
 
@@ -1062,7 +1092,7 @@ docker image push thekingofcool/hello-docker
 
 <p>Happy hacking.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[作为开发人员，你是否曾经感叹应用程序的部署和环境配置过程的纷繁复杂？有没有遇到过在开发环境好用，但是到了测试和商场环境就不好用的情况？有没有遇到过新同事加入项目组需要花费大量的时间来配置开发环境的问题？有没有遇到过花了一整天甚至更长的时间一步一步按照配置部署文档来配置环境，但是其中却卡在中间某一个步骤上再过不去的问题？Docker了解一下。]]></summary></entry><entry><title type="html">Yasso 800s</title><link href="http://localhost:4000/blog/2023/12/27/yasso_800s.html" rel="alternate" type="text/html" title="Yasso 800s" /><published>2023-12-27T00:00:00+08:00</published><updated>2023-12-27T00:00:00+08:00</updated><id>http://localhost:4000/blog/2023/12/27/yasso_800s</id><content type="html" xml:base="http://localhost:4000/blog/2023/12/27/yasso_800s.html"><![CDATA[<p>亚索 800（Yasso 800s）是一套提高跑步速度，并被众多跑者拿来预测全马成绩的训练方法。</p>
 
-<p>这套训练方法出自 Bart Yasso，他是跑步杂志 Runners World 的 Chief Running Officer，他通过总结自己的众多马拉松赛前训练发现了一个规律，自己** 10 x 800 m 间歇跑的 800 m 耗时意外地和自己的全马成绩存在微妙的一致性**。也就是如果训练中 800 m 需要 3 分钟，那全马比赛的成绩在 3 小时附近，以此类推。可谓是跑步领域的 E = mc² 公式。</p>
+<p>这套训练方法出自 Bart Yasso，他是跑步杂志 Runners World 的 Chief Running Officer，他通过总结自己的众多马拉松赛前训练发现了一个规律，自己<strong>10 x 800 m 间歇跑的 800 m 耗时意外地和自己的全马成绩存在微妙的一致性</strong>。也就是如果训练中 800 m 需要 3 分钟，那全马比赛的成绩在 3 小时附近，以此类推。可谓是跑步领域的 E = mc² 公式。</p>
 
 <p>训练变得空前“简单”，你唯一需要的就是一条 400 m 跑道，一块可以计时的手表，还有一双合脚的跑鞋，就可以开启你的马拉松之旅。</p>
 
@@ -1471,32 +1501,4 @@ docker image push thekingofcool/hello-docker
 <p>至此, 在浏览器键入:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://api.gateway.ethswarm.org/bzz/[your_ens_domain]/
 </code></pre></div></div>
-<p>即可访问你的去中心化网站。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[通常来说, 想要搭建一个网站, 首先需要租用一个云服务器, 云服务厂商大同小异, 如果选择中国大陆的云厂商还需要额外的ICP(Internet Content Provider)备案和公安备案。]]></summary></entry><entry><title type="html">区块链黑暗森林漫游指南</title><link href="http://localhost:4000/reading/2023/12/23/blockchain_dark_forest.html" rel="alternate" type="text/html" title="区块链黑暗森林漫游指南" /><published>2023-12-23T00:00:00+08:00</published><updated>2023-12-23T00:00:00+08:00</updated><id>http://localhost:4000/reading/2023/12/23/blockchain_dark_forest</id><content type="html" xml:base="http://localhost:4000/reading/2023/12/23/blockchain_dark_forest.html"><![CDATA[<p>区块链是个伟大的发明, 它<strong>带来了某些生产关系的变革, 让“信任”这种宝贵的东西得以部分解决</strong>。不需要中心化、不需要第三方角色, 有些“信任”基于区块链就可以得到很好解决, 不可篡改、按约定执行、防止抵赖。</p>
-
-<p>但不是每个人对区块链都有着清晰的理解。这导致有邪念的人能轻易钻技术的空子, 将黑手伸进人们的钱包, 造成资金损失, 且几乎不能挽回。</p>
-
-<p>在区块链黑暗森林世界里, 需要牢记两大安全法则:</p>
-
-<p><strong>零信任</strong>。始终保持怀疑。
-<strong>持续验证</strong>。培养能力去验证你的怀疑, 并把这种能力养成习惯。</p>
-
-<h3 id="创建钱包">创建钱包</h3>
-<p>区块链中你的身份其实指的就是公钥-私钥对, 公钥是你对外的账号, 而私钥类似于密码, 只有你本人知道, 是一切区块链活动的核心, 私钥如果丢失/忘记或者被第二个人知道, 那这个身份就不再(唯一)属于你。</p>
-
-<p>钱包是你与区块链交互的媒介。</p>
-
-<p>从应用分类来说钱包主要包括几种: PC钱包、浏览器扩展钱包、移动端钱包、硬件钱包及网页钱包等。</p>
-
-<p>从触网与否来说主要可以分为冷钱包和热钱包。</p>
-
-<p>理论上<strong>没有绝对安全的系统</strong>, 只要连接(过)外界设备都存在信息泄漏风险。这里我们假设业内使用最多的平台所提供的钱包相对安全, 但无论如何都是要自己亲身对比作出选择。但对于大多数人来说, 只要正确找到官网就避免了大部分资金丢失, 利用Google或通过其他信得过的平台/人官方提供的链接, 最好交叉认证之后再进行授权/交互。对于频繁使用的钱包不存放过多的资金, 大多数不常会动用的可以放在冷钱包, 前提是对于冷钱包概念清晰, 以及钱包助记词安全保存的基础上。</p>
-
-<p>但即使是官网提供的下载链接, 也存在源头被完全篡改的可能(官方自己内部作恶、内部被黑、官网被入侵替换了相关信息等等), 验证的方式是文件一致性判断, 和项目方提供的发布验证信息进行对比。</p>
-
-<h3 id="助记词">助记词</h3>
-<p>一般来说, 我们创建了钱包后, 直接打交道的关键信息是助记词(而不是私钥), 毕竟助记词是方便人类记忆的。助记词是有标准约定的(如BIP39), 这就对助记词提了要求, 比如一般 12 个英文单词, 也可以是其他数量(3 的倍数), 不过不会超过 24 个单词, 要不然太复杂也就不助记了, 数量少于 12 的话, 安全性也不靠谱, 12、15、18、21、24 都好说。不过从业内习惯来说, 一般流行的是 12 位, 安全性足够, 有的硬件钱包安全标准更高。还有除了英文单词, 也可以是其他的, 比如中文、日文、韩文等等。但也不是什么单词都可以, 有一个固定 2048 个单词列表, 具体参考: bip-0039 Wordlists</p>
-
-<p>创建钱包时, 助记词的出现是非常敏感的, 请留意你身边没有人、摄像头等一切可以导致偷窥发生的情况。同时留意下助记词是不是足够随机出现, 正常来说这些知名钱包生成的助记词随机数是绝对足够的, 以防万一呢？你真的很难知道, 拿到手的钱包到底有没有万一的猫腻。最后, 当你准备把该钱包当成冷钱包使用时, 确保钱包创建前和创建后永不触网。</p>
-
-<h3 id="自由">自由</h3>
-<p>其他就不再多说了, 不可信的链接不要点, 助记词备份和使用也是一门艺术, <strong>在区块链中犹如在黑暗森林, 尽可能久地隐藏自己的物理身份才能获得足够的自由</strong>。</p>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[区块链是个伟大的发明, 它带来了某些生产关系的变革, 让“信任”这种宝贵的东西得以部分解决。不需要中心化、不需要第三方角色, 有些“信任”基于区块链就可以得到很好解决, 不可篡改、按约定执行、防止抵赖。]]></summary></entry></feed>
+<p>即可访问你的去中心化网站。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[通常来说, 想要搭建一个网站, 首先需要租用一个云服务器, 云服务厂商大同小异, 如果选择中国大陆的云厂商还需要额外的ICP(Internet Content Provider)备案和公安备案。]]></summary></entry></feed>
