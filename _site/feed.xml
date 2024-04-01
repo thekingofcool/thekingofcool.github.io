@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-31T19:09:48+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s qqzone</title><entry><title type="html">How to search information efficiently</title><link href="http://localhost:4000/blog/2024/03/31/how_to_search_information_efficiently.html" rel="alternate" type="text/html" title="How to search information efficiently" /><published>2024-03-31T00:00:00+08:00</published><updated>2024-03-31T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/03/31/how_to_search_information_efficiently</id><content type="html" xml:base="http://localhost:4000/blog/2024/03/31/how_to_search_information_efficiently.html"><![CDATA[<p>日常搜索需求主要包含：信息咨询；知识技能；素材文件；工具软件。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-01T16:11:01+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s qqzone</title><entry><title type="html">我的密码管理策略</title><link href="http://localhost:4000/blog/2024/04/01/my_password_management_strategy.html" rel="alternate" type="text/html" title="我的密码管理策略" /><published>2024-04-01T00:00:00+08:00</published><updated>2024-04-01T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/04/01/my_password_management_strategy</id><content type="html" xml:base="http://localhost:4000/blog/2024/04/01/my_password_management_strategy.html"><![CDATA[<p>随着现代人网上冲浪时间越来越长，有一件事显得愈发重要，但又常常被人忽略，那就是各类网站的密码管理。</p>
+
+<p>如今我们注册的网站品类纷繁复杂，有的类似新闻资讯，账密丢失被盗都无足轻重，有的则涉及个人财产或社交网络，一旦被盗会给自己或朋友带来很多困扰。好在目前一些涉及到财务的网站或应用会开启设备的二次验证，但也不能涵盖我们上网情景的方方面面。</p>
+
+<p>有人为了避免密码遗忘，把所有平台的密码设置成同一个，这样账号（通常是手机号码或邮箱）密码只要在一个平台被泄露，带有不良意图的技术人员就可以去各种网站 <strong>“<a href="https://baike.baidu.com/item/%E6%92%9E%E5%BA%93/16480882">撞库攻击</a>”</strong>。泄露的原因当然不止是自身无意暴露，当你提交注册一个网站，包含你个人信息的表单就被提交到对方服务器中，对于你来说对方是否遵守职业操守，是否合理保管你的密码，甚至是否会对你的个人信息加密存储都不一定。所以，所有平台使用一种账号密码无疑是一件十分危险的事。</p>
+
+<p>那么如果你给每个平台都设置一个独特的密码，又应该如何去管理这些信息？一个选项是交给业内成熟的密码管理工具，不少人熟知的 <a href="https://1password.com/">1Password</a> 就是其中之一，这个工具我使用过一年，各平台同步，自动填充账号密码，确实方便。可当你对个人信息极度敏感，1Password 这种商业公司也无法让你完全信任，那应该怎么办？</p>
+
+<p>首先针对密码管理我们要知道，我们唯一需要的功能就是一个加密的数据库，用以保管我们的所有密码，1Password 承担替我们保管这个加密数据库的职责，并收取年费。那么如果有一个开源的技术，将这个加密数据库放在我们自己的磁盘，通过记住一个密码就可以访问所有密码，而且又免费，是不是就很完美呢？</p>
+
+<p>好在我们处在互联网，<strong>你的 99% 的需求都曾经有其他人提出，并且被具有开源精神的极客们满足了</strong>。所以问题就在于知道自己想要什么，并能获取到需要的信息。</p>
+
+<h3 id="keepassxc">KeePassXC</h3>
+<p><a href="https://keepassxc.org/">KeePassXC</a> 这款工具满足了以上大部分需求，通过它，你可以在本地创建一个后缀 .kdbx的文件作为密码数据库，通过桌面客户端打开文件，输入预制的一段密码，即可操作其中的 entry。在这个工具中，一个文件相当于一个 Database，一条账密信息作为一个 Entry，可以通过配置自动备份一个本次修改以前的文件。</p>
+
+<p>在电脑桌面端，可以在主流浏览器安装相应<a href="https://keepassxc.org/download/#browser">插件</a>， 并通过对插件的<a href="extension://pdffhmdngciaglkoonimfcmckehcpafo/options/options.html#general-settings">配置</a>，当 Database 文件处于解锁状态时，浏览器访问到特定页面可以自动填充账号密码。</p>
+
+<p>唯一鸡肋的一点就是在移动端暂时没有支持。</p>
+
+<p>通过 KeePassXC + 主流云盘（OneDrive、Google Cloud、iCloud、DropBox）配合使用，可以完成跨平台密码同步。</p>
+
+<p>说到云平台，我们可以如何最大程度利用各大厂商免费云盘为自己服务的同时又保证自己的隐私得到保护呢？</p>
+
+<h3 id="cryptomator">Cryptomator</h3>
+<p><a href="https://cryptomator.org/">Cryptomator</a> 是一个使用符合最新标准的加密技术，对本地或云上数据进行加密的工具。正如其官网描述的那样： <strong>Put a lock on your cloud</strong>.</p>
+
+<blockquote>
+  <p>With Cryptomator, the key to your data is in your hands. Cryptomator encrypts your data quickly and easily. Afterwards you upload them protected to your favorite cloud service.</p>
+</blockquote>
+
+<p>你需要指定一个路径作为 vault，通过输入密码进入 vault，你会看到一个标准的文件系统，在其中你可以放置你的个人文件，而对于服务器管理员或有权限读取当前电脑文件系统的程序而言，所有的内容都将只是无法理解的加密文件。</p>
+
+<p>Give it a try, you won’t regret it.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[随着现代人网上冲浪时间越来越长，有一件事显得愈发重要，但又常常被人忽略，那就是各类网站的密码管理。]]></summary></entry><entry><title type="html">How to search information efficiently</title><link href="http://localhost:4000/blog/2024/03/31/how_to_search_information_efficiently.html" rel="alternate" type="text/html" title="How to search information efficiently" /><published>2024-03-31T00:00:00+08:00</published><updated>2024-03-31T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/03/31/how_to_search_information_efficiently</id><content type="html" xml:base="http://localhost:4000/blog/2024/03/31/how_to_search_information_efficiently.html"><![CDATA[<p>日常搜索需求主要包含：信息咨询；知识技能；素材文件；工具软件。</p>
 
 <h3 id="为什么搜">为什么搜</h3>
 <p>know something；learn something；create something；do something</p>
@@ -1461,44 +1493,4 @@ docker image push thekingofcool/hello-docker
   </li>
 </ol>
 
-<p>这些都是国民党自己宣布的纲领，也是国共两党的共同纲领。但是除了抗日一点外，现在的国民党都不能实行，只有共产党和进步派才能实行。这些是已经普及于人民中的最简单的纲领，但是许多共产党员还不知利用它们作为动员民众孤立顽固派的武器。今后应该随时把握这五条纲领，用布告、宣言、传单、论文、演说、谈话等等形式发布之。这在国民党区域还是宣传纲领，但在八路军新四军所到之地则是行动的纲领。根据这些纲领去做，我们是合法的，顽固派反对我们实行这些纲领，他们就是非法的了。在资产阶级民主革命阶段上，国民党的这些纲领，同我们的纲领是基本上相同的；但国民党的思想体系，则和共产党的思想体系绝不相同。我们所应该实行的，仅仅是这些民主革命的共同纲领，而绝不是国民党的思想体系。</p>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[这是毛泽东在延安中国共产党的高级干部会议上的报告提纲。]]></summary></entry><entry><title type="html">如何将网站托管于去中心化服务器</title><link href="http://localhost:4000/blog/2023/12/24/decentralize_your_website.html" rel="alternate" type="text/html" title="如何将网站托管于去中心化服务器" /><published>2023-12-24T00:00:00+08:00</published><updated>2023-12-24T00:00:00+08:00</updated><id>http://localhost:4000/blog/2023/12/24/decentralize_your_website</id><content type="html" xml:base="http://localhost:4000/blog/2023/12/24/decentralize_your_website.html"><![CDATA[<p>通常来说, 想要搭建一个网站, 首先需要租用一个云服务器, 云服务厂商大同小异, 如果选择中国大陆的云厂商还需要额外的ICP(Internet Content Provider)备案和公安备案。</p>
-
-<p>中心化的云服务器(AWS, Azure, etc.), 乃至部分打着去中心化概念的去中心化存储协议(IPFS), 其本质也是存储提供商购买的云厂商服务, 这里将后者这种内容物联网定义为伪去中心化。这两类模式最核心的缺点在于内容隐私性和抗审查性的缺失。</p>
-
-<h3 id="what-is-swarm">What is Swarm</h3>
-<p>Swarm是一个去中心化存储和内容分发的技术, 类似于一个服务器分散在全球的AWS, 其内生一套激励机制鼓励机器提供为网络存储和带宽, 用户则需要为自己存储的内容购买支票, 按存储时长和内容大小付费, Swarm利用技术做到存储提供商对存储的真实内容一无所知, 是自由主义精神的极致体现。</p>
-
-<p>今天我们尝试在这样一套去中心化网络上发布自己的网站。将网站内容托管于Swarm Network, 利用Swarm官方提供的Gateway node作为门户将网站提供给网上冲浪者。</p>
-
-<h3 id="publish-a-website">Publish a website</h3>
-<p>首先在自己电脑上下载Swarm Desktop作为接入Swarm Network的一个light node, 与Swarm上托管的内容进行交互。</p>
-
-<p>安装好客户端之后该节点会自动创建一个以太坊钱包地址, Swarm Network部署在以太坊侧链Gnosis Chain上, 该链的基础代币是xDAI, 要想在这个链上交互, 首先我们需要在自己的钱包中从Ethereum Mainnet上将DAI跨链至Gnosis Chain成xDAI, 再将xDAI转入Swarm节点钱包, 你也可以在本地Swarm Desktop安装包中找到这个节点钱包的私钥信息, 将其导入Metamask, 直接对该钱包进行操作。</p>
-
-<p>MacOS你可以在:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/[your_username]/Library/Application Support/Swarm Desktop/data-dir/keys/
-</code></pre></div></div>
-<p>中找到swarm.key的json文件, 在Metamask中选择add account - import account, select type选择JSON File, 选择刚刚找到的swarm.key文件, 导入文件需要输入密码, 这时从:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/[your_username]/Library/Application Support/Swarm Desktop/config.yaml
-</code></pre></div></div>
-<p>中拿到password, 节点钱包导入完成。将钱包网络切到Gnosis Chain应该就可以看到之前转入的xDAI。利用Honeyswap将一部分xDAI转为xBZZ作为后续储存费的货币。
-在Swarm Desktop dashboard中, 选择Account - Stamp, Buy New Postage Stamp, 提前购买所需存储服务的内容大小以及存储时间, 并支付相应的xBZZ。</p>
-
-<p>再选中File, 在Upload中选择Add Website, 选中自己的网站文件夹, 选择上传。这时需要用到之前购买的postage stamp, then proceed with that stamp, 上传完成之后会有一个Swarm hash, 通过这个hash, 你可以在Swarm Network中找到对应的资源。</p>
-
-<p>因为安装Swarm Desktop, 你的电脑本地运行着一个Swarm Bee light node, 因此, 简单在浏览器中输入:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://127.0.0.1:1633/bzz/[your_resource_swarm_hash]/
-</code></pre></div></div>
-<p>就可以访问之前的网站。</p>
-
-<h3 id="绑定ens-domains">绑定ENS Domains</h3>
-<p>如果你拥有ENS Domains, 你可以将这个Swarm hash关联到你的ENS域名上, 在Edit profile中Add profile fields选择Website, 在Swarm中输入:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bzz://[your_resource_swarm_hash]
-</code></pre></div></div>
-<p>点击确认这时你需要将该信息上链至以太坊主网, 需要支付的gas费和你提交时的网络拥堵情况以及你所同步的内容条数有关。</p>
-
-<h3 id="welcome-to-the-club">Welcome to the club</h3>
-<p>至此, 在浏览器键入:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://api.gateway.ethswarm.org/bzz/[your_ens_domain]/
-</code></pre></div></div>
-<p>即可访问你的去中心化网站。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[通常来说, 想要搭建一个网站, 首先需要租用一个云服务器, 云服务厂商大同小异, 如果选择中国大陆的云厂商还需要额外的ICP(Internet Content Provider)备案和公安备案。]]></summary></entry></feed>
+<p>这些都是国民党自己宣布的纲领，也是国共两党的共同纲领。但是除了抗日一点外，现在的国民党都不能实行，只有共产党和进步派才能实行。这些是已经普及于人民中的最简单的纲领，但是许多共产党员还不知利用它们作为动员民众孤立顽固派的武器。今后应该随时把握这五条纲领，用布告、宣言、传单、论文、演说、谈话等等形式发布之。这在国民党区域还是宣传纲领，但在八路军新四军所到之地则是行动的纲领。根据这些纲领去做，我们是合法的，顽固派反对我们实行这些纲领，他们就是非法的了。在资产阶级民主革命阶段上，国民党的这些纲领，同我们的纲领是基本上相同的；但国民党的思想体系，则和共产党的思想体系绝不相同。我们所应该实行的，仅仅是这些民主革命的共同纲领，而绝不是国民党的思想体系。</p>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[这是毛泽东在延安中国共产党的高级干部会议上的报告提纲。]]></summary></entry></feed>
