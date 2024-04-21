@@ -22,7 +22,3 @@ Fan of 崔健、Manny Pacquiao、Elon Musk；
 - 在Upwork完成一份远程任务赚到第一美元；
 - 通过个人App赚到第一美元；
 - Marry the cutest girl on this planet.
-
-find me here: [thekingofcool's qqzone](https://thekingof.cool)
-
-and also here: [mastodon](https://@thekingofcool@mastodon.social)
