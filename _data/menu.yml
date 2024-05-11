@@ -6,6 +6,8 @@ entries:
         url: https://mastodon.social/@thekingofcool
       - title: twitter
         url: https://x.com/offXforawhile
+      - title: instagram
+        url: https://www.instagram.com/thekingofcool.eth/
 
   - title: blogs
     post_list:
