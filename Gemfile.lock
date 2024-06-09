@@ -9,8 +9,11 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
+    ffi (1.16.3)
     ffi (1.16.3-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
+    google-protobuf (4.26.0-arm64-darwin)
+      rake (>= 13)
     google-protobuf (4.26.0-x64-mingw-ucrt)
       rake (>= 13)
     http_parser.rb (0.8.0)
@@ -63,6 +66,8 @@ GEM
     rexml (3.2.6)
     rouge (4.2.1)
     safe_yaml (1.0.5)
+    sass-embedded (1.72.0-arm64-darwin)
+      google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.72.0-x64-mingw-ucrt)
       google-protobuf (>= 3.25, < 5.0)
     terminal-table (3.0.2)
@@ -76,6 +81,7 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
+  arm64-darwin-23
   x64-mingw-ucrt
 
 DEPENDENCIES
