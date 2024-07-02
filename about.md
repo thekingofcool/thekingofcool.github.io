@@ -30,7 +30,7 @@ I like sports. Boxing, frisbee, running. Make Sport a Daily Habit.
 - Responsible for data delivery, data validation, task monitoring automation, and platform migration.
 - Successfully participated in and led the design, development, and deployment of multiple big data projects.
 
-### Big Data Development Engineer
+### Big Data Engineer
 **Shanghai Shouyi Information Technology Co., Ltd.**  
 *Aug 2018 - Feb 2019* 
 
