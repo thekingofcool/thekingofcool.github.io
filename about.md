@@ -84,4 +84,4 @@ Bachelor’s in Civil Engineering (2012 - 2016)
 
 ## Additional Information
 - **Languages:** Fluent in English
-- **Interests:** Building physical strength and technical skills in the cyber world
+- **Interests:** Building my body in physical world and upgrading skills in cyber world
