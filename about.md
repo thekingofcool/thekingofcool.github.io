@@ -11,13 +11,9 @@ permalink: /about/
 ---
 
 ## Professional Summary
-Former Structural Engineer (2016-2017), now Big Data Engineer (2018-present). 
+Big Data Engineer with over 6 years of experience in data development, skilled in cloud technologies like AWS and proficient in Python, R, and Scala. Expertise in Airflow and the Apache Hadoop/Spark ecosystem (Hadoop, Hive, Spark, HDFS/S3). Previously a Structural Engineer with a background in Civil Engineering from Chongqing University.
 
-Engaged in data development for more than 6 years. Experienced in cloud technology like AWS and using Python, R, and Scala as programming language. Skilled in Airflow and Apache Hadoop/Spark ecosystem applications such as Hadoop, Hive, Spark, HDFS/S3. 
-
-Before as a big data engineer, I was a structural engineer after 4 years' of Civil Engineering study at ChongQing University, which are both the position of creating things. 
-
-I like sports. Boxing, frisbee, running. Make Sport a Daily Habit.
+I like sports. Boxing, swimming, and running. Make sports a daily habit.
 
 ---
 
@@ -27,23 +23,24 @@ I like sports. Boxing, frisbee, running. Make Sport a Daily Habit.
 **Nike (Contract)**  
 *Mar 2019 - Present* 
 
-- Responsible for data delivery, data validation, task monitoring automation, and platform migration.
-- Successfully participated in and led the design, development, and deployment of multiple big data projects.
+- Led and contributed to the design, development, and deployment of various big data projects.
+- Automated data delivery, validation, and task monitoring processes.
+- Migrated data platforms to enhance efficiency.
 
 ### Big Data Engineer
-**Shanghai Shouyi Information Technology Co., Ltd.**  
+**Shanghai Shouyi Information Technology**  
 *Aug 2018 - Feb 2019* 
 
-- Participated in building the company's big data architecture and applied stream processing frameworks to meet business needs.
-- Conducted offline analysis of daily data, completed risk control and abnormal user data validation.
-- Researched and quickly implemented new technologies, and wrote technical documentation.
+- Developed the company’s big data architecture and implemented stream processing frameworks.
+- Conducted offline data analysis, managed risk control, and validated abnormal user data.
+- Researched and integrated new technologies, and documented technical processes.
 
-### Technician
+### Construction Engineer
 **China State Construction Third Engineering Bureau**  
 *Jul 2016 - Nov 2017*
 
-- Responsible for pre-reviewing construction drawings, drafting construction plans, and inspecting construction nodes.
-- Awarded first prize in the 2017 Xiamen QC Group Activity.
+- Reviewed construction drawings, drafted construction plans, and inspected construction sites.
+- Received first prize in the 2017 Xiamen QC Group Activity.
 
 ---
 
@@ -61,54 +58,30 @@ Bachelor’s in Civil Engineering (2012 - 2016)
 ## Projects
 ### Nike Consumer Promise Review
 
-- **Background:** 
-
-Consumer Promise Review (CPR) allows users to scan key Consumer Promise metrics across the Digital Supply Chain. On the Consumer Promise Dashboard, users can delve into KPIs on:  **Service** (**Digital Units Shipped**, **EDD% Precision**), **Shipment**(**Inner Region%**, **2D Ground%**"),  **Convenience** (**Split Shipment%**),  **Sustainability** (**Outbound AF%**, **RSC INV Accuracy**) and **Cost** (**CPU**). These metrics are reported to the leadership team on a monthly and quarterly basis to provide a broader view of the business.
-- **Tech Stack:** 
-
-Spark, Hive/Presto, Python, Airflow
-- **Role:** 
-
-ETL and feed Presto tables to Tableau for reporting.
+- **Overview:** Supported the backend data development for tracking key Consumer Promise metrics across the Digital Supply Chain, including service, shipment, convenience, sustainability, and cost metrics.
+- **Tech Stack:** Spark, Hive/Presto, Python, Airflow
+- **Role:** Developed ETL processes and prepared Presto tables for reporting.
 
 ### GC Inbound Transportation
 
-- **Background:** 
-
-GC inbound transportation owns the shipment capability of inventory movement between factory and GC Central DC. The entire inbound shipment process including manufacturing in factory, consolidator processing, port to port transit, Custom clearance and DC inbound processing. Through appropriate transport mode and shipment tracking in different stages between cross team, inventory would be deployed into Central DC on time and accurately. Cross teams are using inbound foundation data to track PO completion status, carriers' transportation performance, cost situation and CLC capicity forecast to make better decisions and take timely actions to optimize the vendor management, inbound route/mode selection and load priority optimization.
-- **Tech Stack:** 
-
-Spark, Python, EMR, Snowflake, Box, Airflow
-- **Role:** 
-
-ETL, generate data reports through Box and Snowflake.
+- **Overview:** Managed the inbound shipment process from factories to the GC Central DC, optimizing transport modes and tracking shipment stages to ensure timely inventory deployment.
+- **Tech Stack:** Spark, Python, EMR, Snowflake, Box, Airflow
+- **Role:** Developed ETL processes and generated data reports using Box and Snowflake.
 
 ### Nike United Intelligent Inventory
 
-- **Background:** 
-
-UII means united intelligent inventory, also called CTM means connect the marketplace. UII (CTM) system gathers real-time data from Top Doors, ADC inventory, Nike available orders and inventory. Based on Machine Learning algorithm, the CTM system do demand forecasting for Nike to predict the future sales of stores, and then finds the replenishment opportunities, and intelligently proposes the replenishment quantity for stores.
-- **Tech Stack:** 
-
-Spark, Python, S3, EMR, Snowflake, Airflow
-- **Role:** 
-
-Collect and cleanse data to form model features table for consumption by machine learning models; maintain various dimensional information; and monitor data quality.
+- **Overview:** Created a system for real-time data aggregation and demand forecasting to optimize inventory replenishment based on machine learning algorithms.
+- **Tech Stack:** Spark, Python, S3, EMR, Snowflake, Airflow
+- **Role:** Collected and cleansed data to form model feature tables, maintained various dimensional information, and monitored data quality.
 
 ### Cryptocurrency Transaction Data Analysis Platform
 
-- **Background:** 
-
-In order to efficiently meet business needs, a big data platform is built to complete data cleansing based on log data to meet real-time/offline analysis such as recording user token holdings, labeling of abnormal transaction users, and average transaction interval time.
-- **Tech Stack:** 
-
-Flume, Kafka, Hadoop, Structured Streaming, Aurora
-- **Role:** 
-
-Consume the Kafka topics via Structured Streaming to obtain user asset change, transaction, and historical order information from system logs, and to meet the business other data requirements.
+- **Overview:** Built a big data platform for real-time and offline analysis of cryptocurrency transactions, including user token holdings, abnormal transaction detection, and average transaction interval calculations.
+- **Tech Stack:** Flume, Kafka, Hadoop, Structured Streaming, Aurora
+- **Role:** Consumed Kafka topics via Structured Streaming to process user asset changes and transaction logs, meeting business data requirements.
 
 ---
 
 ## Additional Information
-- **Language:** Fluent in English
-- **Interests:** Build body in pysical world and also skills in cyber world
+- **Languages:** Fluent in English
+- **Interests:** Building physical strength and technical skills in the cyber world
