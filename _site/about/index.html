@@ -88,32 +88,76 @@ Bachelor’s in Civil Engineering (2012 - 2016)</p>
 
 <h2 id="projects">Projects</h2>
 <h3 id="nike-consumer-promise-review">Nike Consumer Promise Review</h3>
+
 <ul>
   <li><strong>Background:</strong></li>
+</ul>
+
+<p>Consumer Promise Review (CPR) allows users to scan key Consumer Promise metrics across the Digital Supply Chain. On the Consumer Promise Dashboard, users can delve into KPIs on:  <strong>Service</strong> (<strong>Digital Units Shipped</strong>, <strong>EDD% Precision</strong>), <strong>Shipment</strong>(<strong>Inner Region%</strong>, <strong>2D Ground%</strong>”),  <strong>Convenience</strong> (<strong>Split Shipment%</strong>),  <strong>Sustainability</strong> (<strong>Outbound AF%</strong>, <strong>RSC INV Accuracy</strong>) and <strong>Cost</strong> (<strong>CPU</strong>). These metrics are reported to the leadership team on a monthly and quarterly basis to provide a broader view of the business.</p>
+<ul>
   <li><strong>Tech Stack:</strong></li>
+</ul>
+
+<p>Spark, Hive/Presto, Python, Airflow</p>
+<ul>
   <li><strong>Role:</strong></li>
 </ul>
 
-<h3 id="logistics-inbound-navigator">Logistics Inbound Navigator</h3>
+<p>ETL and feed Presto tables to Tableau for reporting.</p>
+
+<h3 id="gc-inbound-transportation">GC Inbound Transportation</h3>
+
 <ul>
   <li><strong>Background:</strong></li>
+</ul>
+
+<p>GC inbound transportation owns the shipment capability of inventory movement between factory and GC Central DC. The entire inbound shipment process including manufacturing in factory, consolidator processing, port to port transit, Custom clearance and DC inbound processing. Through appropriate transport mode and shipment tracking in different stages between cross team, inventory would be deployed into Central DC on time and accurately. Cross teams are using inbound foundation data to track PO completion status, carriers’ transportation performance, cost situation and CLC capicity forecast to make better decisions and take timely actions to optimize the vendor management, inbound route/mode selection and load priority optimization.</p>
+<ul>
   <li><strong>Tech Stack:</strong></li>
+</ul>
+
+<p>Spark, Python, EMR, Snowflake, Box, Airflow</p>
+<ul>
   <li><strong>Role:</strong></li>
 </ul>
 
-<h3 id="nike-store-partnered-united-inventory-information">Nike Store Partnered United Inventory Information</h3>
+<p>ETL, generate data reports through Box and Snowflake.</p>
+
+<h3 id="nike-united-intelligent-inventory">Nike United Intelligent Inventory</h3>
+
 <ul>
   <li><strong>Background:</strong></li>
+</ul>
+
+<p>UII means united intelligent inventory, also called CTM means connect the marketplace. UII (CTM) system gathers real-time data from Top Doors, ADC inventory, Nike available orders and inventory. Based on Machine Learning algorithm, the CTM system do demand forecasting for Nike to predict the future sales of stores, and then finds the replenishment opportunities, and intelligently proposes the replenishment quantity for stores.</p>
+<ul>
   <li><strong>Tech Stack:</strong></li>
+</ul>
+
+<p>Spark, Python, S3, EMR, Snowflake, Airflow</p>
+<ul>
   <li><strong>Role:</strong></li>
 </ul>
+
+<p>Collect and cleanse data to form model features table for consumption by machine learning models; maintain various dimensional information; and monitor data quality.</p>
 
 <h3 id="cryptocurrency-transaction-data-analysis-platform">Cryptocurrency Transaction Data Analysis Platform</h3>
+
 <ul>
   <li><strong>Background:</strong></li>
+</ul>
+
+<p>In order to efficiently meet business needs, a big data platform is built to complete data cleansing based on log data to meet real-time/offline analysis such as recording user token holdings, labeling of abnormal transaction users, and average transaction interval time.</p>
+<ul>
   <li><strong>Tech Stack:</strong></li>
+</ul>
+
+<p>Flume, Kafka, Hadoop, Structured Streaming, Aurora</p>
+<ul>
   <li><strong>Role:</strong></li>
 </ul>
+
+<p>Consume the Kafka topics via Structured Streaming to obtain user asset change, transaction, and historical order information from system logs, and to meet the business other data requirements.</p>
 
 <hr />
 

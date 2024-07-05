@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Markdown中文语法规范"
+title:  "Markdown 中文语法规范"
 date:   2024-03-28
-categories: reading
+categories: blog
 ---
 
-内容来自Github repo: [document-style-guide](https://github.com/ruanyf/document-style-guide/tree/master)
+内容摘自 Github repo: [document-style-guide](https://github.com/ruanyf/document-style-guide/tree/master)
 
 # 标题
 
