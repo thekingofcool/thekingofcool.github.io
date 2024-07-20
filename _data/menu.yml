@@ -2,10 +2,6 @@ entries:
   - title: about me
     url: /about
     entries:
-      - title: mastodon
-        url: https://mastodon.social/@thekingofcool
-      - title: instagram
-        url: https://www.instagram.com/thekingofcool.eth/
       - title: credly
         url: https://www.credly.com/users/thekingofcool/
       - title: tableau vizzes

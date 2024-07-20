@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "全马 03:08:29 完赛复盘"
+title:  "全马03:08:29完赛复盘"
 date:   2024-02-28
 categories: blog
 ---

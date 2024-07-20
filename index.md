@@ -2,8 +2,8 @@
 layout: home
 ---
 
-这是一个奇妙的时代, 我们比以往任何时候都更容易接入互联网, 通过一根网线, 有了可以无限传递信息的可能。
+This is a remarkable era. We have easier access to the internet than ever before. With a single cable, we have the potential for unlimited information transmission.
 
-当然这不是当下以及未来信息传递的唯一方式, 但也足够令人兴奋。
+Of course, this isn’t the only way information will be transmitted now and in the future, but it’s exciting enough.
 
-我们正处在以几十年为尺度的周期临界点, 或者是主观上hopefully。我们无法左右经济与政治周期, 能做的只是永远拥抱变革, 积极探索那些可能改变人们生活方式的新事物并投身建设它们, 让我们不算太长的旅程有一点意思。
+We are at a critical point in a decades-long cycle, or perhaps more subjectively, hopefully. We cannot control economic and political cycles, all we can do is always embrace change, actively explore new things that may change people’s lifestyles, and commit to building them, making our relatively short journey a bit more interesting.

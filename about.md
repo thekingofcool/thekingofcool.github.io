@@ -60,25 +60,25 @@ Bachelor’s in Civil Engineering (2012 - 2016)
 
 - **Overview:** Supported the backend data development for tracking key Consumer Promise metrics across the Digital Supply Chain, including service, shipment, convenience, sustainability, and cost metrics.
 - **Tech Stack:** Spark, Hive/Presto, Python, Airflow
-- **Role:** Developed ETL processes and prepared Presto tables for reporting.
+- **Role:** Develop ETL processes and prepare Presto tables for reporting.
 
 ### GC Inbound Transportation
 
 - **Overview:** Managed the inbound shipment process from factories to the GC Central DC, optimizing transport modes and tracking shipment stages to ensure timely inventory deployment.
 - **Tech Stack:** Spark, Python, EMR, Snowflake, Box, Airflow
-- **Role:** Developed ETL processes and generated data reports using Box and Snowflake.
+- **Role:** Develop ETL processes and generate data to Box and Snowflake for use in front-end reports.
 
 ### Nike United Intelligent Inventory
 
 - **Overview:** Created a system for real-time data aggregation and demand forecasting to optimize inventory replenishment based on machine learning algorithms.
 - **Tech Stack:** Spark, Python, S3, EMR, Snowflake, Airflow
-- **Role:** Collected and cleansed data to form model feature tables, maintained various dimensional information, and monitored data quality.
+- **Role:** Collect and cleanse data to form model feature tables, maintaine various dimensional information, and monitore data quality.
 
 ### Cryptocurrency Transaction Data Analysis Platform
 
 - **Overview:** Built a big data platform for real-time and offline analysis of cryptocurrency transactions, including user token holdings, abnormal transaction detection, and average transaction interval calculations.
 - **Tech Stack:** Flume, Kafka, Hadoop, Structured Streaming, Aurora
-- **Role:** Consumed Kafka topics via Structured Streaming to process user asset changes and transaction logs, meeting business data requirements.
+- **Role:** Consume Kafka topics via Structured Streaming to process user asset changes and transaction logs, meeting business data requirements.
 
 ---
 

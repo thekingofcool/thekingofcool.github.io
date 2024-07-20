@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2014~2024，仅仅 10 年"
+title:  "2014~2024，仅仅10年"
 date:   2024-07-03
 categories: reading
 ---
