@@ -6,6 +6,12 @@ entries:
         url: https://mastodon.social/@thekingofcool
       - title: instagram
         url: https://www.instagram.com/thekingofcool.eth/
+      - title: credly
+        url: https://www.credly.com/users/thekingofcool/
+      - title: tableau vizzes
+        url: https://public.tableau.com/app/profile/thekingofcool/vizzes
+      - title: pay me
+        url: https://buy.stripe.com/9AQeYT5I3feicyQ6op
 
   - title: blogs
     post_list:
