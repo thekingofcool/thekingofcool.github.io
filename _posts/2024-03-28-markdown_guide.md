@@ -5,8 +5,6 @@ date:   2024-03-28
 categories: blog
 ---
 
-内容摘自 Github repo: [document-style-guide](https://github.com/ruanyf/document-style-guide/tree/master)
-
 # 标题
 
 ## 层级

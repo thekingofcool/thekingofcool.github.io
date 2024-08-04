@@ -30,5 +30,3 @@ know something；learn something；create something；do something
 8. filetype: extension 限定结果的文件格式
 
 去信息源头获取一手信息，掌握最大化利用AI的能力。
-
-*original youtube link: [搜索技术，普通人变强的唯一外挂](https://youtu.be/tiN6T1LewmQ?si=4dgBUf1qVfVdCeAl)*
