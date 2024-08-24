@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Create Bootable Windows 11 USB Disk on MacOS</title><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="thekingofcool&apos;s website" /><link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+  <link href="https://cdn.jsdelivr.net/gh/gangdong/gangdong.github.io@dev/assets/css/syntax_monokai.css" rel="stylesheet"/>
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><-</a><article>
+  <p class="post-meta">
+    <time datetime="2024-08-24 00:00:00 +0800">2024-08-24</time>
+  </p>
+  
+  <h1>Create Bootable Windows 11 USB Disk on MacOS</h1>
+
+  <h4 id="utilities---disk-utility">Utilities - Disk Utility</h4>
+<p>Erase your USB External Physical Volume to MS-DOS (FAT32);
+Rename the USB Drive name to WIN11</p>
+
+<h4 id="download-window-11-ios">Download Window 11 IOS</h4>
+<p>Download <a href="https://www.microsoft.com/software-download/windows11">Windows 11</a> Disk Image (ISO);</p>
+
+<h4 id="install-wimlib">Install wimlib</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install wimlib
+</code></pre></div></div>
+
+<h4 id="mount-the-iso-file-in-a-folder">Mount the ISO file in a folder</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hdiutil mount Downloads/Win11_23H2_English_x64v2.iso
+</code></pre></div></div>
+
+<h4 id="copy-all-windows-iso-contents-into-the-usb-drive">Copy all Windows ISO contents into the USB Drive</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync -vha --exclude=sources/install.wim /Volumes/CCCOMA_X64FRE_EN-US_DV9/* /Volumes/WIN11
+</code></pre></div></div>
+
+<h4 id="splitinstallwimfile-in-two-parts-if-the-size-is-bigger-than4gb">Split <code class="language-plaintext highlighter-rouge">install.wim</code> file in two parts if the size is bigger than 4GB</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wimlib-imagex split /Volumes/CCCOMA_X64FRE_EN-US_DV9/sources/install.wim /Volumes/WIN11/sources/install.swm 3800
+</code></pre></div></div>
+
+<h4 id="eject-usb-device-to-use-it-for-os-installation">Eject USB device to use it for OS installation</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>diskutil eject /dev/disk2
+</code></pre></div></div>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>
