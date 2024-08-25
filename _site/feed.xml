@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-25T10:40:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Build a PC to Play WuKong</title><link href="http://localhost:4000/blog/2024/08/24/wukong.html" rel="alternate" type="text/html" title="Build a PC to Play WuKong" /><published>2024-08-24T00:00:00+08:00</published><updated>2024-08-24T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/08/24/wukong</id><content type="html" xml:base="http://localhost:4000/blog/2024/08/24/wukong.html"><![CDATA[<h3 id="pc-build-list">PC Build List</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-25T13:32:43+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Build a PC to Play WuKong</title><link href="http://localhost:4000/blog/2024/08/24/wukong.html" rel="alternate" type="text/html" title="Build a PC to Play WuKong" /><published>2024-08-24T00:00:00+08:00</published><updated>2024-08-24T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/08/24/wukong</id><content type="html" xml:base="http://localhost:4000/blog/2024/08/24/wukong.html"><![CDATA[<h3 id="pc-build-list">PC Build List</h3>
+<p>Total cost is 5310.</p>
 
 <table>
   <thead>
     <tr>
       <th style="text-align: left">item</th>
-      <th style="text-align: left">型号</th>
-      <th>渠道</th>
-      <th>价格</th>
+      <th style="text-align: left">model</th>
+      <th>channel</th>
+      <th>price</th>
     </tr>
   </thead>
   <tbody>
@@ -17,49 +18,49 @@
       <td>929</td>
     </tr>
     <tr>
-      <td style="text-align: left">内存条</td>
+      <td style="text-align: left">RAM</td>
       <td style="text-align: left">光威 天策 16g * 2 6400 C32 M</td>
       <td>PDD</td>
       <td>679</td>
     </tr>
     <tr>
-      <td style="text-align: left">显卡</td>
+      <td style="text-align: left">GPU</td>
       <td style="text-align: left">GeForce RTX 战斧 4060 DUO 8G</td>
       <td>PDD</td>
       <td>2108</td>
     </tr>
     <tr>
-      <td style="text-align: left">散热器</td>
+      <td style="text-align: left">Heat sink</td>
       <td style="text-align: left">利民 AX120R SE ARGB</td>
       <td>PDD</td>
       <td>81</td>
     </tr>
     <tr>
-      <td style="text-align: left">电源</td>
+      <td style="text-align: left">Power supply unit</td>
       <td style="text-align: left">鑫谷 GM650M 金牌全模</td>
       <td>PDD</td>
       <td>349</td>
     </tr>
     <tr>
-      <td style="text-align: left">机箱</td>
+      <td style="text-align: left">computer case</td>
       <td style="text-align: left">航嘉 S920 全景</td>
       <td>PDD</td>
       <td>160</td>
     </tr>
     <tr>
-      <td style="text-align: left">硬盘</td>
+      <td style="text-align: left">SSD</td>
       <td style="text-align: left">金士顿 480g SSD</td>
       <td>TMall</td>
       <td>265</td>
     </tr>
     <tr>
-      <td style="text-align: left">主板</td>
+      <td style="text-align: left">Motherboard</td>
       <td style="text-align: left">技嘉 AMD B650M GAMING WIFI</td>
       <td>JD</td>
       <td>739</td>
     </tr>
     <tr>
-      <td style="text-align: left">硬盘加购</td>
+      <td style="text-align: left">SSD(optional)</td>
       <td style="text-align: left">Lexar ARES M.2 pcie4.0 nvmeSSD 1T</td>
       <td>TMall</td>
       <td>521</td>
@@ -67,56 +68,58 @@
   </tbody>
 </table>
 
-<h3 id="create-bootable-windows-11-usb-disk-on-macos">Create Bootable Windows 11 USB Disk on MacOS</h3>
-<h4 id="utilities---disk-utility">Utilities - Disk Utility</h4>
-<p>Erase your USB External Physical Volume to MS-DOS (FAT32);
-Rename the USB Drive name to WIN11</p>
+<h3 id="create-bootable-windows-11-usb-disk">Create Bootable Windows 11 USB Disk</h3>
+<p>When the computer is ready, you need a Windows system boot disk. I’ll do this on a MacOS.</p>
 
-<h4 id="download-window-11-ios">Download Window 11 IOS</h4>
-<p>Download <a href="https://www.microsoft.com/software-download/windows11">Windows 11</a> Disk Image (ISO);</p>
+<h4 id="format-usb-disk">Format USB Disk</h4>
+<p>Go to Application, find Utilities - Disk Utility;
+Choose your Disk, and erase the USB External Physical Volume to MS-DOS (FAT32);
+Rename the USB Drive to <strong>WIN11</strong> or whatever you like.</p>
 
-<h4 id="install-wimlib">Install wimlib</h4>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install wimlib
-</code></pre></div></div>
+<h4 id="download-system-image">Download System Image</h4>
+<p>Download <a href="https://www.microsoft.com/software-download/windows11">Windows 11</a> Disk Image (ISO) to your computer;</p>
 
-<h4 id="mount-the-iso-file-in-a-folder">Mount the ISO file in a folder</h4>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hdiutil mount Downloads/Win11_23H2_English_x64v2.iso
-</code></pre></div></div>
-
-<h4 id="copy-all-windows-iso-contents-into-the-usb-drive">Copy all Windows ISO contents into the USB Drive</h4>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync -vha --exclude=sources/install.wim /Volumes/CCCOMA_X64FRE_EN-US_DV9/* /Volumes/WIN11
-</code></pre></div></div>
-
-<h4 id="splitinstallwimfile-in-two-parts-if-the-size-is-bigger-than4gb">Split <code class="language-plaintext highlighter-rouge">install.wim</code> file in two parts if the size is bigger than 4GB</h4>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wimlib-imagex split /Volumes/CCCOMA_X64FRE_EN-US_DV9/sources/install.wim /Volumes/WIN11/sources/install.swm 3800
-</code></pre></div></div>
-
-<h4 id="eject-usb-device-to-use-it-for-os-installation">Eject USB device to use it for OS installation</h4>
+<h4 id="making-a-boot-disk">Making a Boot Disk</h4>
+<ol>
+  <li>Install wimlib
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install wimlib
+</code></pre></div>    </div>
+  </li>
+  <li>Mount the ISO file into a folder
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hdiutil mount Downloads/Win11_23H2_English_x64v2.iso
+</code></pre></div>    </div>
+  </li>
+  <li>Copy all Windows ISO contents into the USB Disk
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync -vha --exclude=sources/install.wim /Volumes/CCCOMA_X64FRE_EN-US_DV9/* /Volumes/WIN11
+</code></pre></div>    </div>
+  </li>
+  <li>Split the installation file in two parts if the size is bigger than 4GB
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wimlib-imagex split /Volumes/CCCOMA_X64FRE_EN-US_DV9/sources/install.wim /Volumes/WIN11/sources/install.swm 3800
+</code></pre></div>    </div>
+  </li>
+  <li>Eject USB device to use it for OS installation.</li>
+</ol>
 
 <h3 id="troubleshooting">Troubleshooting</h3>
-<h4 id="windows系统安装过程中遇到系统可用空间为零">windows系统安装过程中，遇到系统可用空间为零</h4>
-<p>判断该固态硬盘内存有内容，选择delete清空磁盘；</p>
-<h4 id="系统安装过程中提示磁盘为mbr磁盘需要转为gpt">系统安装过程中，提示磁盘为MBR磁盘，需要转为GPT</h4>
 <ol>
-  <li><strong>使用安装介质启动</strong>：插入Windows 11安装U盘，重启计算机并进入BIOS设置，从U盘启动。</li>
-  <li><strong>进入命令提示符</strong>：
+  <li>
+    <p>0 free space when installing the system
+<strong>Solution</strong>: There is some content in the SSD, choose ‘delete’ to erase SSD.</p>
+  </li>
+  <li>
+    <p>The selected disk has an MBR partition table. On EFI system, Windows can only be installed to GPT disks.
+<strong>Solution</strong>:</p>
     <ul>
-      <li>在Windows安装界面，选择“修复计算机”；</li>
-      <li>选择“疑难解答” &gt; “命令提示符”。</li>
+      <li>Restart the computer, On the Windows installation screen, select ‘Repair your computer’; Choose ‘Troubleshoot’ &gt; ‘Command Prompt’.</li>
+      <li>Enter <code class="language-plaintext highlighter-rouge">diskpart</code> to initiate the disk partition process;</li>
+      <li>Enter <code class="language-plaintext highlighter-rouge">list disk</code>. Make a note of the MBR disk number that you want to convert to GPT format;</li>
+      <li>Enter <code class="language-plaintext highlighter-rouge">select disk</code> <em><code class="language-plaintext highlighter-rouge">&lt;disk-number&gt;</code></em>, where <code class="language-plaintext highlighter-rouge">&lt;disk-number&gt;</code> is the MBR disk number to convert;</li>
+      <li>Enter <code class="language-plaintext highlighter-rouge">clean</code> to delete all partitions and volumes on the disk;</li>
+      <li>Enter <code class="language-plaintext highlighter-rouge">convert gpt</code> to convert the MBR disk to the GPT partition format.
+The diskpart process notifies you when the conversion completes.</li>
     </ul>
   </li>
-  <li><strong>使用DiskPart工具</strong>：
-    <ul>
-      <li>在命令提示符中输入<code class="language-plaintext highlighter-rouge">diskpart</code>并按Enter；</li>
-      <li>输入<code class="language-plaintext highlighter-rouge">list disk</code>查看所有磁盘；</li>
-      <li>输入<code class="language-plaintext highlighter-rouge">select disk X</code>（X为您的目标磁盘号）；</li>
-      <li>输入<code class="language-plaintext highlighter-rouge">clean</code>以删除所有分区（注意：这将删除所有数据）；</li>
-      <li>输入<code class="language-plaintext highlighter-rouge">convert gpt</code>将磁盘转换为GPT格式。</li>
-    </ul>
-  </li>
-  <li><strong>退出DiskPart</strong>：输入<code class="language-plaintext highlighter-rouge">exit</code>退出DiskPart。</li>
-  <li>继续安装。</li>
-</ol>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[PC Build List]]></summary></entry><entry><title type="html">Dana White introduces Donald Trump at the 2024 RNC</title><link href="http://localhost:4000/reading/2024/07/18/Dana_White_introduces_Donald_Trump_at_the_2024_RNC.html" rel="alternate" type="text/html" title="Dana White introduces Donald Trump at the 2024 RNC" /><published>2024-07-18T00:00:00+08:00</published><updated>2024-07-18T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/07/18/Dana_White_introduces_Donald_Trump_at_the_2024_RNC</id><content type="html" xml:base="http://localhost:4000/reading/2024/07/18/Dana_White_introduces_Donald_Trump_at_the_2024_RNC.html"><![CDATA[<p>Good evening ladies and gentlemen. I am Dana White. I am the CEO and president of the Ultimate Fighting Championship.</p>
+</ol>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[PC Build List Total cost is 5310.]]></summary></entry><entry><title type="html">Dana White introduces Donald Trump at the 2024 RNC</title><link href="http://localhost:4000/reading/2024/07/18/Dana_White_introduces_Donald_Trump_at_the_2024_RNC.html" rel="alternate" type="text/html" title="Dana White introduces Donald Trump at the 2024 RNC" /><published>2024-07-18T00:00:00+08:00</published><updated>2024-07-18T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/07/18/Dana_White_introduces_Donald_Trump_at_the_2024_RNC</id><content type="html" xml:base="http://localhost:4000/reading/2024/07/18/Dana_White_introduces_Donald_Trump_at_the_2024_RNC.html"><![CDATA[<p>Good evening ladies and gentlemen. I am Dana White. I am the CEO and president of the Ultimate Fighting Championship.</p>
 
 <p>So two weeks ago I got a call from President Trump asking me if I’d be willing to speak tonight. As usual, there was no pressure, no demands. He asked me as a friend and of course I said yes. Then after I accepted his offer, he sent me a text message. And I just want to read to you a little piece of what President Trump wrote to me.</p>
 
