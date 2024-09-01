@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-01T23:50:50+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Be a Good Data Engineer - Linux and Shell</title><link href="http://localhost:4000/blog/2024/09/01/linux_and_shell.html" rel="alternate" type="text/html" title="Be a Good Data Engineer - Linux and Shell" /><published>2024-09-01T00:00:00+08:00</published><updated>2024-09-01T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/01/linux_and_shell</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/01/linux_and_shell.html"><![CDATA[<h3 id="background">Background</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-01T23:54:07+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Be a Good Data Engineer - Linux and Shell</title><link href="http://localhost:4000/blog/2024/09/01/linux_and_shell.html" rel="alternate" type="text/html" title="Be a Good Data Engineer - Linux and Shell" /><published>2024-09-01T00:00:00+08:00</published><updated>2024-09-01T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/01/linux_and_shell</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/01/linux_and_shell.html"><![CDATA[<h3 id="background">Background</h3>
 <p>Linux 是基于 Unix 的开源操作系统，通常用于服务器、台式机和嵌入式系统。</p>
 
 <p>Linux terminal 是一个用于和操作系统进行交互以及执行各种任务的命令行界面，可以用作浏览目录文件及文件中的内容，你也可以用它来安装和升级软件包，也能创建和编辑文件以及执行 shell 脚本。</p>
@@ -87,7 +87,7 @@ Most Used Commands:</p>
 <p><strong>Shell learning and troubleshooting: <a href="https://explainshell.com/">explainshell</a></strong>.</p>
 
 <h3 id="command-line-basics">Command Line Basics</h3>
-<p>what is <a href="https://www.gnu.org/software/bash/">Bash</a></p>
+<p>What is <a href="https://www.gnu.org/software/bash/">Bash</a></p>
 <ul>
   <li>man: system manual pager;</li>
   <li>ssh: Secure Shell;</li>
@@ -140,9 +140,9 @@ Most Used Commands:</p>
   <li>shutdown: close down the system at a given time;</li>
 </ul>
 
-<p>practical command line use cases on data science: <a href="https://jeroenjanssens.com/dsatcl/list-of-command-line-tools">Data Science at the Command Line</a>;</p>
+<p>Practical command line use cases on data science: <a href="https://jeroenjanssens.com/dsatcl/list-of-command-line-tools">Data Science at the Command Line</a>;</p>
 
-<p>learning the shell step by step: <a href="https://linuxcommand.org/lc3_writing_shell_scripts.php">Writing Shell Scripts</a>;</p>
+<p>Learning the shell step by step: <a href="https://linuxcommand.org/lc3_writing_shell_scripts.php">Writing Shell Scripts</a>;</p>
 
 <p>To be continued…</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Background Linux 是基于 Unix 的开源操作系统，通常用于服务器、台式机和嵌入式系统。]]></summary></entry><entry><title type="html">Build a PC to Play WuKong</title><link href="http://localhost:4000/blog/2024/08/24/wukong.html" rel="alternate" type="text/html" title="Build a PC to Play WuKong" /><published>2024-08-24T00:00:00+08:00</published><updated>2024-08-24T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/08/24/wukong</id><content type="html" xml:base="http://localhost:4000/blog/2024/08/24/wukong.html"><![CDATA[<h3 id="pc-build-list">PC Build List</h3>
 <p>Total cost is 5310.</p>

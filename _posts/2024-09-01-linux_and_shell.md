@@ -82,7 +82,7 @@ Most Used Commands:
 **Shell learning and troubleshooting: [explainshell](https://explainshell.com/)**.
 
 ### Command Line Basics
-what is [Bash](https://www.gnu.org/software/bash/)
+What is [Bash](https://www.gnu.org/software/bash/)
 - man: system manual pager;
 - ssh: Secure Shell;
 - ls: list all the files in your current working directory;
@@ -133,8 +133,8 @@ what is [Bash](https://www.gnu.org/software/bash/)
 - reboot: stopping and restarting the system;
 - shutdown: close down the system at a given time;
 
-practical command line use cases on data science: [Data Science at the Command Line](https://jeroenjanssens.com/dsatcl/list-of-command-line-tools);
+Practical command line use cases on data science: [Data Science at the Command Line](https://jeroenjanssens.com/dsatcl/list-of-command-line-tools);
 
-learning the shell step by step: [Writing Shell Scripts](https://linuxcommand.org/lc3_writing_shell_scripts.php);
+Learning the shell step by step: [Writing Shell Scripts](https://linuxcommand.org/lc3_writing_shell_scripts.php);
 
 To be continued...
