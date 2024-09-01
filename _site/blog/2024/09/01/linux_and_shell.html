@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Be a Good Data Engineer - Linux and Shell</title><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="thekingofcool&apos;s website" /><link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+  <link href="https://cdn.jsdelivr.net/gh/gangdong/gangdong.github.io@dev/assets/css/syntax_monokai.css" rel="stylesheet"/>
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><-</a><article>
+  <p class="post-meta">
+    <time datetime="2024-09-01 00:00:00 +0800">2024-09-01</time>
+  </p>
+  
+  <h1>Be a Good Data Engineer - Linux and Shell</h1>
+
+  <h3 id="background">Background</h3>
+<p>Linux 是基于 Unix 的开源操作系统，通常用于服务器、台式机和嵌入式系统。</p>
+
+<p>Linux terminal 是一个用于和操作系统进行交互以及执行各种任务的命令行界面，可以用作浏览目录文件及文件中的内容，你也可以用它来安装和升级软件包，也能创建和编辑文件以及执行 shell 脚本。</p>
+
+<h3 id="package-management">Package management</h3>
+<p>常用的包管理器有：</p>
+<h4 id="apt"><a href="https://wiki.debian.org/Apt">apt</a></h4>
+<p>Advanced Packaging Tools, 是一款 <a href="https://www.debian.org/">Debian</a>-based Linux 系统最常用的包管理器。</p>
+
+<p>背景信息：</p>
+
+<p><em>Some of the most popular Debian-based Linux distributions: Linux Mint, Ubuntu, Kali Linux.</em></p>
+
+<p><em>Meanwhile Red Hat-based distributions are: CentOS, Fedora.</em></p>
+
+<p><em>Red Hat-based Linux distributions are often preferred for enterprise environments and servers, focusing on stability and security. Whereas Debian-based Linux distributions moreover focus on long-term support and stability.</em>
+Most Used Commands:</p>
+<ul>
+  <li>install package: <code class="language-plaintext highlighter-rouge">sudo apt-get install [package_name]</code>;</li>
+  <li>remove the package: <code class="language-plaintext highlighter-rouge">sudo apt-get remove [package_name]</code>;</li>
+  <li>list details of installed package: <code class="language-plaintext highlighter-rouge">sudo apt-get list [package_name]</code>;</li>
+</ul>
+
+<p><em>More details refer to: <a href="https://linux.die.net/man/8/apt-get">Linux man page</a></em>.</p>
+
+<h4 id="yum"><a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/5/html/deployment_guide/c1-yum">yum</a></h4>
+<p>Yellowdog Updater Modified, 用作 <a href="https://www.redhat.com/en">Red Hat</a> Enterprise Linux versions 5 and later 的包管理；</p>
+
+<p>Most Used Commands:</p>
+<ul>
+  <li>install: <code class="language-plaintext highlighter-rouge">yum install [package_name]</code>;</li>
+  <li>remove: <code class="language-plaintext highlighter-rouge">yum remove [package_name]</code>;</li>
+  <li>update: <code class="language-plaintext highlighter-rouge">yum update</code>;</li>
+</ul>
+
+<p><em>More details refer to: <a href="https://access.redhat.com/articles/yum-cheat-sheet">Yum Command Cheat Sheet</a></em>.</p>
+
+<h4 id="dnf"><a href="https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/DNF/">dnf</a></h4>
+<p>Dandified YUM, a package manager for .rpm-based Linux distributions, is now the default software package management tool in <a href="https://fedoraproject.org/">Fedora</a>.</p>
+
+<p>Most Used Commands:</p>
+<ul>
+  <li>search: <code class="language-plaintext highlighter-rouge">dnf search packagename</code>;</li>
+  <li>install: <code class="language-plaintext highlighter-rouge">dnf install packagename</code>;</li>
+  <li>remove: <code class="language-plaintext highlighter-rouge">dnf remove packagename</code>;</li>
+</ul>
+
+<p><em>More details refer to: <a href="https://dnf.readthedocs.io/en/latest/command_ref.html">DNF Command Reference</a></em>.</p>
+
+<h4 id="pacman"><a href="https://pacman.archlinux.page/">pacman</a></h4>
+<p>一款简单的 Linux 包管理器。</p>
+
+<p>Most Used Commands:</p>
+<ul>
+  <li>search: <code class="language-plaintext highlighter-rouge">sudo pacman -Ss keyword</code>;</li>
+  <li>install: <code class="language-plaintext highlighter-rouge">sudo pacman -S pkgname</code>;</li>
+  <li>remove: <code class="language-plaintext highlighter-rouge">sudo pacman -Rs package_name</code>;</li>
+</ul>
+
+<p><em>More details refer to: <a href="https://wiki.archlinux.org/title/Pacman#Usage">pacman usage</a></em>.</p>
+
+<h4 id="pip"><a href="https://pip.pypa.io/en/stable/">pip</a></h4>
+<p>pip is the package installer for <a href="https://www.python.org/">Python</a>. Alternatively, <a href="https://www.anaconda.com/">conda</a> is another popular package management tool.</p>
+
+<p>Most Used Commands:</p>
+<ul>
+  <li>search: <code class="language-plaintext highlighter-rouge">python -m pip search "key_word"</code>;</li>
+  <li>install: <code class="language-plaintext highlighter-rouge">python -m pip install SomePackage</code>;</li>
+  <li>uninstall: <code class="language-plaintext highlighter-rouge">python -m pip uninstall SomePackage</code>;</li>
+</ul>
+
+<p><em>More details refer to: <a href="https://pip.pypa.io/en/stable/user_guide/">pip User Guide</a></em>.</p>
+
+<h4 id="brew"><a href="https://brew.sh/">brew</a></h4>
+<p>Homebrew installs the stuff you need that Apple (or your Linux system) didn’t.</p>
+
+<p>Most Used Commands:</p>
+<ul>
+  <li>search: <code class="language-plaintext highlighter-rouge">brew search text</code>;</li>
+  <li>install: <code class="language-plaintext highlighter-rouge">brew install package_name</code>;</li>
+  <li>uninstall: <code class="language-plaintext highlighter-rouge">brew uninstall package_name</code>;</li>
+</ul>
+
+<p><em>More details refer to: <a href="https://docs.brew.sh/Manpage">brew command documatation</a></em>.</p>
+
+<p><strong>Shell learning and troubleshooting: <a href="https://explainshell.com/">explainshell</a></strong>.</p>
+
+<h3 id="command-line-basics">Command Line Basics</h3>
+<p>what is <a href="https://www.gnu.org/software/bash/">Bash</a></p>
+<ul>
+  <li>man: system manual pager;</li>
+  <li>ssh: Secure Shell;</li>
+  <li>ls: list all the files in your current working directory;</li>
+  <li>pwd: print current working directory;</li>
+  <li>cd: change working directory;</li>
+  <li>touch: create a file or change file timestamp;</li>
+  <li>echo: write arguments to standard output;</li>
+  <li>nano: simple and useful editor;</li>
+  <li><a href="https://www.vim.org/">vim</a>: Vi IMproved text editor;</li>
+  <li>cat: to see what’s inside a file real quickly;</li>
+  <li>mkdir: make a new directory;</li>
+  <li>cp: copy file to a target directory;</li>
+  <li>mv: move or rename a file;</li>
+  <li>rm: remove files or directories;</li>
+  <li>ln: make links to file;</li>
+  <li>clear: clear your terminal screen;</li>
+  <li>whoami: print effective userid;</li>
+  <li>useradd: create a new user or update default new user information;</li>
+  <li>sudo: execute a command as another user;</li>
+  <li>su: run a command with substitute user and group ID;</li>
+  <li>exit: exit the shell;</li>
+  <li>passwd: change user password;</li>
+  <li><a href="https://curl.se/">curl</a>: transfer data with url;</li>
+  <li>zip: package and compress (archive) files;</li>
+  <li>unzip: extract compressed files in a zip;</li>
+  <li>head: display first lines of a file;</li>
+  <li>tail: display the last part of a file;</li>
+  <li>diff: differential file and directory comparator;</li>
+  <li>sort: sort lines of text files;</li>
+  <li>find: search for files in a directory hierarchy;</li>
+  <li>chmod: change file modes or Access Control Lists;</li>
+  <li>chown: change file owner and group;</li>
+  <li>ifconfig: configure network interface parameters;</li>
+  <li>grep: file pattern searcher;</li>
+  <li><a href="https://www.gnu.org/software/gawk/manual/gawk.html">awk</a>: pattern-directed scanning and processing language;</li>
+  <li>ping: send ICMP ECHO_REQUEST packets to network hosts;</li>
+  <li>netstat: show network status;</li>
+  <li>iptables: administration tool for IPv4/IPv6 packet filtering and NAT</li>
+  <li>ufw: Uncomplicated Firewall for Ubuntu;</li>
+  <li>uname: display information about the system;</li>
+  <li>cal: displays a calendar and the date of Easter;</li>
+  <li>df: display free disk space;</li>
+  <li>ps: process status;</li>
+  <li>top: display sorted information about processes;</li>
+  <li>kill: terminate or signal a process;</li>
+  <li>pkill: find or signal processes by name;</li>
+  <li>history: command history;</li>
+  <li>reboot: stopping and restarting the system;</li>
+  <li>shutdown: close down the system at a given time;</li>
+</ul>
+
+<p>practical command line use cases on data science: <a href="https://jeroenjanssens.com/dsatcl/list-of-command-line-tools">Data Science at the Command Line</a>;</p>
+
+<p>learning the shell step by step: <a href="https://linuxcommand.org/lc3_writing_shell_scripts.php">Writing Shell Scripts</a>;</p>
+
+<p>To be continued…</p>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>
