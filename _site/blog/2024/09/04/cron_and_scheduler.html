@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Be a Good Data Engineer - Cron and Task Scheduler</title><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="thekingofcool&apos;s website" /><link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+  <link href="https://cdn.jsdelivr.net/gh/gangdong/gangdong.github.io@dev/assets/css/syntax_monokai.css" rel="stylesheet"/>
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><-</a><article>
+  <p class="post-meta">
+    <time datetime="2024-09-04 00:00:00 +0800">2024-09-04</time>
+  </p>
+  
+  <h1>Be a Good Data Engineer - Cron and Task Scheduler</h1>
+
+  <h3 id="background">Background</h3>
+<p>程序设计里，依据时间或者依赖其他任务、事件触发执行命令和脚本，是开发很重要的一部分。本文以类 Unix 系统最基础的 Crontab 和生产级任务调度器 Airflow 为例，整体梳理下任务调度这件事。</p>
+
+<h3 id="cron">Cron</h3>
+<p>Cron 是类 Unix 操作系统中一款基于时间的任务管理工具，可以通过 cron 在固定的时间、日期、间隔下，执行命令或运行脚本。</p>
+<ul>
+  <li>check if cron is installed: <code class="language-plaintext highlighter-rouge">dpkg -l cron</code>;</li>
+  <li>install cron: <code class="language-plaintext highlighter-rouge">apt-get install cron</code>;</li>
+  <li>verify the status of cron: <code class="language-plaintext highlighter-rouge">systemctl status cron</code> or <code class="language-plaintext highlighter-rouge">service cron status</code>;</li>
+  <li>start/stop cron service: <code class="language-plaintext highlighter-rouge">systemctl start/stop cron</code> or <code class="language-plaintext highlighter-rouge">service cron start/stop</code>;
+    <h4 id="use-case">Use Case</h4>
+    <p>Check Crontab use case, make sure you go through <code class="language-plaintext highlighter-rouge">man crontab</code>.</p>
+  </li>
+  <li>test your command line to schedule: <code class="language-plaintext highlighter-rouge">echo "Hello World manually at $(date)" &gt;&gt; $HOME/greetings_manual.txt</code>;</li>
+  <li>check result: <code class="language-plaintext highlighter-rouge">tail ~/greetings_manual.txt</code>;</li>
+  <li>install new crontab job, and choose vim editor: <code class="language-plaintext highlighter-rouge">crontab -e</code>;</li>
+  <li>add a line <code class="language-plaintext highlighter-rouge">* * * * * echo "Hello World automatically at $(date)" &gt;&gt; $HOME/greetings.txt"</code> to the end of the crontab file, save and exit the editor;</li>
+  <li>check result: <code class="language-plaintext highlighter-rouge">tail ~/greetings.txt</code>;</li>
+  <li>list all crontab jobs: <code class="language-plaintext highlighter-rouge">crontab -l</code>;</li>
+  <li>remove all crontab jobs created by current user: <code class="language-plaintext highlighter-rouge">crontab -r</code>.
+    <h4 id="syntax">Syntax</h4>
+    <p><code class="language-plaintext highlighter-rouge">* * * * * command to execute</code></p>
+  </li>
+  <li>First * stands for representing minutes [0-59];</li>
+  <li>Second * stands for representing hour[0-23];</li>
+  <li>Third * stands for representing day [0-31];</li>
+  <li>Fourth * stands for representing month[0-12];</li>
+  <li>Fifth * stands for representing a day of the week[0-6];</li>
+</ul>
+
+<p>You can check your cron schedule expressions at: <a href="https://crontab.guru/">Cronitor</a>.</p>
+
+<h3 id="apache-airflow">Apache Airflow</h3>
+<p><a href="https://airflow.apache.org/">Airflow</a> 是一款功能强大的开源工作流调度工具，除了内置的如bash、python、email等 <a href="https://airflow.apache.org/docs/apache-airflow/stable/operators-and-hooks-ref.html">Core Operators</a> 以外，还集成了大量第三方平台应用/软件的 <a href="https://airflow.apache.org/docs/apache-airflow-providers/operators-and-hooks-ref/index.html">Community Operators</a>，包含 Apache Software Foundation, Amazon Web Services, Microsoft Azure, Google, etc 相关服务的调度，并且能够监控任务的状态。</p>
+
+<h4 id="installation">installation</h4>
+<p>Only <code class="language-plaintext highlighter-rouge">pip</code> installation is currently officially supported.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">AIRFLOW_VERSION</span><span class="o">=</span>2.10.0
+
+<span class="nv">PYTHON_VERSION</span><span class="o">=</span><span class="s2">"</span><span class="si">$(</span>python3 <span class="nt">--version</span> | <span class="nb">cut</span> <span class="nt">-d</span> <span class="s2">" "</span> <span class="nt">-f</span> 2 | <span class="nb">cut</span> <span class="nt">-d</span> <span class="s2">"."</span> <span class="nt">-f</span> 1-2<span class="si">)</span><span class="s2">"</span>
+
+<span class="nv">CONSTRAINT_URL</span><span class="o">=</span><span class="s2">"https://raw.githubusercontent.com/apache/airflow/constraints-</span><span class="k">${</span><span class="nv">AIRFLOW_VERSION</span><span class="k">}</span><span class="s2">/constraints-</span><span class="k">${</span><span class="nv">PYTHON_VERSION</span><span class="k">}</span><span class="s2">.txt"</span>
+
+pip <span class="nb">install</span> <span class="s2">"apache-airflow==</span><span class="k">${</span><span class="nv">AIRFLOW_VERSION</span><span class="k">}</span><span class="s2">"</span> <span class="nt">--constraint</span> <span class="s2">"</span><span class="k">${</span><span class="nv">CONSTRAINT_URL</span><span class="k">}</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h4 id="init-airflow-database">init airflow database</h4>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>airflow db init
+</code></pre></div></div>
+
+<h4 id="create-a-user">create a user</h4>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>airflow <span class="nb">users </span>create <span class="se">\</span>
+<span class="nt">--username</span> thekingofcool <span class="se">\</span>
+<span class="nt">--firstname</span> bug <span class="se">\</span>
+<span class="nt">--lastname</span> hunter <span class="se">\</span>
+<span class="nt">--role</span> Admin <span class="se">\</span>
+<span class="nt">--email</span> sayhi@thekingof.cool
+</code></pre></div></div>
+
+<h4 id="start-airflow-scheduler-and-web-server">start airflow scheduler and web server</h4>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>airflow scheduler
+airflow webserver <span class="nt">--port</span> 8080
+</code></pre></div></div>
+
+<p>visit <a href="http://localhost:8080">localhost:8080</a> to check out the web page.</p>
+
+<h4 id="airflow-dag-file">airflow dag file</h4>
+<p>在 Airflow 配置文件中查看 dag 文件位置:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> ~/airflow/airflow.cfg | <span class="nb">grep </span>dags_folder
+</code></pre></div></div>
+<p>在该文件目录下编辑 dag 文件，重启 airflow scheduler。</p>
+
+<p>To be continued…</p>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>
