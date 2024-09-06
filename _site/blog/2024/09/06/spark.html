@@ -267,13 +267,13 @@ This is usually for local usage or as a client to connect to a cluster instead o
 </code></pre></div></div>
 
 <h3 id="spark-性能调优">Spark 性能调优</h3>
-<p>Spark 性能调优是一个复杂的过程，涉及多个方面，包括资源管理、数据分区、数据格式、数据压缩、数据缓存等。除了代码层面的优化，这是一些<a href="https://spark.apache.org/docs/latest/configuration.html">配置参数</a>，以下是一些常见的性能调优方法：</p>
+<p>Spark 性能调优是一个复杂的过程，除了代码层面的优化，这是一些<a href="https://spark.apache.org/docs/latest/configuration.html">配置参数</a>，以下是一些常见的性能调优方法：</p>
 
 <h4 id="资源管理">资源管理</h4>
 <ol>
-  <li><strong>调整资源分配</strong>: 根据集群的资源情况，合理分配 CPU、内存、磁盘和网络资源，确保每个任务都能获得足够的资源；</li>
+  <li><strong>调整资源分配</strong>: 根据集群的资源情况，<a href="https://spark.apache.org/docs/latest/configuration.html#application-properties">合理分配</a> CPU、内存、磁盘和网络资源，确保每个任务都能获得足够的资源；</li>
   <li><strong>设置资源预取</strong>: 在任务开始前，预先分配好所需的资源，减少任务启动时间；</li>
-  <li><strong>监控资源使用情况</strong>: 使用 <a href="https://spark.apache.org/docs/latest/monitoring.html">Spark 的监控工具</a>，如 Spark Web UI、Ganglia、Prometheus 等，监控集群的资源使用情况，及时发现并解决资源瓶颈。</li>
+  <li><strong>监控资源使用情况</strong>: 使用 Spark 的<a href="https://spark.apache.org/docs/latest/monitoring.html">监控工具</a>，如 Spark Web UI、Ganglia、Prometheus 等，监控集群的资源使用情况，及时发现并解决资源瓶颈。</li>
 </ol>
 
 <h4 id="数据分区">数据分区</h4>
@@ -285,16 +285,13 @@ This is usually for local usage or as a client to connect to a cluster instead o
 
 <h4 id="数据格式">数据格式</h4>
 <ol>
-  <li><strong>选择合适的数据格式</strong>: 根据数据的特点和业务需求，选择合适的数据格式，如 Parquet、ORC、Avro 等，减少数据存储和传输的开销；</li>
-  <li><strong>数据压缩</strong>: 使用数据压缩算法，如 Snappy、Gzip、LZO 等，减少数据存储和传输的开销；</li>
-  <li><strong>数据缓存</strong>: 合理设置数据缓存策略，减少数据读取和处理的开销。</li>
+  <li><strong>选择合适的数据格式</strong>: 根据数据的特点和业务需求，选择合适的数据格式，如 <a href="https://parquet.apache.org/">Parquet</a>、<a href="https://orc.apache.org/">ORC</a>、<a href="https://avro.apache.org/">Avro</a> 等，减少数据存储和传输的开销；</li>
+  <li><strong>数据压缩</strong>: 使用<a href="https://spark.apache.org/docs/latest/configuration.html#compression-and-serialization">数据压缩算法</a>，如 <a href="https://github.com/google/snappy">Snappy</a>、<a href="https://www.gnu.org/software/gzip/">Gzip</a>、<a href="https://www.oberhumer.com/opensource/lzo/">LZO</a> 等，减少数据存储和传输的开销。</li>
 </ol>
 
 <h4 id="数据缓存">数据缓存</h4>
 <ol>
-  <li><strong>合理设置缓存策略</strong>: 根据数据的特点和业务需求，合理设置缓存策略，减少数据读取和处理的开销；</li>
-  <li><strong>数据缓存</strong>: 合理设置数据缓存策略，减少数据读取和处理的开销；</li>
-  <li><strong>数据缓存</strong>: 合理设置数据缓存策略，减少数据读取和处理的开销。</li>
+  <li><strong>合理设置缓存策略</strong>: 根据数据的特点和业务需求，合理设置<a href="https://spark.apache.org/docs/latest/configuration.html#memory-management">缓存策略</a>，减少数据读取和处理的开销。</li>
 </ol>
 
 <p>To be continued…</p>
