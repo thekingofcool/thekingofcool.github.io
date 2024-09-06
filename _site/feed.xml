@@ -1,4 +1,283 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-04T22:16:59+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Be a Good Data Engineer - Cron and Task Scheduler</title><link href="http://localhost:4000/blog/2024/09/04/cron_and_scheduler.html" rel="alternate" type="text/html" title="Be a Good Data Engineer - Cron and Task Scheduler" /><published>2024-09-04T00:00:00+08:00</published><updated>2024-09-04T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/04/cron_and_scheduler</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/04/cron_and_scheduler.html"><![CDATA[<h3 id="background">Background</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-07T00:53:51+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Be a Good Data Engineer - Spark</title><link href="http://localhost:4000/blog/2024/09/06/spark.html" rel="alternate" type="text/html" title="Be a Good Data Engineer - Spark" /><published>2024-09-06T00:00:00+08:00</published><updated>2024-09-06T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/06/spark</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/06/spark.html"><![CDATA[<h3 id="background">Background</h3>
+<p>进入21世纪以来，随着互联网的发展，各类社交媒体，科技软件，传感器等工具一刻不停地生成着越来越多地数据。有一个说法是:</p>
+<blockquote>
+  <p>人类现有90%的数据来自于过去两年。</p>
+</blockquote>
+
+<p>这些数据不管是否得到了很好的利用，谁也不能否认它们可以带来的高价值，特别是现阶段以数据和能源作为养料的 artificial intelligence。</p>
+
+<p>大数据集对传统单机数据库造成了不小的麻烦，面对如何处理大量数据并从中洞见到有价值信息的需求，Google 三篇论文——<a href="https://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/gfs-sosp2003.pdf">Google File System</a> at 2003, <a href="https://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/mapreduce-osdi04.pdf">MapReduce</a> at 2004, <a href="https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf">Bigtable</a> at 2006 启发了无数贡献者，推出了一个又一个大数据开源项目，为人类掀开了大数据时代的巨幕。</p>
+
+<p>其中，受 Google File System 和 MapReduce 启发，yahoo 的一组工程师在 2006 年开源了 <a href="https://hadoop.apache.org/">Hadoop</a>， Hadoop 引入了两个技术，分布式存储 (HDFS) 和分布式计算 (MapReduce) ——将大文件切分成小块，分布保存在集群中的多个机器上，每个小块文件备份成多份以防某个节点出错导致文件丢失；处理计算任务时，也将任务分成多个单元，由多个 excutor 分别执行计算操作，再将结果合并在一起。</p>
+
+<p>这种处理方法利用大量廉价机器使得大数据计算得以实现。但由于其内在机制限制，大量的中间计算结果需要落地磁盘，过程中产生的 I/O 导致整个计算花费大量的时间。随着计算机硬件水平和成本的降低，Spark 作为一个内存计算引擎，凭借其更加高效的计算的优势逐渐取代了 MapReduce 的功能。</p>
+
+<h3 id="apache-spark">Apache Spark</h3>
+<h4 id="intro">Intro</h4>
+<p><a href="https://spark.apache.org/">Apache Spark</a> 是由加州大学伯克利分校的一些研究员在 2009 年推出的一个研究项目，目的就是为了解决 Hadoop 的上述限制。Spark 推出了一个 RDD(Resilient Distributed Dataset) 的概念，使数据得以数据集的形式存储在内存中，使得数据读取和处理都更加快速。</p>
+
+<h4 id="language">Language</h4>
+<p>Spark 源代码是由 Scala 语言编写，Spark 支持使用 Python, SQL, Scala, Java, R 语言编写程序。Python 由于其易用性、丰富的资源库以及 Data Science, Machine Learning 领域开发者的偏好，已经成为 Spark 主推的编程语言。下面的演示都以 Python 为例。</p>
+
+<h4 id="installation">Installation</h4>
+<p>Make sure java is installed on your system PATH, or the JAVA_HOME environment variable pointing to a Java installation.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>default-jre
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pyspark
+</code></pre></div></div>
+
+<h4 id="concepts">Concepts</h4>
+<h5 id="spark-任务的运行模式">Spark 任务的运行模式</h5>
+<ul>
+  <li>Local Mode: 单机运行，资源有限，适合用于手动调试；</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit word_count.py
+
+python word_count.py
+
+spark-submit <span class="nt">--master</span> <span class="nb">local</span><span class="o">[</span>4] word_count.py
+</code></pre></div></div>
+
+<ul>
+  <li>Cluster Mode: 提交任务到分布式集群运行，可以利用更高的计算性能，适用于生产环境；</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> cluster word_count.py
+
+spark-submit <span class="nt">--master</span> spark://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> cluster word_count.py
+
+spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> cluster word_count.py
+</code></pre></div></div>
+
+<ul>
+  <li>Client Mode: 任务的 Driver 在本地运行，实际计算任务分发到集群中的 Worker 节点运行，由于 Driver 在本地运行，可以方便地查看日志和调试信息；</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> client word_count.py
+
+spark-submit <span class="nt">--master</span> spark://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> client word_count.py
+
+spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> client word_count.py
+</code></pre></div></div>
+
+<h5 id="spark-资源管理器">Spark 资源管理器</h5>
+<p>Spark 资源管理器负责分配和调度集群资源(CPU, Memory, Disk, Network)</p>
+<ol>
+  <li><a href="https://spark.apache.org/docs/latest/spark-standalone.html">Standalone</a>: 默认的资源管理器；</li>
+  <li><a href="https://spark.apache.org/docs/latest/running-on-yarn.html">YARN</a>: 由 Hadoop 提供；</li>
+  <li><a href="https://spark.apache.org/docs/latest/running-on-mesos.html">Mesos</a>(Deprecated): 由 Apache Mesos 提供;</li>
+  <li><a href="https://spark.apache.org/docs/latest/running-on-kubernetes.html">Kubernetes</a>: 由 Kubernetes 提供</li>
+</ol>
+
+<p>Word Count Example</p>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PySpark is included in the official releases of Spark available in the Apache Spark website.
+For Python users, PySpark also provides pip installation from PyPI.
+This is usually for local usage or as a client to connect to a cluster instead of setting up a cluster itself.
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">from</span> <span class="n">pyspark.sql.functions</span> <span class="kn">import</span> <span class="n">explode</span><span class="p">,</span> <span class="n">split</span><span class="p">,</span> <span class="n">regexp_replace</span><span class="p">,</span> <span class="n">col</span>
+
+<span class="c1"># init SparkSession
+</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
+    <span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">WordCount</span><span class="sh">"</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">master</span><span class="p">(</span><span class="sh">"</span><span class="s">local</span><span class="sh">"</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
+
+<span class="c1"># read input file
+</span><span class="n">input_file</span> <span class="o">=</span> <span class="sh">"</span><span class="s">word_count.txt</span><span class="sh">"</span>
+<span class="n">text_file</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="nf">text</span><span class="p">(</span><span class="n">input_file</span><span class="p">)</span>
+
+<span class="c1"># calculate word frequency
+</span><span class="n">word_counts</span> <span class="o">=</span> <span class="n">text_file</span> \
+               <span class="p">.</span><span class="nf">withColumn</span><span class="p">(</span><span class="sh">"</span><span class="s">cleaned_value</span><span class="sh">"</span><span class="p">,</span> <span class="nf">regexp_replace</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">value</span><span class="sh">"</span><span class="p">),</span> <span class="sh">"</span><span class="s">[^\w\s]</span><span class="sh">"</span><span class="p">,</span> <span class="sh">""</span><span class="p">))</span> \
+               <span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="nf">explode</span><span class="p">(</span><span class="nf">split</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">cleaned_value</span><span class="sh">"</span><span class="p">),</span> <span class="sh">"</span><span class="s">\s+</span><span class="sh">"</span><span class="p">)).</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">word</span><span class="sh">"</span><span class="p">))</span> \
+               <span class="p">.</span><span class="nf">groupBy</span><span class="p">(</span><span class="sh">"</span><span class="s">word</span><span class="sh">"</span><span class="p">)</span> \
+               <span class="p">.</span><span class="nf">count</span><span class="p">()</span>
+
+<span class="c1"># save result to output file
+</span><span class="n">output_dir</span> <span class="o">=</span> <span class="sh">"</span><span class="s">word_count_output</span><span class="sh">"</span>
+<span class="n">word_counts</span><span class="p">.</span><span class="n">write</span><span class="p">.</span><span class="nf">csv</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="sh">"</span><span class="s">overwrite</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># stop SparkSession
+</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h4 id="usage-scenarios">Usage scenarios</h4>
+<h5 id="spark-sql">Spark SQL</h5>
+<p><a href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL</a> 是 Spark 用于处理结构化数据的模块，它提供了一个编程抽象，支持 SQL 查询、Dataframe API 和 Dataset API，而不需要了解底层分布式计算的细节。</p>
+
+<p>它与 <a href="https://spark.apache.org/docs/latest/rdd-programming-guide.html">RDD</a> 的不同在于：</p>
+<ol>
+  <li>RDD 提供了底层的 <a href="https://spark.apache.org/docs/latest/rdd-programming-guide.html#rdd-operations">RDD API</a>，用户需要编写更多的代码来进行数据处理，适合处理非结构化数据；Spark SQL 将数据抽象为 <a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html">Dataframe</a> 或 Dataset，提供了更高级的优化和执行策略；</li>
+  <li>RDD 类型安全，DataFrame API 是非类型安全的，Dataset API 提供了类型安全的操作；</li>
+  <li>Spark SQL 支持 <a href="https://spark.apache.org/docs/latest/sql-data-sources-hive-tables.html">Hive</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-avro.html">Avro</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-parquet.html">Parquet</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-orc.html">ORC</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-json.html">JSON</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html">JDBC</a> 等多种数据源，而 RDD 需要用户自己实现对不同数据源的支持；</li>
+</ol>
+
+<p>总的来说，Spark SQL 更适合处理结构化数据和需要高效查询优化的场景，而 RDD 更适合处理非结构化数据和需要自定义处理逻辑的场景。</p>
+
+<p>需要特别注意的是，Spark SQL 性能调优需要考虑的因素很多，包括数据倾斜、数据分区、数据格式、数据压缩、数据缓存等，根据实际情况参考 <a href="https://spark.apache.org/docs/latest/sql-performance-tuning.html">Spark SQL 性能调优</a> 进行调整。</p>
+
+<h5 id="pandas-api-on-spark">Pandas API on Spark</h5>
+<p><a href="https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_ps.html#">Pandas API on Spark</a> 是 Spark 提供的用于处理大规模数据集的 API，它提供了与 <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html">Pandas</a> 类似的 API，使得用户可以方便地将 Pandas 的代码迁移到 Spark 上运行。</p>
+
+<h5 id="mllib">MLlib</h5>
+<p><a href="https://spark.apache.org/docs/latest/ml-guide.html">MLlib</a> 是 Apache Spark 的机器学习库，提供了一系列用于构建和训练机器学习模型的工具和算法。MLlib 旨在简化机器学习的工作流程，并支持大规模数据集的处理。</p>
+
+<h6 id="features">Features</h6>
+<ol>
+  <li><strong>丰富的算法库</strong>: 包含分类、回归、聚类、协同过滤、降维等多种机器学习算法。</li>
+  <li><strong>数据处理</strong>: 提供数据预处理工具，如特征提取、转换和标准化，支持 DataFrame 和 RDD 数据结构。</li>
+  <li><strong>管道 API</strong>: 允许用户构建复杂的机器学习工作流，通过管道将多个处理步骤组合在一起。</li>
+  <li><strong>模型评估</strong>: 提供多种评估指标和交叉验证工具，帮助用户评估模型性能。</li>
+  <li><strong>分布式计算</strong>: 利用 Spark 的分布式计算能力，支持在大规模数据集上进行高效的模型训练和预测。</li>
+</ol>
+
+<h6 id="example">Example</h6>
+<p>以下是一个使用 MLlib 进行线性回归的简单示例：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">from</span> <span class="n">pyspark.ml.regression</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+
+<span class="c1"># Create SparkSession
+</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
+<span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">MLlibExample</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
+
+<span class="c1"># Load training data
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">libsvm</span><span class="sh">"</span><span class="p">).</span><span class="nf">load</span><span class="p">(</span><span class="sh">"</span><span class="s">data/mllib/sample_linear_regression_data.txt</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># Create Linear Regression model
+</span><span class="n">lr</span> <span class="o">=</span> <span class="nc">LinearRegression</span><span class="p">()</span>
+
+<span class="c1"># Fit the model
+</span><span class="n">lr_model</span> <span class="o">=</span> <span class="n">lr</span><span class="p">.</span><span class="nf">fit</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="c1">#Print the coefficients and intercept
+</span><span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Coefficients: </span><span class="si">{</span><span class="n">lr_model</span><span class="p">.</span><span class="n">coefficients</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Intercept: </span><span class="si">{</span><span class="n">lr_model</span><span class="p">.</span><span class="n">intercept</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># Stop SparkSession
+</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h5 id="graphx">GraphX</h5>
+<p><a href="https://spark.apache.org/docs/latest/graphx-programming-guide.html">GraphX</a> 是 Apache Spark 的图计算库，旨在处理大规模图数据。GraphX 提供了一个统一的 API，用于图的创建、操作和分析，支持图的并行计算。</p>
+
+<h6 id="features-1">Features</h6>
+<ol>
+  <li><strong>图表示</strong>: GraphX 使用边（Edge）和顶点（Vertex）来表示图，支持有向图和无向图。</li>
+  <li><strong>图计算</strong>: 提供了多种图算法，如 PageRank、连接组件、最短路径等，方便用户进行图分析。</li>
+  <li><strong>与 Spark 的集成</strong>: GraphX 可以与 Spark 的其他组件（如 Spark SQL 和 MLlib）无缝集成，支持复杂的数据处理和分析任务。</li>
+  <li><strong>灵活的 API</strong>: 提供了基于 RDD 的 API，用户可以使用 Scala、Java 和 Python 进行图计算。</li>
+</ol>
+
+<h6 id="example-1">Example</h6>
+<p>以下是一个使用 GraphX 计算 PageRank 的简单示例：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">from</span> <span class="n">pyspark.graphx</span> <span class="kn">import</span> <span class="n">GraphLoader</span>
+
+<span class="c1"># Create SparkSession
+</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
+<span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">GraphXExample</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
+
+<span class="c1"># Load graph data
+</span><span class="n">graph</span> <span class="o">=</span> <span class="n">GraphLoader</span><span class="p">.</span><span class="nf">edgeListFile</span><span class="p">(</span><span class="n">spark</span><span class="p">,</span> <span class="sh">"</span><span class="s">data/graphx/followers.txt</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># Compute PageRank
+</span><span class="n">ranks</span> <span class="o">=</span> <span class="n">graph</span><span class="p">.</span><span class="nf">pageRank</span><span class="p">(</span><span class="n">maxIter</span><span class="o">=</span><span class="mi">10</span><span class="p">).</span><span class="n">vertices</span>
+
+<span class="c1"># Print the results
+</span><span class="nf">print</span><span class="p">(</span><span class="n">ranks</span><span class="p">.</span><span class="nf">collect</span><span class="p">())</span>
+
+<span class="c1"># Stop SparkSession
+</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h5 id="structured-streaming">Structured Streaming</h5>
+<p><a href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html">Structured Streaming</a> 是 Spark 的流处理库，用于构建可扩展的流式数据处理应用程序。Structured Streaming 允许用户以批处理的方式处理流数据，同时保持了与批处理相同的编程模型。</p>
+
+<h6 id="features-2">Features</h6>
+<ol>
+  <li><strong>编程模型</strong>: 使用类似于批处理的编程模型来处理流数据，用户可以编写类似于批处理作业的代码来处理流数据。</li>
+  <li><strong>数据源</strong>: 支持多种数据源，如 Kafka、Socket、文件系统等，方便用户将现有数据迁移到流处理任务中。</li>
+  <li><strong>数据格式</strong>: 支持多种数据格式，如 CSV、JSON、Parquet 等，方便用户将现有数据迁移到流处理任务中。</li>
+  <li><strong>数据处理</strong>: 支持多种数据处理操作，如过滤、转换、聚合等，方便用户进行数据处理。</li>
+  <li><strong>数据输出</strong>: 支持多种数据输出方式，如 Kafka、Socket、文件系统等，方便用户将处理结果输出到外部系统。</li>
+</ol>
+
+<h6 id="example-2">Example</h6>
+<p>以下是一个使用 Structured Streaming 进行实时数据处理的简单示例：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">from</span> <span class="n">pyspark.sql.functions</span> <span class="kn">import</span> <span class="n">explode</span><span class="p">,</span> <span class="n">split</span>
+
+<span class="c1"># Create SparkSession
+</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
+<span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">StructuredStreamingExample</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
+
+<span class="c1"># Create DataFrame representing the stream of input data
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">spark</span> \
+<span class="p">.</span><span class="n">readStream</span> \
+<span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">socket</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">host</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">localhost</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">port</span><span class="sh">"</span><span class="p">,</span> <span class="mi">9999</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">load</span><span class="p">()</span>
+
+<span class="c1"># Split the lines into words    
+</span><span class="n">words</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="nf">explode</span><span class="p">(</span><span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s"> </span><span class="sh">"</span><span class="p">)).</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">word</span><span class="sh">"</span><span class="p">))</span>
+
+<span class="c1"># Count the occurrences of each word
+</span><span class="n">wordCounts</span> <span class="o">=</span> <span class="n">words</span><span class="p">.</span><span class="nf">groupBy</span><span class="p">(</span><span class="sh">"</span><span class="s">word</span><span class="sh">"</span><span class="p">).</span><span class="nf">count</span><span class="p">()</span>
+
+<span class="c1"># Start the query to stream the data
+</span><span class="n">query</span> <span class="o">=</span> <span class="n">wordCounts</span> \
+<span class="p">.</span><span class="n">writeStream</span> \
+<span class="p">.</span><span class="nf">outputMode</span><span class="p">(</span><span class="sh">"</span><span class="s">complete</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">console</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">start</span><span class="p">()</span>
+
+<span class="c1"># Wait for the query to finish
+</span><span class="n">query</span><span class="p">.</span><span class="nf">awaitTermination</span><span class="p">()</span>
+
+<span class="c1"># Stop SparkSession
+</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="spark-性能调优">Spark 性能调优</h3>
+<p>Spark 性能调优是一个复杂的过程，涉及多个方面，包括资源管理、数据分区、数据格式、数据压缩、数据缓存等。除了代码层面的优化，这是一些<a href="https://spark.apache.org/docs/latest/configuration.html">配置参数</a>，以下是一些常见的性能调优方法：</p>
+
+<h4 id="资源管理">资源管理</h4>
+<ol>
+  <li><strong>调整资源分配</strong>: 根据集群的资源情况，合理分配 CPU、内存、磁盘和网络资源，确保每个任务都能获得足够的资源；</li>
+  <li><strong>设置资源预取</strong>: 在任务开始前，预先分配好所需的资源，减少任务启动时间；</li>
+  <li><strong>监控资源使用情况</strong>: 使用 <a href="https://spark.apache.org/docs/latest/monitoring.html">Spark 的监控工具</a>，如 Spark Web UI、Ganglia、Prometheus 等，监控集群的资源使用情况，及时发现并解决资源瓶颈。</li>
+</ol>
+
+<h4 id="数据分区">数据分区</h4>
+<ol>
+  <li><strong>合理设置分区数</strong>: 根据数据量和集群的资源情况，合理设置分区数，减少数据倾斜和资源浪费；</li>
+  <li><strong>数据倾斜</strong>: 数据倾斜是指某些分区中的数据量远大于其他分区，导致某些任务运行时间过长，甚至导致任务失败。可以通过增加分区数、调整分区大小、使用随机分区等方式解决数据倾斜问题；</li>
+  <li><strong>数据预分区</strong>: 在数据加载时，根据业务需求和集群的资源情况，合理设置数据分区，减少数据倾斜和资源浪费。</li>
+</ol>
+
+<h4 id="数据格式">数据格式</h4>
+<ol>
+  <li><strong>选择合适的数据格式</strong>: 根据数据的特点和业务需求，选择合适的数据格式，如 Parquet、ORC、Avro 等，减少数据存储和传输的开销；</li>
+  <li><strong>数据压缩</strong>: 使用数据压缩算法，如 Snappy、Gzip、LZO 等，减少数据存储和传输的开销；</li>
+  <li><strong>数据缓存</strong>: 合理设置数据缓存策略，减少数据读取和处理的开销。</li>
+</ol>
+
+<h4 id="数据缓存">数据缓存</h4>
+<ol>
+  <li><strong>合理设置缓存策略</strong>: 根据数据的特点和业务需求，合理设置缓存策略，减少数据读取和处理的开销；</li>
+  <li><strong>数据缓存</strong>: 合理设置数据缓存策略，减少数据读取和处理的开销；</li>
+  <li><strong>数据缓存</strong>: 合理设置数据缓存策略，减少数据读取和处理的开销。</li>
+</ol>
+
+<p>To be continued…</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Background 进入21世纪以来，随着互联网的发展，各类社交媒体，科技软件，传感器等工具一刻不停地生成着越来越多地数据。有一个说法是: 人类现有90%的数据来自于过去两年。]]></summary></entry><entry><title type="html">Be a Good Data Engineer - Cron and Task Scheduler</title><link href="http://localhost:4000/blog/2024/09/04/cron_and_scheduler.html" rel="alternate" type="text/html" title="Be a Good Data Engineer - Cron and Task Scheduler" /><published>2024-09-04T00:00:00+08:00</published><updated>2024-09-04T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/04/cron_and_scheduler</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/04/cron_and_scheduler.html"><![CDATA[<h3 id="background">Background</h3>
 <p>程序设计里，依据时间或者依赖其他任务、事件触发执行命令和脚本，是开发很重要的一部分。本文以类 Unix 系统最基础的 Crontab 和生产级任务调度器 Airflow 为例，整体梳理下任务调度这件事。</p>
 
 <h3 id="cron">Cron</h3>
@@ -688,590 +967,4 @@ The diskpart process notifies you when the conversion completes.</li>
   <li>filetype: extension 限定结果的文件格式</li>
 </ol>
 
-<p>去信息源头获取一手信息，掌握最大化利用AI的能力。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[日常搜索需求主要包含：信息咨询；知识技能；素材文件；工具软件。 为什么搜 know something；learn something；create something；do something 搜什么 信息资讯：新闻、事件； 知识技能：概念、教程； 素材文件：图片、视频、文档； 工具软件：工具、插件。 去哪里搜 搜索效率：谷歌 &gt; 公众号 &gt; 短视频 &gt; 百度 怎么搜 “word” 限定关键词 intitle: word 限定标题关键词 allintitle: word1 word2 联合标题关键词 intext: word 限定文章内容关键词 site: website 限定网站 inurl: word 限定域名关键词 imagesize: width x length 限定图片尺寸 filetype: extension 限定结果的文件格式 去信息源头获取一手信息，掌握最大化利用AI的能力。]]></summary></entry><entry><title type="html">Markdown中文语法规范</title><link href="http://localhost:4000/blog/2024/03/28/markdown_guide.html" rel="alternate" type="text/html" title="Markdown中文语法规范" /><published>2024-03-28T00:00:00+08:00</published><updated>2024-03-28T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/03/28/markdown_guide</id><content type="html" xml:base="http://localhost:4000/blog/2024/03/28/markdown_guide.html"><![CDATA[<h1 id="标题">标题</h1>
-
-<h2 id="层级">层级</h2>
-
-<p>标题分为四级。</p>
-
-<ul>
-  <li>一级标题：文章的标题</li>
-  <li>二级标题：文章主要部分的大标题</li>
-  <li>三级标题：二级标题下面一级的小标题</li>
-  <li>四级标题：三级标题下面某一方面的小标题</li>
-</ul>
-
-<p>下面是示例。</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># 一级标题</span>
-
-<span class="gu">## 二级标题</span>
-
-<span class="gu">### 三级标题</span>
-
-<span class="gu">#### 四级标题</span>
-</code></pre></div></div>
-
-<h2 id="原则">原则</h2>
-
-<p>（1）一级标题下，不能直接出现三级标题。</p>
-
-<p>示例：下面的文章结构，缺少二级标题。</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># 一级标题</span>
-
-<span class="gu">### 三级标题</span>
-</code></pre></div></div>
-
-<p>（2）标题要避免孤立编号（即同级标题只有一个）。</p>
-
-<p>示例：下面的文章结构，<code class="language-plaintext highlighter-rouge">二级标题 A</code>只包含一个三级标题，完全可以省略<code class="language-plaintext highlighter-rouge">三级标题 A</code>。</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gu">## 二级标题 A</span>
-
-<span class="gu">### 三级标题 A</span>
-
-<span class="gu">## 二级标题 B</span>
-</code></pre></div></div>
-
-<p>（3）下级标题不重复上一级标题的名字。</p>
-
-<p>示例：下面的文章结构，二级标题与下属的三级标题同名，建议避免。</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gu">## 概述</span>
-
-<span class="gu">### 概述</span>
-</code></pre></div></div>
-
-<p>（4）谨慎使用四级标题，尽量避免出现，保持层级的简单，防止出现过于复杂的章节。</p>
-
-<p>如果三级标题下有并列性的内容，建议只使用项目列表（Item list）。</p>
-
-<p>示例：下面的结构二要好于结构一。结构一适用的场景，主要是较长篇幅的内容。</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>结构一
-
-<span class="gu">### 三级标题</span>
-
-<span class="gu">#### 四级标题 A</span>
-
-<span class="gu">#### 四级标题 B</span>
-
-<span class="gu">#### 四级标题 C</span>
-
-结构二
-
-<span class="gu">### 三级标题</span>
-
-<span class="gs">**（1）A**</span>
-
-<span class="gs">**（2）B**</span>
-
-<span class="gs">**（3）C**</span>
-</code></pre></div></div>
-
-<h1 id="文本">文本</h1>
-
-<h2 id="字间距">字间距</h2>
-
-<p>（1）全角中文字符与半角英文字符之间，应有一个半角空格。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：本文介绍如何快速启动Windows系统。
-
-正确：本文介绍如何快速启动 Windows 系统。
-</code></pre></div></div>
-
-<p>（2）全角中文字符与半角阿拉伯数字之间，有没有半角空格都可，但必须保证风格统一，不能两种风格混杂。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>正确：2011年5月15日，我订购了5台笔记本电脑与10台平板电脑。
-
-正确：2011 年 5 月 15 日，我订购了 5 台笔记本电脑与 10 台平板电脑。
-</code></pre></div></div>
-
-<p>半角的百分号，视同阿拉伯数字。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>正确：今年我国经济增长率是6.5%。
-
-正确：今年我国经济增长率是 6.5%。
-</code></pre></div></div>
-
-<p>（3）英文单位若不翻译，单位前的阿拉伯数字与单位符号之间，应留出适当的空隙。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>例1：一部容量为 16 GB 的智能手机
-
-例2：1 h = 60 min = 3,600 s
-</code></pre></div></div>
-
-<p>（4）半角英文字符和半角阿拉伯数字，与全角标点符号之间不留空格。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：他的电脑是 MacBook Air 。
-
-正确：他的电脑是 MacBook Air。
-</code></pre></div></div>
-
-<h2 id="句子">句子</h2>
-
-<p>（1）避免使用长句。</p>
-
-<p>不包含任何标点符号的单个句子，或者以逗号分隔的句子构件，长度尽量保持在 20 个字以内；20～29 个字的句子，可以接受；30～39 个字的句子，语义必须明确，才能接受；多于 40 个字的句子，任何情况下都不能接受。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：本产品适用于从由一台服务器进行动作控制的单一节点结构到由多台服务器进行动作控制的并行处理程序结构等多种体系结构。
-
-正确：本产品适用于多种体系结构。无论是由一台服务器（单一节点结构），还是由多台服务器（并行处理结构）进行动作控制，均可以使用本产品。
-</code></pre></div></div>
-
-<p>逗号分割的长句，总长度不应该超过 100 字或者正文的 3 行。</p>
-
-<p>（2）尽量使用简单句和并列句，避免使用复合句。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>并列句：他昨天生病了，没有参加会议。
-
-复合句：那个昨天生病的人没有参加会议。
-</code></pre></div></div>
-
-<p>（3）同样一个意思，尽量使用肯定句表达，不使用否定句表达。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：请确认没有接通装置的电源。
-
-正确：请确认装置的电源已关闭。
-</code></pre></div></div>
-
-<p>（4）避免使用双重否定句。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：没有删除权限的用户，不能删除此文件。
-
-正确：用户必须拥有删除权限，才能删除此文件。
-</code></pre></div></div>
-
-<h2 id="写作风格">写作风格</h2>
-
-<p>（1）尽量不使用被动语态，改为使用主动语态。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：假如此软件尚未被安装，
-
-正确：假如尚未安装这个软件，
-</code></pre></div></div>
-
-<p>（2）不使用非正式的语言风格。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：Lady Gaga 的演唱会真是酷毙了，从没看过这么给力的表演！！！
-
-正确：无法参加本次活动，我深感遗憾。
-</code></pre></div></div>
-
-<p>（3）不使用冷僻、生造或者文言文的词语，而要使用现代汉语的常用表达方式。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：这是唯二的快速启动的方法。
-
-正确：这是仅有的两种快速启动的方法。
-</code></pre></div></div>
-
-<p>（4）用对“的”、“地”、“得”。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>她露出了开心的笑容。
-（形容词＋的＋名词）
-
-她开心地笑了。
-（副词＋地＋动词）
-
-她笑得很开心。
-（动词＋得＋副词）
-</code></pre></div></div>
-
-<p>（5）使用代词时（比如“其”、“该”、“此”、“这”等词），必须明确指代的内容，保证只有一个含义。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：从管理系统可以监视中继系统和受其直接控制的分配系统。
-
-正确：从管理系统可以监视两个系统：中继系统和受中继系统直接控制的分配系统。
-</code></pre></div></div>
-
-<p>（6）名词前不要使用过多的形容词。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：此设备的使用必须在接受过本公司举办的正式的设备培训的技师的指导下进行。
-
-正确：此设备必须在技师的指导下使用，且指导技师必须接受过由本公司举办的正式设备培训。
-</code></pre></div></div>
-
-<h2 id="英文处理">英文处理</h2>
-
-<p>（1）英文原文如果使用了复数形式，翻译成中文时，应该将其还原为单数形式。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>英文：...information stored in random access memory (RAMs)...
-
-中文：⋯⋯存储在随机存取存储器（RAM）里的信息⋯⋯
-</code></pre></div></div>
-
-<p>（2）外文缩写可以使用半角圆点(<code class="language-plaintext highlighter-rouge">.</code>)表示缩写。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>U.S.A.
-Apple, Inc.
-</code></pre></div></div>
-
-<p>（3）表示中文时，英文省略号（<code class="language-plaintext highlighter-rouge">...</code>）应改为中文省略号（<code class="language-plaintext highlighter-rouge">⋯⋯</code>）。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>英文：5 minutes later...
-
-中文：5 分钟过去了⋯⋯
-</code></pre></div></div>
-
-<p>（4）英文书名或电影名改用中文表达时，双引号应改为书名号。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>英文：He published an article entitled "The Future of the Aviation".
-
-中文：他发表了一篇名为《航空业的未来》的文章。
-</code></pre></div></div>
-
-<p>（5）第一次出现英文词汇时，在括号中给出中文标注。此后再次出现时，直接使用英文缩写即可。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>IOC（International Olympic Committee，国际奥林匹克委员会）。这样定义后，便可以直接使用“IOC”了。
-</code></pre></div></div>
-
-<p>（6）专有名词中每个词第一个字母均应大写，非专有名词则不需要大写。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>“American Association of Physicists in Medicine”（美国医学物理学家协会）是专有名词，需要大写。
-
-“online transaction processing”（在线事务处理）不是专有名词，不应大写。
-</code></pre></div></div>
-<h1 id="段落">段落</h1>
-
-<h2 id="原则-1">原则</h2>
-
-<ul>
-  <li>一个段落只能有一个主题，或一个中心句子。</li>
-  <li>段落的中心句子放在段首，对全段内容进行概述。后面陈述的句子为中心句子服务。</li>
-  <li>一个段落的长度不能超过七行，最佳段落长度小于等于四行。</li>
-  <li>段落的句子语气要使用陈述和肯定语气，避免使用感叹语气。</li>
-  <li>段落之间使用一个空行隔开。</li>
-  <li>段落开头不要留出空白字符。</li>
-</ul>
-
-<h2 id="引用">引用</h2>
-
-<p>引用第三方内容时，应注明出处。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>One man’s constant is another man’s variable. — Alan Perlis
-</code></pre></div></div>
-
-<p>如果是全篇转载，请在全文开头显著位置注明作者和出处，并链接至原文。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>本文转载自 WikiQuote
-</code></pre></div></div>
-
-<p>使用外部图片时，必须在图片下方或文末标明来源。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>本文部分图片来自 Wikipedia
-</code></pre></div></div>
-<h1 id="数值">数值</h1>
-
-<h2 id="半角数字">半角数字</h2>
-
-<p>阿拉伯数字一律使用半角形式，不得使用全角形式。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：这件商品的价格是１０００元。
-
-正确：这件商品的价格是 1000 元。
-</code></pre></div></div>
-
-<h2 id="千分号">千分号</h2>
-
-<p>数值为千位以上，应添加千分号（半角逗号）。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>XXX 公司的实收资本为 ￥1,258,000 人民币。
-</code></pre></div></div>
-
-<p>对于 4 位的数值，千分号是选用的，比如<code class="language-plaintext highlighter-rouge">1000</code>和<code class="language-plaintext highlighter-rouge">1,000</code>都可以接受。对于 4 位以上的数值，应添加千分号。</p>
-
-<h2 id="货币">货币</h2>
-
-<p>货币应为阿拉伯数字，并在数字前写出货币符号，或在数字后写出货币中文名称。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$1,000
-1,000 美元
-</code></pre></div></div>
-
-<p>英文的货币名称，建议参考国际标准 <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a>。</p>
-
-<h2 id="数值范围">数值范围</h2>
-
-<p>表示数值范围时，用波浪线（<code class="language-plaintext highlighter-rouge">～</code>）或一字线（<code class="language-plaintext highlighter-rouge">—</code>）连接。参见《标点符号》一节的“连接号”部分。</p>
-
-<p>带有单位或百分号时，两个数字建议都要加上单位或百分号。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>132 kg～234 kg
-
-67%～89%
-</code></pre></div></div>
-
-<h2 id="变化程度的表示法">变化程度的表示法</h2>
-
-<p>数字的增加要使用“增加了”、“增加到”。“了”表示增量，“到”表示定量。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>增加到过去的两倍
-（过去为一，现在为二）
-
-增加了两倍
-（过去为一，现在为三）
-</code></pre></div></div>
-
-<p>数字的减少要使用“降低了”、“降低到”。“了”表示增量，“到”表示定量。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>降低到百分之八十
-（定额是一百，现在是八十）
-
-降低了百分之八十
-（原来是一百，现在是二十）
-</code></pre></div></div>
-
-<p>不能用“降低 N 倍”或“减少 N 倍”的表示法，要用“降低百分之几”或“减少百分之几”。因为减少（或降低）一倍表示数值原来为一百，现在等于零。</p>
-
-<h1 id="标点符号">标点符号</h1>
-
-<h2 id="原则-2">原则</h2>
-
-<p>（1）中文语句的标点符号，均应该采取全角符号，这样可以与全角文字保持视觉的一致。</p>
-
-<p>（2）如果整句为英文，则该句使用英文/半角标点。</p>
-
-<p>（3）句号、问号、叹号、逗号、顿号、分号和冒号不得出现在一行之首。</p>
-
-<p>（4）点号（句号、逗号、顿号、分号、冒号）不得出现在标题的末尾，而标号（引号、括号、破折号、省略号、书名号、着重号、间隔号、叹号、问号）可以。</p>
-
-<h2 id="句号">句号</h2>
-
-<p>（1）中文语句的结尾处应该用全角句号（<code class="language-plaintext highlighter-rouge">。</code>）。</p>
-
-<p>（2）句子末尾用括号加注时，句号应在括号之外。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：关于文件的输出，请参照第 1.3 节（见第 26 页。）
-
-正确：关于文件的输出，请参照第 1.3 节（见第 26 页）。
-</code></pre></div></div>
-
-<h2 id="逗号">逗号</h2>
-
-<p>（1）逗号（<code class="language-plaintext highlighter-rouge">，</code>）表示句子内部的一般性停顿。</p>
-
-<p>（2）注意避免“一逗到底”，即整个段落除了结尾，全部停顿都使用逗号。</p>
-
-<h2 id="顿号">顿号</h2>
-
-<p>（1）句子内部的并列词，应该用全角顿号(<code class="language-plaintext highlighter-rouge">、</code>) 分隔，而不用逗号，即使并列词是英语也是如此。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：我最欣赏的科技公司有 Google, Facebook, 腾讯, 阿里和百度等。
-
-正确：我最欣赏的科技公司有 Google、Facebook、腾讯、阿里和百度等。
-</code></pre></div></div>
-
-<p>（2）英文句子中，并列词语之间使用半角逗号（<code class="language-plaintext highlighter-rouge">,</code>）分隔。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>例句：Microsoft Office includes Word, Excel, PowerPoint, Outlook and other components.
-</code></pre></div></div>
-
-<p>（3）中文句子内部的并列词，最后一个尽量使用（<code class="language-plaintext highlighter-rouge">和</code>）来连接，使句子读起来更加连贯，下面两个句子都可以，第二个更优。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>正确：我最欣赏的科技公司有 Google、Facebook、腾讯、阿里，以及百度等。
-
-正确：我最欣赏的科技公司有 Google、Facebook、腾讯、阿里和百度等。
-</code></pre></div></div>
-
-<h2 id="分号">分号</h2>
-
-<p>（1）分号（<code class="language-plaintext highlighter-rouge">；</code>）表示复句内部并列分句之间的停顿。</p>
-
-<h2 id="引号">引号</h2>
-
-<p>（1）引用时，应该使用全角双引号（<code class="language-plaintext highlighter-rouge">“ ”</code>），注意前后双引号不同。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>例句：许多人都认为客户服务的核心是“友好”和“专业”。
-</code></pre></div></div>
-
-<p>（2）引号里面还要用引号时，外面一层用双引号，里面一层用单引号（<code class="language-plaintext highlighter-rouge">‘ ’</code>），注意前后单引号不同。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>例句：鲍勃解释道：“我要放音乐，可萨利说，‘不行！’。”
-</code></pre></div></div>
-
-<h2 id="括号">括号</h2>
-
-<p>（1）补充说明时，使用全角圆括号（<code class="language-plaintext highlighter-rouge">（）</code>），括号前后不加空格。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>例句：请确认所有的连接（电缆和接插件）均安装牢固。
-</code></pre></div></div>
-
-<p>（2）几种括号的中英文名称。</p>
-
-<table>
-  <thead>
-    <tr>
-      <th> </th>
-      <th style="text-align: center">英文</th>
-      <th style="text-align: center">中文</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">{ }</code></td>
-      <td style="text-align: center">braces 或 curly brackets</td>
-      <td style="text-align: center">大括号</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">[ ]</code></td>
-      <td style="text-align: center">square brackets 或 brackets</td>
-      <td style="text-align: center">方括号</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt; &gt;</code></td>
-      <td style="text-align: center">angled brackets</td>
-      <td style="text-align: center">尖括号</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">( )</code></td>
-      <td style="text-align: center">parentheses</td>
-      <td style="text-align: center">圆括号</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="冒号">冒号</h2>
-
-<p>（1）全角冒号（<code class="language-plaintext highlighter-rouge">：</code>）常用在需要解释的词语后边，引出解释和说明。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>例句：请确认以下几项内容：时间、地点、活动名称和来宾数量。
-</code></pre></div></div>
-
-<p>（2）表示时间时，应使用半角冒号（<code class="language-plaintext highlighter-rouge">:</code>）。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>例句：早上 8:00
-</code></pre></div></div>
-
-<h2 id="省略号">省略号</h2>
-
-<p>（1）省略号（<code class="language-plaintext highlighter-rouge">⋯⋯</code>）表示语句未完、或者语气的不连续。</p>
-
-<p>（2）省略号占两个汉字空间、包含六个省略点，不要使用<code class="language-plaintext highlighter-rouge">。。。</code>或<code class="language-plaintext highlighter-rouge">...</code>等非标准形式。</p>
-
-<p>（3）省略号不应与“等”这个词一起使用。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：我们为会餐准备了香蕉、苹果、梨…等各色水果。
-
-正确：我们为会餐准备了各色水果，有香蕉、苹果、梨⋯⋯
-
-正确：我们为会餐准备了香蕉、苹果、梨等各色水果。
-</code></pre></div></div>
-
-<h2 id="感叹号">感叹号</h2>
-
-<p>（1）应该使用平静的语气叙述，尽量避免使用感叹号（<code class="language-plaintext highlighter-rouge">！</code>）。</p>
-
-<p>（2）不得多个感叹号连用，比如<code class="language-plaintext highlighter-rouge">！！</code>和<code class="language-plaintext highlighter-rouge">!!!</code>。</p>
-
-<h2 id="破折号">破折号</h2>
-
-<p>（1）破折号<code class="language-plaintext highlighter-rouge">————</code>一般用于进一步解释。</p>
-
-<p>（2）破折号应占两个汉字的位置。如果破折号本身只占一个汉字的位置，那么前后应该留出一个半角空格。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>例句：直觉————尽管它并不总是可靠的————告诉我，这事可能出了些问题。
-
-例句：直觉 —— 尽管它并不总是可靠的 —— 告诉我，这事可能出了些问题。
-</code></pre></div></div>
-
-<h2 id="连接号">连接号</h2>
-
-<p>（1）连接号用于连接两个类似的词。</p>
-
-<p>（2）以下场合应该使用直线连接号（<code class="language-plaintext highlighter-rouge">-</code>），占一个半角字符的位置。</p>
-
-<ul>
-  <li>两个名词的复合</li>
-  <li>图表编号</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>例句：氧化-还原反应
-
-例句：图 1-1
-</code></pre></div></div>
-
-<p>（3）数值范围（例如日期、时间或数字）应该使用波浪连接号（<code class="language-plaintext highlighter-rouge">～</code>）或一字号（<code class="language-plaintext highlighter-rouge">—</code>），占一个全角字符的位置。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>例句：2009 年～2011 年
-</code></pre></div></div>
-
-<p>注意，波浪连接号前后两个值都建议加上单位。</p>
-
-<p>（4）波浪连接号也可以用汉字“至”代替。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>例句：周围温度：-20 °C 至 -10 °C
-</code></pre></div></div>
-
-<h1 id="文档体系">文档体系</h1>
-
-<h2 id="结构">结构</h2>
-
-<p>软件手册是一部完整的书，建议采用下面的结构。</p>
-
-<ul>
-  <li><strong>简介</strong>（Introduction）：[必备] [文件] 提供对产品和文档本身的总体的、扼要的说明</li>
-  <li><strong>快速上手</strong>（Getting Started）：[可选] [文件] 如何最快速地使用产品</li>
-  <li><strong>入门篇</strong>（Basics）：[必备] [目录] 又称“使用篇”，提供初级的使用教程
-    <ul>
-      <li><strong>环境准备</strong>（Prerequisite）：[必备] [文件] 软件使用需要满足的前置条件</li>
-      <li><strong>安装</strong>（Installation）：[可选] [文件] 软件的安装方法</li>
-      <li><strong>设置</strong>（Configuration）：[必备] [文件] 软件的设置</li>
-    </ul>
-  </li>
-  <li><strong>进阶篇</strong>（Advanced)：[可选] [目录] 又称“开发篇”，提供中高级的开发教程</li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td><strong>API</strong>（Reference）：[可选] [目录</td>
-          <td>文件] 软件 API 的逐一介绍</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li><strong>FAQ</strong>：[可选] [文件] 常见问题解答</li>
-  <li><strong>附录</strong>（Appendix）：[可选] [目录] 不属于教程本身、但对阅读教程有帮助的内容
-    <ul>
-      <li><strong>Glossary</strong>：[可选] [文件] 名词解释</li>
-      <li><strong>Recipes</strong>：[可选] [文件] 最佳实践</li>
-      <li><strong>Troubleshooting</strong>：[可选] [文件] 故障处理</li>
-      <li><strong>ChangeLog</strong>：[可选] [文件] 版本说明</li>
-      <li><strong>Feedback</strong>：[可选] [文件] 反馈方式</li>
-    </ul>
-  </li>
-</ul>
-
-<p>下面是两个真实范例，可参考。</p>
-
-<ul>
-  <li><a href="https://redux.js.org/introduction/getting-started">Redux 手册</a></li>
-  <li><a href="http://flight-manual.atom.io/">Atom 手册</a></li>
-</ul>
-
-<h2 id="文件名">文件名</h2>
-
-<p>文档的文件名不得含有空格。</p>
-
-<p>文件名必须使用半角字符，不得使用全角字符。这也意味着，中文不能用于文件名。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：名词解释.md
-
-正确：glossary.md
-</code></pre></div></div>
-
-<p>文件名建议只使用小写字母，不使用大写字母。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>错误：TroubleShooting.md
-
-正确：troubleshooting.md
-</code></pre></div></div>
-
-<p>为了醒目，某些说明文件的文件名，可以使用大写字母，比如<code class="language-plaintext highlighter-rouge">README</code>、<code class="language-plaintext highlighter-rouge">LICENSE</code>。</p>
-
-<p>文件名包含多个单词时，单词之间建议使用半角的连词线（<code class="language-plaintext highlighter-rouge">-</code>）分隔。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>不佳：advanced_usage.md
-
-正确：advanced-usage.md
-</code></pre></div></div>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[标题 层级 标题分为四级。 一级标题：文章的标题 二级标题：文章主要部分的大标题 三级标题：二级标题下面一级的小标题 四级标题：三级标题下面某一方面的小标题 下面是示例。 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 原则 （1）一级标题下，不能直接出现三级标题。 示例：下面的文章结构，缺少二级标题。 # 一级标题 ### 三级标题 （2）标题要避免孤立编号（即同级标题只有一个）。 示例：下面的文章结构，二级标题 A只包含一个三级标题，完全可以省略三级标题 A。 ## 二级标题 A ### 三级标题 A ## 二级标题 B （3）下级标题不重复上一级标题的名字。 示例：下面的文章结构，二级标题与下属的三级标题同名，建议避免。 ## 概述 ### 概述 （4）谨慎使用四级标题，尽量避免出现，保持层级的简单，防止出现过于复杂的章节。 如果三级标题下有并列性的内容，建议只使用项目列表（Item list）。 示例：下面的结构二要好于结构一。结构一适用的场景，主要是较长篇幅的内容。 结构一 ### 三级标题 #### 四级标题 A #### 四级标题 B #### 四级标题 C 结构二 ### 三级标题 **（1）A** **（2）B** **（3）C** 文本 字间距 （1）全角中文字符与半角英文字符之间，应有一个半角空格。 错误：本文介绍如何快速启动Windows系统。 正确：本文介绍如何快速启动 Windows 系统。 （2）全角中文字符与半角阿拉伯数字之间，有没有半角空格都可，但必须保证风格统一，不能两种风格混杂。 正确：2011年5月15日，我订购了5台笔记本电脑与10台平板电脑。 正确：2011 年 5 月 15 日，我订购了 5 台笔记本电脑与 10 台平板电脑。 半角的百分号，视同阿拉伯数字。 正确：今年我国经济增长率是6.5%。 正确：今年我国经济增长率是 6.5%。 （3）英文单位若不翻译，单位前的阿拉伯数字与单位符号之间，应留出适当的空隙。 例1：一部容量为 16 GB 的智能手机 例2：1 h = 60 min = 3,600 s （4）半角英文字符和半角阿拉伯数字，与全角标点符号之间不留空格。 错误：他的电脑是 MacBook Air 。 正确：他的电脑是 MacBook Air。 句子 （1）避免使用长句。 不包含任何标点符号的单个句子，或者以逗号分隔的句子构件，长度尽量保持在 20 个字以内；20～29 个字的句子，可以接受；30～39 个字的句子，语义必须明确，才能接受；多于 40 个字的句子，任何情况下都不能接受。 错误：本产品适用于从由一台服务器进行动作控制的单一节点结构到由多台服务器进行动作控制的并行处理程序结构等多种体系结构。 正确：本产品适用于多种体系结构。无论是由一台服务器（单一节点结构），还是由多台服务器（并行处理结构）进行动作控制，均可以使用本产品。 逗号分割的长句，总长度不应该超过 100 字或者正文的 3 行。 （2）尽量使用简单句和并列句，避免使用复合句。 并列句：他昨天生病了，没有参加会议。 复合句：那个昨天生病的人没有参加会议。 （3）同样一个意思，尽量使用肯定句表达，不使用否定句表达。 错误：请确认没有接通装置的电源。 正确：请确认装置的电源已关闭。 （4）避免使用双重否定句。 错误：没有删除权限的用户，不能删除此文件。 正确：用户必须拥有删除权限，才能删除此文件。 写作风格 （1）尽量不使用被动语态，改为使用主动语态。 错误：假如此软件尚未被安装， 正确：假如尚未安装这个软件， （2）不使用非正式的语言风格。 错误：Lady Gaga 的演唱会真是酷毙了，从没看过这么给力的表演！！！ 正确：无法参加本次活动，我深感遗憾。 （3）不使用冷僻、生造或者文言文的词语，而要使用现代汉语的常用表达方式。 错误：这是唯二的快速启动的方法。 正确：这是仅有的两种快速启动的方法。 （4）用对“的”、“地”、“得”。 她露出了开心的笑容。 （形容词＋的＋名词） 她开心地笑了。 （副词＋地＋动词） 她笑得很开心。 （动词＋得＋副词） （5）使用代词时（比如“其”、“该”、“此”、“这”等词），必须明确指代的内容，保证只有一个含义。 错误：从管理系统可以监视中继系统和受其直接控制的分配系统。 正确：从管理系统可以监视两个系统：中继系统和受中继系统直接控制的分配系统。 （6）名词前不要使用过多的形容词。 错误：此设备的使用必须在接受过本公司举办的正式的设备培训的技师的指导下进行。 正确：此设备必须在技师的指导下使用，且指导技师必须接受过由本公司举办的正式设备培训。 英文处理 （1）英文原文如果使用了复数形式，翻译成中文时，应该将其还原为单数形式。 英文：...information stored in random access memory (RAMs)... 中文：⋯⋯存储在随机存取存储器（RAM）里的信息⋯⋯ （2）外文缩写可以使用半角圆点(.)表示缩写。 U.S.A. Apple, Inc. （3）表示中文时，英文省略号（...）应改为中文省略号（⋯⋯）。 英文：5 minutes later... 中文：5 分钟过去了⋯⋯ （4）英文书名或电影名改用中文表达时，双引号应改为书名号。 英文：He published an article entitled "The Future of the Aviation". 中文：他发表了一篇名为《航空业的未来》的文章。 （5）第一次出现英文词汇时，在括号中给出中文标注。此后再次出现时，直接使用英文缩写即可。 IOC（International Olympic Committee，国际奥林匹克委员会）。这样定义后，便可以直接使用“IOC”了。 （6）专有名词中每个词第一个字母均应大写，非专有名词则不需要大写。 “American Association of Physicists in Medicine”（美国医学物理学家协会）是专有名词，需要大写。 “online transaction processing”（在线事务处理）不是专有名词，不应大写。 段落 原则 一个段落只能有一个主题，或一个中心句子。 段落的中心句子放在段首，对全段内容进行概述。后面陈述的句子为中心句子服务。 一个段落的长度不能超过七行，最佳段落长度小于等于四行。 段落的句子语气要使用陈述和肯定语气，避免使用感叹语气。 段落之间使用一个空行隔开。 段落开头不要留出空白字符。 引用 引用第三方内容时，应注明出处。 One man’s constant is another man’s variable. — Alan Perlis 如果是全篇转载，请在全文开头显著位置注明作者和出处，并链接至原文。 本文转载自 WikiQuote 使用外部图片时，必须在图片下方或文末标明来源。 本文部分图片来自 Wikipedia 数值 半角数字 阿拉伯数字一律使用半角形式，不得使用全角形式。 错误：这件商品的价格是１０００元。 正确：这件商品的价格是 1000 元。 千分号 数值为千位以上，应添加千分号（半角逗号）。 XXX 公司的实收资本为 ￥1,258,000 人民币。 对于 4 位的数值，千分号是选用的，比如1000和1,000都可以接受。对于 4 位以上的数值，应添加千分号。 货币 货币应为阿拉伯数字，并在数字前写出货币符号，或在数字后写出货币中文名称。 $1,000 1,000 美元 英文的货币名称，建议参考国际标准 ISO 4217。 数值范围 表示数值范围时，用波浪线（～）或一字线（—）连接。参见《标点符号》一节的“连接号”部分。 带有单位或百分号时，两个数字建议都要加上单位或百分号。 132 kg～234 kg 67%～89% 变化程度的表示法 数字的增加要使用“增加了”、“增加到”。“了”表示增量，“到”表示定量。 增加到过去的两倍 （过去为一，现在为二） 增加了两倍 （过去为一，现在为三） 数字的减少要使用“降低了”、“降低到”。“了”表示增量，“到”表示定量。 降低到百分之八十 （定额是一百，现在是八十） 降低了百分之八十 （原来是一百，现在是二十） 不能用“降低 N 倍”或“减少 N 倍”的表示法，要用“降低百分之几”或“减少百分之几”。因为减少（或降低）一倍表示数值原来为一百，现在等于零。 标点符号 原则 （1）中文语句的标点符号，均应该采取全角符号，这样可以与全角文字保持视觉的一致。 （2）如果整句为英文，则该句使用英文/半角标点。 （3）句号、问号、叹号、逗号、顿号、分号和冒号不得出现在一行之首。 （4）点号（句号、逗号、顿号、分号、冒号）不得出现在标题的末尾，而标号（引号、括号、破折号、省略号、书名号、着重号、间隔号、叹号、问号）可以。 句号 （1）中文语句的结尾处应该用全角句号（。）。 （2）句子末尾用括号加注时，句号应在括号之外。 错误：关于文件的输出，请参照第 1.3 节（见第 26 页。） 正确：关于文件的输出，请参照第 1.3 节（见第 26 页）。 逗号 （1）逗号（，）表示句子内部的一般性停顿。 （2）注意避免“一逗到底”，即整个段落除了结尾，全部停顿都使用逗号。 顿号 （1）句子内部的并列词，应该用全角顿号(、) 分隔，而不用逗号，即使并列词是英语也是如此。 错误：我最欣赏的科技公司有 Google, Facebook, 腾讯, 阿里和百度等。 正确：我最欣赏的科技公司有 Google、Facebook、腾讯、阿里和百度等。 （2）英文句子中，并列词语之间使用半角逗号（,）分隔。 例句：Microsoft Office includes Word, Excel, PowerPoint, Outlook and other components. （3）中文句子内部的并列词，最后一个尽量使用（和）来连接，使句子读起来更加连贯，下面两个句子都可以，第二个更优。 正确：我最欣赏的科技公司有 Google、Facebook、腾讯、阿里，以及百度等。 正确：我最欣赏的科技公司有 Google、Facebook、腾讯、阿里和百度等。 分号 （1）分号（；）表示复句内部并列分句之间的停顿。 引号 （1）引用时，应该使用全角双引号（“ ”），注意前后双引号不同。 例句：许多人都认为客户服务的核心是“友好”和“专业”。 （2）引号里面还要用引号时，外面一层用双引号，里面一层用单引号（‘ ’），注意前后单引号不同。 例句：鲍勃解释道：“我要放音乐，可萨利说，‘不行！’。” 括号 （1）补充说明时，使用全角圆括号（（）），括号前后不加空格。 例句：请确认所有的连接（电缆和接插件）均安装牢固。 （2）几种括号的中英文名称。   英文 中文 { } braces 或 curly brackets 大括号 [ ] square brackets 或 brackets 方括号 &lt; &gt; angled brackets 尖括号 ( ) parentheses 圆括号 冒号 （1）全角冒号（：）常用在需要解释的词语后边，引出解释和说明。 例句：请确认以下几项内容：时间、地点、活动名称和来宾数量。 （2）表示时间时，应使用半角冒号（:）。 例句：早上 8:00 省略号 （1）省略号（⋯⋯）表示语句未完、或者语气的不连续。 （2）省略号占两个汉字空间、包含六个省略点，不要使用。。。或...等非标准形式。 （3）省略号不应与“等”这个词一起使用。 错误：我们为会餐准备了香蕉、苹果、梨…等各色水果。 正确：我们为会餐准备了各色水果，有香蕉、苹果、梨⋯⋯ 正确：我们为会餐准备了香蕉、苹果、梨等各色水果。 感叹号 （1）应该使用平静的语气叙述，尽量避免使用感叹号（！）。 （2）不得多个感叹号连用，比如！！和!!!。 破折号 （1）破折号————一般用于进一步解释。 （2）破折号应占两个汉字的位置。如果破折号本身只占一个汉字的位置，那么前后应该留出一个半角空格。 例句：直觉————尽管它并不总是可靠的————告诉我，这事可能出了些问题。 例句：直觉 —— 尽管它并不总是可靠的 —— 告诉我，这事可能出了些问题。 连接号 （1）连接号用于连接两个类似的词。 （2）以下场合应该使用直线连接号（-），占一个半角字符的位置。 两个名词的复合 图表编号 例句：氧化-还原反应 例句：图 1-1 （3）数值范围（例如日期、时间或数字）应该使用波浪连接号（～）或一字号（—），占一个全角字符的位置。 例句：2009 年～2011 年 注意，波浪连接号前后两个值都建议加上单位。 （4）波浪连接号也可以用汉字“至”代替。 例句：周围温度：-20 °C 至 -10 °C 文档体系 结构 软件手册是一部完整的书，建议采用下面的结构。 简介（Introduction）：[必备] [文件] 提供对产品和文档本身的总体的、扼要的说明 快速上手（Getting Started）：[可选] [文件] 如何最快速地使用产品 入门篇（Basics）：[必备] [目录] 又称“使用篇”，提供初级的使用教程 环境准备（Prerequisite）：[必备] [文件] 软件使用需要满足的前置条件 安装（Installation）：[可选] [文件] 软件的安装方法 设置（Configuration）：[必备] [文件] 软件的设置 进阶篇（Advanced)：[可选] [目录] 又称“开发篇”，提供中高级的开发教程 API（Reference）：[可选] [目录 文件] 软件 API 的逐一介绍 FAQ：[可选] [文件] 常见问题解答 附录（Appendix）：[可选] [目录] 不属于教程本身、但对阅读教程有帮助的内容 Glossary：[可选] [文件] 名词解释 Recipes：[可选] [文件] 最佳实践 Troubleshooting：[可选] [文件] 故障处理 ChangeLog：[可选] [文件] 版本说明 Feedback：[可选] [文件] 反馈方式 下面是两个真实范例，可参考。 Redux 手册 Atom 手册 文件名 文档的文件名不得含有空格。 文件名必须使用半角字符，不得使用全角字符。这也意味着，中文不能用于文件名。 错误：名词解释.md 正确：glossary.md 文件名建议只使用小写字母，不使用大写字母。 错误：TroubleShooting.md 正确：troubleshooting.md 为了醒目，某些说明文件的文件名，可以使用大写字母，比如README、LICENSE。 文件名包含多个单词时，单词之间建议使用半角的连词线（-）分隔。 不佳：advanced_usage.md 正确：advanced-usage.md]]></summary></entry></feed>
+<p>去信息源头获取一手信息，掌握最大化利用AI的能力。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[日常搜索需求主要包含：信息咨询；知识技能；素材文件；工具软件。 为什么搜 know something；learn something；create something；do something 搜什么 信息资讯：新闻、事件； 知识技能：概念、教程； 素材文件：图片、视频、文档； 工具软件：工具、插件。 去哪里搜 搜索效率：谷歌 &gt; 公众号 &gt; 短视频 &gt; 百度 怎么搜 “word” 限定关键词 intitle: word 限定标题关键词 allintitle: word1 word2 联合标题关键词 intext: word 限定文章内容关键词 site: website 限定网站 inurl: word 限定域名关键词 imagesize: width x length 限定图片尺寸 filetype: extension 限定结果的文件格式 去信息源头获取一手信息，掌握最大化利用AI的能力。]]></summary></entry></feed>

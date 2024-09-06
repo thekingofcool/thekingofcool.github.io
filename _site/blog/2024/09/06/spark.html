@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Be a Good Data Engineer - Spark</title><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="thekingofcool&apos;s website" /><link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+  <link href="https://cdn.jsdelivr.net/gh/gangdong/gangdong.github.io@dev/assets/css/syntax_monokai.css" rel="stylesheet"/>
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><-</a><article>
+  <p class="post-meta">
+    <time datetime="2024-09-06 00:00:00 +0800">2024-09-06</time>
+  </p>
+  
+  <h1>Be a Good Data Engineer - Spark</h1>
+
+  <h3 id="background">Background</h3>
+<p>进入21世纪以来，随着互联网的发展，各类社交媒体，科技软件，传感器等工具一刻不停地生成着越来越多地数据。有一个说法是:</p>
+<blockquote>
+  <p>人类现有90%的数据来自于过去两年。</p>
+</blockquote>
+
+<p>这些数据不管是否得到了很好的利用，谁也不能否认它们可以带来的高价值，特别是现阶段以数据和能源作为养料的 artificial intelligence。</p>
+
+<p>大数据集对传统单机数据库造成了不小的麻烦，面对如何处理大量数据并从中洞见到有价值信息的需求，Google 三篇论文——<a href="https://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/gfs-sosp2003.pdf">Google File System</a> at 2003, <a href="https://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/mapreduce-osdi04.pdf">MapReduce</a> at 2004, <a href="https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf">Bigtable</a> at 2006 启发了无数贡献者，推出了一个又一个大数据开源项目，为人类掀开了大数据时代的巨幕。</p>
+
+<p>其中，受 Google File System 和 MapReduce 启发，yahoo 的一组工程师在 2006 年开源了 <a href="https://hadoop.apache.org/">Hadoop</a>， Hadoop 引入了两个技术，分布式存储 (HDFS) 和分布式计算 (MapReduce) ——将大文件切分成小块，分布保存在集群中的多个机器上，每个小块文件备份成多份以防某个节点出错导致文件丢失；处理计算任务时，也将任务分成多个单元，由多个 excutor 分别执行计算操作，再将结果合并在一起。</p>
+
+<p>这种处理方法利用大量廉价机器使得大数据计算得以实现。但由于其内在机制限制，大量的中间计算结果需要落地磁盘，过程中产生的 I/O 导致整个计算花费大量的时间。随着计算机硬件水平和成本的降低，Spark 作为一个内存计算引擎，凭借其更加高效的计算的优势逐渐取代了 MapReduce 的功能。</p>
+
+<h3 id="apache-spark">Apache Spark</h3>
+<h4 id="intro">Intro</h4>
+<p><a href="https://spark.apache.org/">Apache Spark</a> 是由加州大学伯克利分校的一些研究员在 2009 年推出的一个研究项目，目的就是为了解决 Hadoop 的上述限制。Spark 推出了一个 RDD(Resilient Distributed Dataset) 的概念，使数据得以数据集的形式存储在内存中，使得数据读取和处理都更加快速。</p>
+
+<h4 id="language">Language</h4>
+<p>Spark 源代码是由 Scala 语言编写，Spark 支持使用 Python, SQL, Scala, Java, R 语言编写程序。Python 由于其易用性、丰富的资源库以及 Data Science, Machine Learning 领域开发者的偏好，已经成为 Spark 主推的编程语言。下面的演示都以 Python 为例。</p>
+
+<h4 id="installation">Installation</h4>
+<p>Make sure java is installed on your system PATH, or the JAVA_HOME environment variable pointing to a Java installation.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>default-jre
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pyspark
+</code></pre></div></div>
+
+<h4 id="concepts">Concepts</h4>
+<h5 id="spark-任务的运行模式">Spark 任务的运行模式</h5>
+<ul>
+  <li>Local Mode: 单机运行，资源有限，适合用于手动调试；</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit word_count.py
+
+python word_count.py
+
+spark-submit <span class="nt">--master</span> <span class="nb">local</span><span class="o">[</span>4] word_count.py
+</code></pre></div></div>
+
+<ul>
+  <li>Cluster Mode: 提交任务到分布式集群运行，可以利用更高的计算性能，适用于生产环境；</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> cluster word_count.py
+
+spark-submit <span class="nt">--master</span> spark://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> cluster word_count.py
+
+spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> cluster word_count.py
+</code></pre></div></div>
+
+<ul>
+  <li>Client Mode: 任务的 Driver 在本地运行，实际计算任务分发到集群中的 Worker 节点运行，由于 Driver 在本地运行，可以方便地查看日志和调试信息；</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> client word_count.py
+
+spark-submit <span class="nt">--master</span> spark://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> client word_count.py
+
+spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> client word_count.py
+</code></pre></div></div>
+
+<h5 id="spark-资源管理器">Spark 资源管理器</h5>
+<p>Spark 资源管理器负责分配和调度集群资源(CPU, Memory, Disk, Network)</p>
+<ol>
+  <li><a href="https://spark.apache.org/docs/latest/spark-standalone.html">Standalone</a>: 默认的资源管理器；</li>
+  <li><a href="https://spark.apache.org/docs/latest/running-on-yarn.html">YARN</a>: 由 Hadoop 提供；</li>
+  <li><a href="https://spark.apache.org/docs/latest/running-on-mesos.html">Mesos</a>(Deprecated): 由 Apache Mesos 提供;</li>
+  <li><a href="https://spark.apache.org/docs/latest/running-on-kubernetes.html">Kubernetes</a>: 由 Kubernetes 提供</li>
+</ol>
+
+<p>Word Count Example</p>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PySpark is included in the official releases of Spark available in the Apache Spark website.
+For Python users, PySpark also provides pip installation from PyPI.
+This is usually for local usage or as a client to connect to a cluster instead of setting up a cluster itself.
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">from</span> <span class="n">pyspark.sql.functions</span> <span class="kn">import</span> <span class="n">explode</span><span class="p">,</span> <span class="n">split</span><span class="p">,</span> <span class="n">regexp_replace</span><span class="p">,</span> <span class="n">col</span>
+
+<span class="c1"># init SparkSession
+</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
+    <span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">WordCount</span><span class="sh">"</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">master</span><span class="p">(</span><span class="sh">"</span><span class="s">local</span><span class="sh">"</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
+
+<span class="c1"># read input file
+</span><span class="n">input_file</span> <span class="o">=</span> <span class="sh">"</span><span class="s">word_count.txt</span><span class="sh">"</span>
+<span class="n">text_file</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="nf">text</span><span class="p">(</span><span class="n">input_file</span><span class="p">)</span>
+
+<span class="c1"># calculate word frequency
+</span><span class="n">word_counts</span> <span class="o">=</span> <span class="n">text_file</span> \
+               <span class="p">.</span><span class="nf">withColumn</span><span class="p">(</span><span class="sh">"</span><span class="s">cleaned_value</span><span class="sh">"</span><span class="p">,</span> <span class="nf">regexp_replace</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">value</span><span class="sh">"</span><span class="p">),</span> <span class="sh">"</span><span class="s">[^\w\s]</span><span class="sh">"</span><span class="p">,</span> <span class="sh">""</span><span class="p">))</span> \
+               <span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="nf">explode</span><span class="p">(</span><span class="nf">split</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">cleaned_value</span><span class="sh">"</span><span class="p">),</span> <span class="sh">"</span><span class="s">\s+</span><span class="sh">"</span><span class="p">)).</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">word</span><span class="sh">"</span><span class="p">))</span> \
+               <span class="p">.</span><span class="nf">groupBy</span><span class="p">(</span><span class="sh">"</span><span class="s">word</span><span class="sh">"</span><span class="p">)</span> \
+               <span class="p">.</span><span class="nf">count</span><span class="p">()</span>
+
+<span class="c1"># save result to output file
+</span><span class="n">output_dir</span> <span class="o">=</span> <span class="sh">"</span><span class="s">word_count_output</span><span class="sh">"</span>
+<span class="n">word_counts</span><span class="p">.</span><span class="n">write</span><span class="p">.</span><span class="nf">csv</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="sh">"</span><span class="s">overwrite</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># stop SparkSession
+</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h4 id="usage-scenarios">Usage scenarios</h4>
+<h5 id="spark-sql">Spark SQL</h5>
+<p><a href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL</a> 是 Spark 用于处理结构化数据的模块，它提供了一个编程抽象，支持 SQL 查询、Dataframe API 和 Dataset API，而不需要了解底层分布式计算的细节。</p>
+
+<p>它与 <a href="https://spark.apache.org/docs/latest/rdd-programming-guide.html">RDD</a> 的不同在于：</p>
+<ol>
+  <li>RDD 提供了底层的 <a href="https://spark.apache.org/docs/latest/rdd-programming-guide.html#rdd-operations">RDD API</a>，用户需要编写更多的代码来进行数据处理，适合处理非结构化数据；Spark SQL 将数据抽象为 <a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html">Dataframe</a> 或 Dataset，提供了更高级的优化和执行策略；</li>
+  <li>RDD 类型安全，DataFrame API 是非类型安全的，Dataset API 提供了类型安全的操作；</li>
+  <li>Spark SQL 支持 <a href="https://spark.apache.org/docs/latest/sql-data-sources-hive-tables.html">Hive</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-avro.html">Avro</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-parquet.html">Parquet</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-orc.html">ORC</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-json.html">JSON</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html">JDBC</a> 等多种数据源，而 RDD 需要用户自己实现对不同数据源的支持；</li>
+</ol>
+
+<p>总的来说，Spark SQL 更适合处理结构化数据和需要高效查询优化的场景，而 RDD 更适合处理非结构化数据和需要自定义处理逻辑的场景。</p>
+
+<p>需要特别注意的是，Spark SQL 性能调优需要考虑的因素很多，包括数据倾斜、数据分区、数据格式、数据压缩、数据缓存等，根据实际情况参考 <a href="https://spark.apache.org/docs/latest/sql-performance-tuning.html">Spark SQL 性能调优</a> 进行调整。</p>
+
+<h5 id="pandas-api-on-spark">Pandas API on Spark</h5>
+<p><a href="https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_ps.html#">Pandas API on Spark</a> 是 Spark 提供的用于处理大规模数据集的 API，它提供了与 <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html">Pandas</a> 类似的 API，使得用户可以方便地将 Pandas 的代码迁移到 Spark 上运行。</p>
+
+<h5 id="mllib">MLlib</h5>
+<p><a href="https://spark.apache.org/docs/latest/ml-guide.html">MLlib</a> 是 Apache Spark 的机器学习库，提供了一系列用于构建和训练机器学习模型的工具和算法。MLlib 旨在简化机器学习的工作流程，并支持大规模数据集的处理。</p>
+
+<h6 id="features">Features</h6>
+<ol>
+  <li><strong>丰富的算法库</strong>: 包含分类、回归、聚类、协同过滤、降维等多种机器学习算法。</li>
+  <li><strong>数据处理</strong>: 提供数据预处理工具，如特征提取、转换和标准化，支持 DataFrame 和 RDD 数据结构。</li>
+  <li><strong>管道 API</strong>: 允许用户构建复杂的机器学习工作流，通过管道将多个处理步骤组合在一起。</li>
+  <li><strong>模型评估</strong>: 提供多种评估指标和交叉验证工具，帮助用户评估模型性能。</li>
+  <li><strong>分布式计算</strong>: 利用 Spark 的分布式计算能力，支持在大规模数据集上进行高效的模型训练和预测。</li>
+</ol>
+
+<h6 id="example">Example</h6>
+<p>以下是一个使用 MLlib 进行线性回归的简单示例：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">from</span> <span class="n">pyspark.ml.regression</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+
+<span class="c1"># Create SparkSession
+</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
+<span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">MLlibExample</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
+
+<span class="c1"># Load training data
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">libsvm</span><span class="sh">"</span><span class="p">).</span><span class="nf">load</span><span class="p">(</span><span class="sh">"</span><span class="s">data/mllib/sample_linear_regression_data.txt</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># Create Linear Regression model
+</span><span class="n">lr</span> <span class="o">=</span> <span class="nc">LinearRegression</span><span class="p">()</span>
+
+<span class="c1"># Fit the model
+</span><span class="n">lr_model</span> <span class="o">=</span> <span class="n">lr</span><span class="p">.</span><span class="nf">fit</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="c1">#Print the coefficients and intercept
+</span><span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Coefficients: </span><span class="si">{</span><span class="n">lr_model</span><span class="p">.</span><span class="n">coefficients</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Intercept: </span><span class="si">{</span><span class="n">lr_model</span><span class="p">.</span><span class="n">intercept</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># Stop SparkSession
+</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h5 id="graphx">GraphX</h5>
+<p><a href="https://spark.apache.org/docs/latest/graphx-programming-guide.html">GraphX</a> 是 Apache Spark 的图计算库，旨在处理大规模图数据。GraphX 提供了一个统一的 API，用于图的创建、操作和分析，支持图的并行计算。</p>
+
+<h6 id="features-1">Features</h6>
+<ol>
+  <li><strong>图表示</strong>: GraphX 使用边（Edge）和顶点（Vertex）来表示图，支持有向图和无向图。</li>
+  <li><strong>图计算</strong>: 提供了多种图算法，如 PageRank、连接组件、最短路径等，方便用户进行图分析。</li>
+  <li><strong>与 Spark 的集成</strong>: GraphX 可以与 Spark 的其他组件（如 Spark SQL 和 MLlib）无缝集成，支持复杂的数据处理和分析任务。</li>
+  <li><strong>灵活的 API</strong>: 提供了基于 RDD 的 API，用户可以使用 Scala、Java 和 Python 进行图计算。</li>
+</ol>
+
+<h6 id="example-1">Example</h6>
+<p>以下是一个使用 GraphX 计算 PageRank 的简单示例：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">from</span> <span class="n">pyspark.graphx</span> <span class="kn">import</span> <span class="n">GraphLoader</span>
+
+<span class="c1"># Create SparkSession
+</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
+<span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">GraphXExample</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
+
+<span class="c1"># Load graph data
+</span><span class="n">graph</span> <span class="o">=</span> <span class="n">GraphLoader</span><span class="p">.</span><span class="nf">edgeListFile</span><span class="p">(</span><span class="n">spark</span><span class="p">,</span> <span class="sh">"</span><span class="s">data/graphx/followers.txt</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># Compute PageRank
+</span><span class="n">ranks</span> <span class="o">=</span> <span class="n">graph</span><span class="p">.</span><span class="nf">pageRank</span><span class="p">(</span><span class="n">maxIter</span><span class="o">=</span><span class="mi">10</span><span class="p">).</span><span class="n">vertices</span>
+
+<span class="c1"># Print the results
+</span><span class="nf">print</span><span class="p">(</span><span class="n">ranks</span><span class="p">.</span><span class="nf">collect</span><span class="p">())</span>
+
+<span class="c1"># Stop SparkSession
+</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h5 id="structured-streaming">Structured Streaming</h5>
+<p><a href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html">Structured Streaming</a> 是 Spark 的流处理库，用于构建可扩展的流式数据处理应用程序。Structured Streaming 允许用户以批处理的方式处理流数据，同时保持了与批处理相同的编程模型。</p>
+
+<h6 id="features-2">Features</h6>
+<ol>
+  <li><strong>编程模型</strong>: 使用类似于批处理的编程模型来处理流数据，用户可以编写类似于批处理作业的代码来处理流数据。</li>
+  <li><strong>数据源</strong>: 支持多种数据源，如 Kafka、Socket、文件系统等，方便用户将现有数据迁移到流处理任务中。</li>
+  <li><strong>数据格式</strong>: 支持多种数据格式，如 CSV、JSON、Parquet 等，方便用户将现有数据迁移到流处理任务中。</li>
+  <li><strong>数据处理</strong>: 支持多种数据处理操作，如过滤、转换、聚合等，方便用户进行数据处理。</li>
+  <li><strong>数据输出</strong>: 支持多种数据输出方式，如 Kafka、Socket、文件系统等，方便用户将处理结果输出到外部系统。</li>
+</ol>
+
+<h6 id="example-2">Example</h6>
+<p>以下是一个使用 Structured Streaming 进行实时数据处理的简单示例：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">from</span> <span class="n">pyspark.sql.functions</span> <span class="kn">import</span> <span class="n">explode</span><span class="p">,</span> <span class="n">split</span>
+
+<span class="c1"># Create SparkSession
+</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
+<span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">StructuredStreamingExample</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
+
+<span class="c1"># Create DataFrame representing the stream of input data
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">spark</span> \
+<span class="p">.</span><span class="n">readStream</span> \
+<span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">socket</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">host</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">localhost</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">port</span><span class="sh">"</span><span class="p">,</span> <span class="mi">9999</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">load</span><span class="p">()</span>
+
+<span class="c1"># Split the lines into words    
+</span><span class="n">words</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="nf">explode</span><span class="p">(</span><span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s"> </span><span class="sh">"</span><span class="p">)).</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">word</span><span class="sh">"</span><span class="p">))</span>
+
+<span class="c1"># Count the occurrences of each word
+</span><span class="n">wordCounts</span> <span class="o">=</span> <span class="n">words</span><span class="p">.</span><span class="nf">groupBy</span><span class="p">(</span><span class="sh">"</span><span class="s">word</span><span class="sh">"</span><span class="p">).</span><span class="nf">count</span><span class="p">()</span>
+
+<span class="c1"># Start the query to stream the data
+</span><span class="n">query</span> <span class="o">=</span> <span class="n">wordCounts</span> \
+<span class="p">.</span><span class="n">writeStream</span> \
+<span class="p">.</span><span class="nf">outputMode</span><span class="p">(</span><span class="sh">"</span><span class="s">complete</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">console</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">start</span><span class="p">()</span>
+
+<span class="c1"># Wait for the query to finish
+</span><span class="n">query</span><span class="p">.</span><span class="nf">awaitTermination</span><span class="p">()</span>
+
+<span class="c1"># Stop SparkSession
+</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="spark-性能调优">Spark 性能调优</h3>
+<p>Spark 性能调优是一个复杂的过程，涉及多个方面，包括资源管理、数据分区、数据格式、数据压缩、数据缓存等。除了代码层面的优化，这是一些<a href="https://spark.apache.org/docs/latest/configuration.html">配置参数</a>，以下是一些常见的性能调优方法：</p>
+
+<h4 id="资源管理">资源管理</h4>
+<ol>
+  <li><strong>调整资源分配</strong>: 根据集群的资源情况，合理分配 CPU、内存、磁盘和网络资源，确保每个任务都能获得足够的资源；</li>
+  <li><strong>设置资源预取</strong>: 在任务开始前，预先分配好所需的资源，减少任务启动时间；</li>
+  <li><strong>监控资源使用情况</strong>: 使用 <a href="https://spark.apache.org/docs/latest/monitoring.html">Spark 的监控工具</a>，如 Spark Web UI、Ganglia、Prometheus 等，监控集群的资源使用情况，及时发现并解决资源瓶颈。</li>
+</ol>
+
+<h4 id="数据分区">数据分区</h4>
+<ol>
+  <li><strong>合理设置分区数</strong>: 根据数据量和集群的资源情况，合理设置分区数，减少数据倾斜和资源浪费；</li>
+  <li><strong>数据倾斜</strong>: 数据倾斜是指某些分区中的数据量远大于其他分区，导致某些任务运行时间过长，甚至导致任务失败。可以通过增加分区数、调整分区大小、使用随机分区等方式解决数据倾斜问题；</li>
+  <li><strong>数据预分区</strong>: 在数据加载时，根据业务需求和集群的资源情况，合理设置数据分区，减少数据倾斜和资源浪费。</li>
+</ol>
+
+<h4 id="数据格式">数据格式</h4>
+<ol>
+  <li><strong>选择合适的数据格式</strong>: 根据数据的特点和业务需求，选择合适的数据格式，如 Parquet、ORC、Avro 等，减少数据存储和传输的开销；</li>
+  <li><strong>数据压缩</strong>: 使用数据压缩算法，如 Snappy、Gzip、LZO 等，减少数据存储和传输的开销；</li>
+  <li><strong>数据缓存</strong>: 合理设置数据缓存策略，减少数据读取和处理的开销。</li>
+</ol>
+
+<h4 id="数据缓存">数据缓存</h4>
+<ol>
+  <li><strong>合理设置缓存策略</strong>: 根据数据的特点和业务需求，合理设置缓存策略，减少数据读取和处理的开销；</li>
+  <li><strong>数据缓存</strong>: 合理设置数据缓存策略，减少数据读取和处理的开销；</li>
+  <li><strong>数据缓存</strong>: 合理设置数据缓存策略，减少数据读取和处理的开销。</li>
+</ol>
+
+<p>To be continued…</p>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>
