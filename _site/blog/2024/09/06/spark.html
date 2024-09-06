@@ -37,7 +37,7 @@
 <p><a href="https://spark.apache.org/">Apache Spark</a> 是由加州大学伯克利分校的一些研究员在 2009 年推出的一个研究项目，目的就是为了解决 Hadoop 的上述限制。Spark 推出了一个 RDD(Resilient Distributed Dataset) 的概念，使数据得以数据集的形式存储在内存中，使得数据读取和处理都更加快速。</p>
 
 <h4 id="language">Language</h4>
-<p>Spark 源代码是由 Scala 语言编写，Spark 支持使用 Python, SQL, Scala, Java, R 语言编写程序。Python 由于其易用性、丰富的资源库以及 Data Science, Machine Learning 领域开发者的偏好，已经成为 Spark 主推的编程语言。下面的演示都以 Python 为例。</p>
+<p>Spark 源码是由 Scala 语言编写，但提供了 Python, Scala, Java, R 的 API 接口进行编程。Python 由于其易用性、丰富的资源库以及和 Data Science, Machine Learning 的紧密结合，其已经成为 Spark 主推的编程语言。下面的演示都以 Python 为例。</p>
 
 <h4 id="installation">Installation</h4>
 <p>Make sure java is installed on your system PATH, or the JAVA_HOME environment variable pointing to a Java installation.</p>
@@ -47,51 +47,7 @@
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pyspark
 </code></pre></div></div>
 
-<h4 id="concepts">Concepts</h4>
-<h5 id="spark-任务的运行模式">Spark 任务的运行模式</h5>
-<ul>
-  <li>Local Mode: 单机运行，资源有限，适合用于手动调试；</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit word_count.py
-
-python word_count.py
-
-spark-submit <span class="nt">--master</span> <span class="nb">local</span><span class="o">[</span>4] word_count.py
-</code></pre></div></div>
-
-<ul>
-  <li>Cluster Mode: 提交任务到分布式集群运行，可以利用更高的计算性能，适用于生产环境；</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> cluster word_count.py
-
-spark-submit <span class="nt">--master</span> spark://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> cluster word_count.py
-
-spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> cluster word_count.py
-</code></pre></div></div>
-
-<ul>
-  <li>Client Mode: 任务的 Driver 在本地运行，实际计算任务分发到集群中的 Worker 节点运行，由于 Driver 在本地运行，可以方便地查看日志和调试信息；</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> client word_count.py
-
-spark-submit <span class="nt">--master</span> spark://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> client word_count.py
-
-spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> client word_count.py
-</code></pre></div></div>
-
-<h5 id="spark-资源管理器">Spark 资源管理器</h5>
-<p>Spark 资源管理器负责分配和调度集群资源(CPU, Memory, Disk, Network)</p>
-<ol>
-  <li><a href="https://spark.apache.org/docs/latest/spark-standalone.html">Standalone</a>: 默认的资源管理器；</li>
-  <li><a href="https://spark.apache.org/docs/latest/running-on-yarn.html">YARN</a>: 由 Hadoop 提供；</li>
-  <li><a href="https://spark.apache.org/docs/latest/running-on-mesos.html">Mesos</a>(Deprecated): 由 Apache Mesos 提供;</li>
-  <li><a href="https://spark.apache.org/docs/latest/running-on-kubernetes.html">Kubernetes</a>: 由 Kubernetes 提供</li>
-</ol>
-
-<p>Word Count Example</p>
+<h4 id="word-count-example">Word Count Example</h4>
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PySpark is included in the official releases of Spark available in the Apache Spark website.
 For Python users, PySpark also provides pip installation from PyPI.
 This is usually for local usage or as a client to connect to a cluster instead of setting up a cluster itself.
@@ -124,6 +80,50 @@ This is usually for local usage or as a client to connect to a cluster instead o
 <span class="c1"># stop SparkSession
 </span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
 </code></pre></div></div>
+
+<h4 id="concepts">Concepts</h4>
+<h5 id="spark-任务的运行模式">Spark 任务的运行模式</h5>
+<ul>
+  <li>Local Mode: 单机运行，资源有限，适合用于手动调试；</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit word_count.py
+
+python word_count.py
+
+spark-submit <span class="nt">--master</span> <span class="nb">local</span><span class="o">[</span><span class="k">*</span><span class="o">]</span> word_count.py
+</code></pre></div></div>
+
+<ul>
+  <li>Client Mode: 任务的 Driver 在本地运行，实际计算任务分发到集群中的 Worker 节点运行，由于 Driver 在本地运行，可以方便地查看日志和调试信息；</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> client word_count.py
+
+spark-submit <span class="nt">--master</span> spark://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> client word_count.py
+
+spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> client word_count.py
+</code></pre></div></div>
+
+<ul>
+  <li>Cluster Mode: 提交任务到分布式集群运行，可以利用更高的计算性能，适用于生产环境；</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> cluster word_count.py
+
+spark-submit <span class="nt">--master</span> spark://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> cluster word_count.py
+
+spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> cluster word_count.py
+</code></pre></div></div>
+
+<h5 id="spark-资源管理器">Spark 资源管理器</h5>
+<p>Spark 资源管理器负责分配和调度集群资源(CPU, Memory, Disk, Network)</p>
+<ol>
+  <li><a href="https://spark.apache.org/docs/latest/spark-standalone.html">Standalone</a>: 默认的资源管理器；</li>
+  <li><a href="https://spark.apache.org/docs/latest/running-on-yarn.html">YARN</a>: 由 Hadoop 提供；</li>
+  <li><a href="https://spark.apache.org/docs/latest/running-on-mesos.html">Mesos</a>(Deprecated): 由 Apache Mesos 提供;</li>
+  <li><a href="https://spark.apache.org/docs/latest/running-on-kubernetes.html">Kubernetes</a>: 由 Kubernetes 提供</li>
+</ol>
 
 <h4 id="usage-scenarios">Usage scenarios</h4>
 <h5 id="spark-sql">Spark SQL</h5>
