@@ -278,11 +278,11 @@ wget https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.9.0/commo
 </code></pre></div>    </div>
   </li>
   <li>启动 zookeeper
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zookeeper-server-start /opt/homebrew/etc/kafka/zookeeper.properties
 </code></pre></div>    </div>
   </li>
   <li>启动 kafka
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kafka-server-start /usr/local/etc/kafka/server.properties
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kafka-server-start /opt/homebrew/etc/kafka/server.properties
 </code></pre></div>    </div>
   </li>
   <li>创建 topic
@@ -301,11 +301,12 @@ wget https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.9.0/commo
 
 <p><strong>2. 代码实现</strong></p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
-<span class="kn">from</span> <span class="n">pyspark.sql.functions</span> <span class="kn">import</span> <span class="n">explode</span><span class="p">,</span> <span class="n">split</span>
+<span class="kn">from</span> <span class="n">pyspark.sql.functions</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="c1"># Create SparkSession
 </span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
 <span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">StructuredStreamingExample</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">config</span><span class="p">(</span><span class="sh">"</span><span class="s">spark.sql.streaming.forceDeleteTempCheckpointLocation</span><span class="sh">"</span><span class="p">,</span> <span class="sh">'</span><span class="s">true</span><span class="sh">'</span><span class="p">)</span> \
 <span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
 
 <span class="c1"># Create DataFrame representing the stream of input data
@@ -317,16 +318,22 @@ wget https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.9.0/commo
     <span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">startingOffsets</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">earliest</span><span class="sh">"</span><span class="p">)</span> \
     <span class="p">.</span><span class="nf">load</span><span class="p">()</span>
 
-<span class="c1"># Split the lines into words    
-</span><span class="n">words</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="nf">explode</span><span class="p">(</span><span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s"> </span><span class="sh">"</span><span class="p">)).</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">word</span><span class="sh">"</span><span class="p">))</span>
+<span class="c1"># Select the necessary columns
+</span><span class="n">ark_holdings</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">date</span><span class="sh">"</span><span class="p">),</span> 
+                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">1</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">fund_name</span><span class="sh">"</span><span class="p">),</span>
+                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">2</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">company_name</span><span class="sh">"</span><span class="p">),</span>
+                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">3</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">ticker</span><span class="sh">"</span><span class="p">),</span>
+                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">6</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">shares</span><span class="sh">"</span><span class="p">),</span>
+                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">7</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">),</span>
+                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">5</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">weight</span><span class="sh">"</span><span class="p">))</span>
 
-<span class="c1"># Count the occurrences of each word
-</span><span class="n">wordCounts</span> <span class="o">=</span> <span class="n">words</span><span class="p">.</span><span class="nf">groupBy</span><span class="p">(</span><span class="sh">"</span><span class="s">word</span><span class="sh">"</span><span class="p">).</span><span class="nf">count</span><span class="p">()</span>
+<span class="c1"># if market_value &gt; 1000000, show the data
+</span><span class="n">weight_stock</span> <span class="o">=</span> <span class="n">ark_holdings</span><span class="p">.</span><span class="nf">filter</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">'</span><span class="s">market_value</span><span class="sh">'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1000000</span><span class="p">)</span>
 
 <span class="c1"># Start the query to stream the data
-</span><span class="n">query</span> <span class="o">=</span> <span class="n">wordCounts</span> \
+</span><span class="n">query</span> <span class="o">=</span> <span class="n">weight_stock</span> \
 <span class="p">.</span><span class="n">writeStream</span> \
-<span class="p">.</span><span class="nf">outputMode</span><span class="p">(</span><span class="sh">"</span><span class="s">complete</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">outputMode</span><span class="p">(</span><span class="sh">"</span><span class="s">append</span><span class="sh">"</span><span class="p">)</span> \
 <span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">console</span><span class="sh">"</span><span class="p">)</span> \
 <span class="p">.</span><span class="nf">start</span><span class="p">()</span>
 
