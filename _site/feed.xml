@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-07T12:30:05+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Be a Good Data Engineer - Spark</title><link href="http://localhost:4000/blog/2024/09/06/spark.html" rel="alternate" type="text/html" title="Be a Good Data Engineer - Spark" /><published>2024-09-06T00:00:00+08:00</published><updated>2024-09-06T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/06/spark</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/06/spark.html"><![CDATA[<h3 id="background">Background</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-07T23:28:51+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Be a Good Data Engineer - Spark</title><link href="http://localhost:4000/blog/2024/09/06/spark.html" rel="alternate" type="text/html" title="Be a Good Data Engineer - Spark" /><published>2024-09-06T00:00:00+08:00</published><updated>2024-09-06T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/06/spark</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/06/spark.html"><![CDATA[<h3 id="background">Background</h3>
 <p>进入21世纪以来，随着互联网的发展，各类社交媒体，科技软件，传感器等工具一刻不停地生成着越来越多地数据。有一个说法是:</p>
 <blockquote>
   <p>人类现有90%的数据来自于过去两年。</p>
@@ -239,90 +239,47 @@ spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&
 <h5 id="mllib">MLlib</h5>
 <p><a href="https://spark.apache.org/docs/latest/ml-guide.html">MLlib</a> 是 Apache Spark 的机器学习库，提供了一系列用于构建和训练机器学习模型的工具和算法。MLlib 旨在简化机器学习的工作流程，并支持大规模数据集的处理。</p>
 
-<h6 id="features">Features</h6>
-<ol>
-  <li><strong>丰富的算法库</strong>: 包含分类、回归、聚类、协同过滤、降维等多种机器学习算法。</li>
-  <li><strong>数据处理</strong>: 提供数据预处理工具，如特征提取、转换和标准化，支持 DataFrame 和 RDD 数据结构。</li>
-  <li><strong>管道 API</strong>: 允许用户构建复杂的机器学习工作流，通过管道将多个处理步骤组合在一起。</li>
-  <li><strong>模型评估</strong>: 提供多种评估指标和交叉验证工具，帮助用户评估模型性能。</li>
-  <li><strong>分布式计算</strong>: 利用 Spark 的分布式计算能力，支持在大规模数据集上进行高效的模型训练和预测。</li>
-</ol>
-
-<h6 id="example">Example</h6>
-<p>以下是一个使用 MLlib 进行线性回归的简单示例：</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
-<span class="kn">from</span> <span class="n">pyspark.ml.regression</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
-
-<span class="c1"># Create SparkSession
-</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
-<span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">MLlibExample</span><span class="sh">"</span><span class="p">)</span> \
-<span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
-
-<span class="c1"># Load training data
-</span><span class="n">data</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">libsvm</span><span class="sh">"</span><span class="p">).</span><span class="nf">load</span><span class="p">(</span><span class="sh">"</span><span class="s">data/mllib/sample_linear_regression_data.txt</span><span class="sh">"</span><span class="p">)</span>
-
-<span class="c1"># Create Linear Regression model
-</span><span class="n">lr</span> <span class="o">=</span> <span class="nc">LinearRegression</span><span class="p">()</span>
-
-<span class="c1"># Fit the model
-</span><span class="n">lr_model</span> <span class="o">=</span> <span class="n">lr</span><span class="p">.</span><span class="nf">fit</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-
-<span class="c1">#Print the coefficients and intercept
-</span><span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Coefficients: </span><span class="si">{</span><span class="n">lr_model</span><span class="p">.</span><span class="n">coefficients</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Intercept: </span><span class="si">{</span><span class="n">lr_model</span><span class="p">.</span><span class="n">intercept</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
-
-<span class="c1"># Stop SparkSession
-</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
-</code></pre></div></div>
-
 <h5 id="graphx">GraphX</h5>
 <p><a href="https://spark.apache.org/docs/latest/graphx-programming-guide.html">GraphX</a> 是 Apache Spark 的图计算库，旨在处理大规模图数据。GraphX 提供了一个统一的 API，用于图的创建、操作和分析，支持图的并行计算。</p>
-
-<h6 id="features-1">Features</h6>
-<ol>
-  <li><strong>图表示</strong>: GraphX 使用边（Edge）和顶点（Vertex）来表示图，支持有向图和无向图。</li>
-  <li><strong>图计算</strong>: 提供了多种图算法，如 PageRank、连接组件、最短路径等，方便用户进行图分析。</li>
-  <li><strong>与 Spark 的集成</strong>: GraphX 可以与 Spark 的其他组件（如 Spark SQL 和 MLlib）无缝集成，支持复杂的数据处理和分析任务。</li>
-  <li><strong>灵活的 API</strong>: 提供了基于 RDD 的 API，用户可以使用 Scala、Java 和 Python 进行图计算。</li>
-</ol>
-
-<h6 id="example-1">Example</h6>
-<p>以下是一个使用 GraphX 计算 PageRank 的简单示例：</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
-<span class="kn">from</span> <span class="n">pyspark.graphx</span> <span class="kn">import</span> <span class="n">GraphLoader</span>
-
-<span class="c1"># Create SparkSession
-</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
-<span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">GraphXExample</span><span class="sh">"</span><span class="p">)</span> \
-<span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
-
-<span class="c1"># Load graph data
-</span><span class="n">graph</span> <span class="o">=</span> <span class="n">GraphLoader</span><span class="p">.</span><span class="nf">edgeListFile</span><span class="p">(</span><span class="n">spark</span><span class="p">,</span> <span class="sh">"</span><span class="s">data/graphx/followers.txt</span><span class="sh">"</span><span class="p">)</span>
-
-<span class="c1"># Compute PageRank
-</span><span class="n">ranks</span> <span class="o">=</span> <span class="n">graph</span><span class="p">.</span><span class="nf">pageRank</span><span class="p">(</span><span class="n">maxIter</span><span class="o">=</span><span class="mi">10</span><span class="p">).</span><span class="n">vertices</span>
-
-<span class="c1"># Print the results
-</span><span class="nf">print</span><span class="p">(</span><span class="n">ranks</span><span class="p">.</span><span class="nf">collect</span><span class="p">())</span>
-
-<span class="c1"># Stop SparkSession
-</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
-</code></pre></div></div>
 
 <h5 id="structured-streaming">Structured Streaming</h5>
 <p><a href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html">Structured Streaming</a> 是 Spark 的流处理库，用于构建可扩展的流式数据处理应用程序。Structured Streaming 允许用户以批处理的方式处理流数据，同时保持了与批处理相同的编程模型。</p>
 
-<h6 id="features-2">Features</h6>
-<ol>
-  <li><strong>编程模型</strong>: 使用类似于批处理的编程模型来处理流数据，用户可以编写类似于批处理作业的代码来处理流数据。</li>
-  <li><strong>数据源</strong>: 支持多种数据源，如 Kafka、Socket、文件系统等，方便用户将现有数据迁移到流处理任务中。</li>
-  <li><strong>数据格式</strong>: 支持多种数据格式，如 CSV、JSON、Parquet 等，方便用户将现有数据迁移到流处理任务中。</li>
-  <li><strong>数据处理</strong>: 支持多种数据处理操作，如过滤、转换、聚合等，方便用户进行数据处理。</li>
-  <li><strong>数据输出</strong>: 支持多种数据输出方式，如 Kafka、Socket、文件系统等，方便用户将处理结果输出到外部系统。</li>
-</ol>
+<p><strong>Structured Streaming 案例</strong></p>
 
-<h6 id="example-2">Example</h6>
-<p>以下是一个使用 Structured Streaming 进行实时数据处理的简单示例：</p>
+<p><strong>1. 环境准备</strong></p>
+<ul>
+  <li>安装 zookeeper, kafka 以及必要的一些依赖包
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>zookeeper kafka
+pip <span class="nb">install </span>kafka-python
+wget https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.0.0/spark-sql-kafka-0-10_2.12-3.0.0.jar
+wget https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka-0-10-assembly_2.12/3.0.0/spark-streaming-kafka-0-10-assembly_2.12-3.0.0.jar
+wget https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.9.0/commons-pool2-2.9.0.jar
+</code></pre></div>    </div>
+  </li>
+  <li>启动 zookeeper
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties
+</code></pre></div>    </div>
+  </li>
+  <li>启动 kafka
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kafka-server-start /usr/local/etc/kafka/server.properties
+</code></pre></div>    </div>
+  </li>
+  <li>创建 topic
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kafka-topics <span class="nt">--create</span> <span class="nt">--topic</span> structured_streaming_demo <span class="nt">--bootstrap-server</span> localhost:9092 <span class="nt">--partitions</span> 1 <span class="nt">--replication-factor</span> 1
+</code></pre></div>    </div>
+  </li>
+  <li>启动 kafka 生产者
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kafka-console-producer <span class="nt">--topic</span> structured_streaming_demo <span class="nt">--bootstrap-server</span> localhost:9092
+</code></pre></div>    </div>
+  </li>
+  <li>启动 spark shell
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyspark <span class="nt">--jars</span> jars/spark-sql-kafka-0-10_2.12-3.0.0.jar,jars/spark-streaming-kafka-0-10-assembly_2.12-3.0.0.jar,jars/commons-pool2-2.9.0.jar
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>2. 代码实现</strong></p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
 <span class="kn">from</span> <span class="n">pyspark.sql.functions</span> <span class="kn">import</span> <span class="n">explode</span><span class="p">,</span> <span class="n">split</span>
 
@@ -333,11 +290,12 @@ spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&
 
 <span class="c1"># Create DataFrame representing the stream of input data
 </span><span class="n">data</span> <span class="o">=</span> <span class="n">spark</span> \
-<span class="p">.</span><span class="n">readStream</span> \
-<span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">socket</span><span class="sh">"</span><span class="p">)</span> \
-<span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">host</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">localhost</span><span class="sh">"</span><span class="p">)</span> \
-<span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">port</span><span class="sh">"</span><span class="p">,</span> <span class="mi">9999</span><span class="p">)</span> \
-<span class="p">.</span><span class="nf">load</span><span class="p">()</span>
+    <span class="p">.</span><span class="n">readStream</span> \
+    <span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">kafka</span><span class="sh">"</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">kafka.bootstrap.servers</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">localhost:9092</span><span class="sh">"</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">subscribe</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">structured_streaming_demo</span><span class="sh">"</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">startingOffsets</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">earliest</span><span class="sh">"</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">load</span><span class="p">()</span>
 
 <span class="c1"># Split the lines into words    
 </span><span class="n">words</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="nf">explode</span><span class="p">(</span><span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s"> </span><span class="sh">"</span><span class="p">)).</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">word</span><span class="sh">"</span><span class="p">))</span>
@@ -354,9 +312,6 @@ spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&
 
 <span class="c1"># Wait for the query to finish
 </span><span class="n">query</span><span class="p">.</span><span class="nf">awaitTermination</span><span class="p">()</span>
-
-<span class="c1"># Stop SparkSession
-</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
 </code></pre></div></div>
 
 <h3 id="spark-性能调优">Spark 性能调优</h3>
