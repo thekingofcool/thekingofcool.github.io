@@ -2,7 +2,7 @@
 layout: post
 title:  "延迟退休可能是对一代人违约"
 date:   2024-09-14
-categories: reading
+categories: blog
 ---
 
 [Read Original](http://jingji.cntv.cn/2013/04/20/ARTI1366415217203221.shtml)
