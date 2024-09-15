@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-15T11:44:47+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">延迟退休可能是对一代人违约</title><link href="http://localhost:4000/reading/2024/09/14/delaying_retirement.html" rel="alternate" type="text/html" title="延迟退休可能是对一代人违约" /><published>2024-09-14T00:00:00+08:00</published><updated>2024-09-14T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/14/delaying_retirement</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/14/delaying_retirement.html"><![CDATA[<p><a href="http://jingji.cntv.cn/2013/04/20/ARTI1366415217203221.shtml">Read Original</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-15T13:17:12+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">no style, please!</title><link href="http://localhost:4000/blog/2024/09/15/no_style_please.html" rel="alternate" type="text/html" title="no style, please!" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/15/no_style_please</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/15/no_style_please.html"><![CDATA[<p>前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 <a href="https://www.cloudflare.com/">Cloudflare</a>（可以在 <a href="https://lookup.icann.org/en">ICANN</a> 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。</p>
+
+<h3 id="what-is-jekyll">What is Jekyll</h3>
+<p><a href="https://jekyllrb.com/">Jekyll</a> 是一款简单的静态网站生成器。它可以将纯文本转化成静态网站，你只需要用自己习惯的标记语言如 Markdown 来编写博客文章，借由 Jekyll 预设模版内置的文章发布、分类、标签、归档等博客所需的功能，使创建和维护博客变得更加简单和高效。</p>
+
+<p><a href="https://riggraz.dev/no-style-please/">no style, please!</a> 是一款几乎没有 CSS 样式的，快速生成，极简的 Jekyll 主题。</p>
+
+<p>结合了这套组件，网站的发布和维护变得非常简单，网站所有者只需专注于输出内容，通过几个简单的命令行，文章就自动部署到网站。</p>
+
+<p>下面来一步一步演示它是如何实现的。</p>
+
+<h3 id="installation">Installation</h3>
+<p>Jekyll 是一个 Ruby 项目，安装 Jekyll 首先需要 Ruby 的开发环境。</p>
+
+<h4 id="install-chruby-and-ruby-install-with-homebrew">Install chruby and ruby-install with Homebrew</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>chruby ruby-install xz
+</code></pre></div></div>
+
+<h4 id="install-the-latest-stable-version-of-ruby">Install the latest stable version of Ruby</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby-install ruby 3.1.3
+</code></pre></div></div>
+
+<h4 id="configure-your-shell-to-automatically-use-chruby">Configure your shell to automatically use chruby</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/chruby.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/auto.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s2">"chruby ruby-3.1.3"</span> <span class="o">&gt;&gt;</span> ~/.zshrc <span class="c"># run 'chruby' to see actual version</span>
+</code></pre></div></div>
+
+<h4 id="install-jekyll">Install Jekyll</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
+</code></pre></div></div>
+
+<h4 id="create-a-new-gemfile">Create a new Gemfile</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle init
+</code></pre></div></div>
+
+<h4 id="edit-gemfile">Edit Gemfile</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="s2">"jekyll"</span>, <span class="s2">"~&gt; 4.3.3"</span>
+<span class="c"># Change default Jekyll theme to no-style-please</span>
+gem <span class="s2">"no-style-please"</span>
+</code></pre></div></div>
+
+<p>Run <code class="language-plaintext highlighter-rouge">bundle</code> to install jekyll for your project.</p>
+
+<h3 id="create-a-site">Create a site</h3>
+<p>在 _data, _includes, _layouts 中预设网站模版样式，将 Markdown 格式的文件放入指定的 _posts 路径。</p>
+
+<h3 id="build-your-site">Build your site</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<p>通过 <code class="language-plaintext highlighter-rouge">localhost:4000</code> 预览生成后的网站，确保无误后将生成后的网站内容推到 Github 触发 Github Pages 部署，至此网站发布成功。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 Cloudflare（可以在 ICANN 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。]]></summary></entry><entry><title type="html">延迟退休可能是对一代人违约</title><link href="http://localhost:4000/reading/2024/09/14/delaying_retirement.html" rel="alternate" type="text/html" title="延迟退休可能是对一代人违约" /><published>2024-09-14T00:00:00+08:00</published><updated>2024-09-14T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/14/delaying_retirement</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/14/delaying_retirement.html"><![CDATA[<p><a href="http://jingji.cntv.cn/2013/04/20/ARTI1366415217203221.shtml">Read Original</a></p>
 
 <table>
   <tbody>
@@ -1028,15 +1086,4 @@ The diskpart process notifies you when the conversion completes.</li>
 
 <p>好巧，我跟陈都是这么幸运和幸福的人。我们都有对我们最好的爸爸妈妈，并且从今天开始，我们的幸运和幸福翻倍。未来，就让我们俩一起陪伴你们，保护你们。</p>
 
-<p>最后，两位爸爸，父亲节快乐!</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[陈:]]></summary></entry><entry><title type="html">10 rules for financial success</title><link href="http://localhost:4000/blog/2024/06/09/financial_success.html" rel="alternate" type="text/html" title="10 rules for financial success" /><published>2024-06-09T00:00:00+08:00</published><updated>2024-06-09T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/06/09/financial_success</id><content type="html" xml:base="http://localhost:4000/blog/2024/06/09/financial_success.html"><![CDATA[<ol>
-  <li>Budget</li>
-  <li>Buy assets</li>
-  <li>Pay off debt</li>
-  <li>Invest in yourself</li>
-  <li>Add income streams</li>
-  <li>Refuse lifestyle creep</li>
-  <li>Cut unneeded expenses</li>
-  <li>Invest 20% of your income</li>
-  <li>Be with business-minded people</li>
-  <li>Marry someone who understands this</li>
-</ol>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Budget Buy assets Pay off debt Invest in yourself Add income streams Refuse lifestyle creep Cut unneeded expenses Invest 20% of your income Be with business-minded people Marry someone who understands this]]></summary></entry></feed>
+<p>最后，两位爸爸，父亲节快乐!</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[陈:]]></summary></entry></feed>
