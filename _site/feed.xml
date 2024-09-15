@@ -1,4 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-15T13:17:12+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">no style, please!</title><link href="http://localhost:4000/blog/2024/09/15/no_style_please.html" rel="alternate" type="text/html" title="no style, please!" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/15/no_style_please</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/15/no_style_please.html"><![CDATA[<p>前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 <a href="https://www.cloudflare.com/">Cloudflare</a>（可以在 <a href="https://lookup.icann.org/en">ICANN</a> 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-15T17:06:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Python Overall</title><link href="http://localhost:4000/go_big/2024/09/15/python.html" rel="alternate" type="text/html" title="Python Overall" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/15/python</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/15/python.html"><![CDATA[<h3 id="background">Background</h3>
+<p><a href="https://www.python.org/">Python</a> 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。</p>
+
+<p>相比于机器语言和汇编语言等低级语言 (low-level language)，使用高级编程语言编写代码有一些好处：代码更少也更易读，编写代码所需的时间更短；更容易做到跨平台运行。</p>
+
+<p>安装 Python 时，它很重要的一个组件是 Python Interpreter。解释器的主要工作是解释并运行 Python: 读取用户编写的 Python 源代码；对源代码进行词法分析，将代码分解成词法单元（tokens）；之后进行语法分析，构建抽象语法树（Abstract Syntax Tree，AST）来表示代码的结构；接着将抽象语法树编译成 bytecode，这是一种中间形式的代码；最后，Python 解释器会逐行执行字节码指令，将其转换为机器码并执行，实现源代码的功能。</p>
+
+<p>执行 Python 有两种模式：<strong>immediate mode</strong> &amp; <strong>script mode</strong>. 前者是在 terminal 界面进入 Python 解释器的窗口进行即时交互；第二种是通过编写扩展名为 <strong>py</strong> 的 Python 脚本，使用 Python 解释器去执行该脚本。</p>
+
+<p>在日常调试和数据分析过程中，另一个常用的 python 交互方式是 <a href="https://jupyter.org/">Jupiter Notebook</a>。</p>
+
+<h3 id="installation">Installation</h3>
+<p>根据操作系统不同，安装 Python 的方式有很多，详情可以参考 <a href="https://www.python.org/downloads/">Downlaod Python</a>。笔者推荐使用 <a href="https://www.anaconda.com/download/success">Anaconda</a> 作为 Python 的环境管理工具。</p>
+
+<p>检验 Python 环境配置是否已经完成：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">--version</span>
+</code></pre></div></div>
+
+<h3 id="data-type">Data Type</h3>
+<p>Python 中常见的数据类型包括：</p>
+
+<ol>
+  <li>整数（int）：表示整数值，如 5、-3;</li>
+  <li>浮点数（float）：表示带有小数点的数值，如 3.14、-0.001;</li>
+  <li>字符串（str）：表示文本数据，如 ‘hello’、”world”;</li>
+  <li>布尔值（bool）：表示逻辑值，只有两个取值：True 和 False;</li>
+  <li>列表（list）：有序、可变的集合，如 [1, 2, 3];</li>
+  <li>元组（tuple）：有序、不可变的集合，如 (1, 2, 3);</li>
+  <li>集合（set）：无序、不重复的集合，如 {1, 2, 3};</li>
+  <li>字典（dict）：无序的键值对集合，如 {‘name’: ‘Alice’, ‘age’: 30}。</li>
+</ol>
+
+<h3 id="script-structure">Script Structure</h3>
+<p>在生产级别的 Python 编程中，一个 Python 脚本通常由以下部分构成：</p>
+
+<p><strong>1. 导入模块</strong></p>
+
+<p>在开头导入代码所需的模块，以扩展 Python 的功能和复用代码。例如：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">os</span>
+<span class="kn">import</span> <span class="n">sys</span>
+<span class="kn">from</span> <span class="n">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+</code></pre></div></div>
+<p>注：你可以在 <a href="https://docs.python.org/3/library/">Python 标准库</a>, <a href="https://pypi.org/">PyPI (Python Package Index)</a>, <a href="https://awesome-python.com/">Awesome Python</a> 找到丰富的 Python 库及其功能详情；也可以使用 <code class="language-plaintext highlighter-rouge">help(function_name)</code> 可以查看已导入方法内置的说明。</p>
+
+<p><strong>2. 全局变量和常量定义</strong></p>
+
+<p>定义全局变量和常量，用于在整个脚本中共享数据。例如：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MAX_RETRIES</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">DEBUG_MODE</span> <span class="o">=</span> <span class="bp">True</span>
+</code></pre></div></div>
+
+<p><strong>3. 函数和类定义</strong></p>
+
+<p>编写函数和类来组织代码逻辑和实现功能。函数用于封装可重复使用的代码块，类用于组织相关属性和方法。例如：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">calculate_area</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mf">3.14</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">**</span> <span class="mi">2</span>
+
+<span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+</code></pre></div></div>
+
+<p>注：其中 <code class="language-plaintext highlighter-rouge">__init__</code> 是 Python 中的构造函数，用于在创建对象时初始化对象的属性。</p>
+
+<p><strong>4. 主程序逻辑</strong></p>
+
+<p>编写主要的程序逻辑，包括流程控制、数据处理、调用函数等。这部分代码通常位于脚本的最顶层，用于实现脚本的主要功能。例如：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">"</span><span class="s">__main__</span><span class="sh">"</span><span class="p">:</span>
+    <span class="n">radius</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">area</span> <span class="o">=</span> <span class="nf">calculate_area</span><span class="p">(</span><span class="n">radius</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">The area of the circle is: </span><span class="si">{</span><span class="n">area</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>注：<code class="language-plaintext highlighter-rouge">if __name__ == "__main__"</code> 被用来判断当前脚本是否作为主程序运行，加上这段代码可以防止在被其他脚本导入时执行了不必要的代码；当 Python 解释器运行一个脚本时，<code class="language-plaintext highlighter-rouge">__name__</code> 变量会被设置为 <code class="language-plaintext highlighter-rouge">"__main__"</code>，而如果该脚本被作为模块导入到其他脚本时，<code class="language-plaintext highlighter-rouge">__name__</code> 变量会被设置为模块的名称。</p>
+
+<p><strong>5. 异常处理</strong></p>
+
+<p>添加适当的异常处理机制，以处理可能出现的错误和异常情况，确保程序的稳定性和可靠性。例如：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span>
+<span class="k">except</span> <span class="nb">ZeroDivisionError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Error: Division by zero!</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+<p>注：可以通过 <a href="https://docs.python.org/3/library/exceptions.html">Python 异常文档</a> 查看完整的 Exception 列表，也可以通过 <code class="language-plaintext highlighter-rouge">help(ExceptionNameError)</code> 查看特定异常的详细信息。</p>
+
+<p><strong>6. 日志记录</strong></p>
+
+<p>使用日志记录模块记录程序运行时的信息、警告和错误，以便进行故障排查和监控。例如：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">logging</span>
+<span class="n">logging</span><span class="p">.</span><span class="nf">basicConfig</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="sh">'</span><span class="s">app.log</span><span class="sh">'</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="p">.</span><span class="n">INFO</span><span class="p">)</span>
+<span class="n">logging</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">Program started</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Python 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。]]></summary></entry><entry><title type="html">no style, please!</title><link href="http://localhost:4000/blog/2024/09/15/no_style_please.html" rel="alternate" type="text/html" title="no style, please!" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/15/no_style_please</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/15/no_style_please.html"><![CDATA[<p>前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 <a href="https://www.cloudflare.com/">Cloudflare</a>（可以在 <a href="https://lookup.icann.org/en">ICANN</a> 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。</p>
 
 <h3 id="what-is-jekyll">What is Jekyll</h3>
 <p><a href="https://jekyllrb.com/">Jekyll</a> 是一款简单的静态网站生成器。它可以将纯文本转化成静态网站，你只需要用自己习惯的标记语言如 Markdown 来编写博客文章，借由 Jekyll 预设模版内置的文章发布、分类、标签、归档等博客所需的功能，使创建和维护博客变得更加简单和高效。</p>
@@ -1026,64 +1127,4 @@ The diskpart process notifies you when the conversion completes.</li>
 
 <p>褚时健说，他也曾是年轻人，从新中国成立后到现在，社会变动很大，人生很多事，不是一条直线。国家要转型，始终要靠人来破解难题。</p>
 
-<p>他说，困难多，搞好一点，信心就大一点，只有这样走，一步一步来。</p>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[Read Original]]></summary></entry><entry><title type="html">Wedding Speech</title><link href="http://localhost:4000/blog/2024/06/16/big_day.html" rel="alternate" type="text/html" title="Wedding Speech" /><published>2024-06-16T00:00:00+08:00</published><updated>2024-06-16T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/06/16/big_day</id><content type="html" xml:base="http://localhost:4000/blog/2024/06/16/big_day.html"><![CDATA[<h2 id="陈">陈:</h2>
-
-<p>刚认识你时，记得漫威剧《Loki》正在更新，最开始对你的印象就是，我们就像平行宇宙中的不同变体——</p>
-
-<p>我们的共同点很多：都喜欢皇马，都经常运动，都对生活和对方充满好奇。</p>
-
-<p>随着了解加深，我发现我们也有很多的不同，你看过很多音乐剧，我听过很多摇滚乐，我陪你看了许多舞台剧，你也因为我有段时间热衷马拉松而开始喜欢长跑。</p>
-
-<p>你让我觉得，人生是可以做着自己热爱的事来度过的。</p>
-
-<p>未来还有很多事情值得探索，而你的陪伴也让我对这一切变得更加期待。</p>
-
-<hr />
-
-<p>今天场下在座的，以及台上站着的，都是我人生中最重要的人。</p>
-
-<p>很难用语言来形容这个时刻有你们见证所感到的喜悦。</p>
-
-<p>利用这个机会，我想先感谢我的爸妈，你们在我心里是最伟大的人，没有你们的辛勤付出，就没有我和弟弟的今天。你们以身作则，教会了我们诚实、善良、进取的品质；在那个充满未知和挑战的年代，你们把我们家从四川乡村的土墙房带到了大都市，让我和弟弟接受到了最好的教育，真正意义上实现了命运的改变。</p>
-
-<p>我还要感谢我今天新多的爸妈，感谢你们培养了如此优秀、美丽、纯真的女儿。含辛茹苦三十载并不容易，将她护在自己的羽翼下快乐成长尤其困难。从此以后，我会倾尽所有照顾好她和我们的家。不让她受到一点委屈。</p>
-
-<p>同时，我也要感谢从繁忙的工作和学业中赶来的弟弟和弟妹，未来在你们身上有着一切可能。以后无论身处何处，血浓于水的情感纽带都将始终将我们紧密连结。在这个变革的时代，让我们团结一心，共同努力，使这个大家庭更加繁荣和充满活力。</p>
-
-<p>再次感谢大家来参加我们的婚礼，希望你们这几天都能玩得开心。</p>
-
-<hr />
-
-<h2 id="杨">杨:</h2>
-
-<p>陈先生，你好。</p>
-
-<p>我一直觉得，下定决心结婚是非常困难的一件事。要跟这个人朝夕相处几十年，要从今天开始以后每天都面对面在枕头上喷气儿，要共同养育一个孩子，甚至更多。甚至，你还拥有我在手术台上昏迷不醒时决定我要不要继续手术的权利，相当于我得把一半的命给你，我怎么能轻而易举的交出自己的命呢？</p>
-
-<p>所以，陈先生，我必然不会因为你是高富帅而嫁给你，当然，这三个字也不太是用来形容你。而是因为你善良，温厚，努力上进，真实简单吗？这是我想到的夸赞你的话，但这也不是作为我爱你的理由。</p>
-
-<p>比起这些所有人可见的美好品质，我更珍惜你的尊重，支持和包容，以及和你在一起后每一天相处的点滴，都让我深信不疑，这个人我愿意和他在一起。</p>
-
-<p>这可能就是我今天站在这里的原因。我们在如此平凡琐碎的生活中，拥有对方有趣的灵魂，拥有彼此的绝对信任，拥有自由，平等和尊重。拥有对方无条件的鼓励和支持。</p>
-
-<p>以前我一直觉得，一个人能过得很开心，但有了你才发现，两个人原来可以更好。</p>
-
-<p>我爱的，是我们拥有各自的光芒，同时也依赖对方。</p>
-
-<p>谢谢你，让我期待和你一起的未来。</p>
-
-<p>我要我们不止新婚快乐，我要我们一直都快乐。</p>
-
-<hr />
-
-<p>今天算是我人生中很重要的时刻，对于我这种时常心怀感激却不善于表露的人来说也是一个表达谢意的绝佳机会。</p>
-
-<p>首先最想感谢的是我的爸爸妈妈，谢谢你们30年来的养育，在能力范围内创造最好的条件把我培养长大，让我在爱的环境里健康成长，感谢你们包容了我每一个特立独行的勇气和决定。</p>
-
-<p>我是这个世界上很普通的女儿，经常会惹你们生气失望，但你们在我眼里是最好的爸爸妈妈，我从未让你们骄傲，你们却待我如宝。感谢你们陪着我一起长大。</p>
-
-<p>有人说过:“父母存在的意义不是给予孩子多舒适和富裕的生活，而是当你想到你的父母时，你的内心就会充满力量会感受到温暖，从而拥有克服困难的勇气和能力，因此获得人生真正的乐趣和自由。”</p>
-
-<p>好巧，我跟陈都是这么幸运和幸福的人。我们都有对我们最好的爸爸妈妈，并且从今天开始，我们的幸运和幸福翻倍。未来，就让我们俩一起陪伴你们，保护你们。</p>
-
-<p>最后，两位爸爸，父亲节快乐!</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[陈:]]></summary></entry></feed>
+<p>他说，困难多，搞好一点，信心就大一点，只有这样走，一步一步来。</p>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[Read Original]]></summary></entry></feed>
