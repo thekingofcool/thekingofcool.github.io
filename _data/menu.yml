@@ -1,4 +1,17 @@
 entries:
+  - title: about me
+    url: /about
+    entries:
+      - title: credly
+        url: https://www.credly.com/users/thekingofcool/
+      - title: tableau vizzes
+        url: https://public.tableau.com/app/profile/thekingofcool/vizzes
+
+  - title: go big
+    post_list:
+      category: go_big
+    entries: false
+
   - title: blogs
     post_list:
       category: blog

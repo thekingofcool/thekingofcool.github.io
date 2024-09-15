@@ -5,38 +5,55 @@ permalink: /about/
 ---
 # Edward Chen
 
-📞 188-8387-8352 | 📧 sayhi@thekingof.cool
-[LinkedIn](https://linkedin.com/in/thekingofcool) | [GitHub](https://github.com/thekingofcool)
+## About
+Data Engineer with over 6 years of experience in data development. Skilled in cloud technologies like AWS and proficient in Python, R and Scala. Expertise in Airflow and the Apache Hadoop/Spark ecosystem (Hadoop, Hive, Spark, HDFS/S3). Previously a Structural Engineer with a background in Civil Engineering from Chongqing University.
+
+I like sports. Boxing, swimming and running. Make sports a daily habit.
 
 ---
 
-## Professional Summary
-Big Data Engineer with over 6 years of experience in data development, skilled in cloud technologies like AWS and proficient in Python, R, and Scala. Expertise in Airflow and the Apache Hadoop/Spark ecosystem (Hadoop, Hive, Spark, HDFS/S3). Previously a Structural Engineer with a background in Civil Engineering from Chongqing University.
+## Projects
+### Digital Consumer Order Lifecycle Integration at **Nike** - *2024*
 
-I like sports. Boxing, swimming, and running. Make sports a daily habit.
+Integrate all e-commerce channel orders, tracking the status throughout the entire lifecycle from order placement, order cancellation, and outbound shipment to delivery by courier, as well as returns and exchanges, for use by the Digital data analysis team in creating dashboards.
+### Nike Consumer Promise Review
+
+### Consumer Promise Review at **Nike** - *2023*
+
+Support the backend data development for tracking key Consumer Promise metrics across the Digital Supply Chain, including service, shipment, convenience, sustainability, and cost metrics.
+
+### GC Inbound Transportation at **Nike** - *2022*
+
+Manage the inbound shipment process from factories to the GC Central DC, optimizing transport modes and tracking shipment stages to ensure timely inventory deployment.
+
+### United Intelligent Inventory at **Nike** - *2019*
+
+Created a system for real-time data aggregation and demand forecasting to optimize inventory replenishment based on machine learning algorithms.
+
+
+### Cryptocurrency Transaction Data Analysis Platform at **Shanghai Shouyi Information Technology** - *2018*
+
+Built a big data platform for real-time and offline analysis of cryptocurrency transactions, including user token holdings, abnormal transaction detection, and average transaction interval calculations.
 
 ---
 
-## Professional Experience
+## Work Experience
 
-### Big Data Engineer
-**Nike (Contract)**  
+### Data Engineer at **Nike** - *Shanghai*
 *Mar 2019 - Present* 
 
 - Led and contributed to the design, development, and deployment of various big data projects.
-- Automated data delivery, validation, and task monitoring processes.
+- Automated data delivery, data validation, and task monitoring processes.
 - Migrated data platforms to enhance efficiency.
 
-### Big Data Engineer
-**Shanghai Shouyi Information Technology**  
+### Data Engineer at **Shanghai Shouyi Information Technology** - *Shanghai*
 *Aug 2018 - Feb 2019* 
 
 - Developed the company’s big data architecture and implemented stream processing frameworks.
 - Conducted offline data analysis, managed risk control, and validated abnormal user data.
 - Researched and integrated new technologies, and documented technical processes.
 
-### Construction Engineer
-**China State Construction Third Engineering Bureau**  
+### Construction Engineer at **China State Construction Third Engineering Bureau** - *Amoy*
 *Jul 2016 - Nov 2017*
 
 - Reviewed construction drawings, drafted construction plans, and inspected construction sites.
@@ -45,43 +62,14 @@ I like sports. Boxing, swimming, and running. Make sports a daily habit.
 ---
 
 ## Education
-**Chongqing University**  
-Bachelor’s in Civil Engineering (2012 - 2016)
+Bachelor of Civil Engineering at **Chongqing University** (2012 - 2016)
 
 ---
 
-## Certifications & Training
+## Certifications
 - [Snowflake Certified Data Engineer](https://www.credly.com/users/thekingofcool/badges)
 
 ---
+## Contact
 
-## Projects
-### Nike Consumer Promise Review
-
-- **Overview:** Supported the backend data development for tracking key Consumer Promise metrics across the Digital Supply Chain, including service, shipment, convenience, sustainability, and cost metrics.
-- **Tech Stack:** Spark, Hive/Presto, Python, Airflow
-- **Role:** Develop ETL processes and prepare Presto tables for reporting.
-
-### GC Inbound Transportation
-
-- **Overview:** Managed the inbound shipment process from factories to the GC Central DC, optimizing transport modes and tracking shipment stages to ensure timely inventory deployment.
-- **Tech Stack:** Spark, Python, EMR, Snowflake, Box, Airflow
-- **Role:** Develop ETL processes and generate data to Box and Snowflake for use in front-end reports.
-
-### Nike United Intelligent Inventory
-
-- **Overview:** Created a system for real-time data aggregation and demand forecasting to optimize inventory replenishment based on machine learning algorithms.
-- **Tech Stack:** Spark, Python, S3, EMR, Snowflake, Airflow
-- **Role:** Collect and cleanse data to form model feature tables, maintaine various dimensional information, and monitore data quality.
-
-### Cryptocurrency Transaction Data Analysis Platform
-
-- **Overview:** Built a big data platform for real-time and offline analysis of cryptocurrency transactions, including user token holdings, abnormal transaction detection, and average transaction interval calculations.
-- **Tech Stack:** Flume, Kafka, Hadoop, Structured Streaming, Aurora
-- **Role:** Consume Kafka topics via Structured Streaming to process user asset changes and transaction logs, meeting business data requirements.
-
----
-
-## Additional Information
-- **Languages:** Fluent in English
-- **Interests:** Building my body in physical world and upgrading skills in cyber world
+📞 188-8387-8352 | 📧 sayhi@thekingof.cool
