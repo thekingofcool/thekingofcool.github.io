@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Data Visualization</title><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="thekingofcool&apos;s website" /><link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+  <link href="https://cdn.jsdelivr.net/gh/gangdong/gangdong.github.io@dev/assets/css/syntax_monokai.css" rel="stylesheet"/>
+</head><body a="dark">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><-</a><article>
+  <p class="post-meta">
+    <time datetime="2024-09-16 00:00:00 +0800">2024-09-16</time>
+  </p>
+  
+  <h1>Data Visualization</h1>
+
+  <h3 id="background">Background</h3>
+<p>在当前信息化时代，我们所有人都正遭受信息过载和数据过剩的困扰。数据可视化的好处便是让我们看到这些数据的规律以及它们的内在联系，便于我们在繁杂的信息中聚焦到最重要的部分。</p>
+
+<p>一位丹麦科普学家 <a href="https://en.wikipedia.org/wiki/Tor_N%C3%B8rretranders">Tor Nørretranders</a> 研究发现，人类通过视觉接收信息的带宽是最大的，大概是 1250MB/s，触觉类似于 USB 传输接口，大约有 125MB/s，其次是听觉、嗅觉、味觉。我们每天通过感官接收到巨量的信息，再经由大脑的处理提取精炼，凭借人类群体社会日益高效的信息交换，构成了这个物种不断进化源源不断的动力。</p>
+
+<p>数据可视化的本质就是将大量信息压缩成图表，通过视觉的形式将其中的洞见直观地展示出来。当以足够大的数据集为基础，如果你提出了正确的问题，并且以正确的方式去处理这些数据，有趣的事情就会出现。</p>
+
+<blockquote>
+  <p>Let my dataset change your mindset. ——Hans Rosling</p>
+</blockquote>
+
+<h3 id="data-visualization-tools">Data Visualization Tools</h3>
+<h4 id="matplotlib-with-seaborn">Matplotlib (with Seaborn)</h4>
+<p><a href="https://matplotlib.org/stable/contents.html">Matplotlib</a> 是 Python 数据科学和数据分析领域最常见的可视化库，支持各种图表类型。<a href="https://seaborn.pydata.org/">Seaborn</a> 是基于 Matplotlib 的绘图库，它提供了更高级的接口和更美观的默认样式。</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="n">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
+<span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="c1"># Matplotlib example
+</span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">xlabel</span><span class="p">(</span><span class="sh">'</span><span class="s">X-axis</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">ylabel</span><span class="p">(</span><span class="sh">'</span><span class="s">Y-axis</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">title</span><span class="p">(</span><span class="sh">'</span><span class="s">Line Chart</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+
+<span class="c1"># Seaborn example
+</span><span class="n">holdings</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nf">read_csv</span><span class="p">(</span><span class="sh">"</span><span class="s">holdings.csv</span><span class="sh">"</span><span class="p">)</span>
+<span class="n">sns</span><span class="p">.</span><span class="nf">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">holdings</span><span class="p">.</span><span class="n">ticker</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">holdings</span><span class="p">.</span><span class="n">shares</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">title</span><span class="p">(</span><span class="sh">"</span><span class="s">holdings</span><span class="sh">"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><strong>Learning Path</strong></p>
+<ul>
+  <li><strong>基础学习</strong>: 从 Matplotlib 的基础开始，学习如何创建基本图表。</li>
+  <li><strong>高级功能</strong>: 学习如何使用 Seaborn 创建更高级和美观的图表。</li>
+  <li><strong>项目实践</strong>: 通过实际项目练习，巩固所学知识。</li>
+</ul>
+
+<h4 id="tableau">Tableau</h4>
+<p><a href="https://www.tableau.com/learn/training">Tableau</a> 是一个强大的商业数据可视化工具，支持丰富的图表类型和交互功能。它的拖放界面使得创建复杂的可视化变得简单。</p>
+
+<p><strong>Learning Path</strong></p>
+<ul>
+  <li><strong>基础学习</strong>: 学习 Tableau 的基本操作和界面。</li>
+  <li><strong>高级功能</strong>: 探索 Tableau 的高级功能，如计算字段、参数和仪表盘。</li>
+  <li><strong>项目实践</strong>: 通过实际项目练习，创建复杂的商业智能报告和可视化。</li>
+</ul>
+
+<p>To be continued…</p>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>
