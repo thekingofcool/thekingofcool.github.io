@@ -6,7 +6,9 @@ permalink: /about/
 # Edward Chen
 
 ## About
-Data Engineer with over 6 years of experience in data development. Skilled in cloud technologies like AWS and proficient in Python, R and Scala. Expertise in Airflow and the Apache Hadoop/Spark ecosystem (Hadoop, Hive, Spark, HDFS/S3). Previously a Structural Engineer with a background in Civil Engineering from Chongqing University.
+Data Engineer with over 6 years of experience in data development. Skilled in cloud technologies like AWS and proficient in Python, R and Scala. Expertise in Airflow and the Apache Hadoop/Spark ecosystem. 
+
+Possess exceptional logical thinking, proficient information retrieval, and advanced problem-solving skills.
 
 I like sports. Boxing, swimming and running. Make sports a daily habit.
 
