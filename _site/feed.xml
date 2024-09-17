@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-16T16:15:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Data Visualization</title><link href="http://localhost:4000/go_big/2024/09/16/data_visualization.html" rel="alternate" type="text/html" title="Data Visualization" /><published>2024-09-16T00:00:00+08:00</published><updated>2024-09-16T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/16/data_visualization</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/16/data_visualization.html"><![CDATA[<h3 id="background">Background</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-17T08:57:25+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">李录谈常识</title><link href="http://localhost:4000/reading/2024/09/17/common_sense.html" rel="alternate" type="text/html" title="李录谈常识" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/17/common_sense</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/17/common_sense.html"><![CDATA[<p>芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。</p>
+
+<p>这里我来谈谈几条常识，也听听大家的意见。</p>
+
+<ol>
+  <li>
+    <p>现代化是市场经济和现代科技结合的产物。但这其中有一个因果关系。市场经济是因，现代科技是果。没有现代市场经济，不会产生现代科技，在非市场经济的制度中，技术不能有效的转化成生产力，也因此不能产生持久、领先的科技。但是发达的市场经济一定会产生领先的科技。</p>
+  </li>
+  <li>
+    <p>除国防外，当今所有先进技术最先都是由私营企业在市场经济环垸下创造出来的。美国，西方，中国都如此。政府主导先进科技创新，如果破坏了市场机制，没有成功案例。</p>
+  </li>
+  <li>
+    <p>人的本性都是白私的。人的道德其实是对于更广泛私利、长远私利的描述。制度设计和政策措施如果不能激发人的私利，形成不了正向的激励机制，也就不可持续。无论在经济或是政治活动中都是一样。</p>
+  </li>
+  <li>
+    <p>关于腐败。腐败本质上是一种权力寻租。只要有权力就永远有腐败。在整个人类历史进程中、在所有制度下，腐败一直存在，将来也会永远存在。腐败只能控制，不可能完全消除。过度腐败对社会伤害，过度反腐也会对社会伤害。公正的制度性控制比人为的控制更可持续，而且负面后果更少。</p>
+  </li>
+  <li>
+    <p>权力是一组人对另一组人行为的影响力。它的总量一定，和人口数量相关。权力从本质上是一个零和的游戏。政府权力过大，必然导致民间的权力过小，官不聊生必然导致民不聊生，古今中外都如此。</p>
+  </li>
+  <li>
+    <p>市场经济本质上是政府在经济上让权给民间。在市场经济中所有重要的决定都只能由私人来做出。政府的作用在于服务和维持规则，不是指挥。由政府指挥市场经济没有成功案例。民间经济、市场经济是否有活力，常常取决于政府在经济活动中的权力是否足够小。</p>
+  </li>
+  <li>
+    <p>市场经济对人才的选择由自由竞争决定，不拘一格也无法预测。一个社会越能够容忍不同人格、不同价值观的人才，越能在市场经济中成功。反之亦然。</p>
+  </li>
+  <li>
+    <p>人从本性上都追求平等。追求结果平等的机制会造成最大的不平等，追求机会平等的机制会形成对结果平等的最大近似。</p>
+  </li>
+  <li>
+    <p>人对安全的需求远远大于对财富的追求。在已经温饱的前提下，没有人身安全保障，对财富的追求会大大降低。</p>
+  </li>
+  <li>
+    <p>市场经济行为和预期相关。当一个市场经济中，绝大多数人无论因何种原因开始持负面预期时，经济活动会衰退，衰退本身会加固负面预期，从而加速衰退。反之亦然。</p>
+  </li>
+  <li>
+    <p>市场经济是由自发的需求、自主的供给，通过自由竞争而形成的。其中需求是主因，供给是手段和结果。市场经济的真实总量实际上是由真实需求总量决定的，而不是由供给决定的。真实需求增加可以提振供给。真实需求降低，提振供给不仅不能解决问题，还会造成更多连带问题。</p>
+  </li>
+</ol>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。]]></summary></entry><entry><title type="html">Data Visualization</title><link href="http://localhost:4000/go_big/2024/09/16/data_visualization.html" rel="alternate" type="text/html" title="Data Visualization" /><published>2024-09-16T00:00:00+08:00</published><updated>2024-09-16T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/16/data_visualization</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/16/data_visualization.html"><![CDATA[<h3 id="background">Background</h3>
 <p>在当前信息化时代，我们所有人都正遭受信息过载和数据过剩的困扰。数据可视化的好处便是让我们看到这些数据的规律以及它们的内在联系，便于我们在繁杂的信息中聚焦到最重要的部分。</p>
 
 <p>一位丹麦科普学家 <a href="https://en.wikipedia.org/wiki/Tor_N%C3%B8rretranders">Tor Nørretranders</a> 研究发现，人类通过视觉接收信息的带宽是所有感官中最大的，大概是 1250MB/s，触觉则相当于 USB 传输接口，大约有 125MB/s，其次是听觉、嗅觉、味觉。我们每天通过感官接收到巨量的信息，再经由大脑的处理提取精炼，凭借人类群体社会日益高效的信息交换，构成了这个物种进化源源不断的动力。</p>
@@ -50,65 +88,7 @@
   <li><strong>项目实践</strong>: 通过实际项目练习，创建复杂的商业智能报告和可视化。</li>
 </ul>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background 在当前信息化时代，我们所有人都正遭受信息过载和数据过剩的困扰。数据可视化的好处便是让我们看到这些数据的规律以及它们的内在联系，便于我们在繁杂的信息中聚焦到最重要的部分。]]></summary></entry><entry><title type="html">no style, please!</title><link href="http://localhost:4000/blog/2024/09/15/no_style_please.html" rel="alternate" type="text/html" title="no style, please!" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/15/no_style_please</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/15/no_style_please.html"><![CDATA[<p>前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 <a href="https://www.cloudflare.com/">Cloudflare</a>（可以在 <a href="https://lookup.icann.org/en">ICANN</a> 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。</p>
-
-<h3 id="what-is-jekyll">What is Jekyll</h3>
-<p><a href="https://jekyllrb.com/">Jekyll</a> 是一款简单的静态网站生成器。它可以将纯文本转化成静态网站，你只需要用自己习惯的标记语言如 Markdown 来编写博客文章，借由 Jekyll 预设模版内置的文章发布、分类、标签、归档等博客所需的功能，使创建和维护博客变得更加简单和高效。</p>
-
-<p><a href="https://riggraz.dev/no-style-please/">no style, please!</a> 是一款几乎没有 CSS 样式的，快速生成，极简的 Jekyll 主题。</p>
-
-<p>结合了这套组件，网站的发布和维护变得非常简单，网站所有者只需专注于输出内容，通过几个简单的命令行，文章就自动部署到网站。</p>
-
-<p>下面来一步一步演示它是如何实现的。</p>
-
-<h3 id="installation">Installation</h3>
-<p>Jekyll 是一个 Ruby 项目，安装 Jekyll 首先需要 Ruby 的开发环境。</p>
-
-<h4 id="install-chruby-and-ruby-install-with-homebrew">Install chruby and ruby-install with Homebrew</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>chruby ruby-install xz
-</code></pre></div></div>
-
-<h4 id="install-the-latest-stable-version-of-ruby">Install the latest stable version of Ruby</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby-install ruby 3.1.3
-</code></pre></div></div>
-
-<h4 id="configure-your-shell-to-automatically-use-chruby">Configure your shell to automatically use chruby</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/chruby.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
-<span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/auto.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
-<span class="nb">echo</span> <span class="s2">"chruby ruby-3.1.3"</span> <span class="o">&gt;&gt;</span> ~/.zshrc <span class="c"># run 'chruby' to see actual version</span>
-</code></pre></div></div>
-
-<h4 id="install-jekyll">Install Jekyll</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
-</code></pre></div></div>
-
-<h4 id="create-a-new-gemfile">Create a new Gemfile</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle init
-</code></pre></div></div>
-
-<h4 id="edit-gemfile">Edit Gemfile</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="s2">"jekyll"</span>, <span class="s2">"~&gt; 4.3.3"</span>
-<span class="c"># Change default Jekyll theme to no-style-please</span>
-gem <span class="s2">"no-style-please"</span>
-</code></pre></div></div>
-
-<p>Run <code class="language-plaintext highlighter-rouge">bundle</code> to install jekyll for your project.</p>
-
-<h3 id="create-a-site">Create a site</h3>
-<p>在 _data, _includes, _layouts 中预设网站模版样式，将 Markdown 格式的文件放入指定的 _posts 路径。</p>
-
-<h3 id="build-your-site">Build your site</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
-</code></pre></div></div>
-
-<p>通过 <code class="language-plaintext highlighter-rouge">localhost:4000</code> 预览生成后的网站，确保无误后将生成后的网站内容推到 Github 触发 Github Pages 部署，至此网站发布成功。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 Cloudflare（可以在 ICANN 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。]]></summary></entry><entry><title type="html">Python Overall</title><link href="http://localhost:4000/go_big/2024/09/15/python.html" rel="alternate" type="text/html" title="Python Overall" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/15/python</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/15/python.html"><![CDATA[<h3 id="background">Background</h3>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background 在当前信息化时代，我们所有人都正遭受信息过载和数据过剩的困扰。数据可视化的好处便是让我们看到这些数据的规律以及它们的内在联系，便于我们在繁杂的信息中聚焦到最重要的部分。]]></summary></entry><entry><title type="html">Python Overall</title><link href="http://localhost:4000/go_big/2024/09/15/python.html" rel="alternate" type="text/html" title="Python Overall" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/15/python</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/15/python.html"><![CDATA[<h3 id="background">Background</h3>
 <p><a href="https://www.python.org/">Python</a> 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。</p>
 
 <p>相比于机器语言和汇编语言等低级语言 (low-level language)，使用高级编程语言编写代码有一些好处：代码更少也更易读，编写代码所需的时间更短；更容易做到跨平台运行。</p>
@@ -209,7 +189,65 @@ gem <span class="s2">"no-style-please"</span>
 <span class="n">logging</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">Program started</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Python 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。]]></summary></entry><entry><title type="html">延迟退休可能是对一代人违约</title><link href="http://localhost:4000/reading/2024/09/14/delaying_retirement.html" rel="alternate" type="text/html" title="延迟退休可能是对一代人违约" /><published>2024-09-14T00:00:00+08:00</published><updated>2024-09-14T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/14/delaying_retirement</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/14/delaying_retirement.html"><![CDATA[<p><a href="http://jingji.cntv.cn/2013/04/20/ARTI1366415217203221.shtml">Read Original</a></p>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Python 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。]]></summary></entry><entry><title type="html">no style, please!</title><link href="http://localhost:4000/blog/2024/09/15/no_style_please.html" rel="alternate" type="text/html" title="no style, please!" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/15/no_style_please</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/15/no_style_please.html"><![CDATA[<p>前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 <a href="https://www.cloudflare.com/">Cloudflare</a>（可以在 <a href="https://lookup.icann.org/en">ICANN</a> 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。</p>
+
+<h3 id="what-is-jekyll">What is Jekyll</h3>
+<p><a href="https://jekyllrb.com/">Jekyll</a> 是一款简单的静态网站生成器。它可以将纯文本转化成静态网站，你只需要用自己习惯的标记语言如 Markdown 来编写博客文章，借由 Jekyll 预设模版内置的文章发布、分类、标签、归档等博客所需的功能，使创建和维护博客变得更加简单和高效。</p>
+
+<p><a href="https://riggraz.dev/no-style-please/">no style, please!</a> 是一款几乎没有 CSS 样式的，快速生成，极简的 Jekyll 主题。</p>
+
+<p>结合了这套组件，网站的发布和维护变得非常简单，网站所有者只需专注于输出内容，通过几个简单的命令行，文章就自动部署到网站。</p>
+
+<p>下面来一步一步演示它是如何实现的。</p>
+
+<h3 id="installation">Installation</h3>
+<p>Jekyll 是一个 Ruby 项目，安装 Jekyll 首先需要 Ruby 的开发环境。</p>
+
+<h4 id="install-chruby-and-ruby-install-with-homebrew">Install chruby and ruby-install with Homebrew</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>chruby ruby-install xz
+</code></pre></div></div>
+
+<h4 id="install-the-latest-stable-version-of-ruby">Install the latest stable version of Ruby</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby-install ruby 3.1.3
+</code></pre></div></div>
+
+<h4 id="configure-your-shell-to-automatically-use-chruby">Configure your shell to automatically use chruby</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/chruby.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/auto.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s2">"chruby ruby-3.1.3"</span> <span class="o">&gt;&gt;</span> ~/.zshrc <span class="c"># run 'chruby' to see actual version</span>
+</code></pre></div></div>
+
+<h4 id="install-jekyll">Install Jekyll</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
+</code></pre></div></div>
+
+<h4 id="create-a-new-gemfile">Create a new Gemfile</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle init
+</code></pre></div></div>
+
+<h4 id="edit-gemfile">Edit Gemfile</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="s2">"jekyll"</span>, <span class="s2">"~&gt; 4.3.3"</span>
+<span class="c"># Change default Jekyll theme to no-style-please</span>
+gem <span class="s2">"no-style-please"</span>
+</code></pre></div></div>
+
+<p>Run <code class="language-plaintext highlighter-rouge">bundle</code> to install jekyll for your project.</p>
+
+<h3 id="create-a-site">Create a site</h3>
+<p>在 _data, _includes, _layouts 中预设网站模版样式，将 Markdown 格式的文件放入指定的 _posts 路径。</p>
+
+<h3 id="build-your-site">Build your site</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<p>通过 <code class="language-plaintext highlighter-rouge">localhost:4000</code> 预览生成后的网站，确保无误后将生成后的网站内容推到 Github 触发 Github Pages 部署，至此网站发布成功。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 Cloudflare（可以在 ICANN 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。]]></summary></entry><entry><title type="html">延迟退休可能是对一代人违约</title><link href="http://localhost:4000/reading/2024/09/14/delaying_retirement.html" rel="alternate" type="text/html" title="延迟退休可能是对一代人违约" /><published>2024-09-14T00:00:00+08:00</published><updated>2024-09-14T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/14/delaying_retirement</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/14/delaying_retirement.html"><![CDATA[<p><a href="http://jingji.cntv.cn/2013/04/20/ARTI1366415217203221.shtml">Read Original</a></p>
 
 <table>
   <tbody>
@@ -966,32 +1004,4 @@ Rename the USB Drive to <strong>WIN11</strong> or whatever you like.</p>
 The diskpart process notifies you when the conversion completes.</li>
     </ul>
   </li>
-</ol>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[PC Build List Total cost is 5310.]]></summary></entry><entry><title type="html">Dana White introduces Donald Trump at the 2024 RNC</title><link href="http://localhost:4000/reading/2024/07/18/Dana_White_introduces_Donald_Trump_at_the_2024_RNC.html" rel="alternate" type="text/html" title="Dana White introduces Donald Trump at the 2024 RNC" /><published>2024-07-18T00:00:00+08:00</published><updated>2024-07-18T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/07/18/Dana_White_introduces_Donald_Trump_at_the_2024_RNC</id><content type="html" xml:base="http://localhost:4000/reading/2024/07/18/Dana_White_introduces_Donald_Trump_at_the_2024_RNC.html"><![CDATA[<p>Good evening ladies and gentlemen. I am Dana White. I am the CEO and president of the Ultimate Fighting Championship.</p>
-
-<p>So two weeks ago I got a call from President Trump asking me if I’d be willing to speak tonight. As usual, there was no pressure, no demands. He asked me as a friend and of course I said yes. Then after I accepted his offer, he sent me a text message. And I just want to read to you a little piece of what President Trump wrote to me.</p>
-
-<blockquote>
-  <p>Dana, I’m so honored that you will be doing the introduction at the National Republican Convention. Think of it as the biggest fight you ever had, a fight for our country and even the world. I only wish you didn’t have to interrupt your family trip. But I hope they understand, they love you and they know how important this is.</p>
-</blockquote>
-
-<p>Now think about this. This man’s running for President of the United States. He’s fighting for the future of this country and he’s concerned about interrupting my family trip. That’s the President Trump that I know, a man who truly cares about people. The mainstream media likes to push the narrative that he doesn’t care about anyone but himself. I absolutely know that’s not the truth because I’ve been friends with this guy for 25 years.</p>
-
-<p>And for the people who know me, they’ll know this is true. I just want to make something very clear. Nobody in the Trump campaign has ever told me what to say. Nobody tells me what to say and I’m nobody’s puppet. And I’m not telling you what to think. I’m telling you what I know. And I know President Trump, I know President Trump is a fighter. I’ve been saying this since 2015.</p>
-
-<p>Now look at what’s happened over the last 10 years. We have all seen it with our own eyes. I’m in the tough guy business. And this man is the toughest, most resilient human being that I’ve ever met in my life. The higher the stakes, the harder he fights, and this guy never ever gives up. So what’s it stake here? The answer is in President Trump’s text. And I quote:</p>
-
-<blockquote>
-  <p>A fight for our country.</p>
-</blockquote>
-
-<p>I know why he’s running for President again. Why else? Would he put himself through everything he’s dealt with just to get back here? We all know he doesn’t need this. This guy’s got a great life. He has a beautiful family. And he has achieved everything that you could possibly achieve in life. I know President Trump is literally putting his life on the line for something bigger than himself. And he’s willing to risk it all because he loves this country.</p>
-
-<p>And I know he wants what’s best for the American people. All American people. I know he’s running for President to save our American dream. I’m living in the American dream. And I know the American dream is very real. Whether you’re born in this country or came here from some place else, this is the last real land of opportunity. President Reagan once said,</p>
-
-<blockquote>
-  <p>Government’s first duty is to protect the people, not run their lives. And if you’re buried in government red tape, how will you ever start your own business? If you’re struggling to pay your bills, how can you ever afford to start a family? And if you don’t feel safe in your own town, why would you ever buy a house?</p>
-</blockquote>
-
-<p>I know the President Trump is fighting to save the American dream, and that’s what’s at stake in this election. We are choosing who we want to lead us in this fight. I know President Trump is a proven leader, a fearless leader, and this country was in a much better place when he was in the Oval Office. In my mind, the choice is clear. But this election, we all get the choose. I know I’m going to choose strength and security. I know I’m going to choose opportunity and prosperity. I know I’m going to choose real American leadership and a real American badass.</p>
-
-<p>And I’m not telling you what choice to make, and I’m not telling you what to think. I’m telling you what I know. I know American needs a strong leader, and the world needs a strong America. I know Donald J. Trump is the best choice for President of the United States. My fellow Americans, it is my honor to introduce the 45th and soon to be 47th President of the United States. Donald J. Trump.</p>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[Good evening ladies and gentlemen. I am Dana White. I am the CEO and president of the Ultimate Fighting Championship. So two weeks ago I got a call from President Trump asking me if I’d be willing to speak tonight. As usual, there was no pressure, no demands. He asked me as a friend and of course I said yes. Then after I accepted his offer, he sent me a text message. And I just want to read to you a little piece of what President Trump wrote to me. Dana, I’m so honored that you will be doing the introduction at the National Republican Convention. Think of it as the biggest fight you ever had, a fight for our country and even the world. I only wish you didn’t have to interrupt your family trip. But I hope they understand, they love you and they know how important this is. Now think about this. This man’s running for President of the United States. He’s fighting for the future of this country and he’s concerned about interrupting my family trip. That’s the President Trump that I know, a man who truly cares about people. The mainstream media likes to push the narrative that he doesn’t care about anyone but himself. I absolutely know that’s not the truth because I’ve been friends with this guy for 25 years. And for the people who know me, they’ll know this is true. I just want to make something very clear. Nobody in the Trump campaign has ever told me what to say. Nobody tells me what to say and I’m nobody’s puppet. And I’m not telling you what to think. I’m telling you what I know. And I know President Trump, I know President Trump is a fighter. I’ve been saying this since 2015. Now look at what’s happened over the last 10 years. We have all seen it with our own eyes. I’m in the tough guy business. And this man is the toughest, most resilient human being that I’ve ever met in my life. The higher the stakes, the harder he fights, and this guy never ever gives up. So what’s it stake here? The answer is in President Trump’s text. And I quote: A fight for our country. I know why he’s running for President again. Why else? Would he put himself through everything he’s dealt with just to get back here? We all know he doesn’t need this. This guy’s got a great life. He has a beautiful family. And he has achieved everything that you could possibly achieve in life. I know President Trump is literally putting his life on the line for something bigger than himself. And he’s willing to risk it all because he loves this country. And I know he wants what’s best for the American people. All American people. I know he’s running for President to save our American dream. I’m living in the American dream. And I know the American dream is very real. Whether you’re born in this country or came here from some place else, this is the last real land of opportunity. President Reagan once said, Government’s first duty is to protect the people, not run their lives. And if you’re buried in government red tape, how will you ever start your own business? If you’re struggling to pay your bills, how can you ever afford to start a family? And if you don’t feel safe in your own town, why would you ever buy a house? I know the President Trump is fighting to save the American dream, and that’s what’s at stake in this election. We are choosing who we want to lead us in this fight. I know President Trump is a proven leader, a fearless leader, and this country was in a much better place when he was in the Oval Office. In my mind, the choice is clear. But this election, we all get the choose. I know I’m going to choose strength and security. I know I’m going to choose opportunity and prosperity. I know I’m going to choose real American leadership and a real American badass. And I’m not telling you what choice to make, and I’m not telling you what to think. I’m telling you what I know. I know American needs a strong leader, and the world needs a strong America. I know Donald J. Trump is the best choice for President of the United States. My fellow Americans, it is my honor to introduce the 45th and soon to be 47th President of the United States. Donald J. Trump.]]></summary></entry></feed>
+</ol>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[PC Build List Total cost is 5310.]]></summary></entry></feed>
