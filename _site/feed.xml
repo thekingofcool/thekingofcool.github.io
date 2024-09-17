@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-17T12:03:54+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Rules of AI in Cursor</title><link href="http://localhost:4000/blog/2024/09/17/rules_of_ai.html" rel="alternate" type="text/html" title="Rules of AI in Cursor" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/17/rules_of_ai</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/17/rules_of_ai.html"><![CDATA[<p>You are an Al coding instructor designed to assist and guide me as l learn to code. Your primary goal is to help me learn programming concepts, bestpractices, and problem-solving skils while writing code. Always assume l’m a beginner with limited programming knowledge.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-17T12:14:19+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Rules of AI in Cursor</title><link href="http://localhost:4000/blog/2024/09/17/rules_of_ai.html" rel="alternate" type="text/html" title="Rules of AI in Cursor" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/17/rules_of_ai</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/17/rules_of_ai.html"><![CDATA[<p>Here are the AI ​​answer rules I set for <a href="https://www.cursor.com/">Cursor</a> to help me maximize my learning and understanding of programming knowledge:</p>
+
+<p>You are an Al coding instructor designed to assist and guide me as l learn to code. Your primary goal is to help me learn programming concepts, bestpractices, and problem-solving skils while writing code. Always assume l’m a beginner with limited programming knowledge.</p>
 
 <p>Follow these guidelines in all interactions:</p>
 <ol>
@@ -14,7 +16,7 @@
   <li>Foster problem-solving skils by guiding me to find solutions rather than always providing direct answers.</li>
   <li>Adapt your teaching style to my pace and learning preferences.</li>
   <li>Provide code snippets to illustrate concepts, but always explain the code line by line.</li>
-  <li>Use comments throughout the code to help document what is happening</li>
+  <li>Use comments throughout the code to help document what is happening.</li>
 </ol>
 
 <p>Address the my questions thoroughly, keeping in mind the quidelines above. lf the question is unclear or lacks context, ask me for clarification
@@ -22,14 +24,14 @@ Review the code and provide feedback. f there are erors or areas for improvement
 
 <p>Structure your responses as follows:</p>
 <ol>
-  <li>Format your response as markdown</li>
-  <li>Answer my question</li>
-  <li>Code review and feedback</li>
-  <li>Suggestions for further learning or practice</li>
-  <li>Using zh-CN</li>
+  <li>Format your response as markdown.</li>
+  <li>Answer my question.</li>
+  <li>Code review and feedback.</li>
+  <li>Suggestions for further learning or practice.</li>
+  <li>Using zh-CN.</li>
 </ol>
 
-<p>Remember, your goal is not just to help me write correct code, but to help me understand the underlying principles and develop my programming skilsAlways strive to be clear, patient, and encouraging in your responses.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[You are an Al coding instructor designed to assist and guide me as l learn to code. Your primary goal is to help me learn programming concepts, bestpractices, and problem-solving skils while writing code. Always assume l’m a beginner with limited programming knowledge.]]></summary></entry><entry><title type="html">李录谈常识</title><link href="http://localhost:4000/reading/2024/09/17/common_sense.html" rel="alternate" type="text/html" title="李录谈常识" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/17/common_sense</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/17/common_sense.html"><![CDATA[<p>芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。</p>
+<p>Remember, your goal is not just to help me write correct code, but to help me understand the underlying principles and develop my programming skilsAlways strive to be clear, patient, and encouraging in your responses.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Here are the AI ​​answer rules I set for Cursor to help me maximize my learning and understanding of programming knowledge:]]></summary></entry><entry><title type="html">李录谈常识</title><link href="http://localhost:4000/reading/2024/09/17/common_sense.html" rel="alternate" type="text/html" title="李录谈常识" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/17/common_sense</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/17/common_sense.html"><![CDATA[<p>芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。</p>
 
 <p>这里我来谈谈几条常识，也听听大家的意见。</p>
 
@@ -67,7 +69,7 @@ Review the code and provide feedback. f there are erors or areas for improvement
   <li>
     <p>市场经济是由自发的需求、自主的供给，通过自由竞争而形成的。其中需求是主因，供给是手段和结果。市场经济的真实总量实际上是由真实需求总量决定的，而不是由供给决定的。真实需求增加可以提振供给。真实需求降低，提振供给不仅不能解决问题，还会造成更多连带问题。</p>
   </li>
-</ol>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。]]></summary></entry><entry><title type="html">Data Visualization</title><link href="http://localhost:4000/go_big/2024/09/16/data_visualization.html" rel="alternate" type="text/html" title="Data Visualization" /><published>2024-09-16T00:00:00+08:00</published><updated>2024-09-16T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/16/data_visualization</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/16/data_visualization.html"><![CDATA[<h3 id="background">Background</h3>
+</ol>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。]]></summary></entry><entry><title type="html">Data Modeling</title><link href="http://localhost:4000/go_big/2024/09/17/data_modeling.html" rel="alternate" type="text/html" title="Data Modeling" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/17/data_modeling</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/17/data_modeling.html"><![CDATA[]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Data Visualization</title><link href="http://localhost:4000/go_big/2024/09/16/data_visualization.html" rel="alternate" type="text/html" title="Data Visualization" /><published>2024-09-16T00:00:00+08:00</published><updated>2024-09-16T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/16/data_visualization</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/16/data_visualization.html"><![CDATA[<h3 id="background">Background</h3>
 <p>在当前信息化时代，我们所有人都正遭受信息过载和数据过剩的困扰。数据可视化的好处便是让我们看到这些数据的规律以及它们的内在联系，便于我们在繁杂的信息中聚焦到最重要的部分。</p>
 
 <p>一位丹麦科普学家 <a href="https://en.wikipedia.org/wiki/Tor_N%C3%B8rretranders">Tor Nørretranders</a> 研究发现，人类通过视觉接收信息的带宽是所有感官中最大的，大概是 1250MB/s，触觉则相当于 USB 传输接口，大约有 125MB/s，其次是听觉、嗅觉、味觉。我们每天通过感官接收到巨量的信息，再经由大脑的处理提取精炼，凭借人类群体社会日益高效的信息交换，构成了这个物种进化源源不断的动力。</p>
@@ -768,150 +770,4 @@ airflow webserver <span class="nt">--port</span> 8080
   <li>Do not use the <a href="https://airflow.apache.org/docs/apache-airflow/2.10.0/core-concepts/executor/index.html">SequentialExecutor</a> in production.</li>
 </ul>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background 程序设计里，依据时间或者依赖其他任务、事件触发执行命令和脚本，是开发很重要的一部分。本文以类 Unix 系统最基础的 Crontab 和生产级任务调度器 Airflow 为例，整体梳理下任务调度这件事。]]></summary></entry><entry><title type="html">Be a Good Data Engineer - Linux and Shell</title><link href="http://localhost:4000/go_big/2024/09/01/linux_and_shell.html" rel="alternate" type="text/html" title="Be a Good Data Engineer - Linux and Shell" /><published>2024-09-01T00:00:00+08:00</published><updated>2024-09-01T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/01/linux_and_shell</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/01/linux_and_shell.html"><![CDATA[<h3 id="background">Background</h3>
-<p>Linux 是基于 Unix 的开源操作系统，通常用于服务器、台式机和嵌入式系统。</p>
-
-<p>Linux terminal 是一个用于和操作系统进行交互以及执行各种任务的命令行界面，可以用作浏览目录文件及文件中的内容，你也可以用它来安装和升级软件包，也能创建和编辑文件以及执行 shell 脚本。</p>
-
-<h3 id="package-management">Package management</h3>
-<p>常用的包管理器有：</p>
-<h4 id="apt"><a href="https://wiki.debian.org/Apt">apt</a></h4>
-<p>Advanced Packaging Tools, 是一款 <a href="https://www.debian.org/">Debian</a>-based Linux 系统最常用的包管理器。</p>
-
-<p>背景信息：</p>
-
-<p><em>Some of the most popular Debian-based Linux distributions: Linux Mint, Ubuntu, Kali Linux.</em></p>
-
-<p><em>Meanwhile Red Hat-based distributions are: CentOS, Fedora.</em></p>
-
-<p><em>Red Hat-based Linux distributions are often preferred for enterprise environments and servers, focusing on stability and security. Whereas Debian-based Linux distributions moreover focus on long-term support and stability.</em>
-Most Used Commands:</p>
-<ul>
-  <li>install package: <code class="language-plaintext highlighter-rouge">sudo apt-get install [package_name]</code>;</li>
-  <li>remove the package: <code class="language-plaintext highlighter-rouge">sudo apt-get remove [package_name]</code>;</li>
-  <li>list details of installed package: <code class="language-plaintext highlighter-rouge">sudo apt-get list [package_name]</code>;</li>
-</ul>
-
-<p><em>More details refer to: <a href="https://linux.die.net/man/8/apt-get">Linux man page</a></em>.</p>
-
-<h4 id="yum"><a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/5/html/deployment_guide/c1-yum">yum</a></h4>
-<p>Yellowdog Updater Modified, 用作 <a href="https://www.redhat.com/en">Red Hat</a> Enterprise Linux versions 5 and later 的包管理；</p>
-
-<p>Most Used Commands:</p>
-<ul>
-  <li>install: <code class="language-plaintext highlighter-rouge">yum install [package_name]</code>;</li>
-  <li>remove: <code class="language-plaintext highlighter-rouge">yum remove [package_name]</code>;</li>
-  <li>update: <code class="language-plaintext highlighter-rouge">yum update</code>;</li>
-</ul>
-
-<p><em>More details refer to: <a href="https://access.redhat.com/articles/yum-cheat-sheet">Yum Command Cheat Sheet</a></em>.</p>
-
-<h4 id="dnf"><a href="https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/DNF/">dnf</a></h4>
-<p>Dandified YUM, a package manager for .rpm-based Linux distributions, is now the default software package management tool in <a href="https://fedoraproject.org/">Fedora</a>.</p>
-
-<p>Most Used Commands:</p>
-<ul>
-  <li>search: <code class="language-plaintext highlighter-rouge">dnf search packagename</code>;</li>
-  <li>install: <code class="language-plaintext highlighter-rouge">dnf install packagename</code>;</li>
-  <li>remove: <code class="language-plaintext highlighter-rouge">dnf remove packagename</code>;</li>
-</ul>
-
-<p><em>More details refer to: <a href="https://dnf.readthedocs.io/en/latest/command_ref.html">DNF Command Reference</a></em>.</p>
-
-<h4 id="pacman"><a href="https://pacman.archlinux.page/">pacman</a></h4>
-<p>一款简单的 Linux 包管理器。</p>
-
-<p>Most Used Commands:</p>
-<ul>
-  <li>search: <code class="language-plaintext highlighter-rouge">sudo pacman -Ss keyword</code>;</li>
-  <li>install: <code class="language-plaintext highlighter-rouge">sudo pacman -S pkgname</code>;</li>
-  <li>remove: <code class="language-plaintext highlighter-rouge">sudo pacman -Rs package_name</code>;</li>
-</ul>
-
-<p><em>More details refer to: <a href="https://wiki.archlinux.org/title/Pacman#Usage">pacman usage</a></em>.</p>
-
-<h4 id="pip"><a href="https://pip.pypa.io/en/stable/">pip</a></h4>
-<p>pip is the package installer for <a href="https://www.python.org/">Python</a>. Alternatively, <a href="https://www.anaconda.com/">conda</a> is another popular package management tool.</p>
-
-<p>Most Used Commands:</p>
-<ul>
-  <li>search: <code class="language-plaintext highlighter-rouge">python -m pip search "key_word"</code>;</li>
-  <li>install: <code class="language-plaintext highlighter-rouge">python -m pip install SomePackage</code>;</li>
-  <li>uninstall: <code class="language-plaintext highlighter-rouge">python -m pip uninstall SomePackage</code>;</li>
-</ul>
-
-<p><em>More details refer to: <a href="https://pip.pypa.io/en/stable/user_guide/">pip User Guide</a></em>.</p>
-
-<h4 id="brew"><a href="https://brew.sh/">brew</a></h4>
-<p>Homebrew installs the stuff you need that Apple (or your Linux system) didn’t.</p>
-
-<p>Most Used Commands:</p>
-<ul>
-  <li>search: <code class="language-plaintext highlighter-rouge">brew search text</code>;</li>
-  <li>install: <code class="language-plaintext highlighter-rouge">brew install package_name</code>;</li>
-  <li>uninstall: <code class="language-plaintext highlighter-rouge">brew uninstall package_name</code>;</li>
-</ul>
-
-<p><em>More details refer to: <a href="https://docs.brew.sh/Manpage">brew command documatation</a></em>.</p>
-
-<p><strong>Shell learning and troubleshooting: <a href="https://explainshell.com/">explainshell</a></strong>.</p>
-
-<h3 id="command-line-basics">Command Line Basics</h3>
-<p>What is <a href="https://www.gnu.org/software/bash/">Bash</a></p>
-<ul>
-  <li>man: system manual pager;</li>
-  <li>ssh: Secure Shell;</li>
-  <li>ls: list all the files in your current working directory;</li>
-  <li>pwd: print current working directory;</li>
-  <li>cd: change working directory;</li>
-  <li>touch: create a file or change file timestamp;</li>
-  <li>echo: write arguments to standard output;</li>
-  <li>nano: simple and useful editor;</li>
-  <li><a href="https://www.vim.org/">vim</a>: Vi IMproved text editor;</li>
-  <li>cat: to see what’s inside a file real quickly;</li>
-  <li>mkdir: make a new directory;</li>
-  <li>cp: copy file to a target directory;</li>
-  <li>mv: move or rename a file;</li>
-  <li>rm: remove files or directories;</li>
-  <li>ln: make links to file;</li>
-  <li>clear: clear your terminal screen;</li>
-  <li>whoami: print effective userid;</li>
-  <li>useradd: create a new user or update default new user information;</li>
-  <li>sudo: execute a command as another user;</li>
-  <li>su: run a command with substitute user and group ID;</li>
-  <li>exit: exit the shell;</li>
-  <li>passwd: change user password;</li>
-  <li><a href="https://curl.se/">curl</a>: transfer data with url;</li>
-  <li>zip: package and compress (archive) files;</li>
-  <li>unzip: extract compressed files in a zip;</li>
-  <li>head: display first lines of a file;</li>
-  <li>tail: display the last part of a file;</li>
-  <li>diff: differential file and directory comparator;</li>
-  <li>sort: sort lines of text files;</li>
-  <li>find: search for files in a directory hierarchy;</li>
-  <li>chmod: change file modes or Access Control Lists;</li>
-  <li>chown: change file owner and group;</li>
-  <li>ifconfig: configure network interface parameters;</li>
-  <li>grep: file pattern searcher;</li>
-  <li><a href="https://www.gnu.org/software/gawk/manual/gawk.html">awk</a>: pattern-directed scanning and processing language;</li>
-  <li>ping: send ICMP ECHO_REQUEST packets to network hosts;</li>
-  <li>netstat: show network status;</li>
-  <li>iptables: administration tool for IPv4/IPv6 packet filtering and NAT</li>
-  <li>ufw: Uncomplicated Firewall for Ubuntu;</li>
-  <li>uname: display information about the system;</li>
-  <li>cal: displays a calendar and the date of Easter;</li>
-  <li>df: display free disk space;</li>
-  <li>ps: process status;</li>
-  <li>top: display sorted information about processes;</li>
-  <li>kill: terminate or signal a process;</li>
-  <li>pkill: find or signal processes by name;</li>
-  <li>history: command history;</li>
-  <li>reboot: stopping and restarting the system;</li>
-  <li>shutdown: close down the system at a given time;</li>
-</ul>
-
-<p>Practical command line use cases on data science: <a href="https://jeroenjanssens.com/dsatcl/list-of-command-line-tools">Data Science at the Command Line</a>;</p>
-
-<p>Learning the shell step by step: <a href="https://linuxcommand.org/lc3_writing_shell_scripts.php">Writing Shell Scripts</a>;</p>
-
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Linux 是基于 Unix 的开源操作系统，通常用于服务器、台式机和嵌入式系统。]]></summary></entry></feed>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background 程序设计里，依据时间或者依赖其他任务、事件触发执行命令和脚本，是开发很重要的一部分。本文以类 Unix 系统最基础的 Crontab 和生产级任务调度器 Airflow 为例，整体梳理下任务调度这件事。]]></summary></entry></feed>
