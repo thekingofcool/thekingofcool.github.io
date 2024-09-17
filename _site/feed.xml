@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-17T08:57:25+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">李录谈常识</title><link href="http://localhost:4000/reading/2024/09/17/common_sense.html" rel="alternate" type="text/html" title="李录谈常识" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/17/common_sense</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/17/common_sense.html"><![CDATA[<p>芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-17T12:03:54+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Rules of AI in Cursor</title><link href="http://localhost:4000/blog/2024/09/17/rules_of_ai.html" rel="alternate" type="text/html" title="Rules of AI in Cursor" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/17/rules_of_ai</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/17/rules_of_ai.html"><![CDATA[<p>You are an Al coding instructor designed to assist and guide me as l learn to code. Your primary goal is to help me learn programming concepts, bestpractices, and problem-solving skils while writing code. Always assume l’m a beginner with limited programming knowledge.</p>
+
+<p>Follow these guidelines in all interactions:</p>
+<ol>
+  <li>Explain concepts thoroughly but in simple terms, avoiding jargon when possible.</li>
+  <li>When introducing new terms, provide clear definitions and examples.</li>
+  <li>Break down complex problems into smaller,manageable steps.</li>
+  <li>Encourage good coding practices and explain why they are important.</li>
+  <li>Provide examples and analogies to illustrate programming concepts.</li>
+  <li>Be patient and supportive, understanding that learning to code can be challenging.</li>
+  <li>Offer praise for correct implementations and gentle corrections for mistakes.</li>
+  <li>When correcting errors, explain why the error occurred and how to fix it.9.Suggest resources for further learning when appropriate</li>
+  <li>Encourage me to ask questions and seek clarification.</li>
+  <li>Foster problem-solving skils by guiding me to find solutions rather than always providing direct answers.</li>
+  <li>Adapt your teaching style to my pace and learning preferences.</li>
+  <li>Provide code snippets to illustrate concepts, but always explain the code line by line.</li>
+  <li>Use comments throughout the code to help document what is happening</li>
+</ol>
+
+<p>Address the my questions thoroughly, keeping in mind the quidelines above. lf the question is unclear or lacks context, ask me for clarification
+Review the code and provide feedback. f there are erors or areas for improvement,explain them clearly and suggest corrections. if the code is correct, offerpraise and explain why it’s a good implementation.</p>
+
+<p>Structure your responses as follows:</p>
+<ol>
+  <li>Format your response as markdown</li>
+  <li>Answer my question</li>
+  <li>Code review and feedback</li>
+  <li>Suggestions for further learning or practice</li>
+  <li>Using zh-CN</li>
+</ol>
+
+<p>Remember, your goal is not just to help me write correct code, but to help me understand the underlying principles and develop my programming skilsAlways strive to be clear, patient, and encouraging in your responses.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[You are an Al coding instructor designed to assist and guide me as l learn to code. Your primary goal is to help me learn programming concepts, bestpractices, and problem-solving skils while writing code. Always assume l’m a beginner with limited programming knowledge.]]></summary></entry><entry><title type="html">李录谈常识</title><link href="http://localhost:4000/reading/2024/09/17/common_sense.html" rel="alternate" type="text/html" title="李录谈常识" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/17/common_sense</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/17/common_sense.html"><![CDATA[<p>芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。</p>
 
 <p>这里我来谈谈几条常识，也听听大家的意见。</p>
 
@@ -88,7 +119,65 @@
   <li><strong>项目实践</strong>: 通过实际项目练习，创建复杂的商业智能报告和可视化。</li>
 </ul>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background 在当前信息化时代，我们所有人都正遭受信息过载和数据过剩的困扰。数据可视化的好处便是让我们看到这些数据的规律以及它们的内在联系，便于我们在繁杂的信息中聚焦到最重要的部分。]]></summary></entry><entry><title type="html">Python Overall</title><link href="http://localhost:4000/go_big/2024/09/15/python.html" rel="alternate" type="text/html" title="Python Overall" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/15/python</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/15/python.html"><![CDATA[<h3 id="background">Background</h3>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background 在当前信息化时代，我们所有人都正遭受信息过载和数据过剩的困扰。数据可视化的好处便是让我们看到这些数据的规律以及它们的内在联系，便于我们在繁杂的信息中聚焦到最重要的部分。]]></summary></entry><entry><title type="html">no style, please!</title><link href="http://localhost:4000/blog/2024/09/15/no_style_please.html" rel="alternate" type="text/html" title="no style, please!" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/15/no_style_please</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/15/no_style_please.html"><![CDATA[<p>前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 <a href="https://www.cloudflare.com/">Cloudflare</a>（可以在 <a href="https://lookup.icann.org/en">ICANN</a> 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。</p>
+
+<h3 id="what-is-jekyll">What is Jekyll</h3>
+<p><a href="https://jekyllrb.com/">Jekyll</a> 是一款简单的静态网站生成器。它可以将纯文本转化成静态网站，你只需要用自己习惯的标记语言如 Markdown 来编写博客文章，借由 Jekyll 预设模版内置的文章发布、分类、标签、归档等博客所需的功能，使创建和维护博客变得更加简单和高效。</p>
+
+<p><a href="https://riggraz.dev/no-style-please/">no style, please!</a> 是一款几乎没有 CSS 样式的，快速生成，极简的 Jekyll 主题。</p>
+
+<p>结合了这套组件，网站的发布和维护变得非常简单，网站所有者只需专注于输出内容，通过几个简单的命令行，文章就自动部署到网站。</p>
+
+<p>下面来一步一步演示它是如何实现的。</p>
+
+<h3 id="installation">Installation</h3>
+<p>Jekyll 是一个 Ruby 项目，安装 Jekyll 首先需要 Ruby 的开发环境。</p>
+
+<h4 id="install-chruby-and-ruby-install-with-homebrew">Install chruby and ruby-install with Homebrew</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>chruby ruby-install xz
+</code></pre></div></div>
+
+<h4 id="install-the-latest-stable-version-of-ruby">Install the latest stable version of Ruby</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby-install ruby 3.1.3
+</code></pre></div></div>
+
+<h4 id="configure-your-shell-to-automatically-use-chruby">Configure your shell to automatically use chruby</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/chruby.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/auto.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s2">"chruby ruby-3.1.3"</span> <span class="o">&gt;&gt;</span> ~/.zshrc <span class="c"># run 'chruby' to see actual version</span>
+</code></pre></div></div>
+
+<h4 id="install-jekyll">Install Jekyll</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
+</code></pre></div></div>
+
+<h4 id="create-a-new-gemfile">Create a new Gemfile</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle init
+</code></pre></div></div>
+
+<h4 id="edit-gemfile">Edit Gemfile</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="s2">"jekyll"</span>, <span class="s2">"~&gt; 4.3.3"</span>
+<span class="c"># Change default Jekyll theme to no-style-please</span>
+gem <span class="s2">"no-style-please"</span>
+</code></pre></div></div>
+
+<p>Run <code class="language-plaintext highlighter-rouge">bundle</code> to install jekyll for your project.</p>
+
+<h3 id="create-a-site">Create a site</h3>
+<p>在 _data, _includes, _layouts 中预设网站模版样式，将 Markdown 格式的文件放入指定的 _posts 路径。</p>
+
+<h3 id="build-your-site">Build your site</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<p>通过 <code class="language-plaintext highlighter-rouge">localhost:4000</code> 预览生成后的网站，确保无误后将生成后的网站内容推到 Github 触发 Github Pages 部署，至此网站发布成功。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 Cloudflare（可以在 ICANN 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。]]></summary></entry><entry><title type="html">Python Overall</title><link href="http://localhost:4000/go_big/2024/09/15/python.html" rel="alternate" type="text/html" title="Python Overall" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/15/python</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/15/python.html"><![CDATA[<h3 id="background">Background</h3>
 <p><a href="https://www.python.org/">Python</a> 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。</p>
 
 <p>相比于机器语言和汇编语言等低级语言 (low-level language)，使用高级编程语言编写代码有一些好处：代码更少也更易读，编写代码所需的时间更短；更容易做到跨平台运行。</p>
@@ -189,65 +278,7 @@
 <span class="n">logging</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">Program started</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Python 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。]]></summary></entry><entry><title type="html">no style, please!</title><link href="http://localhost:4000/blog/2024/09/15/no_style_please.html" rel="alternate" type="text/html" title="no style, please!" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/15/no_style_please</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/15/no_style_please.html"><![CDATA[<p>前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 <a href="https://www.cloudflare.com/">Cloudflare</a>（可以在 <a href="https://lookup.icann.org/en">ICANN</a> 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。</p>
-
-<h3 id="what-is-jekyll">What is Jekyll</h3>
-<p><a href="https://jekyllrb.com/">Jekyll</a> 是一款简单的静态网站生成器。它可以将纯文本转化成静态网站，你只需要用自己习惯的标记语言如 Markdown 来编写博客文章，借由 Jekyll 预设模版内置的文章发布、分类、标签、归档等博客所需的功能，使创建和维护博客变得更加简单和高效。</p>
-
-<p><a href="https://riggraz.dev/no-style-please/">no style, please!</a> 是一款几乎没有 CSS 样式的，快速生成，极简的 Jekyll 主题。</p>
-
-<p>结合了这套组件，网站的发布和维护变得非常简单，网站所有者只需专注于输出内容，通过几个简单的命令行，文章就自动部署到网站。</p>
-
-<p>下面来一步一步演示它是如何实现的。</p>
-
-<h3 id="installation">Installation</h3>
-<p>Jekyll 是一个 Ruby 项目，安装 Jekyll 首先需要 Ruby 的开发环境。</p>
-
-<h4 id="install-chruby-and-ruby-install-with-homebrew">Install chruby and ruby-install with Homebrew</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>chruby ruby-install xz
-</code></pre></div></div>
-
-<h4 id="install-the-latest-stable-version-of-ruby">Install the latest stable version of Ruby</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby-install ruby 3.1.3
-</code></pre></div></div>
-
-<h4 id="configure-your-shell-to-automatically-use-chruby">Configure your shell to automatically use chruby</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/chruby.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
-<span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/auto.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
-<span class="nb">echo</span> <span class="s2">"chruby ruby-3.1.3"</span> <span class="o">&gt;&gt;</span> ~/.zshrc <span class="c"># run 'chruby' to see actual version</span>
-</code></pre></div></div>
-
-<h4 id="install-jekyll">Install Jekyll</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
-</code></pre></div></div>
-
-<h4 id="create-a-new-gemfile">Create a new Gemfile</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle init
-</code></pre></div></div>
-
-<h4 id="edit-gemfile">Edit Gemfile</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="s2">"jekyll"</span>, <span class="s2">"~&gt; 4.3.3"</span>
-<span class="c"># Change default Jekyll theme to no-style-please</span>
-gem <span class="s2">"no-style-please"</span>
-</code></pre></div></div>
-
-<p>Run <code class="language-plaintext highlighter-rouge">bundle</code> to install jekyll for your project.</p>
-
-<h3 id="create-a-site">Create a site</h3>
-<p>在 _data, _includes, _layouts 中预设网站模版样式，将 Markdown 格式的文件放入指定的 _posts 路径。</p>
-
-<h3 id="build-your-site">Build your site</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
-</code></pre></div></div>
-
-<p>通过 <code class="language-plaintext highlighter-rouge">localhost:4000</code> 预览生成后的网站，确保无误后将生成后的网站内容推到 Github 触发 Github Pages 部署，至此网站发布成功。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 Cloudflare（可以在 ICANN 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。]]></summary></entry><entry><title type="html">延迟退休可能是对一代人违约</title><link href="http://localhost:4000/reading/2024/09/14/delaying_retirement.html" rel="alternate" type="text/html" title="延迟退休可能是对一代人违约" /><published>2024-09-14T00:00:00+08:00</published><updated>2024-09-14T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/14/delaying_retirement</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/14/delaying_retirement.html"><![CDATA[<p><a href="http://jingji.cntv.cn/2013/04/20/ARTI1366415217203221.shtml">Read Original</a></p>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Python 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。]]></summary></entry><entry><title type="html">延迟退休可能是对一代人违约</title><link href="http://localhost:4000/reading/2024/09/14/delaying_retirement.html" rel="alternate" type="text/html" title="延迟退休可能是对一代人违约" /><published>2024-09-14T00:00:00+08:00</published><updated>2024-09-14T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/14/delaying_retirement</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/14/delaying_retirement.html"><![CDATA[<p><a href="http://jingji.cntv.cn/2013/04/20/ARTI1366415217203221.shtml">Read Original</a></p>
 
 <table>
   <tbody>
@@ -883,125 +914,4 @@ Most Used Commands:</p>
 
 <p>Learning the shell step by step: <a href="https://linuxcommand.org/lc3_writing_shell_scripts.php">Writing Shell Scripts</a>;</p>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Linux 是基于 Unix 的开源操作系统，通常用于服务器、台式机和嵌入式系统。]]></summary></entry><entry><title type="html">Build a PC to Play WuKong</title><link href="http://localhost:4000/blog/2024/08/24/wukong.html" rel="alternate" type="text/html" title="Build a PC to Play WuKong" /><published>2024-08-24T00:00:00+08:00</published><updated>2024-08-24T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/08/24/wukong</id><content type="html" xml:base="http://localhost:4000/blog/2024/08/24/wukong.html"><![CDATA[<h3 id="pc-build-list">PC Build List</h3>
-<p>Total cost is 5310.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">item</th>
-      <th style="text-align: left">model</th>
-      <th>channel</th>
-      <th>price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">CPU</td>
-      <td style="text-align: left">AMD R5 7500F</td>
-      <td>PDD</td>
-      <td>929</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">RAM</td>
-      <td style="text-align: left">光威 天策 16g * 2 6400 C32 M</td>
-      <td>PDD</td>
-      <td>679</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">GPU</td>
-      <td style="text-align: left">GeForce RTX 战斧 4060 DUO 8G</td>
-      <td>PDD</td>
-      <td>2108</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Heat sink</td>
-      <td style="text-align: left">利民 AX120R SE ARGB</td>
-      <td>PDD</td>
-      <td>81</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Power supply unit</td>
-      <td style="text-align: left">鑫谷 GM650M 金牌全模</td>
-      <td>PDD</td>
-      <td>349</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">computer case</td>
-      <td style="text-align: left">航嘉 S920 全景</td>
-      <td>PDD</td>
-      <td>160</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">SSD</td>
-      <td style="text-align: left">金士顿 480g SSD</td>
-      <td>TMall</td>
-      <td>265</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Motherboard</td>
-      <td style="text-align: left">技嘉 AMD B650M GAMING WIFI</td>
-      <td>JD</td>
-      <td>739</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">SSD(optional)</td>
-      <td style="text-align: left">Lexar ARES M.2 pcie4.0 nvmeSSD 1T</td>
-      <td>TMall</td>
-      <td>521</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="create-bootable-windows-11-usb-disk">Create Bootable Windows 11 USB Disk</h3>
-<p>When the computer is ready, you need a Windows system boot disk. I’ll do this on a MacOS.</p>
-
-<h4 id="format-usb-disk">Format USB Disk</h4>
-<p>Go to Application, find Utilities - Disk Utility;
-Choose your Disk, and erase the USB External Physical Volume to MS-DOS (FAT32);
-Rename the USB Drive to <strong>WIN11</strong> or whatever you like.</p>
-
-<h4 id="download-system-image">Download System Image</h4>
-<p>Download <a href="https://www.microsoft.com/software-download/windows11">Windows 11</a> Disk Image (ISO) to your computer;</p>
-
-<h4 id="making-a-boot-disk">Making a Boot Disk</h4>
-<ol>
-  <li>Install wimlib
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install wimlib
-</code></pre></div>    </div>
-  </li>
-  <li>Mount the ISO file into a folder
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hdiutil mount Downloads/Win11_23H2_English_x64v2.iso
-</code></pre></div>    </div>
-  </li>
-  <li>Copy all Windows ISO contents into the USB Disk
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync -vha --exclude=sources/install.wim /Volumes/CCCOMA_X64FRE_EN-US_DV9/* /Volumes/WIN11
-</code></pre></div>    </div>
-  </li>
-  <li>Split the installation file in two parts if the size is bigger than 4GB
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wimlib-imagex split /Volumes/CCCOMA_X64FRE_EN-US_DV9/sources/install.wim /Volumes/WIN11/sources/install.swm 3800
-</code></pre></div>    </div>
-  </li>
-  <li>Eject USB device to use it for OS installation.</li>
-</ol>
-
-<h3 id="troubleshooting">Troubleshooting</h3>
-<ol>
-  <li>
-    <p>0 free space when installing the system
-<strong>Solution</strong>: There is some content in the SSD, choose ‘delete’ to erase SSD.</p>
-  </li>
-  <li>
-    <p>The selected disk has an MBR partition table. On EFI system, Windows can only be installed to GPT disks.
-<strong>Solution</strong>:</p>
-    <ul>
-      <li>Restart the computer, On the Windows installation screen, select ‘Repair your computer’; Choose ‘Troubleshoot’ &gt; ‘Command Prompt’.</li>
-      <li>Enter <code class="language-plaintext highlighter-rouge">diskpart</code> to initiate the disk partition process;</li>
-      <li>Enter <code class="language-plaintext highlighter-rouge">list disk</code>. Make a note of the MBR disk number that you want to convert to GPT format;</li>
-      <li>Enter <code class="language-plaintext highlighter-rouge">select disk</code> <em><code class="language-plaintext highlighter-rouge">&lt;disk-number&gt;</code></em>, where <code class="language-plaintext highlighter-rouge">&lt;disk-number&gt;</code> is the MBR disk number to convert;</li>
-      <li>Enter <code class="language-plaintext highlighter-rouge">clean</code> to delete all partitions and volumes on the disk;</li>
-      <li>Enter <code class="language-plaintext highlighter-rouge">convert gpt</code> to convert the MBR disk to the GPT partition format.
-The diskpart process notifies you when the conversion completes.</li>
-    </ul>
-  </li>
-</ol>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[PC Build List Total cost is 5310.]]></summary></entry></feed>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Linux 是基于 Unix 的开源操作系统，通常用于服务器、台式机和嵌入式系统。]]></summary></entry></feed>
