@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-17T16:39:15+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Rules of AI in Cursor</title><link href="http://localhost:4000/blog/2024/09/17/rules_of_ai.html" rel="alternate" type="text/html" title="Rules of AI in Cursor" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/17/rules_of_ai</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/17/rules_of_ai.html"><![CDATA[<p>Here are the AI ​​answer rules I set for <a href="https://www.cursor.com/">Cursor</a> to help me maximize my learning and understanding of programming knowledge:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-18T19:40:01+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Rules of AI in Cursor</title><link href="http://localhost:4000/blog/2024/09/17/rules_of_ai.html" rel="alternate" type="text/html" title="Rules of AI in Cursor" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/17/rules_of_ai</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/17/rules_of_ai.html"><![CDATA[<p>Here are the AI ​​answer rules I set for <a href="https://www.cursor.com/">Cursor</a> to help me maximize my learning and understanding of programming knowledge:</p>
 
 <p>You are an Al coding instructor designed to assist and guide me as l learn to code. Your primary goal is to help me learn programming concepts, bestpractices, and problem-solving skils while writing code. Always assume l’m a beginner with limited programming knowledge.</p>
 
@@ -70,97 +70,114 @@ Review the code and provide feedback. f there are erors or areas for improvement
     <p>市场经济是由自发的需求、自主的供给，通过自由竞争而形成的。其中需求是主因，供给是手段和结果。市场经济的真实总量实际上是由真实需求总量决定的，而不是由供给决定的。真实需求增加可以提振供给。真实需求降低，提振供给不仅不能解决问题，还会造成更多连带问题。</p>
   </li>
 </ol>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。]]></summary></entry><entry><title type="html">Data Modeling</title><link href="http://localhost:4000/go_big/2024/09/17/data_modeling.html" rel="alternate" type="text/html" title="Data Modeling" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/17/data_modeling</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/17/data_modeling.html"><![CDATA[<h3 id="what-is-data-modeling">What is Data Modeling</h3>
-<p>数据建模是指创建一个数据模型的过程。在软件工程中，数据工程师在设计数据库时，将现实世界各类数据及其关系进行分析、抽象，从中找出内在联系，并形式化描述为数据模型，最终建立信息系统的数据库结构。</p>
+<p>数据建模是指创建数据模型的过程。软件工程中，数据工程师在设计数据库时，会将现实世界的各类数据及其关系进行分析、抽象，从中找出内在联系，并将其形式化描述为数据模型，以此建立信息系统的数据库结构。</p>
 
 <h3 id="why-data-modeling">Why Data Modeling</h3>
 <ol>
-  <li>组织数据：帮助理解和组织数据，使其更易于管理和使用;</li>
-  <li>提高效率：通过优化数据结构，提高数据存储和检索的效率;</li>
-  <li>确保数据一致性：定义数据的约束和规则，确保数据的一致性和完整性;</li>
-  <li>支持业务需求：确保数据模型能够满足业务需求和流程。</li>
+  <li>帮助理解和组织数据，使其更易于管理和使用；</li>
+  <li>通过优化数据结构，提高数据存储和检索的效率；</li>
+  <li>定义数据的约束和规则，确保数据的一致性和完整性；</li>
+  <li>确保数据模型能够满足业务需求和流程。</li>
 </ol>
 
 <h3 id="how-to-model-data">How to Model Data</h3>
 <ol>
-  <li>需求分析
+  <li>Requirement Analysis
     <ul>
       <li>定义和分析业务需求；</li>
-      <li>确定数据需求和其需要的相应支持。</li>
+      <li>确定数据需求和需要的相应支持。</li>
     </ul>
   </li>
-  <li>概念模型
+  <li>Conceptual Data Model
     <ul>
-      <li>使用 ER(Entity-relationship) 图来表示数据的高层次结构；</li>
-      <li>定义实体以及实体之间的关系。</li>
+      <li>定义实体以及实体之间的关系；</li>
+      <li>使用 ER(Entity-relationship) 图来表示数据的高层次结构，常用 <a href="https://www.lucidchart.com/pages/?">Lucidchart</a> 来构建概念模型。</li>
     </ul>
   </li>
-  <li>逻辑模型
+  <li>Logical Data Model
     <ul>
       <li>在概念模型的基础上添加更多信息，定义表、列、主键和外键；</li>
       <li>一个概念模型的实现可能需要多个逻辑模型。</li>
     </ul>
   </li>
-  <li>物理模型
+  <li>Physical Data Model
     <ul>
-      <li>根据逻辑模型创建数据库对象；</li>
+      <li>根据逻辑模型创建数据库对象，包括数据表的物理位置、物理名字、字段类型以及命名规范；</li>
       <li>考虑数据库的性能、存储和索引。</li>
     </ul>
   </li>
 </ol>
 
 <h3 id="data-warehouse">Data Warehouse</h3>
-<p>数据仓库是一个用于存储和关系大量数据的系统，它通常从多个源系统中提取数据，并进行清洗、转换和加载供数据分析和 BI 报告使用。数据建模在数据仓库的构建过程中同样尤为重要。</p>
+<p>数据仓库 (Data Warehouse) 是一个用于存储和分析大量数据的系统，它通常从多个源系统中提取数据，并进行清洗、转换和加载 (ETL) 供数据分析和 BI 报告使用。数据建模在数据仓库的构建过程中同样尤为重要。</p>
 
 <h4 id="数据仓库建模的类型">数据仓库建模的类型</h4>
 <ol>
   <li>Star Schema
     <ul>
-      <li>星型模型以事实表为中心，周围是维度表；</li>
-      <li>事实表存储度量数据（如销售额），维度表存储描述数据（如时间、地点、产品）。</li>
+      <li>星型模型 (Star Schema) 以事实表 (Fact Table) 为中心，周围是维度表 (Dimension Table)；</li>
+      <li>事实表存储度量数据（如: 销售额），维度表存储描述数据（如: 时间、地点、产品）。</li>
     </ul>
   </li>
   <li>Snowflake Schema
     <ul>
-      <li>雪花模型是星型模型的扩展，将维度表进一步规范化，分解成多个相关的表；</li>
-      <li>它的特点是减少了数据冗余，但提高了查询的复杂性。</li>
+      <li>雪花模型 (Snowflake Schema) 是星型模型的扩展，将维度表进一步规范化，分解成多个相关的表；</li>
+      <li>它的特点是减少了数据冗余，但是提高了查询的复杂性。</li>
     </ul>
   </li>
-  <li>Fact Constellation Schema
+  <li>Constellation Schema
     <ul>
-      <li>星座模型包含多个事实表，适用于复杂的业务场景。</li>
+      <li>事实星座模型 (Fact Constellation Schema) 包含多个事实表，适用于复杂的业务场景。</li>
     </ul>
   </li>
 </ol>
 
 <h3 id="data-lake">Data Lake</h3>
-<p>数据湖和数据仓库一样，是存储大量数据的系统，但数据湖不仅仅用于存储结构化的数据，还用来存储半结构化、非结构化的数据。数据湖允许以原始格式存储数据，因此数据的质量和一致性可能较低。一般用于存储用户行为数据，如网站日志、社交媒体数据、视频等，以进行大数据分析和机器学习。</p>
+<p>数据湖 (Data Lake) 和数据仓库一样，是存储大量数据的系统，但数据湖不仅用于存储结构化数据，还用来存储半结构化、非结构化数据。数据湖允许以原始格式存储数据，数据的质量和一致性可能较低。它一般用于存储用户行为数据，如网站日志、社交媒体数据、视频等，以进行大数据分析和机器学习。</p>
 
 <h3 id="data-lakehouse">Data Lakehouse</h3>
-<p>数据湖仓库结合了数据湖和数据仓库的优点，它既能处理结构化数据，也能处理非结构化数据，同时提供了高效的查询性能和数据管理功能。它的代表产品是由 <a href="https://docs.databricks.com/en/delta/index.html">Databricks</a> 开发的基于 Apache Spark 的开源存储层的 <a href="https://delta.io/">Delta Lake</a>，以及用于大规模数据集的高性能表格式的 <a href="https://iceberg.apache.org/">Apache Iceberg</a>。值得后续花时间研究一下。</p>
+<p>数据湖仓库 (Data Lakehouse) 结合了数据湖和数据仓库的优点，它既能处理结构化数据，也能处理非结构化数据，同时提供了高效的查询性能和数据管理功能。它的代表产品是由 <a href="https://docs.databricks.com/en/delta/index.html">Databricks</a> 开发的基于 Apache Spark 的开源存储层的 <a href="https://delta.io/">Delta Lake</a>，以及用于大规模数据集的高性能表格式的 <a href="https://iceberg.apache.org/">Apache Iceberg</a>。值得后续花时间研究一下。</p>
 
 <h3 id="数据建模过程中常见问题及应对措施">数据建模过程中常见问题及应对措施</h3>
 <blockquote>
   <p><strong>Problem</strong>: 业务需求不清晰，以及项目进行中需求变更频繁</p>
 
-  <p><strong>Solution</strong>: 深入沟通，明确需求，并编写详细的需求文档；采用迭代开发的方法，分阶段完善数据模型。</p>
+  <p><strong>Solution</strong>:</p>
+  <ol>
+    <li>深入沟通，明确需求，并编写详细的需求文档；</li>
+    <li>采用迭代开发的方法，分阶段完善数据模型</li>
+  </ol>
 </blockquote>
 
 <blockquote>
   <p><strong>Problem</strong>: 不同数据源数据不一致，数据缺失，数据冗余</p>
 
-  <p><strong>Solution</strong>: 数据清洗，确保数据的一致性和完整性；建立数据验证规则，确保数据的准确性</p>
+  <p><strong>Solution</strong>:</p>
+  <ol>
+    <li>数据清洗，确保数据的一致性和完整性；</li>
+    <li>建立数据验证规则，确保数据的准确性</li>
+  </ol>
 </blockquote>
 
 <blockquote>
   <p><strong>Problem</strong>: 实体之间关系复杂，数据模型复杂</p>
 
-  <p><strong>Solution</strong>: 以目的驱动简化模型，避免不必要的复杂度；将复杂的数据模型分解为多个模块，分别建模和管理</p>
+  <p><strong>Solution</strong>:</p>
+  <ol>
+    <li>以目的驱动简化模型，避免不必要的复杂度；</li>
+    <li>将复杂的数据模型分解为多个模块，分别建模和管理</li>
+  </ol>
 </blockquote>
 
 <blockquote>
   <p><strong>Problem</strong>: 存储效率低，查询性能差</p>
 
-  <p><strong>Solution</strong>: 根据实际需求，平衡数据的 Normalization 和 Denormalization；为常用查询字段建立索引；在数据建模过程中进行性能测试</p>
+  <p><strong>Solution</strong>:</p>
+  <ol>
+    <li>根据实际需求，平衡数据的 Normalization 和 Denormalization；</li>
+    <li>为常用查询字段建立索引；</li>
+    <li>在数据建模过程中进行性能测试</li>
+  </ol>
 
   <blockquote>
     <p><em>注：</em></p>
@@ -174,10 +191,14 @@ Review the code and provide feedback. f there are erors or areas for improvement
 <blockquote>
   <p><strong>Problem</strong>: 敏感数据泄露</p>
 
-  <p><strong>Solution</strong>: 对敏感数据进行加密；严格的访问控制策略，确保只有授权的用户可以访问数据</p>
+  <p><strong>Solution</strong>:</p>
+  <ol>
+    <li>对敏感数据进行加密；</li>
+    <li>严格的访问控制策略，确保只有授权的用户可以访问数据</li>
+  </ol>
 </blockquote>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[What is Data Modeling 数据建模是指创建一个数据模型的过程。在软件工程中，数据工程师在设计数据库时，将现实世界各类数据及其关系进行分析、抽象，从中找出内在联系，并形式化描述为数据模型，最终建立信息系统的数据库结构。]]></summary></entry><entry><title type="html">Data Visualization</title><link href="http://localhost:4000/go_big/2024/09/16/data_visualization.html" rel="alternate" type="text/html" title="Data Visualization" /><published>2024-09-16T00:00:00+08:00</published><updated>2024-09-16T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/16/data_visualization</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/16/data_visualization.html"><![CDATA[<h3 id="background">Background</h3>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[What is Data Modeling 数据建模是指创建数据模型的过程。软件工程中，数据工程师在设计数据库时，会将现实世界的各类数据及其关系进行分析、抽象，从中找出内在联系，并将其形式化描述为数据模型，以此建立信息系统的数据库结构。]]></summary></entry><entry><title type="html">Data Visualization</title><link href="http://localhost:4000/go_big/2024/09/16/data_visualization.html" rel="alternate" type="text/html" title="Data Visualization" /><published>2024-09-16T00:00:00+08:00</published><updated>2024-09-16T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/16/data_visualization</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/16/data_visualization.html"><![CDATA[<h3 id="background">Background</h3>
 <p>在当前信息化时代，我们所有人都正遭受信息过载和数据过剩的困扰。数据可视化的好处便是让我们看到这些数据的规律以及它们的内在联系，便于我们在繁杂的信息中聚焦到最重要的部分。</p>
 
 <p>一位丹麦科普学家 <a href="https://en.wikipedia.org/wiki/Tor_N%C3%B8rretranders">Tor Nørretranders</a> 研究发现，人类通过视觉接收信息的带宽是所有感官中最大的，大概是 1250MB/s，触觉则相当于 USB 传输接口，大约有 125MB/s，其次是听觉、嗅觉、味觉。我们每天通过感官接收到巨量的信息，再经由大脑的处理提取精炼，凭借人类群体社会日益高效的信息交换，构成了这个物种进化源源不断的动力。</p>
@@ -388,6 +409,107 @@ gem <span class="s2">"no-style-please"</span>
 <span class="n">logging</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">Program started</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
+<h3 id="useful-libraries">Useful Libraries</h3>
+<p><strong>1. <a href="https://docs.python.org/3/library/pdb.html">pdb</a> —— The Python Debugger</strong></p>
+
+<p>pdb 是一个 python 中用于调试代码的模块，它的用法有两种，在代码行中插入：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">pdb</span><span class="p">;</span> <span class="n">pdb</span><span class="p">.</span><span class="nf">set_trace</span><span class="p">()</span>
+</code></pre></div></div>
+<p>或者使用 python3.7 之后内置的 <code class="language-plaintext highlighter-rouge">breakpoint()</code></p>
+
+<p><strong>Example: Debug Guessing Number</strong></p>
+
+<p>random.randint(a, b) 返回一个 a &lt;= N &lt;= b 的随机整型，用 Python 执行下面的脚本得不到我们想要的结果。使用 breakpoint() 来寻找原因。</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># import pdb
+</span><span class="kn">from</span> <span class="n">random</span> <span class="kn">import</span> <span class="n">randint</span>
+
+<span class="c1"># pdb.set_trace()
+</span><span class="nf">breakpoint</span><span class="p">()</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="nf">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Guess: 0 or 1?</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="n">answer</span><span class="p">:</span>
+    <span class="nf">breakpoint</span><span class="p">()</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Correct!</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nf">breakpoint</span><span class="p">()</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Incorrect. The answer was </span><span class="si">{</span><span class="n">answer</span><span class="si">}</span><span class="s">.</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-&gt; answer <span class="o">=</span> randint<span class="o">(</span>0, 1<span class="o">)</span>
+<span class="o">(</span>Pdb<span class="o">)</span> n
+-&gt; n <span class="o">=</span> input<span class="o">(</span><span class="s2">"Guess: 0 or 1?"</span><span class="o">)</span>
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="o">!</span>answer
+1
+<span class="o">(</span>Pdb<span class="o">)</span> n
+Guess: 0 or 1?1
+-&gt; <span class="k">if </span>n <span class="o">==</span> answer:
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="k">continue</span>
+-&gt; print<span class="o">(</span>f<span class="s2">"Incorrect. The answer was {answer}."</span><span class="o">)</span>
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="o">!(</span>n <span class="o">==</span> answer<span class="o">)</span>
+False
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="o">!</span><span class="nb">type</span><span class="o">(</span>n<span class="o">)</span>
+&lt;class <span class="s1">'str'</span><span class="o">&gt;</span>
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="o">!</span><span class="nb">type</span><span class="o">(</span>answer<span class="o">)</span>
+&lt;class <span class="s1">'int'</span><span class="o">&gt;</span>
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="k">continue
+</span>Incorrect. The answer was 1.
+</code></pre></div></div>
+
+<p>通过 debug 发现，比较时变量 n 和变量 answer 类型不同，将第 7 行代码按如下调整即可修复功能：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Guess: 0 or 1?</span><span class="sh">"</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>在 debug 模式下，键入 <code class="language-plaintext highlighter-rouge">help</code> 查看可以使用的所有命令，以下是开发中最常用的命令及其说明：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">pdb Command</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">n or next</td>
+      <td>Run the next line of code</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">s or step</td>
+      <td>Step into current line(usually a function call)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">r or return</td>
+      <td>Return from the current function</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">l or list</td>
+      <td>List the surrounding code lines</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">interact</td>
+      <td>Starts an interactive Python interpreter</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">c or continue</td>
+      <td>Continue running (until next breakpoint or exit)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">b or break</td>
+      <td>Set a breakpoint for a specific line or function</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">!</td>
+      <td>Special prefix to say “run this as Python code”</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">pp</td>
+      <td>Pretty-print the value of a Python expression</td>
+    </tr>
+  </tbody>
+</table>
+
 <p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Python 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。]]></summary></entry><entry><title type="html">延迟退休可能是对一代人违约</title><link href="http://localhost:4000/reading/2024/09/14/delaying_retirement.html" rel="alternate" type="text/html" title="延迟退休可能是对一代人违约" /><published>2024-09-14T00:00:00+08:00</published><updated>2024-09-14T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/14/delaying_retirement</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/14/delaying_retirement.html"><![CDATA[<p><a href="http://jingji.cntv.cn/2013/04/20/ARTI1366415217203221.shtml">Read Original</a></p>
 
 <table>
@@ -448,7 +570,7 @@ gem <span class="s2">"no-style-please"</span>
 
 <p>而中国目前正陷于房地产泡沫破灭，老龄少子化，地方财政捉襟见肘。届时可能也需要一个事件转移全社会的矛盾。</p>
 
-<p>作为普通人，只有好好锻炼身体，照顾好家人，学习一切有趣的东西，然后祈祷科技变革的发生早于社会变革。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[看了绝大多数简中网友解读的马斯克 X 发言都不全面或者说是错的。 Fine Taylor … you win … I will give you a child and guard your cats with my life]]></summary></entry><entry><title type="html">Be a Good Data Engineer - Spark</title><link href="http://localhost:4000/go_big/2024/09/06/spark.html" rel="alternate" type="text/html" title="Be a Good Data Engineer - Spark" /><published>2024-09-06T00:00:00+08:00</published><updated>2024-09-06T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/06/spark</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/06/spark.html"><![CDATA[<h3 id="background">Background</h3>
+<p>作为普通人，只有好好锻炼身体，照顾好家人，学习一切有趣的东西，然后祈祷科技变革的发生早于社会变革。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[看了绝大多数简中网友解读的马斯克 X 发言都不全面或者说是错的。 Fine Taylor … you win … I will give you a child and guard your cats with my life]]></summary></entry><entry><title type="html">Apache Spark</title><link href="http://localhost:4000/go_big/2024/09/06/spark.html" rel="alternate" type="text/html" title="Apache Spark" /><published>2024-09-06T00:00:00+08:00</published><updated>2024-09-06T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/06/spark</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/06/spark.html"><![CDATA[<h3 id="background">Background</h3>
 <p>进入21世纪以来，随着互联网的发展，各类社交媒体，科技软件，传感器等工具一刻不停地生成着越来越多地数据。有一个说法是:</p>
 <blockquote>
   <p>人类现有90%的数据来自于过去两年。</p>
@@ -799,7 +921,7 @@ wget https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.9.0/commo
   <li><strong>合理设置缓存策略</strong>: 根据数据的特点和业务需求，合理设置<a href="https://spark.apache.org/docs/latest/configuration.html#memory-management">缓存策略</a>，减少数据读取和处理的开销。</li>
 </ol>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background 进入21世纪以来，随着互联网的发展，各类社交媒体，科技软件，传感器等工具一刻不停地生成着越来越多地数据。有一个说法是: 人类现有90%的数据来自于过去两年。]]></summary></entry><entry><title type="html">Be a Good Data Engineer - Cron and Task Scheduler</title><link href="http://localhost:4000/go_big/2024/09/04/cron_and_scheduler.html" rel="alternate" type="text/html" title="Be a Good Data Engineer - Cron and Task Scheduler" /><published>2024-09-04T00:00:00+08:00</published><updated>2024-09-04T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/04/cron_and_scheduler</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/04/cron_and_scheduler.html"><![CDATA[<h3 id="background">Background</h3>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background 进入21世纪以来，随着互联网的发展，各类社交媒体，科技软件，传感器等工具一刻不停地生成着越来越多地数据。有一个说法是: 人类现有90%的数据来自于过去两年。]]></summary></entry><entry><title type="html">Cron and Task Scheduler</title><link href="http://localhost:4000/go_big/2024/09/04/cron_and_scheduler.html" rel="alternate" type="text/html" title="Cron and Task Scheduler" /><published>2024-09-04T00:00:00+08:00</published><updated>2024-09-04T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/04/cron_and_scheduler</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/04/cron_and_scheduler.html"><![CDATA[<h3 id="background">Background</h3>
 <p>程序设计里，依据时间或者依赖其他任务、事件触发执行命令和脚本，是开发很重要的一部分。本文以类 Unix 系统最基础的 Crontab 和生产级任务调度器 Airflow 为例，整体梳理下任务调度这件事。</p>
 
 <h3 id="cron">Cron</h3>

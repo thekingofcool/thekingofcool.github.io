@@ -119,6 +119,107 @@
 <span class="n">logging</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">Program started</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
+<h3 id="useful-libraries">Useful Libraries</h3>
+<p><strong>1. <a href="https://docs.python.org/3/library/pdb.html">pdb</a> —— The Python Debugger</strong></p>
+
+<p>pdb 是一个 python 中用于调试代码的模块，它的用法有两种，在代码行中插入：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">pdb</span><span class="p">;</span> <span class="n">pdb</span><span class="p">.</span><span class="nf">set_trace</span><span class="p">()</span>
+</code></pre></div></div>
+<p>或者使用 python3.7 之后内置的 <code class="language-plaintext highlighter-rouge">breakpoint()</code></p>
+
+<p><strong>Example: Debug Guessing Number</strong></p>
+
+<p>random.randint(a, b) 返回一个 a &lt;= N &lt;= b 的随机整型，用 Python 执行下面的脚本得不到我们想要的结果。使用 breakpoint() 来寻找原因。</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># import pdb
+</span><span class="kn">from</span> <span class="n">random</span> <span class="kn">import</span> <span class="n">randint</span>
+
+<span class="c1"># pdb.set_trace()
+</span><span class="nf">breakpoint</span><span class="p">()</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="nf">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Guess: 0 or 1?</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="n">answer</span><span class="p">:</span>
+    <span class="nf">breakpoint</span><span class="p">()</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Correct!</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nf">breakpoint</span><span class="p">()</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Incorrect. The answer was </span><span class="si">{</span><span class="n">answer</span><span class="si">}</span><span class="s">.</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-&gt; answer <span class="o">=</span> randint<span class="o">(</span>0, 1<span class="o">)</span>
+<span class="o">(</span>Pdb<span class="o">)</span> n
+-&gt; n <span class="o">=</span> input<span class="o">(</span><span class="s2">"Guess: 0 or 1?"</span><span class="o">)</span>
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="o">!</span>answer
+1
+<span class="o">(</span>Pdb<span class="o">)</span> n
+Guess: 0 or 1?1
+-&gt; <span class="k">if </span>n <span class="o">==</span> answer:
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="k">continue</span>
+-&gt; print<span class="o">(</span>f<span class="s2">"Incorrect. The answer was {answer}."</span><span class="o">)</span>
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="o">!(</span>n <span class="o">==</span> answer<span class="o">)</span>
+False
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="o">!</span><span class="nb">type</span><span class="o">(</span>n<span class="o">)</span>
+&lt;class <span class="s1">'str'</span><span class="o">&gt;</span>
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="o">!</span><span class="nb">type</span><span class="o">(</span>answer<span class="o">)</span>
+&lt;class <span class="s1">'int'</span><span class="o">&gt;</span>
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="k">continue
+</span>Incorrect. The answer was 1.
+</code></pre></div></div>
+
+<p>通过 debug 发现，比较时变量 n 和变量 answer 类型不同，将第 7 行代码按如下调整即可修复功能：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Guess: 0 or 1?</span><span class="sh">"</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>在 debug 模式下，键入 <code class="language-plaintext highlighter-rouge">help</code> 查看可以使用的所有命令，以下是开发中最常用的命令及其说明：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">pdb Command</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">n or next</td>
+      <td>Run the next line of code</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">s or step</td>
+      <td>Step into current line(usually a function call)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">r or return</td>
+      <td>Return from the current function</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">l or list</td>
+      <td>List the surrounding code lines</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">interact</td>
+      <td>Starts an interactive Python interpreter</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">c or continue</td>
+      <td>Continue running (until next breakpoint or exit)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">b or break</td>
+      <td>Set a breakpoint for a specific line or function</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">!</td>
+      <td>Special prefix to say “run this as Python code”</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">pp</td>
+      <td>Pretty-print the value of a Python expression</td>
+    </tr>
+  </tbody>
+</table>
+
 <p>To be continued…</p>
 
 </article>

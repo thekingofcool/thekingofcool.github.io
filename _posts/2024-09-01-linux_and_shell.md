@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Be a Good Data Engineer - Linux and Shell"
+title:  "Linux and Shell"
 date:   2024-09-01
 categories: go_big
 ---

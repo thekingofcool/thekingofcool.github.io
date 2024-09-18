@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Be a Good Data Engineer - Cron and Task Scheduler"
+title:  "Cron and Task Scheduler"
 date:   2024-09-04
 categories: go_big
 ---
