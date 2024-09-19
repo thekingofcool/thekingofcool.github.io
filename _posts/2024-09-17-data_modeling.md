@@ -52,7 +52,7 @@ categories: go_big
 ### Data Lakehouse
 数据湖仓库 (Data Lakehouse) 结合了数据湖和数据仓库的优点，它既能处理结构化数据，也能处理非结构化数据，同时提供了高效的查询性能和数据管理功能。它的代表产品是由 [Databricks](https://docs.databricks.com/en/delta/index.html) 开发的基于 Apache Spark 的开源存储层的 [Delta Lake](https://delta.io/)，以及用于大规模数据集的高性能表格式的 [Apache Iceberg](https://iceberg.apache.org/)。
 
-关于 Delta Lake 可以参见我的这一篇日志：[Delta Lake](_site/go_big/2024/09/19/delta_lake.html).
+关于 Delta Lake 可以参见我的这一篇日志：[Delta Lake](../19/delta_lake.html).
 
 ### 数据建模过程中常见问题及应对措施
 >**Problem**: 业务需求不清晰，以及项目进行中需求变更频繁
