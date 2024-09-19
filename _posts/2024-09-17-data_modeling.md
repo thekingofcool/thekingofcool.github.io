@@ -50,7 +50,9 @@ categories: go_big
 数据湖 (Data Lake) 和数据仓库一样，是存储大量数据的系统，但数据湖不仅用于存储结构化数据，还用来存储半结构化、非结构化数据。数据湖允许以原始格式存储数据，数据的质量和一致性可能较低。它一般用于存储用户行为数据，如网站日志、社交媒体数据、视频等，以进行大数据分析和机器学习。
 
 ### Data Lakehouse
-数据湖仓库 (Data Lakehouse) 结合了数据湖和数据仓库的优点，它既能处理结构化数据，也能处理非结构化数据，同时提供了高效的查询性能和数据管理功能。它的代表产品是由 [Databricks](https://docs.databricks.com/en/delta/index.html) 开发的基于 Apache Spark 的开源存储层的 [Delta Lake](https://delta.io/)，以及用于大规模数据集的高性能表格式的 [Apache Iceberg](https://iceberg.apache.org/)。值得后续花时间研究一下。
+数据湖仓库 (Data Lakehouse) 结合了数据湖和数据仓库的优点，它既能处理结构化数据，也能处理非结构化数据，同时提供了高效的查询性能和数据管理功能。它的代表产品是由 [Databricks](https://docs.databricks.com/en/delta/index.html) 开发的基于 Apache Spark 的开源存储层的 [Delta Lake](https://delta.io/)，以及用于大规模数据集的高性能表格式的 [Apache Iceberg](https://iceberg.apache.org/)。
+
+关于 Delta Lake 可以参见我的这一篇日志：[Delta Lake](_site/go_big/2024/09/19/delta_lake.html).
 
 ### 数据建模过程中常见问题及应对措施
 >**Problem**: 业务需求不清晰，以及项目进行中需求变更频繁
