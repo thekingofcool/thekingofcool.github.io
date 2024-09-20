@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Data Visualization"
+title:  "Hands on Data Visualization"
 date:   2024-09-16
 categories: go_big
 ---
