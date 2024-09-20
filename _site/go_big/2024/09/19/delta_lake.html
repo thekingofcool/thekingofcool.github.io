@@ -321,29 +321,33 @@ Delta Lake 为了解决数据的一致性和可靠性，引入了事务日志和
   <span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="sh">"</span><span class="s">/tmp/delta-table</span><span class="sh">"</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p><strong>Data Retention</strong>
-为了访问先前版本的 Delta table 数据，必须完整地保留数据文件和事务日志。默认情况下，数据文件不会自动被清除，表的历史快照会被保留 30 天。</p>
+<p><strong>Data Retention</strong></p>
+
+<p>为了访问先前版本的 Delta table 数据，必须完整地保留数据文件和事务日志。默认情况下，数据文件不会自动被清除，表的历史快照会被保留 30 天。</p>
 <ol>
-  <li>清除数据文件，执行 <a href="https://docs.delta.io/2.1.0/delta-utility.html#-delta-vacuum">VACUUM</a>
-```sql
-– vacuum files not required by versions older than the default retention period
-VACUUM {your_database}.delta_demo</li>
+  <li>清除数据文件，执行 <a href="https://docs.delta.io/2.1.0/delta-utility.html#-delta-vacuum">VACUUM</a></li>
 </ol>
 
-<p>– vacuum files in path-based table
-VACUUM ‘/data/events’
-VACUUM delta.<code class="language-plaintext highlighter-rouge">/data/events/</code></p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- vacuum files not required by versions older than the default retention period</span>
+<span class="k">VACUUM</span> <span class="p">{</span><span class="n">your_database</span><span class="p">}.</span><span class="n">delta_demo</span>
 
-<p>– vacuum files not required by versions more than 100 hours old
-VACUUM delta.<code class="language-plaintext highlighter-rouge">/data/events/</code> RETAIN 100 HOURS</p>
+<span class="c1">-- vacuum files in path-based table</span>
+<span class="k">VACUUM</span> <span class="s1">'/data/events'</span>
+<span class="k">VACUUM</span> <span class="n">delta</span><span class="p">.</span><span class="nv">`/data/events/`</span>
 
-<p>– do dry run to get the list of files to be deleted
-VACUUM {your_database}.delta_demo DRY RUN</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-2. 改变数据留存时间，改变 [Table properties](https://docs.delta.io/2.1.0/delta-batch.html#-table-properties)
-```sql
---controls how long the history for a table is kept. The default is interval 30 days.
-ALTER TABLE {your_database}.delta_demo SET TBLPROPERTIES ('delta.logRetentionDuration' = 'interval &lt;interval&gt;');
+<span class="c1">-- vacuum files not required by versions more than 100 hours old</span>
+<span class="k">VACUUM</span> <span class="n">delta</span><span class="p">.</span><span class="nv">`/data/events/`</span> <span class="n">RETAIN</span> <span class="mi">100</span> <span class="n">HOURS</span>
+
+<span class="c1">-- do dry run to get the list of files to be deleted</span>
+<span class="k">VACUUM</span> <span class="p">{</span><span class="n">your_database</span><span class="p">}.</span><span class="n">delta_demo</span> <span class="n">DRY</span> <span class="n">RUN</span>
+</code></pre></div></div>
+
+<ol>
+  <li>改变数据留存时间，改变 <a href="https://docs.delta.io/2.1.0/delta-batch.html#-table-properties">Table properties</a></li>
+</ol>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">--controls how long the history for a table is kept. The default is interval 30 days.</span>
+<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="p">{</span><span class="n">your_database</span><span class="p">}.</span><span class="n">delta_demo</span> <span class="k">SET</span> <span class="n">TBLPROPERTIES</span> <span class="p">(</span><span class="s1">'delta.logRetentionDuration'</span> <span class="o">=</span> <span class="s1">'interval &lt;interval&gt;'</span><span class="p">);</span>
 </code></pre></div></div>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">--To access historical data even if you run VACUUM on the Delta table, This setting may cause your storage costs to go up.</span>

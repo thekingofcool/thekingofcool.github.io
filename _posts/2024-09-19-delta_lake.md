@@ -198,8 +198,10 @@ df2 = spark.read.format("delta") \
 ```
 
 **Data Retention**
+
 为了访问先前版本的 Delta table 数据，必须完整地保留数据文件和事务日志。默认情况下，数据文件不会自动被清除，表的历史快照会被保留 30 天。
 1. 清除数据文件，执行 [VACUUM](https://docs.delta.io/2.1.0/delta-utility.html#-delta-vacuum)
+
 ```sql
 -- vacuum files not required by versions older than the default retention period
 VACUUM {your_database}.delta_demo
@@ -216,6 +218,7 @@ VACUUM {your_database}.delta_demo DRY RUN
 ```
 
 2. 改变数据留存时间，改变 [Table properties](https://docs.delta.io/2.1.0/delta-batch.html#-table-properties)
+
 ```sql
 --controls how long the history for a table is kept. The default is interval 30 days.
 ALTER TABLE {your_database}.delta_demo SET TBLPROPERTIES ('delta.logRetentionDuration' = 'interval <interval>');
