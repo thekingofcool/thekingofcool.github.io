@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-20T18:36:43+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">Hands on Delta Lake</title><link href="http://localhost:4000/go_big/2024/09/19/delta_lake.html" rel="alternate" type="text/html" title="Hands on Delta Lake" /><published>2024-09-19T00:00:00+08:00</published><updated>2024-09-19T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/19/delta_lake</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/19/delta_lake.html"><![CDATA[<h3 id="what-is-delta-lake">What is Delta Lake</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-21T12:52:21+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s website</title><entry><title type="html">日本人学校遇害学生父亲的信</title><link href="http://localhost:4000/reading/2024/09/21/japanese_children_in_china.html" rel="alternate" type="text/html" title="日本人学校遇害学生父亲的信" /><published>2024-09-21T00:00:00+08:00</published><updated>2024-09-21T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/21/japanese_children_in_china</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/21/japanese_children_in_china.html"><![CDATA[<p>2024年6月24日，中国苏州，一辆载有放学回家的日本孩子的校车抵达距学校近一公里外的车站时，一位 “不清楚作案动机” 的52岁男子试图上车袭击学生，55岁的校车乘务员胡友平在阻拦过程中被刺身亡。</p>
+
+<p>2024年9月18日，中国深圳，一名5年級日本男学生在距离学校200米处，遭一名44岁中国男子持刀袭击，经抢救无效死亡。</p>
+
+<p>前一个事件以“宣扬胡友平英勇无畏、弘扬社会正气”为终，后一个事件以“就核废水排海达成共识，中国恢复进口日本水产”试图画上句号。当然它们会有一个共同点，那就是和东航737客机坠毁一样，永远等不到官方调查通报。</p>
+
+<p>昨天还观察到一个事情，遇害男学生的父亲小山纯平的一封写给领事馆的信的截图在中文互联网被大面积移除。</p>
+
+<p>我很好奇，他们何以心虚至此，以至于如此义无反顾地站在人类良善、同理及一切进步的品质的对立面。以及浩浩荡荡的义和团运动和人类踏上火星开启多星系物种时代，哪一个会先到来？</p>
+
+<p>做个记录。</p>
+
+<p>形势一片大好，不是小好，是大好。一切正越来越好。</p>
+
+<blockquote>
+  <p>力石先生、古家先生</p>
+
+  <p>感谢您昨日一直陪伴到很晚。</p>
+
+  <p>关于领事馆和公司的评论，您可以自行决定。但我还是希望您能了解我的心情，因此写下了这封信。或许更多是为了整理我的情绪，可能有些地方写得不够好，还请见谅。是否转发、以及转发给谁，都请您自由决定。</p>
+
+  <p>航平非常喜欢昆虫和爬行动物，是个拥有独特眼力，能发现任何小生物的孩子。他拥有比任何人都更为温柔的心灵。从小就喜欢画画，是一个对语言很有天赋的孩子，能够流利地使用日语和中文。</p>
+
+  <p>他一直对随我前往深圳的安排感到犹豫不决。由于偏食，他一开始很难适应当地的饮食，但最近，他喜欢上了越来越多的中国食物，并且迷上了刚刚开始的篮球运动。</p>
+
+  <p>他如此突然地离开了我们，我完全没有料到。现在，我的内心充满了困惑和无尽的悲痛。我再也无法看到他如何成长，如何成为大人。无法保护他，这将成为我一生都无法释怀的悔恨。</p>
+
+  <p>航平既是日本人，也是中国人。他的母亲是中国人，曾在日本生活了近十年；他的父亲是一个已经在中国度过了将近一半人生的日本人。航平本人三岁前的大部分时间都是在中国妻子的家中度过的。无论外界如何报道，他拥有日本和中国两国根源的事实不会改变。</p>
+
+  <p>我们不会憎恨中国，同样，我们也不会憎恨日本。</p>
+
+  <p>无论国籍为何，我们都将这两个国家视为自己的国家。尽管风俗和文化存在差异，但我们比谁都清楚，大家都是一样的人。因此，我不希望由极少数持扭曲思想的卑劣之人的罪行，来破坏两国的关系。我唯一的愿望就是，这样的悲剧不再重演。</p>
+
+  <p>航平曾经有一次对我说：“将来想成为像爸爸一样的人。”或许这只是一时的心血来潮，但作为父亲，这句话让我无比欣慰。我从事中日贸易的工作，担任着日本和中国之间的桥梁。我的主要职责是弥合双方的认知差异，促进顺畅的沟通。</p>
+
+  <p>如果没有发生这次不幸的事件，我相信他一定会成为比我更有用的人。但现在，我只能尽全力成为一个他可以为之自豪的人，并且，继续为日中两国的相互理解作出微小的贡献，这既是对我最爱的儿子的赎罪，也是对犯人的报复。</p>
+
+  <p>最重要的是，我想对航平表示感激，感谢他让我们成为父母，感谢他在我们身边度过了10年8个月又7天的时光。我们将会继续坚强地生活下去，为他，继续走完他未完成的路。</p>
+
+  <p>小山纯平</p>
+</blockquote>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[2024年6月24日，中国苏州，一辆载有放学回家的日本孩子的校车抵达距学校近一公里外的车站时，一位 “不清楚作案动机” 的52岁男子试图上车袭击学生，55岁的校车乘务员胡友平在阻拦过程中被刺身亡。]]></summary></entry><entry><title type="html">Hands on Delta Lake</title><link href="http://localhost:4000/go_big/2024/09/19/delta_lake.html" rel="alternate" type="text/html" title="Hands on Delta Lake" /><published>2024-09-19T00:00:00+08:00</published><updated>2024-09-19T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/19/delta_lake</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/19/delta_lake.html"><![CDATA[<h3 id="what-is-delta-lake">What is Delta Lake</h3>
 <p><a href="https://delta.io/">Delta Lake</a> 是一个开源的数据湖存储层 (lakehouse storage layer) 技术，它利用基于文件的事务日志 (file-based transaction log) 扩展了 <a href="https://parquet.apache.org/">Parquet</a> 数据文件，以实现 ACID 事务和可扩展的元数据处理。Delta Lake 与 Apache Spark API 完全兼容，专为与 Structured Streaming 集成而开发，可以很方便地对 batch &amp; streaming 数据进行处理。</p>
 
 <p>Delta Lake 的主要优势是它对大规模数据处理的可靠性和一致性，同时提供了类似于传统数据库的事务功能。在使用过程中可以通过 Spark SQL 来读取、写入和管理 Delta Lake 中的数据。下面将这些功能一一演示。</p>
@@ -448,7 +488,78 @@ Delta Lake 为了解决数据的一致性和可靠性，引入了事务日志和
 <span class="n">delta_text_df</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[What is Delta Lake Delta Lake 是一个开源的数据湖存储层 (lakehouse storage layer) 技术，它利用基于文件的事务日志 (file-based transaction log) 扩展了 Parquet 数据文件，以实现 ACID 事务和可扩展的元数据处理。Delta Lake 与 Apache Spark API 完全兼容，专为与 Structured Streaming 集成而开发，可以很方便地对 batch &amp; streaming 数据进行处理。]]></summary></entry><entry><title type="html">Hands on Data Modeling</title><link href="http://localhost:4000/go_big/2024/09/17/data_modeling.html" rel="alternate" type="text/html" title="Hands on Data Modeling" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/17/data_modeling</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/17/data_modeling.html"><![CDATA[<h3 id="what-is-data-modeling">What is Data Modeling</h3>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[What is Delta Lake Delta Lake 是一个开源的数据湖存储层 (lakehouse storage layer) 技术，它利用基于文件的事务日志 (file-based transaction log) 扩展了 Parquet 数据文件，以实现 ACID 事务和可扩展的元数据处理。Delta Lake 与 Apache Spark API 完全兼容，专为与 Structured Streaming 集成而开发，可以很方便地对 batch &amp; streaming 数据进行处理。]]></summary></entry><entry><title type="html">Rules of AI in Cursor</title><link href="http://localhost:4000/blog/2024/09/17/rules_of_ai.html" rel="alternate" type="text/html" title="Rules of AI in Cursor" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/17/rules_of_ai</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/17/rules_of_ai.html"><![CDATA[<p>Here are the AI ​​answer rules I set for <a href="https://www.cursor.com/">Cursor</a> to help me maximize my learning and understanding of programming knowledge:</p>
+
+<p>You are an Al coding instructor designed to assist and guide me as l learn to code. Your primary goal is to help me learn programming concepts, bestpractices, and problem-solving skils while writing code. Always assume l’m a beginner with limited programming knowledge.</p>
+
+<p>Follow these guidelines in all interactions:</p>
+<ol>
+  <li>Explain concepts thoroughly but in simple terms, avoiding jargon when possible.</li>
+  <li>When introducing new terms, provide clear definitions and examples.</li>
+  <li>Break down complex problems into smaller,manageable steps.</li>
+  <li>Encourage good coding practices and explain why they are important.</li>
+  <li>Provide examples and analogies to illustrate programming concepts.</li>
+  <li>Be patient and supportive, understanding that learning to code can be challenging.</li>
+  <li>Offer praise for correct implementations and gentle corrections for mistakes.</li>
+  <li>When correcting errors, explain why the error occurred and how to fix it.9.Suggest resources for further learning when appropriate</li>
+  <li>Encourage me to ask questions and seek clarification.</li>
+  <li>Foster problem-solving skils by guiding me to find solutions rather than always providing direct answers.</li>
+  <li>Adapt your teaching style to my pace and learning preferences.</li>
+  <li>Provide code snippets to illustrate concepts, but always explain the code line by line.</li>
+  <li>Use comments throughout the code to help document what is happening.</li>
+</ol>
+
+<p>Address the my questions thoroughly, keeping in mind the quidelines above. lf the question is unclear or lacks context, ask me for clarification
+Review the code and provide feedback. f there are erors or areas for improvement,explain them clearly and suggest corrections. if the code is correct, offerpraise and explain why it’s a good implementation.</p>
+
+<p>Structure your responses as follows:</p>
+<ol>
+  <li>Format your response as markdown.</li>
+  <li>Answer my question.</li>
+  <li>Code review and feedback.</li>
+  <li>Suggestions for further learning or practice.</li>
+  <li>Using zh-CN.</li>
+</ol>
+
+<p>Remember, your goal is not just to help me write correct code, but to help me understand the underlying principles and develop my programming skilsAlways strive to be clear, patient, and encouraging in your responses.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Here are the AI ​​answer rules I set for Cursor to help me maximize my learning and understanding of programming knowledge:]]></summary></entry><entry><title type="html">李录谈常识</title><link href="http://localhost:4000/reading/2024/09/17/common_sense.html" rel="alternate" type="text/html" title="李录谈常识" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/17/common_sense</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/17/common_sense.html"><![CDATA[<p>芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。</p>
+
+<p>这里我来谈谈几条常识，也听听大家的意见。</p>
+
+<ol>
+  <li>
+    <p>现代化是市场经济和现代科技结合的产物。但这其中有一个因果关系。市场经济是因，现代科技是果。没有现代市场经济，不会产生现代科技，在非市场经济的制度中，技术不能有效的转化成生产力，也因此不能产生持久、领先的科技。但是发达的市场经济一定会产生领先的科技。</p>
+  </li>
+  <li>
+    <p>除国防外，当今所有先进技术最先都是由私营企业在市场经济环垸下创造出来的。美国，西方，中国都如此。政府主导先进科技创新，如果破坏了市场机制，没有成功案例。</p>
+  </li>
+  <li>
+    <p>人的本性都是白私的。人的道德其实是对于更广泛私利、长远私利的描述。制度设计和政策措施如果不能激发人的私利，形成不了正向的激励机制，也就不可持续。无论在经济或是政治活动中都是一样。</p>
+  </li>
+  <li>
+    <p>关于腐败。腐败本质上是一种权力寻租。只要有权力就永远有腐败。在整个人类历史进程中、在所有制度下，腐败一直存在，将来也会永远存在。腐败只能控制，不可能完全消除。过度腐败对社会伤害，过度反腐也会对社会伤害。公正的制度性控制比人为的控制更可持续，而且负面后果更少。</p>
+  </li>
+  <li>
+    <p>权力是一组人对另一组人行为的影响力。它的总量一定，和人口数量相关。权力从本质上是一个零和的游戏。政府权力过大，必然导致民间的权力过小，官不聊生必然导致民不聊生，古今中外都如此。</p>
+  </li>
+  <li>
+    <p>市场经济本质上是政府在经济上让权给民间。在市场经济中所有重要的决定都只能由私人来做出。政府的作用在于服务和维持规则，不是指挥。由政府指挥市场经济没有成功案例。民间经济、市场经济是否有活力，常常取决于政府在经济活动中的权力是否足够小。</p>
+  </li>
+  <li>
+    <p>市场经济对人才的选择由自由竞争决定，不拘一格也无法预测。一个社会越能够容忍不同人格、不同价值观的人才，越能在市场经济中成功。反之亦然。</p>
+  </li>
+  <li>
+    <p>人从本性上都追求平等。追求结果平等的机制会造成最大的不平等，追求机会平等的机制会形成对结果平等的最大近似。</p>
+  </li>
+  <li>
+    <p>人对安全的需求远远大于对财富的追求。在已经温饱的前提下，没有人身安全保障，对财富的追求会大大降低。</p>
+  </li>
+  <li>
+    <p>市场经济行为和预期相关。当一个市场经济中，绝大多数人无论因何种原因开始持负面预期时，经济活动会衰退，衰退本身会加固负面预期，从而加速衰退。反之亦然。</p>
+  </li>
+  <li>
+    <p>市场经济是由自发的需求、自主的供给，通过自由竞争而形成的。其中需求是主因，供给是手段和结果。市场经济的真实总量实际上是由真实需求总量决定的，而不是由供给决定的。真实需求增加可以提振供给。真实需求降低，提振供给不仅不能解决问题，还会造成更多连带问题。</p>
+  </li>
+</ol>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。]]></summary></entry><entry><title type="html">Hands on Data Modeling</title><link href="http://localhost:4000/go_big/2024/09/17/data_modeling.html" rel="alternate" type="text/html" title="Hands on Data Modeling" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/17/data_modeling</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/17/data_modeling.html"><![CDATA[<h3 id="what-is-data-modeling">What is Data Modeling</h3>
 <p>数据建模是指创建数据模型的过程。软件工程中，数据工程师在设计数据库时，会将现实世界的各类数据及其关系进行分析、抽象，从中找出内在联系，并将其形式化描述为数据模型，以此建立信息系统的数据库结构。</p>
 
 <h3 id="why-data-modeling">Why Data Modeling</h3>
@@ -579,78 +690,7 @@ Delta Lake 为了解决数据的一致性和可靠性，引入了事务日志和
   </ol>
 </blockquote>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[What is Data Modeling 数据建模是指创建数据模型的过程。软件工程中，数据工程师在设计数据库时，会将现实世界的各类数据及其关系进行分析、抽象，从中找出内在联系，并将其形式化描述为数据模型，以此建立信息系统的数据库结构。]]></summary></entry><entry><title type="html">李录谈常识</title><link href="http://localhost:4000/reading/2024/09/17/common_sense.html" rel="alternate" type="text/html" title="李录谈常识" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/17/common_sense</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/17/common_sense.html"><![CDATA[<p>芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。</p>
-
-<p>这里我来谈谈几条常识，也听听大家的意见。</p>
-
-<ol>
-  <li>
-    <p>现代化是市场经济和现代科技结合的产物。但这其中有一个因果关系。市场经济是因，现代科技是果。没有现代市场经济，不会产生现代科技，在非市场经济的制度中，技术不能有效的转化成生产力，也因此不能产生持久、领先的科技。但是发达的市场经济一定会产生领先的科技。</p>
-  </li>
-  <li>
-    <p>除国防外，当今所有先进技术最先都是由私营企业在市场经济环垸下创造出来的。美国，西方，中国都如此。政府主导先进科技创新，如果破坏了市场机制，没有成功案例。</p>
-  </li>
-  <li>
-    <p>人的本性都是白私的。人的道德其实是对于更广泛私利、长远私利的描述。制度设计和政策措施如果不能激发人的私利，形成不了正向的激励机制，也就不可持续。无论在经济或是政治活动中都是一样。</p>
-  </li>
-  <li>
-    <p>关于腐败。腐败本质上是一种权力寻租。只要有权力就永远有腐败。在整个人类历史进程中、在所有制度下，腐败一直存在，将来也会永远存在。腐败只能控制，不可能完全消除。过度腐败对社会伤害，过度反腐也会对社会伤害。公正的制度性控制比人为的控制更可持续，而且负面后果更少。</p>
-  </li>
-  <li>
-    <p>权力是一组人对另一组人行为的影响力。它的总量一定，和人口数量相关。权力从本质上是一个零和的游戏。政府权力过大，必然导致民间的权力过小，官不聊生必然导致民不聊生，古今中外都如此。</p>
-  </li>
-  <li>
-    <p>市场经济本质上是政府在经济上让权给民间。在市场经济中所有重要的决定都只能由私人来做出。政府的作用在于服务和维持规则，不是指挥。由政府指挥市场经济没有成功案例。民间经济、市场经济是否有活力，常常取决于政府在经济活动中的权力是否足够小。</p>
-  </li>
-  <li>
-    <p>市场经济对人才的选择由自由竞争决定，不拘一格也无法预测。一个社会越能够容忍不同人格、不同价值观的人才，越能在市场经济中成功。反之亦然。</p>
-  </li>
-  <li>
-    <p>人从本性上都追求平等。追求结果平等的机制会造成最大的不平等，追求机会平等的机制会形成对结果平等的最大近似。</p>
-  </li>
-  <li>
-    <p>人对安全的需求远远大于对财富的追求。在已经温饱的前提下，没有人身安全保障，对财富的追求会大大降低。</p>
-  </li>
-  <li>
-    <p>市场经济行为和预期相关。当一个市场经济中，绝大多数人无论因何种原因开始持负面预期时，经济活动会衰退，衰退本身会加固负面预期，从而加速衰退。反之亦然。</p>
-  </li>
-  <li>
-    <p>市场经济是由自发的需求、自主的供给，通过自由竞争而形成的。其中需求是主因，供给是手段和结果。市场经济的真实总量实际上是由真实需求总量决定的，而不是由供给决定的。真实需求增加可以提振供给。真实需求降低，提振供给不仅不能解决问题，还会造成更多连带问题。</p>
-  </li>
-</ol>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。]]></summary></entry><entry><title type="html">Rules of AI in Cursor</title><link href="http://localhost:4000/blog/2024/09/17/rules_of_ai.html" rel="alternate" type="text/html" title="Rules of AI in Cursor" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/17/rules_of_ai</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/17/rules_of_ai.html"><![CDATA[<p>Here are the AI ​​answer rules I set for <a href="https://www.cursor.com/">Cursor</a> to help me maximize my learning and understanding of programming knowledge:</p>
-
-<p>You are an Al coding instructor designed to assist and guide me as l learn to code. Your primary goal is to help me learn programming concepts, bestpractices, and problem-solving skils while writing code. Always assume l’m a beginner with limited programming knowledge.</p>
-
-<p>Follow these guidelines in all interactions:</p>
-<ol>
-  <li>Explain concepts thoroughly but in simple terms, avoiding jargon when possible.</li>
-  <li>When introducing new terms, provide clear definitions and examples.</li>
-  <li>Break down complex problems into smaller,manageable steps.</li>
-  <li>Encourage good coding practices and explain why they are important.</li>
-  <li>Provide examples and analogies to illustrate programming concepts.</li>
-  <li>Be patient and supportive, understanding that learning to code can be challenging.</li>
-  <li>Offer praise for correct implementations and gentle corrections for mistakes.</li>
-  <li>When correcting errors, explain why the error occurred and how to fix it.9.Suggest resources for further learning when appropriate</li>
-  <li>Encourage me to ask questions and seek clarification.</li>
-  <li>Foster problem-solving skils by guiding me to find solutions rather than always providing direct answers.</li>
-  <li>Adapt your teaching style to my pace and learning preferences.</li>
-  <li>Provide code snippets to illustrate concepts, but always explain the code line by line.</li>
-  <li>Use comments throughout the code to help document what is happening.</li>
-</ol>
-
-<p>Address the my questions thoroughly, keeping in mind the quidelines above. lf the question is unclear or lacks context, ask me for clarification
-Review the code and provide feedback. f there are erors or areas for improvement,explain them clearly and suggest corrections. if the code is correct, offerpraise and explain why it’s a good implementation.</p>
-
-<p>Structure your responses as follows:</p>
-<ol>
-  <li>Format your response as markdown.</li>
-  <li>Answer my question.</li>
-  <li>Code review and feedback.</li>
-  <li>Suggestions for further learning or practice.</li>
-  <li>Using zh-CN.</li>
-</ol>
-
-<p>Remember, your goal is not just to help me write correct code, but to help me understand the underlying principles and develop my programming skilsAlways strive to be clear, patient, and encouraging in your responses.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Here are the AI ​​answer rules I set for Cursor to help me maximize my learning and understanding of programming knowledge:]]></summary></entry><entry><title type="html">Hands on Data Visualization</title><link href="http://localhost:4000/go_big/2024/09/16/data_visualization.html" rel="alternate" type="text/html" title="Hands on Data Visualization" /><published>2024-09-16T00:00:00+08:00</published><updated>2024-09-16T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/16/data_visualization</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/16/data_visualization.html"><![CDATA[<h3 id="background">Background</h3>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[What is Data Modeling 数据建模是指创建数据模型的过程。软件工程中，数据工程师在设计数据库时，会将现实世界的各类数据及其关系进行分析、抽象，从中找出内在联系，并将其形式化描述为数据模型，以此建立信息系统的数据库结构。]]></summary></entry><entry><title type="html">Hands on Data Visualization</title><link href="http://localhost:4000/go_big/2024/09/16/data_visualization.html" rel="alternate" type="text/html" title="Hands on Data Visualization" /><published>2024-09-16T00:00:00+08:00</published><updated>2024-09-16T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/16/data_visualization</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/16/data_visualization.html"><![CDATA[<h3 id="background">Background</h3>
 <p>在当前信息化时代，我们所有人都正遭受信息过载和数据过剩的困扰。数据可视化的好处便是让我们看到这些数据的规律以及它们的内在联系，便于我们在繁杂的信息中聚焦到最重要的部分。</p>
 
 <p>一位丹麦科普学家 <a href="https://en.wikipedia.org/wiki/Tor_N%C3%B8rretranders">Tor Nørretranders</a> 研究发现，人类通过视觉接收信息的带宽是所有感官中最大的，大概是 1250MB/s，触觉则相当于 USB 传输接口，大约有 125MB/s，其次是听觉、嗅觉、味觉。我们每天通过感官接收到巨量的信息，再经由大脑的处理提取精炼，凭借人类群体社会日益高效的信息交换，构成了这个物种进化源源不断的动力。</p>
@@ -702,65 +742,7 @@ Review the code and provide feedback. f there are erors or areas for improvement
   <li><strong>项目实践</strong>: 通过实际项目练习，创建复杂的商业智能报告和可视化。</li>
 </ul>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background 在当前信息化时代，我们所有人都正遭受信息过载和数据过剩的困扰。数据可视化的好处便是让我们看到这些数据的规律以及它们的内在联系，便于我们在繁杂的信息中聚焦到最重要的部分。]]></summary></entry><entry><title type="html">no style, please!</title><link href="http://localhost:4000/blog/2024/09/15/no_style_please.html" rel="alternate" type="text/html" title="no style, please!" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/15/no_style_please</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/15/no_style_please.html"><![CDATA[<p>前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 <a href="https://www.cloudflare.com/">Cloudflare</a>（可以在 <a href="https://lookup.icann.org/en">ICANN</a> 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。</p>
-
-<h3 id="what-is-jekyll">What is Jekyll</h3>
-<p><a href="https://jekyllrb.com/">Jekyll</a> 是一款简单的静态网站生成器。它可以将纯文本转化成静态网站，你只需要用自己习惯的标记语言如 Markdown 来编写博客文章，借由 Jekyll 预设模版内置的文章发布、分类、标签、归档等博客所需的功能，使创建和维护博客变得更加简单和高效。</p>
-
-<p><a href="https://riggraz.dev/no-style-please/">no style, please!</a> 是一款几乎没有 CSS 样式的，快速生成，极简的 Jekyll 主题。</p>
-
-<p>结合了这套组件，网站的发布和维护变得非常简单，网站所有者只需专注于输出内容，通过几个简单的命令行，文章就自动部署到网站。</p>
-
-<p>下面来一步一步演示它是如何实现的。</p>
-
-<h3 id="installation">Installation</h3>
-<p>Jekyll 是一个 Ruby 项目，安装 Jekyll 首先需要 Ruby 的开发环境。</p>
-
-<h4 id="install-chruby-and-ruby-install-with-homebrew">Install chruby and ruby-install with Homebrew</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>chruby ruby-install xz
-</code></pre></div></div>
-
-<h4 id="install-the-latest-stable-version-of-ruby">Install the latest stable version of Ruby</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby-install ruby 3.1.3
-</code></pre></div></div>
-
-<h4 id="configure-your-shell-to-automatically-use-chruby">Configure your shell to automatically use chruby</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/chruby.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
-<span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/auto.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
-<span class="nb">echo</span> <span class="s2">"chruby ruby-3.1.3"</span> <span class="o">&gt;&gt;</span> ~/.zshrc <span class="c"># run 'chruby' to see actual version</span>
-</code></pre></div></div>
-
-<h4 id="install-jekyll">Install Jekyll</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
-</code></pre></div></div>
-
-<h4 id="create-a-new-gemfile">Create a new Gemfile</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle init
-</code></pre></div></div>
-
-<h4 id="edit-gemfile">Edit Gemfile</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="s2">"jekyll"</span>, <span class="s2">"~&gt; 4.3.3"</span>
-<span class="c"># Change default Jekyll theme to no-style-please</span>
-gem <span class="s2">"no-style-please"</span>
-</code></pre></div></div>
-
-<p>Run <code class="language-plaintext highlighter-rouge">bundle</code> to install jekyll for your project.</p>
-
-<h3 id="create-a-site">Create a site</h3>
-<p>在 _data, _includes, _layouts 中预设网站模版样式，将 Markdown 格式的文件放入指定的 _posts 路径。</p>
-
-<h3 id="build-your-site">Build your site</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
-</code></pre></div></div>
-
-<p>通过 <code class="language-plaintext highlighter-rouge">localhost:4000</code> 预览生成后的网站，确保无误后将生成后的网站内容推到 Github 触发 Github Pages 部署，至此网站发布成功。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 Cloudflare（可以在 ICANN 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。]]></summary></entry><entry><title type="html">Hands on Python</title><link href="http://localhost:4000/go_big/2024/09/15/python.html" rel="alternate" type="text/html" title="Hands on Python" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/15/python</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/15/python.html"><![CDATA[<h3 id="background">Background</h3>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background 在当前信息化时代，我们所有人都正遭受信息过载和数据过剩的困扰。数据可视化的好处便是让我们看到这些数据的规律以及它们的内在联系，便于我们在繁杂的信息中聚焦到最重要的部分。]]></summary></entry><entry><title type="html">Hands on Python</title><link href="http://localhost:4000/go_big/2024/09/15/python.html" rel="alternate" type="text/html" title="Hands on Python" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/15/python</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/15/python.html"><![CDATA[<h3 id="background">Background</h3>
 <p><a href="https://www.python.org/">Python</a> 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。</p>
 
 <p>相比于机器语言和汇编语言等低级语言 (low-level language)，使用高级编程语言编写代码有一些好处：代码更少也更易读，编写代码所需的时间更短；更容易做到跨平台运行。</p>
@@ -962,7 +944,65 @@ False
   </tbody>
 </table>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Python 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。]]></summary></entry><entry><title type="html">延迟退休可能是对一代人违约</title><link href="http://localhost:4000/reading/2024/09/14/delaying_retirement.html" rel="alternate" type="text/html" title="延迟退休可能是对一代人违约" /><published>2024-09-14T00:00:00+08:00</published><updated>2024-09-14T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/14/delaying_retirement</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/14/delaying_retirement.html"><![CDATA[<p><a href="http://jingji.cntv.cn/2013/04/20/ARTI1366415217203221.shtml">Read Original</a></p>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Python 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。]]></summary></entry><entry><title type="html">no style, please!</title><link href="http://localhost:4000/blog/2024/09/15/no_style_please.html" rel="alternate" type="text/html" title="no style, please!" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/15/no_style_please</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/15/no_style_please.html"><![CDATA[<p>前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 <a href="https://www.cloudflare.com/">Cloudflare</a>（可以在 <a href="https://lookup.icann.org/en">ICANN</a> 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。</p>
+
+<h3 id="what-is-jekyll">What is Jekyll</h3>
+<p><a href="https://jekyllrb.com/">Jekyll</a> 是一款简单的静态网站生成器。它可以将纯文本转化成静态网站，你只需要用自己习惯的标记语言如 Markdown 来编写博客文章，借由 Jekyll 预设模版内置的文章发布、分类、标签、归档等博客所需的功能，使创建和维护博客变得更加简单和高效。</p>
+
+<p><a href="https://riggraz.dev/no-style-please/">no style, please!</a> 是一款几乎没有 CSS 样式的，快速生成，极简的 Jekyll 主题。</p>
+
+<p>结合了这套组件，网站的发布和维护变得非常简单，网站所有者只需专注于输出内容，通过几个简单的命令行，文章就自动部署到网站。</p>
+
+<p>下面来一步一步演示它是如何实现的。</p>
+
+<h3 id="installation">Installation</h3>
+<p>Jekyll 是一个 Ruby 项目，安装 Jekyll 首先需要 Ruby 的开发环境。</p>
+
+<h4 id="install-chruby-and-ruby-install-with-homebrew">Install chruby and ruby-install with Homebrew</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>chruby ruby-install xz
+</code></pre></div></div>
+
+<h4 id="install-the-latest-stable-version-of-ruby">Install the latest stable version of Ruby</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby-install ruby 3.1.3
+</code></pre></div></div>
+
+<h4 id="configure-your-shell-to-automatically-use-chruby">Configure your shell to automatically use chruby</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/chruby.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/auto.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s2">"chruby ruby-3.1.3"</span> <span class="o">&gt;&gt;</span> ~/.zshrc <span class="c"># run 'chruby' to see actual version</span>
+</code></pre></div></div>
+
+<h4 id="install-jekyll">Install Jekyll</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
+</code></pre></div></div>
+
+<h4 id="create-a-new-gemfile">Create a new Gemfile</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle init
+</code></pre></div></div>
+
+<h4 id="edit-gemfile">Edit Gemfile</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="s2">"jekyll"</span>, <span class="s2">"~&gt; 4.3.3"</span>
+<span class="c"># Change default Jekyll theme to no-style-please</span>
+gem <span class="s2">"no-style-please"</span>
+</code></pre></div></div>
+
+<p>Run <code class="language-plaintext highlighter-rouge">bundle</code> to install jekyll for your project.</p>
+
+<h3 id="create-a-site">Create a site</h3>
+<p>在 _data, _includes, _layouts 中预设网站模版样式，将 Markdown 格式的文件放入指定的 _posts 路径。</p>
+
+<h3 id="build-your-site">Build your site</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<p>通过 <code class="language-plaintext highlighter-rouge">localhost:4000</code> 预览生成后的网站，确保无误后将生成后的网站内容推到 Github 触发 Github Pages 部署，至此网站发布成功。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 Cloudflare（可以在 ICANN 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。]]></summary></entry><entry><title type="html">延迟退休可能是对一代人违约</title><link href="http://localhost:4000/reading/2024/09/14/delaying_retirement.html" rel="alternate" type="text/html" title="延迟退休可能是对一代人违约" /><published>2024-09-14T00:00:00+08:00</published><updated>2024-09-14T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/14/delaying_retirement</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/14/delaying_retirement.html"><![CDATA[<p><a href="http://jingji.cntv.cn/2013/04/20/ARTI1366415217203221.shtml">Read Original</a></p>
 
 <table>
   <tbody>
@@ -1022,355 +1062,4 @@ False
 
 <p>而中国目前正陷于房地产泡沫破灭，老龄少子化，地方财政捉襟见肘。届时可能也需要一个事件转移全社会的矛盾。</p>
 
-<p>作为普通人，只有好好锻炼身体，照顾好家人，学习一切有趣的东西，然后祈祷科技变革的发生早于社会变革。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[看了绝大多数简中网友解读的马斯克 X 发言都不全面或者说是错的。 Fine Taylor … you win … I will give you a child and guard your cats with my life]]></summary></entry><entry><title type="html">Hands on Spark</title><link href="http://localhost:4000/go_big/2024/09/06/spark.html" rel="alternate" type="text/html" title="Hands on Spark" /><published>2024-09-06T00:00:00+08:00</published><updated>2024-09-06T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/06/spark</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/06/spark.html"><![CDATA[<h3 id="background">Background</h3>
-<p>进入21世纪以来，随着互联网的发展，各类社交媒体，科技软件，传感器等工具一刻不停地生成着越来越多地数据。有一个说法是:</p>
-<blockquote>
-  <p>人类现有90%的数据来自于过去两年。</p>
-</blockquote>
-
-<p>这些数据不管是否得到了很好的利用，谁也不能否认它们可以带来的高价值，特别是现阶段以数据和能源作为养料的 artificial intelligence。</p>
-
-<p>大数据集对传统单机数据库造成了不小的麻烦，面对如何处理大量数据并从中洞见到有价值信息的需求，Google 三篇论文——<a href="https://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/gfs-sosp2003.pdf">Google File System</a> at 2003, <a href="https://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/mapreduce-osdi04.pdf">MapReduce</a> at 2004, <a href="https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf">Bigtable</a> at 2006 启发了无数贡献者，推出了一个又一个大数据开源项目，为人类掀开了大数据时代的巨幕。</p>
-
-<p>其中，受 Google File System 和 MapReduce 启发，yahoo 的一组工程师在 2006 年开源了 <a href="https://hadoop.apache.org/">Hadoop</a>， Hadoop 引入了两个技术，分布式存储 (HDFS) 和分布式计算 (MapReduce) ——将大文件切分成小块，分布保存在集群中的多个机器上，每个小块文件备份成多份以防某个节点出错导致文件丢失；处理计算任务时，也将任务分成多个单元，由多个 excutor 分别执行计算操作，再将结果合并在一起。</p>
-
-<p>这种处理方法利用大量廉价机器使得大数据计算得以实现。但由于其内在机制限制，大量的中间计算结果需要落地磁盘，过程中产生的 I/O 导致整个计算花费大量的时间。随着计算机硬件水平和成本的降低，Spark 作为一个内存计算引擎，凭借其更加高效的计算的优势逐渐取代了 MapReduce 的功能。</p>
-
-<h3 id="apache-spark">Apache Spark</h3>
-<h4 id="intro">Intro</h4>
-<p><a href="https://spark.apache.org/">Apache Spark</a> 是由加州大学伯克利分校的一些研究员在 2009 年推出的一个研究项目，目的就是为了解决 Hadoop 的上述限制。Spark 推出了一个 RDD(Resilient Distributed Dataset) 的概念，使数据得以数据集的形式存储在内存中，使得数据读取和处理都更加快速。</p>
-
-<h4 id="language">Language</h4>
-<p>Spark 源码是由 Scala 语言编写，但提供了 Python, Scala, Java, R 的 API 接口进行编程。Python 由于其易用性、丰富的资源库以及和 Data Science, Machine Learning 的紧密结合，其已经成为 Spark 主推的编程语言。下面的演示都以 Python 为例。</p>
-
-<h4 id="installation">Installation</h4>
-<p>Make sure java is installed on your system PATH, or the JAVA_HOME environment variable pointing to a Java installation.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>default-jre
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pyspark
-</code></pre></div></div>
-
-<h4 id="concepts">Concepts</h4>
-<h5 id="spark-任务的运行模式">Spark 任务的运行模式</h5>
-<ul>
-  <li>Local Mode: 单机运行，资源有限，适合用于手动调试；</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit word_count.py
-
-python word_count.py
-
-spark-submit <span class="nt">--master</span> <span class="nb">local</span><span class="o">[</span><span class="k">*</span><span class="o">]</span> word_count.py
-</code></pre></div></div>
-
-<ul>
-  <li>Client Mode: 任务的 Driver 在本地运行，实际计算任务分发到集群中的 Worker 节点运行，由于 Driver 在本地运行，可以方便地查看日志和调试信息；</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> client word_count.py
-
-spark-submit <span class="nt">--master</span> spark://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> client word_count.py
-
-spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> client word_count.py
-</code></pre></div></div>
-
-<ul>
-  <li>Cluster Mode: 提交任务到分布式集群运行，可以利用更高的计算性能，适用于生产环境；</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> cluster word_count.py
-
-spark-submit <span class="nt">--master</span> spark://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> cluster word_count.py
-
-spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> cluster word_count.py
-</code></pre></div></div>
-
-<h5 id="spark-资源管理器">Spark 资源管理器</h5>
-<p>Spark 资源管理器负责分配和调度集群资源(CPU, Memory, Disk, Network)</p>
-<ol>
-  <li><a href="https://spark.apache.org/docs/latest/spark-standalone.html">Standalone</a>: 默认的资源管理器；</li>
-  <li><a href="https://spark.apache.org/docs/latest/running-on-yarn.html">YARN</a>: 由 Hadoop 提供；</li>
-  <li><a href="https://spark.apache.org/docs/latest/running-on-mesos.html">Mesos</a>(Deprecated): 由 Apache Mesos 提供;</li>
-  <li><a href="https://spark.apache.org/docs/latest/running-on-kubernetes.html">Kubernetes</a>: 由 Kubernetes 提供</li>
-</ol>
-
-<h5 id="spark-任务物理运行原理">Spark 任务物理运行原理</h5>
-<p><strong>1. 客户端提交任务</strong></p>
-
-<p>用户通过 spark-submit 命令提交一个 Spark 应用程序。这个应用程序包含了用户的代码和依赖项。</p>
-
-<p><strong>2. Driver 进程启动</strong></p>
-
-<p>Spark 应用程序在 Driver 进程中启动。Driver 负责以下任务：</p>
-<ul>
-  <li>解析用户代码: 解析并执行用户代码中的 transformation 和 action 操作；</li>
-  <li>生成 DAG: 将用户代码中的一系列 transformation 操作转换为一个有向无环图（DAG）；</li>
-  <li>任务调度: 将 DAG 划分为多个阶段（stages），每个阶段包含一组可以并行执行的任务（tasks）。</li>
-</ul>
-
-<p><strong>3. 资源管理器分配资源</strong></p>
-
-<p>Driver 向集群的资源管理器（如 YARN、Mesos 或 Kubernetes）请求资源。资源管理器分配资源并启动 Executor 进程。</p>
-
-<p><strong>4. Executor 进程启动</strong></p>
-
-<p>Executor 进程在集群的工作节点（Worker Nodes）上启动。每个 Executor 负责以下任务：</p>
-<ul>
-  <li>执行任务: 执行由 Driver 分配的任务；</li>
-  <li>存储数据: 缓存和存储中间结果数据；</li>
-  <li>报告状态: 向 Driver 报告任务的执行状态和结果。</li>
-</ul>
-
-<p><strong>5. 任务执行</strong></p>
-
-<p>Driver 将任务分配给各个 Executor。任务的执行过程如下：</p>
-<ul>
-  <li>读取数据: 从数据源（如 HDFS、S3、Kafka 等）读取数据；</li>
-  <li>执行计算: 根据用户代码中的 transformation 操作对数据进行处理；</li>
-  <li>写入结果: 将计算结果写入到指定的存储位置（如 HDFS、S3、数据库等）。</li>
-</ul>
-
-<p><strong>6. 任务监控和容错</strong></p>
-
-<p>Spark 提供了多种机制来监控和处理任务的执行：</p>
-<ul>
-  <li>任务重试: 如果某个任务失败，Spark 会自动重试该任务；</li>
-  <li>数据备份: Spark 会将数据分片（partitions）备份到多个节点，以防止数据丢失；</li>
-  <li>监控工具: Spark 提供了 Web UI 和其他监控工具，帮助用户监控任务的执行状态和性能。</li>
-</ul>
-
-<p><strong>7. 任务完成</strong></p>
-
-<p>当所有任务都成功完成后，Driver 会将最终结果返回给用户或写入到指定的存储位置。然后，Driver 和 Executor 进程会正常退出，释放资源。</p>
-
-<h4 id="usage-scenarios">Usage scenarios</h4>
-<h5 id="spark-sql">Spark SQL</h5>
-<p><a href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL</a> 是 Spark 用于处理结构化数据的模块，它提供了一个编程抽象，支持 SQL 查询、Dataframe API 和 Dataset API，而不需要了解底层分布式计算的细节。</p>
-
-<p>它与 <a href="https://spark.apache.org/docs/latest/rdd-programming-guide.html">RDD</a> 的不同在于：</p>
-<ol>
-  <li>RDD 提供了底层的 <a href="https://spark.apache.org/docs/latest/rdd-programming-guide.html#rdd-operations">RDD API</a>，用户需要编写更多的代码来进行数据处理，适合处理非结构化数据；Spark SQL 将数据抽象为 <a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html">Dataframe</a> 或 Dataset，提供了更高级的优化和执行策略；</li>
-  <li>RDD 类型安全，DataFrame API 是非类型安全的，Dataset API 提供了类型安全的操作；</li>
-  <li>Spark SQL 支持 <a href="https://spark.apache.org/docs/latest/sql-data-sources-hive-tables.html">Hive</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-avro.html">Avro</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-parquet.html">Parquet</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-orc.html">ORC</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-json.html">JSON</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html">JDBC</a> 等多种数据源，而 RDD 需要用户自己实现对不同数据源的支持；</li>
-</ol>
-
-<p><strong>使用 Dataframe API 案例</strong></p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Import necessary libraries
-</span><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
-<span class="kn">from</span> <span class="n">pyspark.sql.functions</span> <span class="kn">import</span> <span class="n">col</span><span class="p">,</span> <span class="n">regexp_replace</span>
-
-<span class="c1"># Create a Spark session
-</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span><span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">SparkSQLExample</span><span class="sh">"</span><span class="p">).</span><span class="nf">getOrCreate</span><span class="p">()</span>
-
-<span class="c1"># Read CSV data into a DataFrame
-</span><span class="n">ark_holdings_df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="nf">csv</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="sh">"</span><span class="s">test_file/ark_holdings.csv</span><span class="sh">"</span><span class="p">,</span> 
-                    <span class="n">header</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> 
-                    <span class="n">inferSchema</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-
-<span class="c1"># Perform a query
-</span><span class="n">ark_holdings_df</span> <span class="o">=</span> <span class="n">ark_holdings_df</span> \
-    <span class="p">.</span><span class="nf">withColumn</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">,</span> <span class="nf">regexp_replace</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">),</span> <span class="sh">"</span><span class="s">[$,]</span><span class="sh">"</span><span class="p">,</span> <span class="sh">""</span><span class="p">).</span><span class="nf">cast</span><span class="p">(</span><span class="sh">"</span><span class="s">double</span><span class="sh">"</span><span class="p">))</span>
-<span class="n">result_df</span> <span class="o">=</span> <span class="n">ark_holdings_df</span> \
-    <span class="p">.</span><span class="nf">filter</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">ark_holdings_df</span><span class="p">.</span><span class="nf">filter</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">ticker</span><span class="sh">"</span><span class="p">)</span> <span class="o">==</span> <span class="sh">"</span><span class="s">U</span><span class="sh">"</span><span class="p">).</span><span class="nf">select</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">)).</span><span class="nf">first</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span> \
-    <span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">ticker</span><span class="sh">"</span><span class="p">),</span> <span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">))</span> \
-    <span class="p">.</span><span class="nf">orderBy</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">).</span><span class="nf">desc</span><span class="p">())</span>
-
-<span class="c1"># Show the result
-</span><span class="n">result_df</span><span class="p">.</span><span class="nf">show</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="n">truncate</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-
-<span class="c1"># Stop the Spark session
-</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
-</code></pre></div></div>
-
-<p><strong>使用 RDD API 案例</strong></p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Import necessary libraries
-</span><span class="kn">from</span> <span class="n">pyspark</span> <span class="kn">import</span> <span class="n">SparkContext</span>
-
-<span class="c1"># Create a Spark context
-</span><span class="n">sc</span> <span class="o">=</span> <span class="nc">SparkContext</span><span class="p">(</span><span class="sh">"</span><span class="s">local</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">RDDExample</span><span class="sh">"</span><span class="p">)</span>
-
-<span class="c1"># Read CSV data into an RDD
-</span><span class="n">ark_holdings_rdd</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="nf">textFile</span><span class="p">(</span><span class="sh">"</span><span class="s">test_file/ark_holdings.csv</span><span class="sh">"</span><span class="p">)</span>
-
-<span class="c1"># Perform a query
-</span><span class="n">result_rdd</span> <span class="o">=</span> <span class="n">ark_holdings_rdd</span><span class="p">.</span><span class="nf">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">line</span><span class="p">:</span> <span class="sh">"</span><span class="s">UNITY</span><span class="sh">"</span> <span class="ow">in</span> <span class="n">line</span><span class="p">)</span> \
-    <span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">line</span><span class="p">:</span> <span class="n">line</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="sh">'"'</span><span class="p">)[</span><span class="mi">1</span><span class="p">].</span><span class="nf">replace</span><span class="p">(</span><span class="sh">'</span><span class="s">,</span><span class="sh">'</span><span class="p">,</span> <span class="sh">''</span><span class="p">))</span>
-
-<span class="c1"># Show the result
-</span><span class="nf">print</span><span class="p">(</span><span class="n">result_rdd</span><span class="p">.</span><span class="nf">collect</span><span class="p">())</span>
-
-<span class="c1"># Stop the Spark context
-</span><span class="n">sc</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
-</code></pre></div></div>
-
-<p><strong>RDD 和 Dataframe 相互转换</strong></p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Dataframe 转 RDD
-</span><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="nf">csv</span><span class="p">(</span><span class="sh">"</span><span class="s">test_file/ark_holdings.csv</span><span class="sh">"</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">inferSchema</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="n">rdd</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="n">rdd</span>
-
-<span class="c1"># RDD 转 Dataframe
-</span><span class="n">rdd</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">sparkContext</span><span class="p">.</span><span class="nf">parallelize</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="sh">"</span><span class="s">Alice</span><span class="sh">"</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="sh">"</span><span class="s">Bob</span><span class="sh">"</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="sh">"</span><span class="s">Cathy</span><span class="sh">"</span><span class="p">)])</span>
-<span class="c1"># 定义 DataFrame 的 schema
-</span><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">Row</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">rdd</span><span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nc">Row</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])).</span><span class="nf">toDF</span><span class="p">()</span>
-
-</code></pre></div></div>
-<p><strong>Action 算子</strong></p>
-
-<p>Spark 有一个特性 Lazy Evaluation，当一个 Spark 操作被提交时，Spark 并不会立即执行任务，而是将任务转换为一系列的 RDD 操作，只有当遇到 Action 算子时，Spark 才会真正执行任务。通过 Lazy Evaluation, Spark 可以优化执行计划，避免存储大量中间结果，提高任务的执行效率。</p>
-
-<p>常见的 RDD action 算子有：collect, count, first, take, takeSample, reduce, fold, aggregate, foreach, saveAsTextFile, saveAsSequenceFile, saveAsObjectFile, countByKey, countByValue, takeOrdered, top, foreachPartition.</p>
-
-<p>常见的 DataFrame action 算子有：collect, count, first, take, show, head, foreach, write, describe, summary, toPandas.</p>
-
-<p>总的来说，Spark SQL 更适合处理结构化数据和需要高效查询优化的场景，而 RDD 更适合处理非结构化数据和需要自定义处理逻辑的场景。</p>
-
-<p>需要特别注意的是，Spark SQL 性能调优需要考虑的因素很多，包括数据倾斜、数据分区、数据格式、数据压缩、数据缓存等，根据实际情况参考 <a href="https://spark.apache.org/docs/latest/sql-performance-tuning.html">Spark SQL 性能调优</a> 进行调整。</p>
-
-<h5 id="pandas-api-on-spark">Pandas API on Spark</h5>
-<p><a href="https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_ps.html#">Pandas API on Spark</a> 是 Spark 提供的用于处理大规模数据集的 API，它提供了与 <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html">Pandas</a> 类似的 API，使得用户可以方便地将 Pandas 的代码迁移到 Spark 上运行。</p>
-
-<p><strong>Pandas API on Spark 案例</strong></p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Import necessary libraries
-</span><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
-<span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
-
-<span class="c1"># Create a Spark session
-</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span><span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">PandasAPISpark</span><span class="sh">"</span><span class="p">).</span><span class="nf">getOrCreate</span><span class="p">()</span>
-
-<span class="c1"># Create a DataFrame
-</span><span class="n">data</span> <span class="o">=</span> <span class="p">[(</span><span class="sh">"</span><span class="s">Alice</span><span class="sh">"</span><span class="p">,</span> <span class="mi">25</span><span class="p">),</span> <span class="p">(</span><span class="sh">"</span><span class="s">Bob</span><span class="sh">"</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="p">(</span><span class="sh">"</span><span class="s">Cathy</span><span class="sh">"</span><span class="p">,</span> <span class="mi">35</span><span class="p">)]</span>
-<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">age</span><span class="sh">"</span><span class="p">]</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="nf">createDataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="p">)</span>
-
-<span class="c1"># Convert DataFrame to Pandas DataFrame
-</span><span class="n">pandas_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="nf">toPandas</span><span class="p">()</span>
-
-<span class="c1"># Perform operations on Pandas DataFrame
-</span><span class="n">pandas_df</span><span class="p">[</span><span class="sh">'</span><span class="s">age_12_years_ago</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pandas_df</span><span class="p">[</span><span class="sh">'</span><span class="s">age</span><span class="sh">'</span><span class="p">]</span> <span class="o">-</span> <span class="mi">12</span>
-
-<span class="c1"># Convert Pandas DataFrame back to Spark DataFrame
-</span><span class="n">spark_df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="nf">createDataFrame</span><span class="p">(</span><span class="n">pandas_df</span><span class="p">)</span>
-
-<span class="c1"># Show the result
-</span><span class="n">spark_df</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
-
-<span class="c1"># Stop the Spark session
-</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
-</code></pre></div></div>
-
-<h5 id="mllib">MLlib</h5>
-<p><a href="https://spark.apache.org/docs/latest/ml-guide.html">MLlib</a> 是 Apache Spark 的机器学习库，提供了一系列用于构建和训练机器学习模型的工具和算法。MLlib 旨在简化机器学习的工作流程，并支持大规模数据集的处理。</p>
-
-<h5 id="graphx">GraphX</h5>
-<p><a href="https://spark.apache.org/docs/latest/graphx-programming-guide.html">GraphX</a> 是 Apache Spark 的图计算库，旨在处理大规模图数据。GraphX 提供了一个统一的 API，用于图的创建、操作和分析，支持图的并行计算。</p>
-
-<h5 id="structured-streaming">Structured Streaming</h5>
-<p><a href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html">Structured Streaming</a> 是 Spark 的流处理库，用于构建可扩展的流式数据处理应用程序。Structured Streaming 允许用户以批处理的方式处理流数据，同时保持了与批处理相同的编程模型。</p>
-
-<p><strong>Structured Streaming 案例</strong></p>
-
-<p><strong>1. 环境准备</strong></p>
-<ul>
-  <li>安装 zookeeper, kafka 以及必要的一些依赖包
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>zookeeper kafka
-pip <span class="nb">install </span>kafka-python
-wget https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.0.0/spark-sql-kafka-0-10_2.12-3.0.0.jar
-wget https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka-0-10-assembly_2.12/3.0.0/spark-streaming-kafka-0-10-assembly_2.12-3.0.0.jar
-wget https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.9.0/commons-pool2-2.9.0.jar
-</code></pre></div>    </div>
-  </li>
-  <li>启动 zookeeper
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zookeeper-server-start /opt/homebrew/etc/kafka/zookeeper.properties
-</code></pre></div>    </div>
-  </li>
-  <li>启动 kafka
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kafka-server-start /opt/homebrew/etc/kafka/server.properties
-</code></pre></div>    </div>
-  </li>
-  <li>创建 topic
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kafka-topics <span class="nt">--create</span> <span class="nt">--topic</span> structured_streaming_demo <span class="nt">--bootstrap-server</span> localhost:9092 <span class="nt">--partitions</span> 1 <span class="nt">--replication-factor</span> 1
-</code></pre></div>    </div>
-  </li>
-  <li>启动 kafka 生产者
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kafka-console-producer <span class="nt">--topic</span> structured_streaming_demo <span class="nt">--bootstrap-server</span> localhost:9092
-</code></pre></div>    </div>
-  </li>
-  <li>启动 spark shell
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyspark <span class="nt">--jars</span> jars/spark-sql-kafka-0-10_2.12-3.0.0.jar,jars/spark-streaming-kafka-0-10-assembly_2.12-3.0.0.jar,jars/commons-pool2-2.9.0.jar
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<p><strong>2. 代码实现</strong></p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
-<span class="kn">from</span> <span class="n">pyspark.sql.functions</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="c1"># Create SparkSession
-</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
-<span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">StructuredStreamingExample</span><span class="sh">"</span><span class="p">)</span> \
-<span class="p">.</span><span class="nf">config</span><span class="p">(</span><span class="sh">"</span><span class="s">spark.sql.streaming.forceDeleteTempCheckpointLocation</span><span class="sh">"</span><span class="p">,</span> <span class="sh">'</span><span class="s">true</span><span class="sh">'</span><span class="p">)</span> \
-<span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
-
-<span class="c1"># Create DataFrame representing the stream of input data
-</span><span class="n">data</span> <span class="o">=</span> <span class="n">spark</span> \
-    <span class="p">.</span><span class="n">readStream</span> \
-    <span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">kafka</span><span class="sh">"</span><span class="p">)</span> \
-    <span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">kafka.bootstrap.servers</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">localhost:9092</span><span class="sh">"</span><span class="p">)</span> \
-    <span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">subscribe</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">structured_streaming_demo</span><span class="sh">"</span><span class="p">)</span> \
-    <span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">startingOffsets</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">earliest</span><span class="sh">"</span><span class="p">)</span> \
-    <span class="p">.</span><span class="nf">load</span><span class="p">()</span>
-
-<span class="c1"># Select the necessary columns
-</span><span class="n">ark_holdings</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">date</span><span class="sh">"</span><span class="p">),</span> 
-                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">1</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">fund_name</span><span class="sh">"</span><span class="p">),</span>
-                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">2</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">company_name</span><span class="sh">"</span><span class="p">),</span>
-                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">3</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">ticker</span><span class="sh">"</span><span class="p">),</span>
-                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">6</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">shares</span><span class="sh">"</span><span class="p">),</span>
-                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">7</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">),</span>
-                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">5</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">weight</span><span class="sh">"</span><span class="p">))</span>
-
-<span class="c1"># if market_value &gt; 1000000, show the data
-</span><span class="n">weight_stock</span> <span class="o">=</span> <span class="n">ark_holdings</span><span class="p">.</span><span class="nf">filter</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">'</span><span class="s">market_value</span><span class="sh">'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1000000</span><span class="p">)</span>
-
-<span class="c1"># Start the query to stream the data
-</span><span class="n">query</span> <span class="o">=</span> <span class="n">weight_stock</span> \
-<span class="p">.</span><span class="n">writeStream</span> \
-<span class="p">.</span><span class="nf">outputMode</span><span class="p">(</span><span class="sh">"</span><span class="s">append</span><span class="sh">"</span><span class="p">)</span> \
-<span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">console</span><span class="sh">"</span><span class="p">)</span> \
-<span class="p">.</span><span class="nf">start</span><span class="p">()</span>
-
-<span class="c1"># Wait for the query to finish
-</span><span class="n">query</span><span class="p">.</span><span class="nf">awaitTermination</span><span class="p">()</span>
-</code></pre></div></div>
-
-<h3 id="spark-性能调优">Spark 性能调优</h3>
-<p>Spark 性能调优是一个复杂的过程，除了代码层面的优化，这是一些<a href="https://spark.apache.org/docs/latest/configuration.html">配置参数</a>，以下是一些常见的性能调优方法：</p>
-
-<h4 id="资源管理">资源管理</h4>
-<ol>
-  <li><strong>调整资源分配</strong>: 根据集群的资源情况，<a href="https://spark.apache.org/docs/latest/configuration.html#application-properties">合理分配</a> CPU、内存、磁盘和网络资源，确保每个任务都能获得足够的资源；</li>
-  <li><strong>设置资源预取</strong>: 在任务开始前，预先分配好所需的资源，减少任务启动时间；</li>
-  <li><strong>监控资源使用情况</strong>: 使用 Spark 的<a href="https://spark.apache.org/docs/latest/monitoring.html">监控工具</a>，如 Spark Web UI、Ganglia、Prometheus 等，监控集群的资源使用情况，及时发现并解决资源瓶颈。</li>
-</ol>
-
-<h4 id="数据分区">数据分区</h4>
-<ol>
-  <li><strong>合理设置分区数</strong>: 根据数据量和集群的资源情况，合理设置分区数，减少数据倾斜和资源浪费；</li>
-  <li><strong>数据倾斜</strong>: 数据倾斜是指某些分区中的数据量远大于其他分区，导致某些任务运行时间过长，甚至导致任务失败。可以通过增加分区数、调整分区大小、使用随机分区等方式解决数据倾斜问题；</li>
-  <li><strong>数据预分区</strong>: 在数据加载时，根据业务需求和集群的资源情况，合理设置数据分区，减少数据倾斜和资源浪费。</li>
-</ol>
-
-<h4 id="数据格式">数据格式</h4>
-<ol>
-  <li><strong>选择合适的数据格式</strong>: 根据数据的特点和业务需求，选择合适的数据格式，如 <a href="https://parquet.apache.org/">Parquet</a>、<a href="https://orc.apache.org/">ORC</a>、<a href="https://avro.apache.org/">Avro</a> 等，减少数据存储和传输的开销；</li>
-  <li><strong>数据压缩</strong>: 使用<a href="https://spark.apache.org/docs/latest/configuration.html#compression-and-serialization">数据压缩算法</a>，如 <a href="https://github.com/google/snappy">Snappy</a>、<a href="https://www.gnu.org/software/gzip/">Gzip</a>、<a href="https://www.oberhumer.com/opensource/lzo/">LZO</a> 等，减少数据存储和传输的开销。</li>
-</ol>
-
-<h4 id="数据缓存">数据缓存</h4>
-<ol>
-  <li><strong>合理设置缓存策略</strong>: 根据数据的特点和业务需求，合理设置<a href="https://spark.apache.org/docs/latest/configuration.html#memory-management">缓存策略</a>，减少数据读取和处理的开销。</li>
-</ol>
-
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background 进入21世纪以来，随着互联网的发展，各类社交媒体，科技软件，传感器等工具一刻不停地生成着越来越多地数据。有一个说法是: 人类现有90%的数据来自于过去两年。]]></summary></entry></feed>
+<p>作为普通人，只有好好锻炼身体，照顾好家人，学习一切有趣的东西，然后祈祷科技变革的发生早于社会变革。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[看了绝大多数简中网友解读的马斯克 X 发言都不全面或者说是错的。 Fine Taylor … you win … I will give you a child and guard your cats with my life]]></summary></entry></feed>
