@@ -74,4 +74,4 @@ Bachelor of Civil Engineering at **Chongqing University** (2012 - 2016)
 ---
 ## Contact
 
-📞 188-8387-8352 | 📧 sayhi@thekingof.cool
+email: sayhi@thekingof.cool
