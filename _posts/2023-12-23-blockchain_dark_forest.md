@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "区块链黑暗森林漫游指南"
+title:  "Dark Forest of Blockchain"
 date:   2023-12-23
 categories: blog
 ---

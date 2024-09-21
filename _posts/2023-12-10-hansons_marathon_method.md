@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "汉森马拉松训练法"
+title:  "Hanson's Marathon Method"
 date:   2023-12-10
 categories: blog
 ---

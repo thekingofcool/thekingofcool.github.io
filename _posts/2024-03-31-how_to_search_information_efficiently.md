@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to search information efficiently"
+title:  "Search Information Efficiently"
 date:   2024-03-31
 categories: blog
 ---

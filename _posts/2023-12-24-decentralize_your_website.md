@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "如何将网站托管于去中心化服务器"
+title:  "Decentralize Your Website"
 date:   2023-12-24
 categories: blog
 ---

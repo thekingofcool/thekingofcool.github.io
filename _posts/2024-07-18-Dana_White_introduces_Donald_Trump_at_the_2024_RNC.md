@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dana White introduces Donald Trump at the 2024 RNC"
+title:  "白大拿介绍特朗普"
 date:   2024-07-18
 categories: reading
 ---

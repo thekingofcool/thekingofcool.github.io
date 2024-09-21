@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "全马03:08:29完赛复盘"
+title:  "Review of the 2024 Osaka Marathon"
 date:   2024-02-28
 categories: blog
 ---

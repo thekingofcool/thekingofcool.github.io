@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "我的密码管理策略"
+title:  "My Password Management Strategy"
 date:   2024-04-01
 categories: blog
 ---

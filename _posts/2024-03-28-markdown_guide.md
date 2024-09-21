@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Markdown中文语法规范"
+title:  "Markdown Guide"
 date:   2024-03-28
 categories: blog
 ---
