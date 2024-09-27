@@ -1,0 +1,352 @@
+<h3 id="background">Background</h3>
+<p>进入21世纪以来，随着互联网的发展，各类社交媒体，科技软件，传感器等工具一刻不停地生成着越来越多地数据。有一个说法是:</p>
+<blockquote>
+  <p>人类现有90%的数据来自于过去两年。</p>
+</blockquote>
+
+<p>这些数据不管是否得到了很好的利用，谁也不能否认它们可以带来的高价值，特别是现阶段以数据和能源作为养料的 artificial intelligence。</p>
+
+<p>大数据集对传统单机数据库造成了不小的麻烦，面对如何处理大量数据并从中洞见到有价值信息的需求，Google 三篇论文——<a href="https://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/gfs-sosp2003.pdf">Google File System</a> at 2003, <a href="https://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/mapreduce-osdi04.pdf">MapReduce</a> at 2004, <a href="https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf">Bigtable</a> at 2006 启发了无数贡献者，推出了一个又一个大数据开源项目，为人类掀开了大数据时代的巨幕。</p>
+
+<p>其中，受 Google File System 和 MapReduce 启发，yahoo 的一组工程师在 2006 年开源了 <a href="https://hadoop.apache.org/">Hadoop</a>， Hadoop 引入了两个技术，分布式存储 (HDFS) 和分布式计算 (MapReduce) ——将大文件切分成小块，分布保存在集群中的多个机器上，每个小块文件备份成多份以防某个节点出错导致文件丢失；处理计算任务时，也将任务分成多个单元，由多个 excutor 分别执行计算操作，再将结果合并在一起。</p>
+
+<p>这种处理方法利用大量廉价机器使得大数据计算得以实现。但由于其内在机制限制，大量的中间计算结果需要落地磁盘，过程中产生的 I/O 导致整个计算花费大量的时间。随着计算机硬件水平和成本的降低，Spark 作为一个内存计算引擎，凭借其更加高效的计算的优势逐渐取代了 MapReduce 的功能。</p>
+
+<h3 id="apache-spark">Apache Spark</h3>
+<h4 id="intro">Intro</h4>
+<p><a href="https://spark.apache.org/">Apache Spark</a> 是由加州大学伯克利分校的一些研究员在 2009 年推出的一个研究项目，目的就是为了解决 Hadoop 的上述限制。Spark 推出了一个 RDD(Resilient Distributed Dataset) 的概念，使数据得以数据集的形式存储在内存中，使得数据读取和处理都更加快速。</p>
+
+<h4 id="language">Language</h4>
+<p>Spark 源码是由 Scala 语言编写，但提供了 Python, Scala, Java, R 的 API 接口进行编程。Python 由于其易用性、丰富的资源库以及和 Data Science, Machine Learning 的紧密结合，其已经成为 Spark 主推的编程语言。下面的演示都以 Python 为例。</p>
+
+<h4 id="installation">Installation</h4>
+<p>Make sure java is installed on your system PATH, or the JAVA_HOME environment variable pointing to a Java installation.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>default-jre
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pyspark
+</code></pre></div></div>
+
+<h4 id="concepts">Concepts</h4>
+<h5 id="spark-任务的运行模式">Spark 任务的运行模式</h5>
+<ul>
+  <li>Local Mode: 单机运行，资源有限，适合用于手动调试；</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit word_count.py
+
+python word_count.py
+
+spark-submit <span class="nt">--master</span> <span class="nb">local</span><span class="o">[</span><span class="k">*</span><span class="o">]</span> word_count.py
+</code></pre></div></div>
+
+<ul>
+  <li>Client Mode: 任务的 Driver 在本地运行，实际计算任务分发到集群中的 Worker 节点运行，由于 Driver 在本地运行，可以方便地查看日志和调试信息；</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> client word_count.py
+
+spark-submit <span class="nt">--master</span> spark://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> client word_count.py
+
+spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> client word_count.py
+</code></pre></div></div>
+
+<ul>
+  <li>Cluster Mode: 提交任务到分布式集群运行，可以利用更高的计算性能，适用于生产环境；</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-submit <span class="nt">--master</span> yarn <span class="nt">--deploy-mode</span> cluster word_count.py
+
+spark-submit <span class="nt">--master</span> spark://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> cluster word_count.py
+
+spark-submit <span class="nt">--master</span> k8s://&lt;master-url&gt;:&lt;port&gt; <span class="nt">--deploy-mode</span> cluster word_count.py
+</code></pre></div></div>
+
+<h5 id="spark-资源管理器">Spark 资源管理器</h5>
+<p>Spark 资源管理器负责分配和调度集群资源(CPU, Memory, Disk, Network)</p>
+<ol>
+  <li><a href="https://spark.apache.org/docs/latest/spark-standalone.html">Standalone</a>: 默认的资源管理器；</li>
+  <li><a href="https://spark.apache.org/docs/latest/running-on-yarn.html">YARN</a>: 由 Hadoop 提供；</li>
+  <li><a href="https://spark.apache.org/docs/latest/running-on-mesos.html">Mesos</a>(Deprecated): 由 Apache Mesos 提供;</li>
+  <li><a href="https://spark.apache.org/docs/latest/running-on-kubernetes.html">Kubernetes</a>: 由 Kubernetes 提供</li>
+</ol>
+
+<h5 id="spark-任务物理运行原理">Spark 任务物理运行原理</h5>
+<p><strong>1. 客户端提交任务</strong></p>
+
+<p>用户通过 spark-submit 命令提交一个 Spark 应用程序。这个应用程序包含了用户的代码和依赖项。</p>
+
+<p><strong>2. Driver 进程启动</strong></p>
+
+<p>Spark 应用程序在 Driver 进程中启动。Driver 负责以下任务：</p>
+<ul>
+  <li>解析用户代码: 解析并执行用户代码中的 transformation 和 action 操作；</li>
+  <li>生成 DAG: 将用户代码中的一系列 transformation 操作转换为一个有向无环图（DAG）；</li>
+  <li>任务调度: 将 DAG 划分为多个阶段（stages），每个阶段包含一组可以并行执行的任务（tasks）。</li>
+</ul>
+
+<p><strong>3. 资源管理器分配资源</strong></p>
+
+<p>Driver 向集群的资源管理器（如 YARN、Mesos 或 Kubernetes）请求资源。资源管理器分配资源并启动 Executor 进程。</p>
+
+<p><strong>4. Executor 进程启动</strong></p>
+
+<p>Executor 进程在集群的工作节点（Worker Nodes）上启动。每个 Executor 负责以下任务：</p>
+<ul>
+  <li>执行任务: 执行由 Driver 分配的任务；</li>
+  <li>存储数据: 缓存和存储中间结果数据；</li>
+  <li>报告状态: 向 Driver 报告任务的执行状态和结果。</li>
+</ul>
+
+<p><strong>5. 任务执行</strong></p>
+
+<p>Driver 将任务分配给各个 Executor。任务的执行过程如下：</p>
+<ul>
+  <li>读取数据: 从数据源（如 HDFS、S3、Kafka 等）读取数据；</li>
+  <li>执行计算: 根据用户代码中的 transformation 操作对数据进行处理；</li>
+  <li>写入结果: 将计算结果写入到指定的存储位置（如 HDFS、S3、数据库等）。</li>
+</ul>
+
+<p><strong>6. 任务监控和容错</strong></p>
+
+<p>Spark 提供了多种机制来监控和处理任务的执行：</p>
+<ul>
+  <li>任务重试: 如果某个任务失败，Spark 会自动重试该任务；</li>
+  <li>数据备份: Spark 会将数据分片（partitions）备份到多个节点，以防止数据丢失；</li>
+  <li>监控工具: Spark 提供了 Web UI 和其他监控工具，帮助用户监控任务的执行状态和性能。</li>
+</ul>
+
+<p><strong>7. 任务完成</strong></p>
+
+<p>当所有任务都成功完成后，Driver 会将最终结果返回给用户或写入到指定的存储位置。然后，Driver 和 Executor 进程会正常退出，释放资源。</p>
+
+<h4 id="usage-scenarios">Usage scenarios</h4>
+<h5 id="spark-sql">Spark SQL</h5>
+<p><a href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL</a> 是 Spark 用于处理结构化数据的模块，它提供了一个编程抽象，支持 SQL 查询、Dataframe API 和 Dataset API，而不需要了解底层分布式计算的细节。</p>
+
+<p>它与 <a href="https://spark.apache.org/docs/latest/rdd-programming-guide.html">RDD</a> 的不同在于：</p>
+<ol>
+  <li>RDD 提供了底层的 <a href="https://spark.apache.org/docs/latest/rdd-programming-guide.html#rdd-operations">RDD API</a>，用户需要编写更多的代码来进行数据处理，适合处理非结构化数据；Spark SQL 将数据抽象为 <a href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html">Dataframe</a> 或 Dataset，提供了更高级的优化和执行策略；</li>
+  <li>RDD 类型安全，DataFrame API 是非类型安全的，Dataset API 提供了类型安全的操作；</li>
+  <li>Spark SQL 支持 <a href="https://spark.apache.org/docs/latest/sql-data-sources-hive-tables.html">Hive</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-avro.html">Avro</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-parquet.html">Parquet</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-orc.html">ORC</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-json.html">JSON</a>、<a href="https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html">JDBC</a> 等多种数据源，而 RDD 需要用户自己实现对不同数据源的支持；</li>
+</ol>
+
+<p><strong>使用 Dataframe API 案例</strong></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Import necessary libraries
+</span><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">from</span> <span class="n">pyspark.sql.functions</span> <span class="kn">import</span> <span class="n">col</span><span class="p">,</span> <span class="n">regexp_replace</span>
+
+<span class="c1"># Create a Spark session
+</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span><span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">SparkSQLExample</span><span class="sh">"</span><span class="p">).</span><span class="nf">getOrCreate</span><span class="p">()</span>
+
+<span class="c1"># Read CSV data into a DataFrame
+</span><span class="n">ark_holdings_df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="nf">csv</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="sh">"</span><span class="s">test_file/ark_holdings.csv</span><span class="sh">"</span><span class="p">,</span> 
+                    <span class="n">header</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> 
+                    <span class="n">inferSchema</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="c1"># Perform a query
+</span><span class="n">ark_holdings_df</span> <span class="o">=</span> <span class="n">ark_holdings_df</span> \
+    <span class="p">.</span><span class="nf">withColumn</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">,</span> <span class="nf">regexp_replace</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">),</span> <span class="sh">"</span><span class="s">[$,]</span><span class="sh">"</span><span class="p">,</span> <span class="sh">""</span><span class="p">).</span><span class="nf">cast</span><span class="p">(</span><span class="sh">"</span><span class="s">double</span><span class="sh">"</span><span class="p">))</span>
+<span class="n">result_df</span> <span class="o">=</span> <span class="n">ark_holdings_df</span> \
+    <span class="p">.</span><span class="nf">filter</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">ark_holdings_df</span><span class="p">.</span><span class="nf">filter</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">ticker</span><span class="sh">"</span><span class="p">)</span> <span class="o">==</span> <span class="sh">"</span><span class="s">U</span><span class="sh">"</span><span class="p">).</span><span class="nf">select</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">)).</span><span class="nf">first</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span> \
+    <span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">ticker</span><span class="sh">"</span><span class="p">),</span> <span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">))</span> \
+    <span class="p">.</span><span class="nf">orderBy</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">).</span><span class="nf">desc</span><span class="p">())</span>
+
+<span class="c1"># Show the result
+</span><span class="n">result_df</span><span class="p">.</span><span class="nf">show</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="n">truncate</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c1"># Stop the Spark session
+</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><strong>使用 RDD API 案例</strong></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Import necessary libraries
+</span><span class="kn">from</span> <span class="n">pyspark</span> <span class="kn">import</span> <span class="n">SparkContext</span>
+
+<span class="c1"># Create a Spark context
+</span><span class="n">sc</span> <span class="o">=</span> <span class="nc">SparkContext</span><span class="p">(</span><span class="sh">"</span><span class="s">local</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">RDDExample</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># Read CSV data into an RDD
+</span><span class="n">ark_holdings_rdd</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="nf">textFile</span><span class="p">(</span><span class="sh">"</span><span class="s">test_file/ark_holdings.csv</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># Perform a query
+</span><span class="n">result_rdd</span> <span class="o">=</span> <span class="n">ark_holdings_rdd</span><span class="p">.</span><span class="nf">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">line</span><span class="p">:</span> <span class="sh">"</span><span class="s">UNITY</span><span class="sh">"</span> <span class="ow">in</span> <span class="n">line</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">line</span><span class="p">:</span> <span class="n">line</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="sh">'"'</span><span class="p">)[</span><span class="mi">1</span><span class="p">].</span><span class="nf">replace</span><span class="p">(</span><span class="sh">'</span><span class="s">,</span><span class="sh">'</span><span class="p">,</span> <span class="sh">''</span><span class="p">))</span>
+
+<span class="c1"># Show the result
+</span><span class="nf">print</span><span class="p">(</span><span class="n">result_rdd</span><span class="p">.</span><span class="nf">collect</span><span class="p">())</span>
+
+<span class="c1"># Stop the Spark context
+</span><span class="n">sc</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><strong>RDD 和 Dataframe 相互转换</strong></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Dataframe 转 RDD
+</span><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="nf">csv</span><span class="p">(</span><span class="sh">"</span><span class="s">test_file/ark_holdings.csv</span><span class="sh">"</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">inferSchema</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">rdd</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="n">rdd</span>
+
+<span class="c1"># RDD 转 Dataframe
+</span><span class="n">rdd</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">sparkContext</span><span class="p">.</span><span class="nf">parallelize</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="sh">"</span><span class="s">Alice</span><span class="sh">"</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="sh">"</span><span class="s">Bob</span><span class="sh">"</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="sh">"</span><span class="s">Cathy</span><span class="sh">"</span><span class="p">)])</span>
+<span class="c1"># 定义 DataFrame 的 schema
+</span><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">Row</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">rdd</span><span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nc">Row</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])).</span><span class="nf">toDF</span><span class="p">()</span>
+
+</code></pre></div></div>
+<p><strong>Action 算子</strong></p>
+
+<p>Spark 有一个特性 Lazy Evaluation，当一个 Spark 操作被提交时，Spark 并不会立即执行任务，而是将任务转换为一系列的 RDD 操作，只有当遇到 Action 算子时，Spark 才会真正执行任务。通过 Lazy Evaluation, Spark 可以优化执行计划，避免存储大量中间结果，提高任务的执行效率。</p>
+
+<p>常见的 RDD action 算子有：collect, count, first, take, takeSample, reduce, fold, aggregate, foreach, saveAsTextFile, saveAsSequenceFile, saveAsObjectFile, countByKey, countByValue, takeOrdered, top, foreachPartition.</p>
+
+<p>常见的 DataFrame action 算子有：collect, count, first, take, show, head, foreach, write, describe, summary, toPandas.</p>
+
+<p>总的来说，Spark SQL 更适合处理结构化数据和需要高效查询优化的场景，而 RDD 更适合处理非结构化数据和需要自定义处理逻辑的场景。</p>
+
+<p>需要特别注意的是，Spark SQL 性能调优需要考虑的因素很多，包括数据倾斜、数据分区、数据格式、数据压缩、数据缓存等，根据实际情况参考 <a href="https://spark.apache.org/docs/latest/sql-performance-tuning.html">Spark SQL 性能调优</a> 进行调整。</p>
+
+<h5 id="pandas-api-on-spark">Pandas API on Spark</h5>
+<p><a href="https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_ps.html#">Pandas API on Spark</a> 是 Spark 提供的用于处理大规模数据集的 API，它提供了与 <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html">Pandas</a> 类似的 API，使得用户可以方便地将 Pandas 的代码迁移到 Spark 上运行。</p>
+
+<p><strong>Pandas API on Spark 案例</strong></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Import necessary libraries
+</span><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="c1"># Create a Spark session
+</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span><span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">PandasAPISpark</span><span class="sh">"</span><span class="p">).</span><span class="nf">getOrCreate</span><span class="p">()</span>
+
+<span class="c1"># Create a DataFrame
+</span><span class="n">data</span> <span class="o">=</span> <span class="p">[(</span><span class="sh">"</span><span class="s">Alice</span><span class="sh">"</span><span class="p">,</span> <span class="mi">25</span><span class="p">),</span> <span class="p">(</span><span class="sh">"</span><span class="s">Bob</span><span class="sh">"</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="p">(</span><span class="sh">"</span><span class="s">Cathy</span><span class="sh">"</span><span class="p">,</span> <span class="mi">35</span><span class="p">)]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">age</span><span class="sh">"</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="nf">createDataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="p">)</span>
+
+<span class="c1"># Convert DataFrame to Pandas DataFrame
+</span><span class="n">pandas_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="nf">toPandas</span><span class="p">()</span>
+
+<span class="c1"># Perform operations on Pandas DataFrame
+</span><span class="n">pandas_df</span><span class="p">[</span><span class="sh">'</span><span class="s">age_12_years_ago</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pandas_df</span><span class="p">[</span><span class="sh">'</span><span class="s">age</span><span class="sh">'</span><span class="p">]</span> <span class="o">-</span> <span class="mi">12</span>
+
+<span class="c1"># Convert Pandas DataFrame back to Spark DataFrame
+</span><span class="n">spark_df</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="nf">createDataFrame</span><span class="p">(</span><span class="n">pandas_df</span><span class="p">)</span>
+
+<span class="c1"># Show the result
+</span><span class="n">spark_df</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+
+<span class="c1"># Stop the Spark session
+</span><span class="n">spark</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h5 id="mllib">MLlib</h5>
+<p><a href="https://spark.apache.org/docs/latest/ml-guide.html">MLlib</a> 是 Apache Spark 的机器学习库，提供了一系列用于构建和训练机器学习模型的工具和算法。MLlib 旨在简化机器学习的工作流程，并支持大规模数据集的处理。</p>
+
+<h5 id="graphx">GraphX</h5>
+<p><a href="https://spark.apache.org/docs/latest/graphx-programming-guide.html">GraphX</a> 是 Apache Spark 的图计算库，旨在处理大规模图数据。GraphX 提供了一个统一的 API，用于图的创建、操作和分析，支持图的并行计算。</p>
+
+<h5 id="structured-streaming">Structured Streaming</h5>
+<p><a href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html">Structured Streaming</a> 是 Spark 的流处理库，用于构建可扩展的流式数据处理应用程序。Structured Streaming 允许用户以批处理的方式处理流数据，同时保持了与批处理相同的编程模型。</p>
+
+<p><strong>Structured Streaming 案例</strong></p>
+
+<p><strong>1. 环境准备</strong></p>
+<ul>
+  <li>安装 zookeeper, kafka 以及必要的一些依赖包
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>zookeeper kafka
+pip <span class="nb">install </span>kafka-python
+wget https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.0.0/spark-sql-kafka-0-10_2.12-3.0.0.jar
+wget https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka-0-10-assembly_2.12/3.0.0/spark-streaming-kafka-0-10-assembly_2.12-3.0.0.jar
+wget https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.9.0/commons-pool2-2.9.0.jar
+</code></pre></div>    </div>
+  </li>
+  <li>启动 zookeeper
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zookeeper-server-start /opt/homebrew/etc/kafka/zookeeper.properties
+</code></pre></div>    </div>
+  </li>
+  <li>启动 kafka
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kafka-server-start /opt/homebrew/etc/kafka/server.properties
+</code></pre></div>    </div>
+  </li>
+  <li>创建 topic
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kafka-topics <span class="nt">--create</span> <span class="nt">--topic</span> structured_streaming_demo <span class="nt">--bootstrap-server</span> localhost:9092 <span class="nt">--partitions</span> 1 <span class="nt">--replication-factor</span> 1
+</code></pre></div>    </div>
+  </li>
+  <li>启动 kafka 生产者
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kafka-console-producer <span class="nt">--topic</span> structured_streaming_demo <span class="nt">--bootstrap-server</span> localhost:9092
+</code></pre></div>    </div>
+  </li>
+  <li>启动 spark shell
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyspark <span class="nt">--jars</span> jars/spark-sql-kafka-0-10_2.12-3.0.0.jar,jars/spark-streaming-kafka-0-10-assembly_2.12-3.0.0.jar,jars/commons-pool2-2.9.0.jar
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>2. 代码实现</strong></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">from</span> <span class="n">pyspark.sql.functions</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Create SparkSession
+</span><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="p">.</span><span class="n">builder</span> \
+<span class="p">.</span><span class="nf">appName</span><span class="p">(</span><span class="sh">"</span><span class="s">StructuredStreamingExample</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">config</span><span class="p">(</span><span class="sh">"</span><span class="s">spark.sql.streaming.forceDeleteTempCheckpointLocation</span><span class="sh">"</span><span class="p">,</span> <span class="sh">'</span><span class="s">true</span><span class="sh">'</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">getOrCreate</span><span class="p">()</span>
+
+<span class="c1"># Create DataFrame representing the stream of input data
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">spark</span> \
+    <span class="p">.</span><span class="n">readStream</span> \
+    <span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">kafka</span><span class="sh">"</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">kafka.bootstrap.servers</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">localhost:9092</span><span class="sh">"</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">subscribe</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">structured_streaming_demo</span><span class="sh">"</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">option</span><span class="p">(</span><span class="sh">"</span><span class="s">startingOffsets</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">earliest</span><span class="sh">"</span><span class="p">)</span> \
+    <span class="p">.</span><span class="nf">load</span><span class="p">()</span>
+
+<span class="c1"># Select the necessary columns
+</span><span class="n">ark_holdings</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">date</span><span class="sh">"</span><span class="p">),</span> 
+                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">1</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">fund_name</span><span class="sh">"</span><span class="p">),</span>
+                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">2</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">company_name</span><span class="sh">"</span><span class="p">),</span>
+                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">3</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">ticker</span><span class="sh">"</span><span class="p">),</span>
+                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">6</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">shares</span><span class="sh">"</span><span class="p">),</span>
+                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">7</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">market_value</span><span class="sh">"</span><span class="p">),</span>
+                    <span class="nf">split</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="sh">"</span><span class="s">,</span><span class="sh">"</span><span class="p">)[</span><span class="mi">5</span><span class="p">].</span><span class="nf">alias</span><span class="p">(</span><span class="sh">"</span><span class="s">weight</span><span class="sh">"</span><span class="p">))</span>
+
+<span class="c1"># if market_value &gt; 1000000, show the data
+</span><span class="n">weight_stock</span> <span class="o">=</span> <span class="n">ark_holdings</span><span class="p">.</span><span class="nf">filter</span><span class="p">(</span><span class="nf">col</span><span class="p">(</span><span class="sh">'</span><span class="s">market_value</span><span class="sh">'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1000000</span><span class="p">)</span>
+
+<span class="c1"># Start the query to stream the data
+</span><span class="n">query</span> <span class="o">=</span> <span class="n">weight_stock</span> \
+<span class="p">.</span><span class="n">writeStream</span> \
+<span class="p">.</span><span class="nf">outputMode</span><span class="p">(</span><span class="sh">"</span><span class="s">append</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="sh">"</span><span class="s">console</span><span class="sh">"</span><span class="p">)</span> \
+<span class="p">.</span><span class="nf">start</span><span class="p">()</span>
+
+<span class="c1"># Wait for the query to finish
+</span><span class="n">query</span><span class="p">.</span><span class="nf">awaitTermination</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="spark-性能调优">Spark 性能调优</h3>
+<p>Spark 性能调优是一个复杂的过程，除了代码层面的优化，这是一些<a href="https://spark.apache.org/docs/latest/configuration.html">配置参数</a>，以下是一些常见的性能调优方法：</p>
+
+<h4 id="资源管理">资源管理</h4>
+<ol>
+  <li><strong>调整资源分配</strong>: 根据集群的资源情况，<a href="https://spark.apache.org/docs/latest/configuration.html#application-properties">合理分配</a> CPU、内存、磁盘和网络资源，确保每个任务都能获得足够的资源；</li>
+  <li><strong>设置资源预取</strong>: 在任务开始前，预先分配好所需的资源，减少任务启动时间；</li>
+  <li><strong>监控资源使用情况</strong>: 使用 Spark 的<a href="https://spark.apache.org/docs/latest/monitoring.html">监控工具</a>，如 Spark Web UI、Ganglia、Prometheus 等，监控集群的资源使用情况，及时发现并解决资源瓶颈。</li>
+</ol>
+
+<h4 id="数据分区">数据分区</h4>
+<ol>
+  <li><strong>合理设置分区数</strong>: 根据数据量和集群的资源情况，合理设置分区数，减少数据倾斜和资源浪费；</li>
+  <li><strong>数据倾斜</strong>: 数据倾斜是指某些分区中的数据量远大于其他分区，导致某些任务运行时间过长，甚至导致任务失败。可以通过增加分区数、调整分区大小、使用随机分区等方式解决数据倾斜问题；</li>
+  <li><strong>数据预分区</strong>: 在数据加载时，根据业务需求和集群的资源情况，合理设置数据分区，减少数据倾斜和资源浪费。</li>
+</ol>
+
+<h4 id="数据格式">数据格式</h4>
+<ol>
+  <li><strong>选择合适的数据格式</strong>: 根据数据的特点和业务需求，选择合适的数据格式，如 <a href="https://parquet.apache.org/">Parquet</a>、<a href="https://orc.apache.org/">ORC</a>、<a href="https://avro.apache.org/">Avro</a> 等，减少数据存储和传输的开销；</li>
+  <li><strong>数据压缩</strong>: 使用<a href="https://spark.apache.org/docs/latest/configuration.html#compression-and-serialization">数据压缩算法</a>，如 <a href="https://github.com/google/snappy">Snappy</a>、<a href="https://www.gnu.org/software/gzip/">Gzip</a>、<a href="https://www.oberhumer.com/opensource/lzo/">LZO</a> 等，减少数据存储和传输的开销。</li>
+</ol>
+
+<h4 id="数据缓存">数据缓存</h4>
+<ol>
+  <li><strong>合理设置缓存策略</strong>: 根据数据的特点和业务需求，合理设置<a href="https://spark.apache.org/docs/latest/configuration.html#memory-management">缓存策略</a>，减少数据读取和处理的开销。</li>
+</ol>
+
+<p>To be continued…</p>

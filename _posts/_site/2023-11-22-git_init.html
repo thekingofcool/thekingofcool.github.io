@@ -1,0 +1,20 @@
+<p>下载对应系统版本并安装git，检查安装情况：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git --version
+</code></pre></div></div>
+
+<p>配置config并检查配置情况：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "your name"
+git config --global user.email "your email"
+git config -l
+</code></pre></div></div>
+
+<p>配置ssh:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen -t rsa -C "your github email"
+</code></pre></div></div>
+<p>return * 3</p>
+
+<p>去到Github - Settings - SSH and GPG keys, new SSH key 将 上一步生成的 ~/.ssh 目录下的 id_rsa.pub 文件内容复制到新建的SSH key中，并建立连接：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh -T git@github.com
+</code></pre></div></div>
+
+<p>接下来就是正常git远程仓库操作。</p>
