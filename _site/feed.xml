@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-26T22:24:13+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s qqzone</title><entry><title type="html">About Running</title><link href="http://localhost:4000/blog/2024/09/25/about_running.html" rel="alternate" type="text/html" title="About Running" /><published>2024-09-25T00:00:00+08:00</published><updated>2024-09-25T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/25/about_running</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/25/about_running.html"><![CDATA[<p>Q: 你为什么会开始跑步？（与其说开始跑，突破极限的感觉）</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-05T14:49:21+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s qqzone</title><entry><title type="html">此时不搏，更待何时？</title><link href="http://localhost:4000/blog/2024/09/27/higher_highs.html" rel="alternate" type="text/html" title="此时不搏，更待何时？" /><published>2024-09-27T00:00:00+08:00</published><updated>2024-09-27T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/27/higher_highs</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/27/higher_highs.html"><![CDATA[<p>一切运动式行为都不倾向于有好的结果，好结果的背后通常是实事求是、以人为本为出发点。</p>
+
+<p>这周二以来，中国央行出了两个政策，一个是将存量房贷利率下调0.5%、降低二套住房首付比例；第二是针对股市，为企业提供股票回购再贷款、允许有资质企业用股票和央行置换国债，卖出国债继续买入股票。加上昨天召开的政治局会议中透露出要促进房地产止跌回稳。一连串政策通知，让上证指数三天从2700多冲上3000点。港股、美股中概也复制了疯狂行情，外资接连唱多。</p>
+
+<p>发展经济要真这么简单就好了，借钱给企业买股票就能使经济繁荣，左脚踩右脚想要跳得更高。运动式行情可以刺激短期经济，市场上确实也缺这种活力。但问题不在于这些刺激政策是否正确，而在于后续能否有更多保障民生的就业、住房、医疗、养老等和人民群众利益切实相关的改革措施跟上。能否真正提高人民收入、改善未来预期。否则，可能又是一次击鼓传花的游戏，钱最终流向了不缺钱的人。</p>
+
+<p>历史经验告诉我们，在这种疯狂中唯一能做的就是做好自己的事，观察，冷静做下任何决定。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[一切运动式行为都不倾向于有好的结果，好结果的背后通常是实事求是、以人为本为出发点。]]></summary></entry><entry><title type="html">About Running</title><link href="http://localhost:4000/blog/2024/09/25/about_running.html" rel="alternate" type="text/html" title="About Running" /><published>2024-09-25T00:00:00+08:00</published><updated>2024-09-25T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/25/about_running</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/25/about_running.html"><![CDATA[<p>Q: 你为什么会开始跑步？（与其说开始跑，突破极限的感觉）</p>
 
 <p>A: 在我看来，跑步是所有运动的基础，任何体育项目要想有优异的表现都需要有足够的体能储备。所以与其说我为什么开始跑步，不如说我顺其自然地去跑了步。另外，当突破自己身体极限之后给我的感觉非常舒服。</p>
 
@@ -1024,29 +1030,4 @@ gem <span class="s2">"no-style-please"</span>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
 </code></pre></div></div>
 
-<p>通过 <code class="language-plaintext highlighter-rouge">localhost:4000</code> 预览生成后的网站，确保无误后将生成后的网站内容推到 Github 触发 Github Pages 部署，至此网站发布成功。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 Cloudflare（可以在 ICANN 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。]]></summary></entry><entry><title type="html">延迟退休可能是对一代人违约</title><link href="http://localhost:4000/reading/2024/09/14/delaying_retirement.html" rel="alternate" type="text/html" title="延迟退休可能是对一代人违约" /><published>2024-09-14T00:00:00+08:00</published><updated>2024-09-14T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/14/delaying_retirement</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/14/delaying_retirement.html"><![CDATA[<p><a href="http://jingji.cntv.cn/2013/04/20/ARTI1366415217203221.shtml">Read Original</a></p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>date_saved: 2024-09-14 06:59:46</td>
-      <td>date_published:2013-04-20 08:00:00</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>加速到来的人口老龄化又一次把延长退休年龄推向了风口浪尖。全国社保基金理事会党组书记戴相龙日前受访时表示，面对30多年后的人口老龄化高峰，国家管理的公共养老金收支会有较大缺口。他建议应逐步延长退休年龄，提出采取每5年把退休年龄延长1岁的制度设计。专家称阶梯式、渐进式的延长退休年龄是国际上通行的做法。</p>
-
-<p>相比此前“一步到位”的激进方案，“5年延1岁”的设计温和多了。不过这是一个容易撕裂社会情感的话题，争议和阻力并未因方案的温和而减少。这种撕裂从不同阶层的态度就可以看出来。从舆情分析看，支持延迟退休的主要是两大社会群体：官员和专家。其他阶层则多数反对延迟退休，辛苦了一辈子快到领退休金安享天年的时候，突然要延迟退休，心理上接受不了。</p>
-
-<p>分析支持者和反对者可以看到一个有意思的现象，支持延迟退休者，大多是既有养老体制的受益者，而反对者则多是相对被剥夺群体，甚至是受损者。中国在养老上实行的是双轨制，机关和事业单位发养老金，而企业单位是自己缴养老保险，从企业退休领到的养老金往往比从机关退休少得多。官员和专家支持延迟退休方案，因为这不仅不触动他们的既得利益，还能给他们带来利益；多数公众之所以反对，是因为这种改革没有触动他们最反对的养老双轨制。人们不患寡而患不均，养老账户的空账问题虽然严重，但他们可以接受一个低的养老金，可不能接受有些人比自己高那么多。人们其实不是反对延迟退休，而更多是反感政府在双轨制改革上对民意的漠视，动不了官员和专家，就拣软柿子捏。</p>
-
-<p>公众最大的期待是养老双轨制的并轨，把每个国民一起置于平等的体制下，先解决平等问题，再解决空账问题。而“延迟退休”则回避了这个核心问题，这正是作为双轨制受益者的官员和专家所期待的。</p>
-
-<p>延迟退休对官员和专家是有益的，官员大多希望延迟退休，因为延迟的不仅是工作，更是权力利益。按现在的退休年龄，一般官员到了60岁就得退，很多人都不适应这种退休后手中无权的落寞感，延迟退休则延长了他们的政治生命。专家也是如此，大学和科研院所多已高度行政化，是官场的翻版，退休的院长和教授自然比不上在位的。但对普通劳动者而言，工作则是一种负担，没有权力利益，辛辛苦苦熬了一辈子好不容易熬到了退休，却又赶上了延迟退休。延迟退休可能会让这些人产生一种双重的双损感：双轨制已让他们受损害，延迟退休更进一步伤害了他们的利益。</p>
-
-<p>从另一个角度看，延迟退休可能是对一代人的违约。制度和政策应该保持一定的稳定性，尤其是这个政策涉及大的公众利益时，应给公众一个稳定的预期。什么年龄退休，什么时候能拿到养老金，是国家对国民的一种承诺和约定，不能轻易打破这样的契约。不能以“延长退休年龄是国际惯例”作为打破契约的借口，发达国家延长退休年龄是经由正当的法律程序和民主途径与国民协商而订立的契约，不能想当然和随意地改变。即使因为空账问题需要调整，也应经过民主决策，让每个利益群体都参与到博弈中。</p>
-
-<p>而且，不能一说到养老金缺口，就把所有责任都转嫁给社会和公众，在提起延迟退休这个议题时，首先要追问政府在养老金问题上有没有承担应有的投入，履行好应有的政府保障责任。毕竟，公众纳的税不是白纳的，里面有对自己未来养老的一份投资。</p>
-
-<p>在养老问题上，改革的次序应该是，先改掉双轨制，再谈延迟退休；先加大政府投入，再谈公众责任。</p>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[Read Original]]></summary></entry></feed>
+<p>通过 <code class="language-plaintext highlighter-rouge">localhost:4000</code> 预览生成后的网站，确保无误后将生成后的网站内容推到 Github 触发 Github Pages 部署，至此网站发布成功。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 Cloudflare（可以在 ICANN 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。]]></summary></entry></feed>
