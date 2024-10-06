@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-06T12:26:23+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s qqzone</title><entry><title type="html">此时不搏，更待何时？</title><link href="http://localhost:4000/blog/2024/09/27/higher_highs.html" rel="alternate" type="text/html" title="此时不搏，更待何时？" /><published>2024-09-27T00:00:00+08:00</published><updated>2024-09-27T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/27/higher_highs</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/27/higher_highs.html"><![CDATA[<p>一切运动式行为都不倾向于有好的结果，好结果的背后通常是实事求是、以人为本为出发点。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-06T12:53:52+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s qqzone</title><entry><title type="html">Tombkeeper on Musk</title><link href="http://localhost:4000/reading/2024/10/06/tombkeeper_on_musk.html" rel="alternate" type="text/html" title="Tombkeeper on Musk" /><published>2024-10-06T00:00:00+08:00</published><updated>2024-10-06T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/10/06/tombkeeper_on_musk</id><content type="html" xml:base="http://localhost:4000/reading/2024/10/06/tombkeeper_on_musk.html"><![CDATA[<blockquote>
+  <p>马斯克的目标不是盖茨贝索斯，是凯撒哥伦布罗伯斯庇尔。 ——<a href="https://weibo.com/1401527553/JFr2qsBRy">Source</a></p>
+</blockquote>
+
+<blockquote>
+  <p>马斯克的情况，我感觉简单描述的话就是中年危机。当然，他这种人的中年危机和咱们不一样，不是买辆法拉利就能缓解的。
+马斯克是 1971 年的，去年刚好 50。他可能意识到之前把火星殖民的事儿想简单了，也把脑机接口的事儿想简单了。于是感觉自己有生之年没办法通过搞火星殖民来重建一个理想社会，也没办法通过脑机接口来延长自己的有生之年。这年月，揭竿而起很不现实。那么人生剩下的时间推动社会变革最可行的路径就是数字技术和社交媒体了。
+这大概就是他买了 twitter 这种赔钱货还特别上心，而疏于经营特斯拉的原因。他这类人的成就感阈值非常高，新能源革命对他来说是远远不够的。 ——<a href="https://weibo.com/6827625527/Mkl31845x">Source</a></p>
+</blockquote>
+
+<p>“As you can see, I’m not just MAGA – I’m dark MAGA,” Musk quipped.</p>
+
+<p>He then compared Trump with President Joe Biden, saying that Biden “could’t climb a flight of stairs” while Trump “was fist pumping after getting shot,” referring to the July assassination attempt that left the former president wounded in the ear.</p>
+
+<blockquote>
+  <p>我以前说过，马斯克有巨大的政治理想。然而他出生在南非，永远当不了美国总统。
+所以他今天在川普竞选集会上的<a href="https://x.com/cb_doge/status/1842702850968744174">表现</a>也并不令人意外，和他近几年干的事算是一以贯之。——<a href="https://weibo.com/6827625527/OAgZlljOs">Source</a></p>
+</blockquote>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[马斯克的目标不是盖茨贝索斯，是凯撒哥伦布罗伯斯庇尔。 ——Source]]></summary></entry><entry><title type="html">此时不搏，更待何时？</title><link href="http://localhost:4000/blog/2024/09/27/higher_highs.html" rel="alternate" type="text/html" title="此时不搏，更待何时？" /><published>2024-09-27T00:00:00+08:00</published><updated>2024-09-27T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/27/higher_highs</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/27/higher_highs.html"><![CDATA[<p>一切运动式行为都不倾向于有好的结果，好结果的背后通常是实事求是、以人为本为出发点。</p>
 
 <p>这周二以来，中国央行出了两个政策，一个是将存量房贷利率下调0.5%、降低二套住房首付比例；第二是针对股市，为企业提供股票回购再贷款、允许有资质企业用股票和央行置换国债，卖出国债继续买入股票。加上昨天召开的政治局会议中透露出要促进房地产止跌回稳。一连串政策通知，让上证指数三天从2700多冲上3000点。港股、美股中概也复制了疯狂行情，外资接连唱多。</p>
 
@@ -972,62 +989,4 @@ False
   </tbody>
 </table>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Python 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。]]></summary></entry><entry><title type="html">no style, please!</title><link href="http://localhost:4000/blog/2024/09/15/no_style_please.html" rel="alternate" type="text/html" title="no style, please!" /><published>2024-09-15T00:00:00+08:00</published><updated>2024-09-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/15/no_style_please</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/15/no_style_please.html"><![CDATA[<p>前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 <a href="https://www.cloudflare.com/">Cloudflare</a>（可以在 <a href="https://lookup.icann.org/en">ICANN</a> 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。</p>
-
-<h3 id="what-is-jekyll">What is Jekyll</h3>
-<p><a href="https://jekyllrb.com/">Jekyll</a> 是一款简单的静态网站生成器。它可以将纯文本转化成静态网站，你只需要用自己习惯的标记语言如 Markdown 来编写博客文章，借由 Jekyll 预设模版内置的文章发布、分类、标签、归档等博客所需的功能，使创建和维护博客变得更加简单和高效。</p>
-
-<p><a href="https://riggraz.dev/no-style-please/">no style, please!</a> 是一款几乎没有 CSS 样式的，快速生成，极简的 Jekyll 主题。</p>
-
-<p>结合了这套组件，网站的发布和维护变得非常简单，网站所有者只需专注于输出内容，通过几个简单的命令行，文章就自动部署到网站。</p>
-
-<p>下面来一步一步演示它是如何实现的。</p>
-
-<h3 id="installation">Installation</h3>
-<p>Jekyll 是一个 Ruby 项目，安装 Jekyll 首先需要 Ruby 的开发环境。</p>
-
-<h4 id="install-chruby-and-ruby-install-with-homebrew">Install chruby and ruby-install with Homebrew</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>chruby ruby-install xz
-</code></pre></div></div>
-
-<h4 id="install-the-latest-stable-version-of-ruby">Install the latest stable version of Ruby</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby-install ruby 3.1.3
-</code></pre></div></div>
-
-<h4 id="configure-your-shell-to-automatically-use-chruby">Configure your shell to automatically use chruby</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/chruby.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
-<span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/auto.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
-<span class="nb">echo</span> <span class="s2">"chruby ruby-3.1.3"</span> <span class="o">&gt;&gt;</span> ~/.zshrc <span class="c"># run 'chruby' to see actual version</span>
-</code></pre></div></div>
-
-<h4 id="install-jekyll">Install Jekyll</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
-</code></pre></div></div>
-
-<h4 id="create-a-new-gemfile">Create a new Gemfile</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle init
-</code></pre></div></div>
-
-<h4 id="edit-gemfile">Edit Gemfile</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="s2">"jekyll"</span>, <span class="s2">"~&gt; 4.3.3"</span>
-<span class="c"># Change default Jekyll theme to no-style-please</span>
-gem <span class="s2">"no-style-please"</span>
-</code></pre></div></div>
-
-<p>Run <code class="language-plaintext highlighter-rouge">bundle</code> to install jekyll for your project.</p>
-
-<h3 id="create-a-site">Create a site</h3>
-<p>在 _data, _includes, _layouts 中预设网站模版样式，将 Markdown 格式的文件放入指定的 _posts 路径。</p>
-
-<h3 id="build-your-site">Build your site</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
-</code></pre></div></div>
-
-<p>通过 <code class="language-plaintext highlighter-rouge">localhost:4000</code> 预览生成后的网站，确保无误后将生成后的网站内容推到 Github 触发 Github Pages 部署，至此网站发布成功。</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[前面已经介绍了把个人网站部署在 Github Pages，并给 Github Page 配置定制化域名的流程。考虑到个人信息安全与审查风险，我将在 Aliyun 购买的域名转移到了 Cloudflare（可以在 ICANN 查看域名注册信息）。为了进一步加快网站部署流程，这里引入一个静态网站生成工具 Jekyll，以及 Jekyll 主题 no style, please! 的应用介绍。]]></summary></entry></feed>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[Background Python 作为一个高级编程语言 (high-level language)，它的主要工作是将用户编写的 Python 源代码解释成机器能理解的成字节码 (bytecode)，以便让机器执行指令。]]></summary></entry></feed>
