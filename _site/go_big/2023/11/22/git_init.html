@@ -39,6 +39,55 @@ git config -l
 
 <p>接下来就是正常git远程仓库操作。</p>
 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## Creating a New Repository </span>
+git init 
+git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Initial commit"</span>
+git remote add origin https://github.com/&lt;user&gt;/&lt;repo&gt;.git
+git push <span class="nt">--set-upstream</span> origin main
+
+<span class="c">## Viewing History </span>
+git log 
+git blame &lt;file&gt;
+
+<span class="c">## Branching and Merging </span>
+git branch <span class="nt">-av</span> <span class="c"># show detail information of all branches</span>
+git branch ‹new-branch&gt; <span class="c"># create a new branch</span>
+git switch &lt;branch-name&gt; <span class="c"># switch to a branch</span>
+git checkout <span class="nt">-b</span> &lt;new_branch&gt; <span class="c"># create a new branch and switch to it</span>
+git branch <span class="nt">-d</span> &lt;branch&gt; <span class="c"># Delete a local branch (only if merged)</span>
+git branch <span class="nt">-D</span> &lt;branch&gt; <span class="c"># Force delete a local branch (even if unmerged)</span>
+git merge &lt;branch&gt; <span class="c"># merge branch to current branch</span>
+
+<span class="c">## Undoing Changes</span>
+git checkout <span class="nt">--</span> &lt; file&gt; <span class="c"># undo changes before git add</span>
+git reset &lt;file&gt; <span class="c"># undo changes between git add and git commit</span>
+git revert &lt;commit-hash&gt; <span class="c"># undo specific commit</span>
+
+<span class="c">## Additional Essential Commands</span>
+<span class="c">### Cloning a Repository </span>
+git clone https://github.com/&lt;user&gt;/&lt;repo&gt;.git
+<span class="c">### Pulling Changes from Remote </span>
+git pull origin master
+<span class="c">### Pushing Changes to Remote </span>
+git push origin &lt;branch&gt;
+
+<span class="c">### Stashing Changes </span>
+git stash <span class="c"># Stash changes</span>
+git stash list <span class="c"># List all stashes</span>
+git stash apply <span class="c"># Apply the latest stash</span>
+git stash drop <span class="c"># Drop the latest stash</span>
+
+<span class="c">### Tagging</span>
+git tag ‹tag-name&gt; <span class="c"># Create a new tag</span>
+git tag <span class="c"># List all tags</span>
+git push origin &lt;tag-name&gt; <span class="c"># Push tag to remote</span>
+
+<span class="c">### Viewing Differences </span>
+git diff <span class="c"># Show changes between working directory and index</span>
+git diff HEAD <span class="c"># Show changes between working directory and last commit</span>
+</code></pre></div></div>
+
 </article>
       </div>
     </main>
