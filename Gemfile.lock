@@ -12,11 +12,15 @@ GEM
     eventmachine (1.2.7)
     ffi (1.17.0-arm64-darwin)
     ffi (1.17.0-x64-mingw-ucrt)
+    ffi (1.17.0-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
     google-protobuf (4.27.1-arm64-darwin)
       bigdecimal
       rake (>= 13)
     google-protobuf (4.27.1-x64-mingw-ucrt)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.27.1-x86_64-linux)
       bigdecimal
       rake (>= 13)
     http_parser.rb (0.8.0)
@@ -70,6 +74,9 @@ GEM
       strscan
     rouge (4.3.0)
     safe_yaml (1.0.5)
+    sass-embedded (1.77.5)
+      google-protobuf (>= 3.25, < 5.0)
+      rake (>= 13)
     sass-embedded (1.77.5-arm64-darwin)
       google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.77.5-x64-mingw-ucrt)
@@ -88,6 +95,7 @@ GEM
 PLATFORMS
   arm64-darwin-23
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
