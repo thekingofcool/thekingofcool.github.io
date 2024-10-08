@@ -5,7 +5,7 @@ date:   2024-10-08
 categories: go_big
 ---
 
-### What is ML
+### What is Machine Learning
 机器学习是一种让计算机模拟人脑从数据中学习并做出决策的过程，而不是过去那样利用计算机通过明确的编程指令完成特定任务。
 
 也有说法是，
@@ -14,11 +14,9 @@ categories: go_big
 
 谁知道呢？
 
-机器学习由数据和模型构成，机器学习的实现依赖数据，这个数据可以是一切形式的信息；模型是机器学习的核心，它是一个数学结构，用于基于数据做出预测。
+机器学习由数据和模型构成。机器学习的实现依赖数据，这个数据可以是一切形式的信息；模型是机器学习的核心，它是一个数学结构，用于基于数据做出预测。
 
-一个完整的机器学习过程是喂给模型很多数据（输入和输出），让它学习如何从输入中得出正确的输出，一旦模型训练完成，就可以用它对新数据进行预测。
-
-机器学习分为 **监督学习**、**无监督学习** 和 **强化学习**。
+根据提供的数据类型和模型机制，机器学习分为 **监督学习**、**无监督学习** 和 **强化学习**。
 
 1. 监督学习 (Supervised Learning) 中，给定一组目标对象的特征数据，及其对应的标签，让计算机模型学习进行预测。代表性的算法有线性回归 (Linear Regression)、逻辑回归 (Logistic Regression)、决策树 (Decision Tree) 等。
 
@@ -27,19 +25,19 @@ categories: go_big
 3. 强化学习 (Reinforcement Learning) 类似于训练宠物，通过给试错后的模型以奖励或者惩罚，来达到想要的效果。代表性算法有 Q-learning、深度 Q 网络 (Deep Q-Network)。
 
 ### Machine Learning Library
-为了帮助开发者更容易构建、训练和评估机器学习模型，一些机器学习库被开发出来。机器学习库由一些预先编写的代码和工具构成，它们提供了许多常用的算法、数据处理工具，使机器学习的实现更加高效和便捷。
+为了帮助开发者更容易构建、训练和评估机器学习模型，一些机器学习库被开发出来。这些机器学习库由一些预先编写的代码和工具构成，它们提供了许多常用的算法、数据处理工具，使机器学习的实现更加高效和便捷。
 
 常用的机器学习库包括 **[Scikit-learn](https://scikit-learn.org/stable/)**, **[TensorFlow](https://www.tensorflow.org/)**, **[PyTorch](https://pytorch.org/)**。
 
-### How to ML
-下面以 Scikit-learn 为例，简单跑通一遍机器学习的流程。
+### How to Machine Learning
+下面以 Scikit-learn 为例，简单跑一遍机器学习的流程。
 
 #### Install Necessary Packages
 ```bash
 pip install scikit-learn pandas
 ```
 
-#### Demo
+#### Hello World
 ```python
 # 导入必须的包
 import pandas as pd
@@ -259,10 +257,13 @@ print(confusion_matrix(y_test, y_pred))
 ```
 
 ### Useful Links
-想要深入实践掌握 ML，除了以上提到的一些官网，还可以尝试从 [Kaggle](https://www.kaggle.com/) 找到数据集并构建自己感兴趣的项目，在机器学习社群 ([Stack Overflow](https://stackoverflow.com/)、[Kaggle Discussions](https://www.kaggle.com/discussions?sort=undefined)、[Reddit](https://www.reddit.com/)) 参与其他学习者的交流，跟踪技术的发展。
+想要深入实践掌握 Machine Learning，除了以上提到的一些官网，还可以尝试从 [Kaggle](https://www.kaggle.com/) 找到数据集并构建自己感兴趣的项目，在机器学习社群 ([Stack Overflow](https://stackoverflow.com/)、[Kaggle Discussions](https://www.kaggle.com/discussions?sort=undefined)、[Reddit](https://www.reddit.com/)) 参与其他学习者的交流，跟踪技术的发展。
 
 需要的技能：线性代数、概率论和统计学，数据处理 (NumPy & Pandas) 和可视化 (Matplotlib & Seaborn)。
 
 多动手，多观察，多总结。
 
 To Be Continued...
+
+BTW The Royal Swedish Academy of Sciences announced on October 8:
+[The Nobel Prize in Physics 2024](https://www.nobelprize.org/prizes/physics/2024/summary/) was awarded to [John J. Hopfield](https://en.wikipedia.org/wiki/John_Hopfield) and [Geoffrey E. Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton) "for foundational discoveries and inventions that enable machine learning with artificial neural networks".
