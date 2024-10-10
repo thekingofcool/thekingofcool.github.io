@@ -58,4 +58,4 @@ categories: go_big
 
 人工智能接管人类或许是迟早的事，但在这之前，充分利用它或多或少能让我们更适应这个变化着的世界，以及，用马斯克的话说，to understand the universe。
 
-> [xAI](https://x.ai/) is a company working on **building artificial intelligence to accelerate human scientific discovery**. We are guided by our mission to advance our collective **understanding of the universe**.
+> [xAI](https://x.ai/) is a company working on **building artificial intelligence to accelerate human scientific discovery**. We are guided by our mission to **advance our collective understanding of the universe**.
