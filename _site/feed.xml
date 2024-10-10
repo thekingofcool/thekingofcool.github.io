@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-10T14:21:48+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s qqzone</title><entry><title type="html">Large Language Models and Prompt Engineering</title><link href="http://localhost:4000/go_big/2024/10/10/llm_and_prompt_engineer.html" rel="alternate" type="text/html" title="Large Language Models and Prompt Engineering" /><published>2024-10-10T00:00:00+08:00</published><updated>2024-10-10T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/10/10/llm_and_prompt_engineer</id><content type="html" xml:base="http://localhost:4000/go_big/2024/10/10/llm_and_prompt_engineer.html"><![CDATA[<h3 id="background">Background</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-10T22:13:49+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">thekingofcool’s qqzone</title><entry><title type="html">Large Language Models and Prompt Engineering</title><link href="http://localhost:4000/go_big/2024/10/10/llm_and_prompt_engineer.html" rel="alternate" type="text/html" title="Large Language Models and Prompt Engineering" /><published>2024-10-10T00:00:00+08:00</published><updated>2024-10-10T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/10/10/llm_and_prompt_engineer</id><content type="html" xml:base="http://localhost:4000/go_big/2024/10/10/llm_and_prompt_engineer.html"><![CDATA[<h3 id="background">Background</h3>
 <p>在传统编程中，想让计算机做出判断，需要将完整的判断标准 hard code 进脚本，在这个阶段计算机还只是一个机器。</p>
 
 <p>在神经网络 (neural network) 浪潮里，当你向经过训练的机器学习模型输入某种信息，它基于一定的预测能力可以返回一个预测结果。</p>
 
-<p>进入生成式语言模型 (generative language model) 时代后，使用者可以生成自己的内容，无论是文本、图片、音频、视频。我们只需要向语言模型提出问题，可以是在对话框输入文字或者口头交谈的形式。</p>
+<p>进入生成式语言模型 (generative language model) 时代后，使用者可以生成自己的内容，无论是文本、图片、音频、视频。我们只需要向语言模型提出问题，可以是在对话框中输入文字或者以口头交谈的形式。</p>
 
-<h3 id="llm-vs-ml">LLM vs ML</h3>
-<p>传统的机器学习开发需要有样例数据来训练模型，同时需要花费计算时间和硬件资源，针对不同的使用场景也需要开发人员训练不同的模型。</p>
+<h3 id="large-language-model-vs-machine-learning">Large Language Model vs Machine Learning</h3>
+<p>传统机器学习开发需要有样例数据来训练模型，同时需要花费计算时间和硬件资源，针对不同的使用场景需要开发人员训练不同的模型。</p>
 
-<p>在大语言模型中，使用者不需要成为专家，不需要收集训练数据，一个模型也可以被用来解决通用的问题。你所需要做的只是考虑如何设计你的提示词，创建出清晰、简洁且信息丰富的问题。</p>
+<p>在大语言模型中，使用者不需要成为专家，不需要收集训练数据，一个模型可以被用来解决通用的问题。你所需要做的只是考虑如何设计你的提示词，创建出清晰、简洁且信息丰富的问题。</p>
 
 <h3 id="what-is-large-language-model">What is Large Language Model</h3>
 <p>大语言模型是机器学习中深度学习 (Deep Learning) 的一个子集，它是一个可以预先训练、根据特定的目标进行微调的大型通用语言模型，可以被用来处理如文本分类、问答、文档摘要、文本生成等问题。现阶段大语言模型一个常见的应用是生成式人工智能 (Generative AI)。</p>
@@ -48,9 +48,9 @@
 <p>在我的另一篇博客中我列举了我使用 Cursor 时预设的规则以达到期望的效果：<a href="https://thekingof.cool/blog/2024/09/17/rules_of_ai.html">Rules of AI in Cursor</a>。</p>
 
 <h3 id="experience-and-beyond">Experience and Beyond</h3>
-<p>就像人类学习说话一样，优秀的提示词工程师需要根据自身需求不断地去与模型交互，并形成一套自己的高效的对话方式。</p>
+<p>就像人类学习说话一样，优秀的提示词工程师需要根据自身需求不断地去与模型交互，并形成一套自己的高效对话方式。</p>
 
-<p>人工智能颠覆人类或许是迟早的事，但在这之前，充分利用它或多或少能让我们更适应这个变化着的世界，以及，用马斯克的话说，to understand the universe。</p>
+<p>人工智能接管人类或许是迟早的事，但在这之前，充分利用它或多或少能让我们更适应这个变化着的世界，以及，用马斯克的话说，to understand the universe。</p>
 
 <blockquote>
   <p><a href="https://x.ai/">xAI</a> is a company working on <strong>building artificial intelligence to accelerate human scientific discovery</strong>. We are guided by our mission to advance our collective <strong>understanding of the universe</strong>.</p>
@@ -1051,45 +1051,40 @@ Delta Lake 为了解决数据的一致性和可靠性，引入了事务日志和
 <span class="n">delta_text_df</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[What is Delta Lake Delta Lake 是一个开源的数据湖存储层 (lakehouse storage layer) 技术，它利用基于文件的事务日志 (file-based transaction log) 扩展了 Parquet 数据文件，以实现 ACID 事务和可扩展的元数据处理。Delta Lake 与 Apache Spark API 完全兼容，专为与 Structured Streaming 集成而开发，可以很方便地对 batch &amp; streaming 数据进行处理。]]></summary></entry><entry><title type="html">李录谈常识</title><link href="http://localhost:4000/reading/2024/09/17/common_sense.html" rel="alternate" type="text/html" title="李录谈常识" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/reading/2024/09/17/common_sense</id><content type="html" xml:base="http://localhost:4000/reading/2024/09/17/common_sense.html"><![CDATA[<p>芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。</p>
+<p>To be continued…</p>]]></content><author><name></name></author><category term="go_big" /><summary type="html"><![CDATA[What is Delta Lake Delta Lake 是一个开源的数据湖存储层 (lakehouse storage layer) 技术，它利用基于文件的事务日志 (file-based transaction log) 扩展了 Parquet 数据文件，以实现 ACID 事务和可扩展的元数据处理。Delta Lake 与 Apache Spark API 完全兼容，专为与 Structured Streaming 集成而开发，可以很方便地对 batch &amp; streaming 数据进行处理。]]></summary></entry><entry><title type="html">Rules of AI in Cursor</title><link href="http://localhost:4000/blog/2024/09/17/rules_of_ai.html" rel="alternate" type="text/html" title="Rules of AI in Cursor" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/blog/2024/09/17/rules_of_ai</id><content type="html" xml:base="http://localhost:4000/blog/2024/09/17/rules_of_ai.html"><![CDATA[<p>Here are the AI ​​answer rules I set for <a href="https://www.cursor.com/">Cursor</a> to help me maximize my learning and understanding of programming knowledge:</p>
 
-<p>这里我来谈谈几条常识，也听听大家的意见。</p>
+<p>You are an Al coding instructor designed to assist and guide me as l learn to code. Your primary goal is to help me learn programming concepts, bestpractices, and problem-solving skils while writing code. Always assume l’m a beginner with limited programming knowledge.</p>
 
+<p>Follow these guidelines in all interactions:</p>
 <ol>
-  <li>
-    <p>现代化是市场经济和现代科技结合的产物。但这其中有一个因果关系。市场经济是因，现代科技是果。没有现代市场经济，不会产生现代科技，在非市场经济的制度中，技术不能有效的转化成生产力，也因此不能产生持久、领先的科技。但是发达的市场经济一定会产生领先的科技。</p>
-  </li>
-  <li>
-    <p>除国防外，当今所有先进技术最先都是由私营企业在市场经济环垸下创造出来的。美国，西方，中国都如此。政府主导先进科技创新，如果破坏了市场机制，没有成功案例。</p>
-  </li>
-  <li>
-    <p>人的本性都是白私的。人的道德其实是对于更广泛私利、长远私利的描述。制度设计和政策措施如果不能激发人的私利，形成不了正向的激励机制，也就不可持续。无论在经济或是政治活动中都是一样。</p>
-  </li>
-  <li>
-    <p>关于腐败。腐败本质上是一种权力寻租。只要有权力就永远有腐败。在整个人类历史进程中、在所有制度下，腐败一直存在，将来也会永远存在。腐败只能控制，不可能完全消除。过度腐败对社会伤害，过度反腐也会对社会伤害。公正的制度性控制比人为的控制更可持续，而且负面后果更少。</p>
-  </li>
-  <li>
-    <p>权力是一组人对另一组人行为的影响力。它的总量一定，和人口数量相关。权力从本质上是一个零和的游戏。政府权力过大，必然导致民间的权力过小，官不聊生必然导致民不聊生，古今中外都如此。</p>
-  </li>
-  <li>
-    <p>市场经济本质上是政府在经济上让权给民间。在市场经济中所有重要的决定都只能由私人来做出。政府的作用在于服务和维持规则，不是指挥。由政府指挥市场经济没有成功案例。民间经济、市场经济是否有活力，常常取决于政府在经济活动中的权力是否足够小。</p>
-  </li>
-  <li>
-    <p>市场经济对人才的选择由自由竞争决定，不拘一格也无法预测。一个社会越能够容忍不同人格、不同价值观的人才，越能在市场经济中成功。反之亦然。</p>
-  </li>
-  <li>
-    <p>人从本性上都追求平等。追求结果平等的机制会造成最大的不平等，追求机会平等的机制会形成对结果平等的最大近似。</p>
-  </li>
-  <li>
-    <p>人对安全的需求远远大于对财富的追求。在已经温饱的前提下，没有人身安全保障，对财富的追求会大大降低。</p>
-  </li>
-  <li>
-    <p>市场经济行为和预期相关。当一个市场经济中，绝大多数人无论因何种原因开始持负面预期时，经济活动会衰退，衰退本身会加固负面预期，从而加速衰退。反之亦然。</p>
-  </li>
-  <li>
-    <p>市场经济是由自发的需求、自主的供给，通过自由竞争而形成的。其中需求是主因，供给是手段和结果。市场经济的真实总量实际上是由真实需求总量决定的，而不是由供给决定的。真实需求增加可以提振供给。真实需求降低，提振供给不仅不能解决问题，还会造成更多连带问题。</p>
-  </li>
-</ol>]]></content><author><name></name></author><category term="reading" /><summary type="html"><![CDATA[芒格先生曾说过，常识是最稀缺的认知。违背常识会付出代价。所谓的常识通常也是由这些代价反证出来的。所以对常识的讨论总还是有价值的。]]></summary></entry><entry><title type="html">Hands on Data Modeling</title><link href="http://localhost:4000/go_big/2024/09/17/data_modeling.html" rel="alternate" type="text/html" title="Hands on Data Modeling" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/17/data_modeling</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/17/data_modeling.html"><![CDATA[<h3 id="what-is-data-modeling">What is Data Modeling</h3>
+  <li>Explain concepts thoroughly but in simple terms, avoiding jargon when possible.</li>
+  <li>When introducing new terms, provide clear definitions and examples.</li>
+  <li>Break down complex problems into smaller,manageable steps.</li>
+  <li>Encourage good coding practices and explain why they are important.</li>
+  <li>Provide examples and analogies to illustrate programming concepts.</li>
+  <li>Be patient and supportive, understanding that learning to code can be challenging.</li>
+  <li>Offer praise for correct implementations and gentle corrections for mistakes.</li>
+  <li>When correcting errors, explain why the error occurred and how to fix it.9.Suggest resources for further learning when appropriate</li>
+  <li>Encourage me to ask questions and seek clarification.</li>
+  <li>Foster problem-solving skils by guiding me to find solutions rather than always providing direct answers.</li>
+  <li>Adapt your teaching style to my pace and learning preferences.</li>
+  <li>Provide code snippets to illustrate concepts, but always explain the code line by line.</li>
+  <li>Use comments throughout the code to help document what is happening.</li>
+</ol>
+
+<p>Address the my questions thoroughly, keeping in mind the quidelines above. lf the question is unclear or lacks context, ask me for clarification
+Review the code and provide feedback. f there are erors or areas for improvement,explain them clearly and suggest corrections. if the code is correct, offerpraise and explain why it’s a good implementation.</p>
+
+<p>Structure your responses as follows:</p>
+<ol>
+  <li>Format your response as markdown.</li>
+  <li>Answer my question.</li>
+  <li>Code review and feedback.</li>
+  <li>Suggestions for further learning or practice.</li>
+  <li>Using zh-CN.</li>
+</ol>
+
+<p>Remember, your goal is not just to help me write correct code, but to help me understand the underlying principles and develop my programming skilsAlways strive to be clear, patient, and encouraging in your responses.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Here are the AI ​​answer rules I set for Cursor to help me maximize my learning and understanding of programming knowledge:]]></summary></entry><entry><title type="html">Hands on Data Modeling</title><link href="http://localhost:4000/go_big/2024/09/17/data_modeling.html" rel="alternate" type="text/html" title="Hands on Data Modeling" /><published>2024-09-17T00:00:00+08:00</published><updated>2024-09-17T00:00:00+08:00</updated><id>http://localhost:4000/go_big/2024/09/17/data_modeling</id><content type="html" xml:base="http://localhost:4000/go_big/2024/09/17/data_modeling.html"><![CDATA[<h3 id="what-is-data-modeling">What is Data Modeling</h3>
 <p>数据建模是指创建数据模型的过程。软件工程中，数据工程师在设计数据库时，会将现实世界的各类数据及其关系进行分析、抽象，从中找出内在联系，并将其形式化描述为数据模型，以此建立信息系统的数据库结构。</p>
 
 <h3 id="why-data-modeling">Why Data Modeling</h3>
