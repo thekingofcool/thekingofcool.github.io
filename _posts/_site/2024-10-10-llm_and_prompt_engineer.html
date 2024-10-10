@@ -1,19 +1,21 @@
 <h3 id="background">Background</h3>
-<p>在传统编程 (traditional programming) 中，想让计算机做出判断，需要将完整的判断标准 hard code 进脚本，这个阶段计算机还是一个机器。</p>
+<p>在传统编程中，想让计算机做出判断，需要将完整的判断标准 hard code 进脚本，在这个阶段计算机还只是一个机器。</p>
 
-<p>在神经网络 (neural network) 浪潮中，当你向经过训练的机器学习模型输入某种信息，它基于一定的预测能力可以给到你一个预测结果。</p>
+<p>在神经网络 (neural network) 浪潮里，当你向经过训练的机器学习模型输入某种信息，它基于一定的预测能力可以返回一个预测结果。</p>
 
-<p>进入生成式语言模型 (generative language model) 时代后，我们作为用户可以生成自己的内容，无论是文本、图片、音频、视频。我们只需要向语言模型提出问题，可以是在对话框输入文字或者口头交谈进行。</p>
+<p>进入生成式语言模型 (generative language model) 时代后，使用者可以生成自己的内容，无论是文本、图片、音频、视频。我们只需要向语言模型提出问题，可以是在对话框输入文字或者口头交谈的形式。</p>
 
 <h3 id="llm-vs-ml">LLM vs ML</h3>
-<p>传统的机器学习开发需要有样例数据来训练模型、计算时间和硬件，同时也需要针对不同使用场景训练不同的模型。</p>
+<p>传统的机器学习开发需要有样例数据来训练模型，同时需要花费计算时间和硬件资源，针对不同的使用场景也需要开发人员训练不同的模型。</p>
 
-<p>而在大预言模型中，你不需要成为专家，也不需要使用者寻找训练数据制作模型。一个模型可以被用来解决通用的问题。你所需要做的只是考虑如何设计你的提示词，创建出清晰、简洁且信息丰富的问题。</p>
+<p>在大语言模型中，使用者不需要成为专家、不需要收集训练数据，而且一个模型可以被用来解决通用的问题。你所需要做的只是考虑如何设计你的提示词，来创建出清晰、简洁且信息丰富的问题。</p>
 
 <h3 id="what-is-large-language-model">What is Large Language Model</h3>
 <p>大语言模型是机器学习中深度学习 (Deep Learning) 的一个子集，它是一个可以预先训练、根据特定的目标进行微调的大型通用语言模型。</p>
 
-<p>大语言模型是用来解决人类通用的语言问题，例如文本分类、问答、文档摘要、跨行业的文本生成。它现阶段常见的一个应用是生成式人工智能 (Generative AI)。</p>
+<p>大语言模型可以被用来处理例如文本分类、问答、文档摘要、文本生成等问题。它现阶段常见的一个应用是生成式人工智能 (Generative AI)。</p>
+
+<p>与机器学习模型相比，LLM 具有以下几个特点：</p>
 
 <h4 id="large">Large</h4>
 <ul>
@@ -28,12 +30,14 @@
 <p>使用大量数据集在大型语言模型中预先进行训练，然后使用较小的数据集对其进行微调用以实现特定的目标。</p>
 
 <h3 id="popular-tools">Popular Tools</h3>
-<p>现在市面上常用的生成式人工智能对话工具有：<a href="https://www.openai.com/chatgpt">OpenAI ChatGPT</a>, <a href="https://bard.google.com">Google Bard</a>, <a href="https://www.microsoft.com/en-us/microsoft-365/copilot">Microsoft Copilot</a>, <a href="https://www.anthropic.com/">Anthropic Claude</a>, <a href="https://ai.facebook.com/">Meta LLaMA</a>;
-以及一些集成各种语言模型到特定场景的工具 <a href="https://www.cursor.com/">Cursor</a>, <a href="https://www.perplexity.ai/">Perplexity AI</a>;
-以及生成图片、视频的工具 <a href="https://openai.com/dall-e">OpenAI DALL-E</a>, <a href="https://www.midjourney.com">Midjourney</a>, <a href="https://stability.ai/stable-diffusion">Stable Diffusion</a>, <a href="https://runwayml.com">Runway ML</a>, <a href="https://www.synthesia.io">Synthesia</a>。</p>
+<p>现在市面上常用的生成式人工智能对话工具有: <a href="https://www.openai.com/chatgpt">OpenAI ChatGPT</a>, <a href="https://bard.google.com">Google Bard</a>, <a href="https://www.microsoft.com/en-us/microsoft-365/copilot">Microsoft Copilot</a>, <a href="https://www.anthropic.com/">Anthropic Claude</a>, <a href="https://ai.facebook.com/">Meta LLaMA</a>;</p>
+
+<p>以及集成各种语言模型到特定应用场景的工具: <a href="https://www.cursor.com/">Cursor</a>, <a href="https://www.perplexity.ai/">Perplexity AI</a>;</p>
+
+<p>以及生成图片、视频的工具: <a href="https://openai.com/dall-e">OpenAI DALL-E</a>, <a href="https://www.midjourney.com">Midjourney</a>, <a href="https://stability.ai/stable-diffusion">Stable Diffusion</a>, <a href="https://runwayml.com">Runway ML</a>, <a href="https://www.synthesia.io">Synthesia</a>。</p>
 
 <h3 id="how-to-prompt">How to Prompt</h3>
-<p>下面介绍一种比较高效的 LLM 提问框架，<strong>CO-STAR</strong>。</p>
+<p>下面介绍一种比较高效的 LLM 提问框架: <strong>CO-STAR</strong>。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- C - Context（上下文）: 提供足够的背景信息，以帮助模型理解问题的背景和目的；
 - O - Objective（目标）: 明确你希望模型实现的目标或任务，例如回答问题、提供建议或生成文本；
@@ -46,7 +50,9 @@
 <p>在我的另一篇博客中我列举了我使用 Cursor 时预设的规则以达到期望的效果：<a href="https://thekingof.cool/blog/2024/09/17/rules_of_ai.html">Rules of AI in Cursor</a>。</p>
 
 <h3 id="experience-and-beyond">Experience and Beyond</h3>
-<p>就跟人类学习说话一样，优秀的提示词工程师需要根据自身需求不断地去与模型交流，并形成一套自己的高效的对话方式。人工智能颠覆人类或许是迟早的事，但是在这之前，充分利用它或多或少能让我们更适应变化着的世界，以及用马斯克的话，help us to understand the universe。</p>
+<p>就像人类学习说话一样，优秀的提示词工程师需要根据自身需求不断地去与模型交互，并形成一套自己的高效的对话方式。</p>
+
+<p>人工智能颠覆人类或许是迟早的事，但在这之前，充分利用它或多或少能让我们更适应这个变化着的世界，以及，用马斯克的话，to understand the universe。</p>
 
 <blockquote>
   <p><a href="https://x.ai/">xAI</a> is a company working on building artificial intelligence to accelerate human scientific discovery. We are guided by our mission to advance our collective understanding of the universe.</p>
