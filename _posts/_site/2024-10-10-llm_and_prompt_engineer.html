@@ -1,0 +1,51 @@
+<h3 id="background">Background</h3>
+<p>在传统编程 (traditional programming) 中，想让计算机做出判断，需要将完整的判断标准 hard code 进脚本，这个阶段计算机还是一个机器。</p>
+
+<p>在神经网络 (neural network) 浪潮中，当你向经过训练的机器学习模型输入某种信息，它基于一定的预测能力可以给到你一个预测结果。</p>
+
+<p>进入生成式语言模型 (generative language model) 时代后，我们作为用户可以生成自己的内容，无论是文本、图片、音频、视频。我们只需要向语言模型提出问题，可以是在对话框输入文字或者口头交谈进行。</p>
+
+<h3 id="llm-vs-ml">LLM vs ML</h3>
+<p>传统的机器学习开发需要有样例数据来训练模型、计算时间和硬件，同时也需要针对不同使用场景训练不同的模型。</p>
+
+<p>而在大预言模型中，你不需要成为专家，也不需要使用者寻找训练数据制作模型。一个模型可以被用来解决通用的问题。你所需要做的只是考虑如何设计你的提示词，创建出清晰、简洁且信息丰富的问题。</p>
+
+<h3 id="what-is-large-language-model-llm">What is Large Language Model (LLM)</h3>
+<p>大语言模型是机器学习中深度学习 (Deep Learning) 的一个子集，它是一个可以预先训练、根据特定的目标进行微调的大型通用语言模型。</p>
+
+<p>大语言模型是用来解决人类通用的语言问题，例如文本分类、问答、文档摘要、跨行业的文本生成。它现阶段常见的一个应用是生成式人工智能 (Generative AI)。</p>
+
+<h4 id="large">Large</h4>
+<ul>
+  <li>训练数据集 (training dataset) 的规模大，通常可以达到 PB 级；</li>
+  <li>参数 (parameter) 的数量大，参数通常指的是机器从模型训练中学到的记忆和知识。</li>
+</ul>
+
+<h4 id="general-purpose">General purpose</h4>
+<p>基于人类语言的共通性，LLM 可以用来解决人类通用的问题。</p>
+
+<h4 id="pre-trained-and-fine-tuned">Pre-trained and fine-tuned</h4>
+<p>使用大量数据集在大型语言模型中预先进行训练，然后使用较小的数据集对其进行微调用以实现特定的目标。</p>
+
+<p>现在市面上常用的生成式人工智能对话工具有：<a href="https://www.openai.com/chatgpt">OpenAI ChatGPT</a>, <a href="https://bard.google.com">Google Bard</a>, <a href="https://www.microsoft.com/en-us/microsoft-365/copilot">Microsoft Copilot</a>, <a href="https://www.anthropic.com/">Anthropic Claude</a>, <a href="https://ai.facebook.com/">Meta LLaMA</a>，以及一些集成各种语言模型到特定场景的工具 <a href="https://www.cursor.com/">Cursor</a>, <a href="https://www.perplexity.ai/">Perplexity AI</a>，以及生成图片、视频的工具 <a href="https://openai.com/dall-e">OpenAI DALL-E</a>, <a href="https://www.midjourney.com">Midjourney</a>, <a href="https://stability.ai/stable-diffusion">Stable Diffusion</a>, <a href="https://runwayml.com">Runway ML</a>, <a href="https://www.synthesia.io">Synthesia</a>。</p>
+
+<h3 id="how-to-prompt">How to Prompt</h3>
+<p>下面介绍一种比较高效的 LLM 提问框架，<strong>CO-STAR</strong>。</p>
+
+<p>- C - Context（上下文）: 提供足够的背景信息，以帮助模型理解问题的背景和目的；
+- O - Objective（目标）: 明确你希望模型实现的目标或任务，例如回答问题、提供建议或生成文本；</p>
+<ul>
+  <li>S - Style（风格）: 指定你希望模型使用的语言风格或语气，比如正式、非正式、幽默等；</li>
+  <li>T - Tone（语调）: 设定模型的语调，例如友好、专业、鼓励等，以便更好地与用户的需求匹配；</li>
+  <li>A - Audience（受众）: 明确目标受众，帮助模型调整内容以适应特定的读者群体；
+- R - Response（响应）: 指定期望的响应格式或结构，例如简短回答、详细解释或列表形式。</li>
+</ul>
+
+<p>在我的另一篇博客中我列举了我使用 Cursor 时预设的规则以达到期望的效果：<a href="https://thekingof.cool/blog/2024/09/17/rules_of_ai.html">Rules of AI in Cursor</a>。</p>
+
+<p>就跟人类学习说话一样，优秀的提示词工程师需要根据自身需求不断去交流，并形成自己的一套高效的对话方式。人工智能颠覆人类或许是迟早的事，但是在这之前，充分利用它或多或少能让我们更适应这个世界，并用马斯克的话说，to Understand the Universe。</p>
+
+<blockquote>
+  <p><a href="https://x.ai/">xAI</a> is a company working on building artificial intelligence to accelerate human scientific discovery. We are guided by our mission to advance our collective understanding of the universe.</p>
+</blockquote>
+
