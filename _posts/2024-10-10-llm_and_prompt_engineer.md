@@ -15,12 +15,10 @@ categories: go_big
 ### LLM vs ML
 传统的机器学习开发需要有样例数据来训练模型，同时需要花费计算时间和硬件资源，针对不同的使用场景也需要开发人员训练不同的模型。
 
-在大语言模型中，使用者不需要成为专家、不需要收集训练数据，而且一个模型可以被用来解决通用的问题。你所需要做的只是考虑如何设计你的提示词，来创建出清晰、简洁且信息丰富的问题。
+在大语言模型中，使用者不需要成为专家，不需要收集训练数据，一个模型也可以被用来解决通用的问题。你所需要做的只是考虑如何设计你的提示词，创建出清晰、简洁且信息丰富的问题。
 
 ### What is Large Language Model
-大语言模型是机器学习中深度学习 (Deep Learning) 的一个子集，它是一个可以预先训练、根据特定的目标进行微调的大型通用语言模型。
-
-大语言模型可以被用来处理例如文本分类、问答、文档摘要、文本生成等问题。它现阶段常见的一个应用是生成式人工智能 (Generative AI)。
+大语言模型是机器学习中深度学习 (Deep Learning) 的一个子集，它是一个可以预先训练、根据特定的目标进行微调的大型通用语言模型，可以被用来处理如文本分类、问答、文档摘要、文本生成等问题。现阶段大语言模型一个常见的应用是生成式人工智能 (Generative AI)。
 
 与机器学习模型相比，LLM 具有以下几个特点：
 
@@ -58,7 +56,7 @@ categories: go_big
 ### Experience and Beyond
 就像人类学习说话一样，优秀的提示词工程师需要根据自身需求不断地去与模型交互，并形成一套自己的高效的对话方式。
 
-人工智能颠覆人类或许是迟早的事，但在这之前，充分利用它或多或少能让我们更适应这个变化着的世界，以及，用马斯克的话，to understand the universe。
+人工智能颠覆人类或许是迟早的事，但在这之前，充分利用它或多或少能让我们更适应这个变化着的世界，以及，用马斯克的话说，to understand the universe。
 
-> [xAI](https://x.ai/) is a company working on building artificial intelligence to accelerate human scientific discovery. We are guided by our mission to advance our collective understanding of the universe.
+> [xAI](https://x.ai/) is a company working on **building artificial intelligence to accelerate human scientific discovery**. We are guided by our mission to advance our collective **understanding of the universe**.
 
