@@ -7,8 +7,8 @@ permalink: /timeline/
 2024-10-01 | Chengdu
 
 Reunited with family in Sichuan.
-![乐山大佛](https://www.dropbox.com/scl/fi/p3mouxxm89g1al87v3411/IMG_4704.jpg?rlkey=9jy603xen5a4wzzzt97d5izal&st=hyhoep3t&raw=1)
-![都江堰](https://www.dropbox.com/scl/fi/3ykrmzmlm2xg0tizn73pe/IMG_4727.jpg?rlkey=5oeegogc3dhbr6q7suu9hvz78&st=mxa5lwo7&raw=1)
+![](https://www.dropbox.com/scl/fi/p3mouxxm89g1al87v3411/IMG_4704.jpg?rlkey=9jy603xen5a4wzzzt97d5izal&st=hyhoep3t&raw=1)
+![](https://www.dropbox.com/scl/fi/3ykrmzmlm2xg0tizn73pe/IMG_4727.jpg?rlkey=5oeegogc3dhbr6q7suu9hvz78&st=mxa5lwo7&raw=1)
 
 ---
 
@@ -18,6 +18,22 @@ Had a good time running before National day.
 ![](https://www.dropbox.com/scl/fi/o65ancj68xn84o71v39cd/IMG_4268.JPG?rlkey=n1rk6in663ch0f53wb1gdc8a5&st=6818tc1b&raw=1)
 ![](https://www.dropbox.com/scl/fi/hpu6q6ax3kjvw6vuyhndd/IMG_4251.JPG?rlkey=d85ixd9sq9lixuw94n9s2jrge&st=udqz8qpt&raw=1)
 [![](https://www.dropbox.com/scl/fi/bcxx5dyg9w5jcq1rjejmo/IMG_4238.JPG?rlkey=i34esdbscg0ulvvjl57mmgnr6&st=89nyyadn&raw=1)](https://www.youtube.com/watch?v=-VBqRJX7ab4)
+
+---
+
+2024-08-12 | Tonglu
+
+浙江桐庐避暑。
+![](https://www.dropbox.com/scl/fi/7y9pjioc8pn196j6w0vaa/IMG_4222.jpg?rlkey=omoj8r4ibtvyntnt2nvprps3o&st=xl6rsq42&raw=1)
+![](https://www.dropbox.com/scl/fi/bcxx5dyg9w5jcq1rjejmo/IMG_4238.jpg?rlkey=i34esdbscg0ulvvjl57mmgnr6&st=l0wc4wsa&raw=1)
+
+---
+
+2024-06-01 | Shanghai
+
+Chill.
+![](https://www.dropbox.com/scl/fi/3v60htpphyrn2ve9prrnn/ac75f448f58cd9def51adc1b012ac3db.JPG?rlkey=96ajb8v4n1icskxwtayrjzpwu&st=tsipae3c&raw=1)
+![](https://www.dropbox.com/scl/fi/2gart0hrjbyfz2bgxfsue/IMG_3467.jpg?rlkey=v20hcvz05d0dr0uo54ixjdyhf&st=r5ynlt62&raw=1)
 
 ---
 
@@ -239,9 +255,10 @@ Fencing.
 
 ---
 
-2021-07-08 | Shanghai
+2021-06-22 | Shanghai
 
 Talked to her for the first time.
+![](https://www.dropbox.com/scl/fi/x9ha7zecj7plu90mf16r1/IMG_1977.JPG?rlkey=khartjwpfrsnos61we537xfpp&st=s2reutcl&raw=1)
 ![](https://www.dropbox.com/scl/fi/zxl9gb8cx1ueuft9w2ne2/IMG_0705.JPG?rlkey=9x49oiiwue05fn9s7vhaf2o4a&st=mejeujye&raw=1)
 ![](https://www.dropbox.com/scl/fi/k6ndbkfjat9cul832xpcy/IMG_1034.jpg?rlkey=zo8ja6p8fxcm3cp6n2ws361aw&st=baexnbkw&raw=1)
 
