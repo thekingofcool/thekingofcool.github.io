@@ -23,7 +23,7 @@ Had a good time running before National day.
 
 2024-04-02 | Shanghai
 
-Getting married.
+42 is not the answer, you are.
 ![](https://www.dropbox.com/scl/fi/8qfjxttzj7hyzuywa8jt7/48bc283fe71336f45394faaa2dc31e49.JPG?rlkey=szhz02w7uh6f4b4rk8ce5d2dk&st=npuuo1zs&raw=1)
 ![](https://www.dropbox.com/scl/fi/ptn1172v2bvrekohpnetb/SWH_1486.JPG?rlkey=aly2e5uogncbee7hrax9li739&st=1wjz2232&raw=1)
 ![](https://www.dropbox.com/scl/fi/3s1befzeh2u4fs3dtbprj/fcc70384cde53eb53c8a5b1ae9a3a4bc.JPG?rlkey=5kx8xprej5y5yy5bi2p1xydta&st=8rksbbvk&raw=1)
@@ -46,6 +46,16 @@ Osaka Marathon.
 ![](https://www.dropbox.com/scl/fi/sd3um3uvth67l7sjcjohc/IMG_1143.JPG?rlkey=db3l8w0g81ii90rwwcdxpptk6&st=76f4jn0n&raw=1)
 ![](https://www.dropbox.com/scl/fi/h9jsvud580sbyyuvtezav/IMG_2513.JPG?rlkey=d8jdsncgxxh5bfwzwsqi77lml&st=l1ncrg6c&raw=1)
 ![](https://www.dropbox.com/scl/fi/13rvpi7qu8ad14oj0yq49/IMG_2633.JPG?rlkey=qlvnhftnh77hlbg0ne2j08qws&st=2a7v2nob&raw=1)
+
+---
+
+2024-01-27 | Shanghai
+
+It's not gonna be easy, I'll make it look easy.
+![](https://www.dropbox.com/scl/fi/av6zi0j9bo659npvzdt6a/IMG_4802.JPG?rlkey=14b1b2sktdjyuw192k4yrgp4h&st=m53d2nw0&raw=1)
+![](https://www.dropbox.com/scl/fi/w18nh5cz447xvu1v5l6dl/IMG_4803.JPG?rlkey=u4w043vuhayt055934hwa6jgl&st=kbi6msin&raw=1)
+![](https://www.dropbox.com/scl/fi/tblb62s46hwzfsj210ful/IMG_4804.JPG?rlkey=681q45npspc5yzoxsns10fgk6&st=nr6i5xst&raw=1)
+![](https://www.dropbox.com/scl/fi/0smwzjjtnswdrfljyf34b/IMG_4805.JPG?rlkey=5gsr89dw20qb5bf8ev7zplmve&st=a0ew5z3t&raw=1)
 
 ---
 
@@ -218,6 +228,14 @@ Practice Brazilian Jiu-Jitsu.
 在家煮火锅。
 ![](https://www.dropbox.com/scl/fi/lu9ah0maxfisn3l4664bq/IMG_1184.JPG?rlkey=k6d6c9bvs181f91phphxhlpfk&st=cdzzag0u&raw=1)
 ![](https://www.dropbox.com/scl/fi/vdbkijl8a7nrgiltfp9l8/IMG_1185.JPG?rlkey=p4pivcx5pl9ymczlh93rzhf2l&st=8lqvwuvu&raw=1)
+
+---
+
+2021-08-05 ｜ Shanghai
+
+Fencing.
+![](https://www.dropbox.com/scl/fi/7bvvtvlxf9268u5yx80ho/IMG_4794.JPG?rlkey=8np3rktn7ennve2bx1iy1izzd&st=mv0tvti7&raw=1)
+![](https://www.dropbox.com/scl/fi/m7ww8hir3cdmas3x03jzq/IMG_4795.JPG?rlkey=hog5w9u1lhkhvnc6aowa0mau5&st=u38jzdrd&raw=1)
 
 ---
 
