@@ -21,6 +21,43 @@ Had a good time running before National day.
 
 ---
 
+2024-04-02 | Shanghai
+
+Getting married.
+![](https://www.dropbox.com/scl/fi/8qfjxttzj7hyzuywa8jt7/48bc283fe71336f45394faaa2dc31e49.JPG?rlkey=szhz02w7uh6f4b4rk8ce5d2dk&st=npuuo1zs&raw=1)
+![](https://www.dropbox.com/scl/fi/ptn1172v2bvrekohpnetb/SWH_1486.JPG?rlkey=aly2e5uogncbee7hrax9li739&st=1wjz2232&raw=1)
+![](https://www.dropbox.com/scl/fi/3s1befzeh2u4fs3dtbprj/fcc70384cde53eb53c8a5b1ae9a3a4bc.JPG?rlkey=5kx8xprej5y5yy5bi2p1xydta&st=8rksbbvk&raw=1)
+
+---
+
+2024-03-25 | Shanghai
+
+Disneyland.
+![](https://www.dropbox.com/scl/fi/f152zm4alets1l9j17tpm/2aa340e553b35b2faff525768b41afa7.JPG?rlkey=au9n4fphev6dzx7mnpoujg4el&st=btg4dj1p&raw=1)
+![](https://www.dropbox.com/scl/fi/34khd0l0skqaltmntvnmb/2fecce3054ff8cf7d41f89f00552cdf0.JPG?rlkey=ufg03dzw7b2vgl4cx4i7g850a&st=9gbn6uns&raw=1)
+
+---
+
+2024-02-25 | Osaka
+
+Osaka Marathon.
+![](https://www.dropbox.com/scl/fi/ggmstsr4q7br1maolqml6/06889fc31fdd8a0f16d857e0e181bd33.JPG?rlkey=awf6jiu1jzzh4adj15txrm7h1&st=b7kpihwd&raw=1)
+![](https://www.dropbox.com/scl/fi/k94wzu1slh4rdkr4w12ms/IMG_2427.JPG?rlkey=6fgmfsjvqagxpgrbhdeybtgv6&st=qqopv14l&raw=1)
+![](https://www.dropbox.com/scl/fi/sd3um3uvth67l7sjcjohc/IMG_1143.JPG?rlkey=db3l8w0g81ii90rwwcdxpptk6&st=76f4jn0n&raw=1)
+![](https://www.dropbox.com/scl/fi/h9jsvud580sbyyuvtezav/IMG_2513.JPG?rlkey=d8jdsncgxxh5bfwzwsqi77lml&st=l1ncrg6c&raw=1)
+![](https://www.dropbox.com/scl/fi/13rvpi7qu8ad14oj0yq49/IMG_2633.JPG?rlkey=qlvnhftnh77hlbg0ne2j08qws&st=2a7v2nob&raw=1)
+
+---
+
+2023-12-03 | Japan
+
+Travel in Osaka, Kyoto, Nara.
+![](https://www.dropbox.com/scl/fi/3xkelgw098egasen3fkd7/IMG_1968.jpg?rlkey=pwkqu1wycxjhorarzdbxhpxuu&st=4inw1ox8&raw=1)
+![](https://www.dropbox.com/scl/fi/9hticdrjixungq0nkbe6k/IMG_0765.jpg?rlkey=90s5gjvqq1qy3eebiliexkltd&st=8yi0mvdu&raw=1)
+![](https://www.dropbox.com/scl/fi/vkskyec20pqxxy3n1nphx/IMG_0978.jpg?rlkey=kbn274iq7av393nj285prfqfa&st=8estmf12&raw=1)
+
+---
+
 2023-11-26 | Shanghai
 
 2023 Shanghai Marathon Pacer.
@@ -29,6 +66,14 @@ Had a good time running before National day.
 ![](https://www.dropbox.com/scl/fi/6yz6in421igidy2ydf703/d210fb3d1c98fec517306abb70a9eb94.JPG?rlkey=n93fn6nrt5lc3wep06eyrauyp&st=xzg6btla&raw=1)
 ![](https://www.dropbox.com/scl/fi/2h0xxsfwm6ceix0jxbofs/0032c69b9ecba5252e88dc37d35f9566.JPG?rlkey=s0aqr6qqnu7dgwuesadul91eb&st=l33f4fet&raw=1)
 ![](https://www.dropbox.com/scl/fi/n669evw3kgrxei3x8qndr/9232dcd12ba67283d6359eab4ff8e2c4.JPG?rlkey=n6dxk7akaoakw8tt6pqgmh0y4&st=cl9tvo3u&raw=1)
+
+---
+
+2023-10-31 | Shanghai
+
+Disneyland.
+![](https://www.dropbox.com/scl/fi/bv36qyu322qkmscoga0fj/IMG_0779.jpg?rlkey=4w5wi6tw0ka3vot6jcqugjrz8&st=x5zq8beg&raw=1)
+![](https://www.dropbox.com/scl/fi/ur5d5beu14damdi2sse9s/IMG_1231.jpg?rlkey=sodb6e791wu35zmdgf91vw8aj&st=pg5kjofw&raw=1)
 
 ---
 
