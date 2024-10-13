@@ -112,7 +112,7 @@ Disneyland.
 
 ---
 
-2023-07-23 ｜ Shanghai
+2023-07-23 | Shanghai
 
 学习绳结。
 ![](https://www.dropbox.com/scl/fi/nutjuua6vr0z2g5l13uz6/IMG_0174.JPG?rlkey=f4tkz5xjmj8adyqybabv85hg3&st=7bpuwqfd&raw=1)
@@ -196,7 +196,7 @@ Mess around with Raspberry Pi.
 
 ---
 
-2022-01-07 ｜ Shanghai
+2022-01-07 | Shanghai
 
 Practice Brazilian Jiu-Jitsu.
 ![](https://www.dropbox.com/scl/fi/6ak0u6z7645toktir6m66/IMG_3402.JPG?rlkey=ywvyp8wixz5xaop5dnsqnajlt&st=996ngsbh&raw=1)
@@ -231,7 +231,7 @@ Practice Brazilian Jiu-Jitsu.
 
 ---
 
-2021-08-05 ｜ Shanghai
+2021-08-05 | Shanghai
 
 Fencing.
 ![](https://www.dropbox.com/scl/fi/7bvvtvlxf9268u5yx80ho/IMG_4794.JPG?rlkey=8np3rktn7ennve2bx1iy1izzd&st=mv0tvti7&raw=1)
@@ -239,7 +239,7 @@ Fencing.
 
 ---
 
-2021-07-08 ｜ Shanghai
+2021-07-08 | Shanghai
 
 Talked to her for the first time.
 ![](https://www.dropbox.com/scl/fi/zxl9gb8cx1ueuft9w2ne2/IMG_0705.JPG?rlkey=9x49oiiwue05fn9s7vhaf2o4a&st=mejeujye&raw=1)
@@ -326,7 +326,7 @@ My first motorcycle.
 
 ---
 
-2017-08-26 ｜ Guangzhou
+2017-08-26 | Guangzhou
 
 My first and only tattoo.
 ![](https://www.dropbox.com/scl/fi/g6erp497ixhjqtxhl4hvh/IMG_7529.JPG?rlkey=orrr51omtm7e1046evtokmouu&st=1s5kgxle&raw=1)
@@ -334,7 +334,7 @@ My first and only tattoo.
 
 ---
 
-2017-01-17 ｜ Amoy
+2017-01-17 | Amoy
 
 Riding a shared bike with colleagues for the first time.
 ![](https://www.dropbox.com/scl/fi/spfujk6wpwmxmzpzyv891/IMG_3983.JPG?rlkey=rawxx01ldtkays3w5w77bz96h&st=47kwkf81&raw=1)
@@ -356,7 +356,7 @@ My First marathon, 108 laps on a standard football field.
 
 ---
 
-2016-10-13 ｜ Wuhan
+2016-10-13 | Wuhan
 
 Company sports meeting and photo with Liu Shiwen.
 ![](https://www.dropbox.com/scl/fi/qwit10ryk8ghgwgll2sp5/.jpg?rlkey=keg0j9g5xgwyvt5yze8uyus5l&st=xvl7dse4&raw=1)
@@ -380,7 +380,7 @@ Graduate from university.
 
 ---
 
-2016-05-23 ｜ Chongqing
+2016-05-23 | Chongqing
 
 Graduation Project.
 ![](https://www.dropbox.com/scl/fi/ozwsu2n27e2yd7pdg2d38/P60601-122916.jpg?rlkey=ajncbtzc8gx3xy7orzjqckz2r&st=lhgz09tf&raw=1)
