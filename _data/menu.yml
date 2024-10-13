@@ -2,8 +2,8 @@ entries:
   - title: about me
     url: /about
     entries:
-      - title: outer space
-        url: /outerspace
+      - title: not today
+        url: /timeline
       - title: credly
         url: https://www.credly.com/users/thekingofcool/
       - title: tableau vizzes

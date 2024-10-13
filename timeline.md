@@ -1,7 +1,7 @@
 ---
 layout: page
-title: thekingofcool's outerspace
-permalink: /outerspace/
+title: thekingofcool's timeline
+permalink: /timeline/
 ---
 
 2024-10-01 | Chengdu
@@ -190,7 +190,7 @@ Pacquiao style.
 
 2022-03-25 | Shanghai
 
-Mess up with Raspberry Pi.
+Mess around with Raspberry Pi.
 ![](https://www.dropbox.com/scl/fi/i5ughzpaw5p8gutma5fr9/IMG_4280.JPG?rlkey=s4j8l0snlmdkl2ejlzobq5f6n&st=ayoget70&raw=1)
 ![](https://www.dropbox.com/scl/fi/laa5hn7kog2jqjd7glax6/IMG_4286.JPG?rlkey=3nw8ac70u8aygr0081r1vsz7z&st=ntlevyg4&raw=1)
 
@@ -287,18 +287,18 @@ My cats.
 ![](https://www.dropbox.com/scl/fi/rudhpz4d83vlqvw56p83g/IMG_1017.jpg?rlkey=d0fkaap29sqs0ctqu0u862i6n&st=3wxmb7fc&raw=1)
 ![](https://www.dropbox.com/scl/fi/wc4mdh5s4vwh0fn4hp20v/IMG_2464.jpg?rlkey=m5rh6yjph41prrvk5xnijubs7&st=izq6ikv3&raw=1)
 ![](https://www.dropbox.com/scl/fi/zp3kbadkspf0lcuadvnpf/IMG_9969.jpg?rlkey=zry46hp9n8856p9730vf8ywb8&st=itt03hi7&raw=1)
+![](https://www.dropbox.com/scl/fi/a72ymc6cj2l5rjv8b7wce/IMG_2998.jpg?rlkey=qqx67pogdo8a2vgk1lhect0be&st=mtpfcewt&raw=1)
 ![](https://www.dropbox.com/scl/fi/h1aachq74w0859xlllo1v/IMG_6169.jpg?rlkey=6nie3d99zyh3jpr54e39vcfms&st=qzbh9xmv&raw=1)
 ![](https://www.dropbox.com/scl/fi/oh6nscd4yhdrr8b9kt0zf/IMG_2379.jpg?rlkey=iuabddxs10bluhf7i2662pdsi&st=t06d58td&raw=1)
 ![](https://www.dropbox.com/scl/fi/sczdr2t1uu8njse7kpgg8/IMG_6235.jpg?rlkey=lop84ozw8qsfgeurs8hzs6k8b&st=inya3kep&raw=1)
 ![](https://www.dropbox.com/scl/fi/53yr75170fcfjqci6x1t7/IMG_0037.jpg?rlkey=q5sf3hr9ul14kokulru4rfhlg&st=xpavfy3q&raw=1)
-![](https://www.dropbox.com/scl/fi/a72ymc6cj2l5rjv8b7wce/IMG_2998.jpg?rlkey=qqx67pogdo8a2vgk1lhect0be&st=mtpfcewt&raw=1)
 ![](https://www.dropbox.com/scl/fi/yqlibxmcokfh3cvtpkkg9/IMG_6495.jpg?rlkey=slnkrrik4ly0jtew6owut3f4c&st=tdlkkczy&raw=1)
 
 ---
 
 2019-07-06 | Shanghai
 
-2019 VS. 2020
+2019 VS 2020
 ![](https://www.dropbox.com/scl/fi/s73zn6dmxjs4w2rn2suou/IMG_3259.jpg?rlkey=xdy1tcsh23fvwsret6el7l03y&st=t3xnj0nj&raw=1)
 ![](https://www.dropbox.com/scl/fi/roarsxmnibxn9xzppugsp/IMG_5263.JPG?rlkey=8845mpok724c95ykhl72olk0a&st=nfd2d4go&raw=1)
 
@@ -313,7 +313,7 @@ Encounter.
 
 2018-03-05 | Shanghai
 
-Study Big Data Engineering.
+Big Data Engineering Study.
 ![](https://www.dropbox.com/scl/fi/fhwbdt7o6ide7cagn6rw0/IMG_0680.JPG?rlkey=cs9sfx44c1k1eqcoq4i46m1vh&st=497jx9gn&raw=1)
 
 ---
@@ -358,7 +358,7 @@ My First marathon, 108 laps on a standard football field.
 
 2016-10-13 ｜ Wuhan
 
-Sports meeting and photo with Liu Shiwen.
+Company sports meeting and photo with Liu Shiwen.
 ![](https://www.dropbox.com/scl/fi/qwit10ryk8ghgwgll2sp5/.jpg?rlkey=keg0j9g5xgwyvt5yze8uyus5l&st=xvl7dse4&raw=1)
 ![](https://www.dropbox.com/scl/fi/ur79lkgro71gseedba151/with_.JPG?rlkey=bx58svjwuqv7qoyfo180ed5x6&st=uyy2o19r&raw=1)
 
