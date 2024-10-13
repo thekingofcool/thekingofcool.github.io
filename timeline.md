@@ -14,7 +14,7 @@ Reunited with family in Sichuan.
 
 2024-09-28 | Shanghai
 
-Had a good time running before National day.
+Had a good time running before National day. (活动视频点击第三张照片跳转)
 ![](https://www.dropbox.com/scl/fi/o65ancj68xn84o71v39cd/IMG_4268.JPG?rlkey=n1rk6in663ch0f53wb1gdc8a5&st=6818tc1b&raw=1)
 ![](https://www.dropbox.com/scl/fi/hpu6q6ax3kjvw6vuyhndd/IMG_4251.JPG?rlkey=d85ixd9sq9lixuw94n9s2jrge&st=udqz8qpt&raw=1)
 [![](https://www.dropbox.com/scl/fi/bcxx5dyg9w5jcq1rjejmo/IMG_4238.JPG?rlkey=i34esdbscg0ulvvjl57mmgnr6&st=89nyyadn&raw=1)](https://www.youtube.com/watch?v=-VBqRJX7ab4)
@@ -56,7 +56,7 @@ Disneyland.
 
 2024-02-25 | Osaka
 
-Osaka Marathon.
+2024 Osaka Marathon.
 ![](https://www.dropbox.com/scl/fi/ggmstsr4q7br1maolqml6/06889fc31fdd8a0f16d857e0e181bd33.JPG?rlkey=awf6jiu1jzzh4adj15txrm7h1&st=b7kpihwd&raw=1)
 ![](https://www.dropbox.com/scl/fi/k94wzu1slh4rdkr4w12ms/IMG_2427.JPG?rlkey=6fgmfsjvqagxpgrbhdeybtgv6&st=qqopv14l&raw=1)
 ![](https://www.dropbox.com/scl/fi/sd3um3uvth67l7sjcjohc/IMG_1143.JPG?rlkey=db3l8w0g81ii90rwwcdxpptk6&st=76f4jn0n&raw=1)
@@ -274,7 +274,7 @@ Talked to her for the first time.
 
 2021-04-22 | Shanghai
 
-AWS 自动驾驶小车模型。
+AWS 自动驾驶小车模型。(视频点击第一张图片跳转)
 [![](https://www.dropbox.com/scl/fi/akh3tjo8m0qco5n0a8ipa/IMG_7733.jpg?rlkey=hakqxdiy6ghkh6s33e5u5gnyy&st=t7tna9ac&raw=1)](https://www.youtube.com/shorts/Fh8k63T5zrE)
 ![](https://www.dropbox.com/scl/fi/7i21oit321l4dwj1vk8kl/IMG_7740.JPG?rlkey=n8qx1fw0iuu45r5mc79vz5j1e&st=yyb8yodw&raw=1)
 
