@@ -28,14 +28,6 @@ Had a good time running before National day. (活动视频点击第二张照片�
 
 ---
 
-2024-06-01 | Shanghai
-
-Chill.
-![](https://www.dropbox.com/scl/fi/3v60htpphyrn2ve9prrnn/ac75f448f58cd9def51adc1b012ac3db.JPG?rlkey=96ajb8v4n1icskxwtayrjzpwu&st=tsipae3c&raw=1)
-![](https://www.dropbox.com/scl/fi/2gart0hrjbyfz2bgxfsue/IMG_3467.jpg?rlkey=v20hcvz05d0dr0uo54ixjdyhf&st=r5ynlt62&raw=1)
-
----
-
 2024-04-02 | Shanghai
 
 42 is not the answer, you are.
@@ -56,7 +48,6 @@ Disneyland.
 2024-02-25 | Osaka
 
 2024 Osaka Marathon.
-![](https://www.dropbox.com/scl/fi/ggmstsr4q7br1maolqml6/06889fc31fdd8a0f16d857e0e181bd33.JPG?rlkey=awf6jiu1jzzh4adj15txrm7h1&st=b7kpihwd&raw=1)
 ![](https://www.dropbox.com/scl/fi/k94wzu1slh4rdkr4w12ms/IMG_2427.JPG?rlkey=6fgmfsjvqagxpgrbhdeybtgv6&st=qqopv14l&raw=1)
 ![](https://www.dropbox.com/scl/fi/sd3um3uvth67l7sjcjohc/IMG_1143.JPG?rlkey=db3l8w0g81ii90rwwcdxpptk6&st=76f4jn0n&raw=1)
 ![](https://www.dropbox.com/scl/fi/h9jsvud580sbyyuvtezav/IMG_2513.JPG?rlkey=d8jdsncgxxh5bfwzwsqi77lml&st=l1ncrg6c&raw=1)
@@ -112,7 +103,7 @@ Disneyland.
 
 2023-10-03 | Nanchong
 
-国庆驾车 上海 - 徐州 - 南充。
+国庆驾车 上海 - 徐州 - 南充 - 上海。
 ![](https://www.dropbox.com/scl/fi/e440z6re99z5v2zze4o9i/IMG_0919.jpg?rlkey=jv2s9j23ssk96ghi3d95imikb&st=igqlsw8o&raw=1)
 ![](https://www.dropbox.com/scl/fi/r7n8ea2hb4fg6t5chic08/IMG_0924.jpg?rlkey=y0kqdj3ggb6bvrn7b6m8219rt&st=kzwq209u&raw=1)
 ![](https://www.dropbox.com/scl/fi/bsh37juiwu63dsd6wvg4g/76176130ca74d6157cb104160cadbd1e.JPG?rlkey=w2oqqwmx05eyel2l7ipxelg7e&st=hx9vz2fp&raw=1)
@@ -137,6 +128,7 @@ Disneyland.
 
 2023-06-25 | Hongkong
 
+Travel in Hongkong.
 ![](https://www.dropbox.com/scl/fi/jb9rxi62pq0k875rzlc3k/IMG_0528.jpg?rlkey=r5e1odt4nx12jpmw86tg2agud&st=w1hu6jy0&raw=1)
 ![](https://www.dropbox.com/scl/fi/n9clangdf63mx0zreby4z/IMG_7411.jpg?rlkey=0nu8bd7yrwoiuffqfb3dguujl&st=gtgeut0f&raw=1)
 
@@ -203,14 +195,6 @@ Pacquiao style.
 
 ---
 
-2022-03-25 | Shanghai
-
-Mess around with Raspberry Pi.
-![](https://www.dropbox.com/scl/fi/i5ughzpaw5p8gutma5fr9/IMG_4280.JPG?rlkey=s4j8l0snlmdkl2ejlzobq5f6n&st=ayoget70&raw=1)
-![](https://www.dropbox.com/scl/fi/laa5hn7kog2jqjd7glax6/IMG_4286.JPG?rlkey=3nw8ac70u8aygr0081r1vsz7z&st=ntlevyg4&raw=1)
-
----
-
 2022-01-07 | Shanghai
 
 Practice Brazilian Jiu-Jitsu.
@@ -234,15 +218,6 @@ Practice Brazilian Jiu-Jitsu.
 ![](https://www.dropbox.com/scl/fi/xon7sbbru9e01zhujeybn/IMG_1926.jpg?rlkey=a1nusbre5su10p00jd554l4bt&st=3nkl4izk&raw=1)
 ![](https://www.dropbox.com/scl/fi/ssq2jct2pv87dd753etwg/IMG_6538.jpg?rlkey=mhy880o72yrvy49mca69luymh&st=s5et4bko&raw=1)
 ![](https://www.dropbox.com/scl/fi/xtl1dl1h8mcju9qcndi9f/IMG_2008.jpg?rlkey=hzlymujp5j57y3km87skj372h&st=yg94hzz5&raw=1)
-![](https://www.dropbox.com/scl/fi/r44oslr2t2k115hkuqwy6/IMG_4853.JPG?rlkey=vv4idgunwjqggjqscb40j4f9g&st=hukncca6&raw=1)
-
----
-
-2021-09-21 | Shanghai
-
-在家煮火锅。
-![](https://www.dropbox.com/scl/fi/lu9ah0maxfisn3l4664bq/IMG_1184.JPG?rlkey=k6d6c9bvs181f91phphxhlpfk&st=cdzzag0u&raw=1)
-![](https://www.dropbox.com/scl/fi/vdbkijl8a7nrgiltfp9l8/IMG_1185.JPG?rlkey=p4pivcx5pl9ymczlh93rzhf2l&st=8lqvwuvu&raw=1)
 
 ---
 
@@ -281,15 +256,14 @@ AWS 自动驾驶小车模型。(视频点击第一张图片跳转)
 
 2020-10-01 | Shanghai
 
-Get rid of glasses.
-![](https://www.dropbox.com/scl/fi/hegxeidnryqu9cihf7msa/IMG_4311.jpg?rlkey=w6ilbqz1jvgavibl30w0gv4jx&st=cd1t9j2x&raw=1)
+Got rid of glasses, feels a bit like The Matrix?
 ![](https://www.dropbox.com/scl/fi/xcuaef6b8fvt7h8e9vcj1/IMG_4316.jpg?rlkey=p7nk7hsxrqb577tzz06p69bqh&st=7mps1tut&raw=1)
 
 ---
 
 2020-08-03 | Kunming
 
-天空并非一无所有，一无所有的只是人本身。
+天空并非一无所有，一无所有的从来只是人本身。
 ![](https://www.dropbox.com/scl/fi/2ykje5x93j4kvqod9u9y2/IMG_3687.JPG?rlkey=hjyycjnq5k69cqc4y6l1th4u2&st=19xwby4f&raw=1)
 
 ---
