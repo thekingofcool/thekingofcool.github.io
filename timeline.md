@@ -4,6 +4,13 @@ title: thekingofcool's timeline
 permalink: /timeline/
 ---
 
+# thekingofcool's timeline
+过去一文不值。可以活在当下，最好活在未来。景物不重要，身边的人重要，体会最重要。
+
+*(本文图片托管于 DropBox，如果没有加载，请检查自己的网络是否科学)*
+
+---
+
 2024-10-01 | Chengdu
 
 Reunited with family in Sichuan.
@@ -14,9 +21,9 @@ Reunited with family in Sichuan.
 
 2024-09-28 | Shanghai
 
-Had a good time running before National day. (活动视频点击第二张照片跳转)
-![](https://www.dropbox.com/scl/fi/o65ancj68xn84o71v39cd/IMG_4268.JPG?rlkey=n1rk6in663ch0f53wb1gdc8a5&st=6818tc1b&raw=1)
-[![](https://www.dropbox.com/scl/fi/hpu6q6ax3kjvw6vuyhndd/IMG_4251.JPG?rlkey=d85ixd9sq9lixuw94n9s2jrge&st=udqz8qpt&raw=1)](https://www.youtube.com/watch?v=-VBqRJX7ab4)
+Had a good time running before National day. (活动视频点击第一张照片跳转)
+[![](https://www.dropbox.com/scl/fi/o65ancj68xn84o71v39cd/IMG_4268.JPG?rlkey=n1rk6in663ch0f53wb1gdc8a5&st=6818tc1b&raw=1)](https://www.youtube.com/watch?v=-VBqRJX7ab4)
+![](https://www.dropbox.com/scl/fi/hpu6q6ax3kjvw6vuyhndd/IMG_4251.JPG?rlkey=d85ixd9sq9lixuw94n9s2jrge&st=udqz8qpt&raw=1)
 
 ---
 
@@ -256,14 +263,14 @@ AWS 自动驾驶小车模型。(视频点击第一张图片跳转)
 
 2020-10-01 | Shanghai
 
-Got rid of glasses, feels a bit like The Matrix?
+Matrix?
 ![](https://www.dropbox.com/scl/fi/xcuaef6b8fvt7h8e9vcj1/IMG_4316.jpg?rlkey=p7nk7hsxrqb577tzz06p69bqh&st=7mps1tut&raw=1)
 
 ---
 
 2020-08-03 | Kunming
 
-天空并非一无所有，一无所有的从来只是人本身。
+天空并非一无所有，一无所有的只是人本身。
 ![](https://www.dropbox.com/scl/fi/2ykje5x93j4kvqod9u9y2/IMG_3687.JPG?rlkey=hjyycjnq5k69cqc4y6l1th4u2&st=19xwby4f&raw=1)
 
 ---
@@ -326,7 +333,7 @@ My first and only tattoo.
 
 2017-01-17 | Amoy
 
-Riding a shared bike with colleagues for the first time.
+Ride a shared bike with colleagues for the first time.
 ![](https://www.dropbox.com/scl/fi/spfujk6wpwmxmzpzyv891/IMG_3983.JPG?rlkey=rawxx01ldtkays3w5w77bz96h&st=47kwkf81&raw=1)
 
 ---
@@ -348,7 +355,7 @@ My First marathon, 108 laps on a standard football field.
 
 2016-10-13 | Wuhan
 
-Company sports meeting and photo with Liu Shiwen.
+Company sports meeting and a photo with Liu Shiwen.
 ![](https://www.dropbox.com/scl/fi/qwit10ryk8ghgwgll2sp5/.jpg?rlkey=keg0j9g5xgwyvt5yze8uyus5l&st=xvl7dse4&raw=1)
 ![](https://www.dropbox.com/scl/fi/ur79lkgro71gseedba151/with_.JPG?rlkey=bx58svjwuqv7qoyfo180ed5x6&st=uyy2o19r&raw=1)
 
@@ -364,7 +371,7 @@ First job.
 
 2016-06-22 | Chongqing
 
-Graduate from university.
+Graduate from college.
 ![](https://www.dropbox.com/scl/fi/ke8mqh0pi57hm16pbyf6z/IMG_2217.JPG?rlkey=ktiwes5c7w6m13urpfey0e8oq&st=zeefphzy&raw=1)
 ![](https://www.dropbox.com/scl/fi/5xr3h949hr812l5t84g60/IMG_3458.JPG?rlkey=k0t1tmsq53ynwbqr70jjqzuhb&st=w2t02b7x&raw=1)
 
