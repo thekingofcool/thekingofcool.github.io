@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "宇宙是一个假象，是不是？"
+title:  "宇宙是一个假象，是不是"
 date:   2024-10-20
 categories: daguguguji
 ---

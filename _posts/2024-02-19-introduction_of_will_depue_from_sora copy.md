@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Will Depue from Sora introduces himself"
-date: 2024-10-20
+date: 2024-02-19
 categories: reading
 ---
 
