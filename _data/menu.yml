@@ -23,3 +23,8 @@ entries:
     post_list:
       category: reading
     entries: false
+
+  - title: daguguguji
+    post_list:
+      category: daguguguji
+    entries: false
