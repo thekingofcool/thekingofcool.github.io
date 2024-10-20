@@ -7,7 +7,23 @@ permalink: /timeline/
 # thekingofcool's timeline
 过去一文不值。可以活在当下，最好活在未来。景物不重要，身边的人重要，体会最重要。
 
-*(本文图片托管于 DropBox，如果没有加载，请检查自己的网络是否科学)*
+*(本文图片托管于 Dropbox，如果没有加载，请检查自己的网络是否科学)*
+
+---
+
+2024-10-19 | Shanghai
+
+Pink run.
+
+![](https://www.dropbox.com/scl/fi/ql9qp466buco5jn46pe8g/WechatIMG7.jpg?rlkey=kk73rje30xeciz4322o529eef&st=e3r9d4d9&raw=1)
+![](https://www.dropbox.com/scl/fi/v0pl3ad7iur99dmpu5j8u/WechatIMG8.jpg?rlkey=0nwhecxskc7bobuamtnx6yt53&st=juuqn9cj&raw=1)
+
+2024-10-18 | Shanghai
+
+Disneyland.
+![](https://www.dropbox.com/scl/fi/f38260731dzn0ptey0d4b/WechatIMG5.jpg?rlkey=e6845c8vya35qjd3h9ey0weel&st=ejwdlfo6&raw=1)
+![](https://www.dropbox.com/scl/fi/qgnrfcvu0m1du2ejmnjg1/WechatIMG4.jpg?rlkey=agdk7mkbteck9gjsakjvptflq&st=3bsquio9&raw=1)
+![](https://www.dropbox.com/scl/fi/97oj90uvkncua129vull4/WechatIMG6.jpg?rlkey=m8kaph3f623f3u49bywel0e0c&st=7iwslfbk&raw=1)
 
 ---
 
