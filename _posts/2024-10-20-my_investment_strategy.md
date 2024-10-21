@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "我的投资策略"
+title:  "My Investment Strategy"
 date:   2024-10-20
 categories: blog
 ---
