@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>The Keyboard-Only Revolution: Best Practices of Neovim</title><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="thekingofcool&apos;s cyber space" /><link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+  <link href="https://cdn.jsdelivr.net/gh/gangdong/gangdong.github.io@dev/assets/css/syntax_monokai.css" rel="stylesheet"/>
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"><-</a><article>
+  <p class="post-meta">
+    <time datetime="2024-10-21 00:00:00 +0800">2024-10-21</time>
+  </p>
+  
+  <h1>The Keyboard-Only Revolution: Best Practices of Neovim</h1>
+
+  <h3 id="why-keyboard-only">Why Keyboard-Only</h3>
+<ol>
+  <li>鼠标操作形成不了肌肉记忆，效率严重不足；</li>
+  <li>写代码过程中，鼠标操作属于上下文切换，手腕的移动、光标的对准、操作模型的切换都带来更大的耗时；</li>
+  <li>鼠标操作的可靠性和准确性不如键盘操作；</li>
+  <li>鼠标操作在写代码过程中是一种打断心流的操作；</li>
+  <li>鼠标操作的诞生是为了服务 GUI 时代，天生不适合文本编辑任务。</li>
+</ol>
+
+<p>综上所述，摆脱鼠标是提升代码效率很重要的一步。开门见山，今天带来的解决方案是 <a href="https://neovim.io/">Neovim</a>。</p>
+
+<h3 id="download-neovim">Download Neovim</h3>
+<ul>
+  <li><strong>Windows</strong>: Install with Windows Package Manager <a href="https://learn.microsoft.com/en-us/windows/package-manager/winget/">Winget</a>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>winget <span class="nb">install </span>Neovim.Neovim
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Linux</strong>: Install in Debian
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>neovim
+</code></pre></div>    </div>
+  </li>
+  <li><strong>MacOS</strong>: Install with Homebrew
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>neovim
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Check Installation:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvim <span class="nt">--version</span>
+</code></pre></div></div>
+
+<h3 id="set-up-lazyvim">Set up <a href="http://www.lazyvim.org/">LazyVim</a></h3>
+<p><strong>Clone LazyVim Starter</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Windows</span>
+git clone https://github.com/LazyVim/starter <span class="nv">$env</span>:LOCALAPPDATA<span class="se">\n</span>vim
+
+<span class="c"># Linux / MacOS</span>
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+</code></pre></div></div>
+
+<p><strong>Remove the <code class="language-plaintext highlighter-rouge">.git</code> folder, so you can add it to your own repo later</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Windows</span>
+Remove-Item <span class="nv">$env</span>:LOCALAPPDATA<span class="se">\n</span>vim<span class="se">\.</span>git <span class="nt">-Recurse</span> <span class="nt">-Force</span>
+
+<span class="c"># Linux / MacOS</span>
+<span class="nb">rm</span> <span class="nt">-rf</span> ~/.config/nvim/.git
+</code></pre></div></div>
+
+<p><strong>Start Neovim!</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvim
+</code></pre></div></div>
+
+<h3 id="types-of-shortcuts">Types of Shortcuts</h3>
+<p><strong>1. 文本操作</strong>
+文本的插入、删除、替换、选取、跳转；
+<strong>2. 编辑器功能</strong>
+文件间的跳转，函数或变量名的搜索、替换，错误修复，代码生成。</p>
+
+<h3 id="how-to-vim">How to Vim</h3>
+<p>学习 Vim 的文本操作只需要记住一个公式：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;number&gt;&lt;command&gt;&lt;text object or motion&gt;
+</code></pre></div></div>
+<ul>
+  <li>number: 操作次数；</li>
+  <li>command: 操作行为；</li>
+  <li>text object or motion: 操作对象或操作距离</li>
+</ul>
+
+<p>Some practical learning websites:
+<a href="https://openvim.com/">Open Vim</a>; <a href="https://vim-adventures.com/">Vim Adventures</a>; <a href="https://www.vim.org/docs.php">Vim Documentation</a></p>
+
+<p>To Be Continued…</p>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>
